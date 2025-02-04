@@ -1,31 +1,37 @@
 import torch
 import torch.nn as nn
-from torch.utils.data import DataLoader, TensorDataset
+from torch.utils.data import DataLoader
 import os
 import matplotlib.pyplot as plt
 import numpy as np
 from sklearn.metrics import precision_recall_curve, roc_curve, auc, confusion_matrix, f1_score
 from model import MILModel
-from bag_creator import BagCreator
+from MNISTMILDataset import MNISTMILDataset
+from MIL_utils import MIL_collate_fn
 from graphs import Graphs
-from training import Training
 
 class ModelEvaluator:
-    def __init__(self, model_path, test_bags, test_labels, output_graphs_dir='./output/10_inst/test_graphs', attention_dir='./output/10_inst/attention_images', batch_size=1):
-        self.model = MILModel()  # Asegúrate de tener la clase MILModel importada correctamente
-        self.model.load_state_dict(torch.load(model_path))  # Cargar el modelo entrenado
+    def __init__(self, model_path, test_dataset, output_graphs_dir='./output/test_graphs', attention_dir='./output/attention_images', batch_size=1):
+        # Cargar el modelo entrenado
+        self.model = MILModel()
+        self.model.load_state_dict(torch.load(model_path, weights_only=True))
         self.model.eval()  # Establecer el modelo en modo evaluación
-        self.test_bags = test_bags
-        self.test_labels = test_labels
-
-        # Crear el conjunto de datos de evaluación
-        self.test_dataset = TensorDataset(torch.stack(self.test_bags), self.test_labels)
-        self.test_dataloader = DataLoader(self.test_dataset, batch_size=batch_size, shuffle=False)
-
+        
+        # Usar el dataset directamente
+        self.test_dataset = test_dataset
+        
+        # Crear DataLoader con MIL_collate_fn
+        self.test_dataloader = DataLoader(
+            self.test_dataset,
+            batch_size=batch_size,
+            shuffle=False,
+            collate_fn=MIL_collate_fn
+        )
+        
         # Función de pérdida
         self.criterion = nn.BCELoss()
-
-        # Directorio de salida para las gráficas
+        
+        # Directorios de salida
         self.output_graphs_dir = output_graphs_dir
         self.attention_dir = attention_dir
         os.makedirs(self.output_graphs_dir, exist_ok=True)
@@ -33,7 +39,7 @@ class ModelEvaluator:
 
     def save_attention_images(self, bag, attention_scores, label, bag_id):
         fig, axes = plt.subplots(1, len(bag), figsize=(15, 5))
-        fig.suptitle(f'Bag {bag_id} - Prediction: {label}', fontsize=16)
+        fig.suptitle(f'Bag {bag_id} - Prediction: {label:.2f}', fontsize=16)
 
         for i, (img, attn) in enumerate(zip(bag, attention_scores)):
             img = img.squeeze(0).numpy()
@@ -56,28 +62,28 @@ class ModelEvaluator:
 
         # Evaluación del modelo
         with torch.no_grad():  # No se necesitan gradientes durante la evaluación
-            for bag_id, (bag, label) in enumerate(self.test_dataloader):
-                output, attention_scores = self.model(bag[0])  # bag[0] porque viene empaquetado con DataLoader
-                loss = self.criterion(output, label.float().unsqueeze(1))
+            for bag_id, (bag_data, bag_label, inst_labels, adj_mat, mask) in enumerate(self.test_dataloader):
+                # Forward pass
+                output, attention_scores = self.model(bag_data, mask, adj_mat)
+                loss = self.criterion(output, bag_label.unsqueeze(1))
                 
                 test_loss += loss.item()
                 
                 # Calcular la precisión de evaluación
                 predicted = (output > 0.5).float()  # Umbral de 0.5 para clasificación binaria
-                correct_test += (predicted == label.unsqueeze(1)).sum().item()
-                total_test += label.size(0)
+                correct_test += (predicted == bag_label.unsqueeze(1)).sum().item()
+                total_test += bag_label.size(0)
                 
                 predictions.append(output.item())  # Guardar las predicciones
-                true_labels.append(label.item())  # Guardar las etiquetas verdaderas
+                true_labels.append(bag_label.item())  # Guardar las etiquetas verdaderas
 
                 # Guardar imágenes con atenciones
-                if count_0 < 3 and label==0:
-                    self.save_attention_images(bag[0], attention_scores, output.item(), bag_id)
-                    count_0=count_0+1
-                elif count_1 < 3 and label==1:
-                    self.save_attention_images(bag[0], attention_scores, output.item(), bag_id)
-                    count_1=count_1+1
-
+                if count_0 < 3 and bag_label == 0:
+                    self.save_attention_images(bag_data[0], attention_scores[0], output.item(), bag_id)
+                    count_0 += 1
+                elif count_1 < 3 and bag_label == 1:
+                    self.save_attention_images(bag_data[0], attention_scores[0], output.item(), bag_id)
+                    count_1 += 1
 
         # Calcular el F1-score
         f1 = f1_score(true_labels, [1 if p > 0.5 else 0 for p in predictions])
@@ -106,26 +112,15 @@ class ModelEvaluator:
         graphs.show_plots()
 
 if __name__ == "__main__":
-    # Crear instancia de BagCreator para generar los datos
-    bag_creator = BagCreator(target_digit=3, num_bags=1000, num_instances=10)
-
-    # Crear las bolsas y obtener las etiquetas
-    bags, labels = bag_creator.create_bags()
-
-    # Dividir las bolsas en entrenamiento (70%) y evaluación (30%)
-    split_idx = int(len(bags) * 0.7)  # 70% para entrenamiento y 30% para evaluación
-    train_bags, eval_bags = bags[:split_idx], bags[split_idx:]
-    train_labels, eval_labels = labels[:split_idx], labels[split_idx:]
-
-    # Dividir el conjunto de entrenamiento (70%) en entrenamiento (80%) y validación (20%)
-    train_split_idx = int(len(train_bags) * 0.8)  # 80% de entrenamiento y 20% de validación
-    train_bags, val_bags = train_bags[:train_split_idx], train_bags[train_split_idx:]
-    train_labels, val_labels = train_labels[:train_split_idx], train_labels[train_split_idx:]
-
-    # Iniciar el entrenamiento
-    trainer = Training(train_bags, train_labels, val_bags, val_labels, num_epochs=10, learning_rate=1e-3, output_model_dir='./models', output_graphs_dir = './output/10_inst/training_graphs')
-    trainer.train()
+    # Crear instancia de MNISTMILDataset para generar los datos
+    test_dataset = MNISTMILDataset(subset="test", bag_size=10, obj_label=3)
 
     # Iniciar la evaluación
-    evaluator = ModelEvaluator(model_path='./models/10_inst/model.pth', test_bags=eval_bags, test_labels=eval_labels, output_graphs_dir = './output/10_inst/test_graphs', attention_dir='./output/10_inst/attention_images', batch_size=1)
+    evaluator = ModelEvaluator(
+        model_path='./models/model.pth',
+        test_dataset=test_dataset,
+        output_graphs_dir='./output/test_graphs',
+        attention_dir='./output/attention_images',
+        batch_size=1
+    )
     evaluator.evaluate()
