@@ -1,0 +1,27 @@
+rsna
+[RSNADataset] Scanning files...
+[RSNADataset] Found 1000 already processed bags
+[RSNADataset] Number of bags found: 1000
+rsna
+[RSNADataset] Scanning files...
+[RSNADataset] Found 150 already processed bags
+[RSNADataset] Number of bags found: 150
+Epoch 1/10, Train Loss: 0.6878, Train Accuracy: 0.6025, Val Loss: 0.6205, Val Accuracy: 0.6550
+Epoch 2/10, Train Loss: 0.6373, Train Accuracy: 0.6425, Val Loss: 0.6296, Val Accuracy: 0.6450
+Epoch 3/10, Train Loss: 0.5712, Train Accuracy: 0.7075, Val Loss: 0.6393, Val Accuracy: 0.6550
+Epoch 4/10, Train Loss: 0.5334, Train Accuracy: 0.7300, Val Loss: 0.5447, Val Accuracy: 0.7350
+Epoch 5/10, Train Loss: 0.5117, Train Accuracy: 0.7488, Val Loss: 0.5582, Val Accuracy: 0.7250
+Epoch 6/10, Train Loss: 0.5103, Train Accuracy: 0.7575, Val Loss: 0.6366, Val Accuracy: 0.6700
+Epoch 7/10, Train Loss: 0.5004, Train Accuracy: 0.7450, Val Loss: 0.5185, Val Accuracy: 0.7450
+Epoch 8/10, Train Loss: 0.4914, Train Accuracy: 0.7550, Val Loss: 0.5584, Val Accuracy: 0.7050
+Epoch 9/10, Train Loss: 0.4742, Train Accuracy: 0.7812, Val Loss: 0.5639, Val Accuracy: 0.7100
+Epoch 10/10, Train Loss: 0.4556, Train Accuracy: 0.8000, Val Loss: 0.4950, Val Accuracy: 0.7700
+/home/javitrucas/TFG/scripts/medical_scripts/medical_evaluation.py:16: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(self.model_path))
+Traceback (most recent call last):
+  File "/home/javitrucas/TFG/scripts/medical_scripts/medical_main.py", line 69, in <module>
+    evaluator.evaluate()
+  File "/home/javitrucas/TFG/scripts/medical_scripts/medical_evaluation.py", line 25, in evaluate
+    probs = torch.sigmoid(output)
+            ^^^^^^^^^^^^^^^^^^^^^
+TypeError: sigmoid(): argument 'input' (position 1) must be Tensor, not tuple

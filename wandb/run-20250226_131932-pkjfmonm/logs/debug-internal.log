@@ -1,0 +1,15 @@
+{"time":"2025-02-26T13:19:32.659291558+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"/home/javitrucas/TFG/wandb/run-20250226_131932-pkjfmonm/logs/debug-core.log"}
+{"time":"2025-02-26T13:19:32.776662482+01:00","level":"INFO","msg":"created new stream","id":"pkjfmonm"}
+{"time":"2025-02-26T13:19:32.77672592+01:00","level":"INFO","msg":"stream: started","id":"pkjfmonm"}
+{"time":"2025-02-26T13:19:32.776784576+01:00","level":"INFO","msg":"handler: started","stream_id":"pkjfmonm"}
+{"time":"2025-02-26T13:19:32.776816086+01:00","level":"INFO","msg":"sender: started","stream_id":"pkjfmonm"}
+{"time":"2025-02-26T13:19:32.776803489+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"pkjfmonm"}
+{"time":"2025-02-26T13:19:32.99191304+01:00","level":"INFO","msg":"stream: closing","id":"pkjfmonm"}
+{"time":"2025-02-26T13:19:33.087789743+01:00","level":"ERROR","msg":"sender: upsertConfig: RunRecord is nil"}
+{"time":"2025-02-26T13:19:33.264353718+01:00","level":"ERROR","msg":"HTTP error","status":404,"method":"POST","url":"https://api.wandb.ai/graphql"}
+{"time":"2025-02-26T13:19:33.264417391+01:00","level":"ERROR","msg":"runfiles: CreateRunFiles returned error: returned error 404 Not Found: {\"errors\":[{\"message\":\"project /TFG not found during createRunFiles\",\"path\":[\"createRunFiles\"]}],\"data\":{\"createRunFiles\":null}}"}
+{"time":"2025-02-26T13:19:33.265345945+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-02-26T13:19:33.265426529+01:00","level":"INFO","msg":"handler: closed","stream_id":"pkjfmonm"}
+{"time":"2025-02-26T13:19:33.265458529+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"pkjfmonm"}
+{"time":"2025-02-26T13:19:33.265502905+01:00","level":"INFO","msg":"sender: closed","stream_id":"pkjfmonm"}
+{"time":"2025-02-26T13:19:33.265583746+01:00","level":"INFO","msg":"stream: closed","id":"pkjfmonm"}

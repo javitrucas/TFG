@@ -1,0 +1,15 @@
+{"time":"2025-02-26T12:51:58.795607269+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"/home/javitrucas/TFG/wandb/run-20250226_125158-fei5380d/logs/debug-core.log"}
+{"time":"2025-02-26T12:51:58.911064217+01:00","level":"INFO","msg":"created new stream","id":"fei5380d"}
+{"time":"2025-02-26T12:51:58.911121239+01:00","level":"INFO","msg":"stream: started","id":"fei5380d"}
+{"time":"2025-02-26T12:51:58.911142658+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"fei5380d"}
+{"time":"2025-02-26T12:51:58.911172049+01:00","level":"INFO","msg":"handler: started","stream_id":"fei5380d"}
+{"time":"2025-02-26T12:51:58.911209104+01:00","level":"INFO","msg":"sender: started","stream_id":"fei5380d"}
+{"time":"2025-02-26T12:51:59.225455137+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-26T12:51:59.406007634+01:00","level":"INFO","msg":"stream: closing","id":"fei5380d"}
+{"time":"2025-02-26T12:51:59.406089958+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-26T12:51:59.406990653+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-02-26T12:52:00.369909386+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-02-26T12:52:00.591226073+01:00","level":"INFO","msg":"handler: closed","stream_id":"fei5380d"}
+{"time":"2025-02-26T12:52:00.591310692+01:00","level":"INFO","msg":"sender: closed","stream_id":"fei5380d"}
+{"time":"2025-02-26T12:52:00.591298377+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"fei5380d"}
+{"time":"2025-02-26T12:52:00.591451484+01:00","level":"INFO","msg":"stream: closed","id":"fei5380d"}

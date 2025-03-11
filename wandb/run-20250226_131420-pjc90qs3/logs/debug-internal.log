@@ -1,0 +1,15 @@
+{"time":"2025-02-26T13:14:20.399604189+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"/home/javitrucas/TFG/wandb/run-20250226_131420-pjc90qs3/logs/debug-core.log"}
+{"time":"2025-02-26T13:14:20.518353255+01:00","level":"INFO","msg":"created new stream","id":"pjc90qs3"}
+{"time":"2025-02-26T13:14:20.51841183+01:00","level":"INFO","msg":"stream: started","id":"pjc90qs3"}
+{"time":"2025-02-26T13:14:20.518501192+01:00","level":"INFO","msg":"sender: started","stream_id":"pjc90qs3"}
+{"time":"2025-02-26T13:14:20.518488614+01:00","level":"INFO","msg":"handler: started","stream_id":"pjc90qs3"}
+{"time":"2025-02-26T13:14:20.518476996+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"pjc90qs3"}
+{"time":"2025-02-26T13:14:20.775496878+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-26T13:14:20.954098488+01:00","level":"INFO","msg":"stream: closing","id":"pjc90qs3"}
+{"time":"2025-02-26T13:14:20.954148359+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-26T13:14:20.954937845+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-02-26T13:14:21.887092531+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-02-26T13:14:22.112876489+01:00","level":"INFO","msg":"handler: closed","stream_id":"pjc90qs3"}
+{"time":"2025-02-26T13:14:22.112953012+01:00","level":"INFO","msg":"sender: closed","stream_id":"pjc90qs3"}
+{"time":"2025-02-26T13:14:22.112950691+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"pjc90qs3"}
+{"time":"2025-02-26T13:14:22.113094442+01:00","level":"INFO","msg":"stream: closed","id":"pjc90qs3"}

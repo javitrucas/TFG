@@ -1,0 +1,65 @@
+2025-02-26 13:19:32,647 INFO    MainThread:219015 [wandb_setup.py:_flush():67] Current SDK version is 0.19.7
+2025-02-26 13:19:32,647 INFO    MainThread:219015 [wandb_setup.py:_flush():67] Configure stats pid to 219015
+2025-02-26 13:19:32,647 INFO    MainThread:219015 [wandb_setup.py:_flush():67] Loading settings from /home/javitrucas/.config/wandb/settings
+2025-02-26 13:19:32,647 INFO    MainThread:219015 [wandb_setup.py:_flush():67] Loading settings from /home/javitrucas/TFG/wandb/settings
+2025-02-26 13:19:32,647 INFO    MainThread:219015 [wandb_setup.py:_flush():67] Loading settings from environment variables
+2025-02-26 13:19:32,647 INFO    MainThread:219015 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /home/javitrucas/TFG/wandb/run-20250226_131932-pkjfmonm/logs/debug.log
+2025-02-26 13:19:32,648 INFO    MainThread:219015 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /home/javitrucas/TFG/wandb/run-20250226_131932-pkjfmonm/logs/debug-internal.log
+2025-02-26 13:19:32,648 INFO    MainThread:219015 [wandb_init.py:init():761] calling init triggers
+2025-02-26 13:19:32,648 INFO    MainThread:219015 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'dataset_name': 'rsna-features_resnet18', 'num_epochs': 10, 'learning_rate': 0.001, 'batch_size': 1, 'val_prop': 0.2, 'seed': 42, 'use_inst_distances': False, 'adj_mat_mode': 'relative', '_wandb': {}}
+2025-02-26 13:19:32,648 INFO    MainThread:219015 [wandb_init.py:init():784] starting backend
+2025-02-26 13:19:32,648 INFO    MainThread:219015 [wandb_init.py:init():788] sending inform_init request
+2025-02-26 13:19:32,652 INFO    MainThread:219015 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2025-02-26 13:19:32,652 INFO    MainThread:219015 [wandb_init.py:init():803] backend started and connected
+2025-02-26 13:19:32,655 INFO    MainThread:219015 [wandb_init.py:init():896] updated telemetry
+2025-02-26 13:19:32,665 INFO    MainThread:219015 [wandb_init.py:init():920] communicating run to backend with 90.0 second timeout
+2025-02-26 13:19:32,985 WARNING MainThread:219015 [wandb_init.py:init():1475] interrupted
+Traceback (most recent call last):
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 1471, in init
+    return wi.init(run_settings, run_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 946, in init
+    result = wait_with_progress(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/mailbox/wait_with_progress.py", line 23, in wait_with_progress
+    return wait_all_with_progress(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/mailbox/wait_with_progress.py", line 69, in wait_all_with_progress
+    return _wait_handles(handle_list, timeout=progress_after)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/mailbox/wait_with_progress.py", line 109, in _wait_handles
+    results.append(handle.wait_or(timeout=remaining_timeout))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/mailbox/handles.py", line 107, in wait_or
+    if not self._event.wait(timeout=timeout):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/threading.py", line 629, in wait
+    signaled = self._cond.wait(timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/threading.py", line 331, in wait
+    gotit = waiter.acquire(True, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+2025-02-26 13:19:32,992 WARNING MsgRouterThr:219015 [router.py:message_loop():77] message_loop has been closed
+Traceback (most recent call last):
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/interface/router_sock.py", line 28, in _read_message
+    resp = self._sock_client.read_server_response(timeout=1)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 285, in read_server_response
+    data = self._read_packet_bytes(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 270, in _read_packet_bytes
+    raise SockClientClosedError
+wandb.sdk.lib.sock_client.SockClientClosedError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/interface/router.py", line 70, in message_loop
+    msg = self._read_message()
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/interface/router_sock.py", line 30, in _read_message
+    raise MessageRouterClosedError from e
+wandb.sdk.interface.router.MessageRouterClosedError
+2025-02-26 13:19:32,993 INFO    MsgRouterThr:219015 [mailbox.py:close():115] Closing mailbox, abandoning 1 handles.

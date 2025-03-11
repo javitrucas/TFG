@@ -1,0 +1,17 @@
+rsna
+[RSNADataset] Scanning files...
+/data/datasets/RSNA_ICH/MIL_processed/features_resnet18/
+[RSNADataset] Processing and saving data: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 1000/1000 [01:20<00:00, 12.44it/s]
+[RSNADataset] Number of bags found: 1000
+rsna
+[RSNADataset] Scanning files...
+[RSNADataset] Found 1 already processed bags
+[RSNADataset] Processing and saving data: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 150/150 [00:15<00:00,  9.67it/s]
+[RSNADataset] Number of bags found: 150
+Traceback (most recent call last):
+  File "/home/javitrucas/TFG/scripts/medical_scripts/medical_main.py", line 54, in <module>
+    trainer.train()
+  File "/home/javitrucas/TFG/scripts/medical_scripts/medical_training.py", line 15, in train
+    from model import MILModel  # Importa tu modelo
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'model'

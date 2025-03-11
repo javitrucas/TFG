@@ -1,0 +1,15 @@
+{"time":"2025-02-26T13:00:14.617451456+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"/home/javitrucas/TFG/wandb/run-20250226_130014-lspinue1/logs/debug-core.log"}
+{"time":"2025-02-26T13:00:14.733386484+01:00","level":"INFO","msg":"created new stream","id":"lspinue1"}
+{"time":"2025-02-26T13:00:14.733442851+01:00","level":"INFO","msg":"stream: started","id":"lspinue1"}
+{"time":"2025-02-26T13:00:14.733469841+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"lspinue1"}
+{"time":"2025-02-26T13:00:14.733492329+01:00","level":"INFO","msg":"sender: started","stream_id":"lspinue1"}
+{"time":"2025-02-26T13:00:14.733555569+01:00","level":"INFO","msg":"handler: started","stream_id":"lspinue1"}
+{"time":"2025-02-26T13:00:14.998044522+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-26T13:00:15.178222227+01:00","level":"INFO","msg":"stream: closing","id":"lspinue1"}
+{"time":"2025-02-26T13:00:15.178276402+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-26T13:00:15.179118114+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-02-26T13:00:16.144091608+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-02-26T13:00:16.367294171+01:00","level":"INFO","msg":"handler: closed","stream_id":"lspinue1"}
+{"time":"2025-02-26T13:00:16.367359+01:00","level":"INFO","msg":"sender: closed","stream_id":"lspinue1"}
+{"time":"2025-02-26T13:00:16.367347312+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"lspinue1"}
+{"time":"2025-02-26T13:00:16.36744602+01:00","level":"INFO","msg":"stream: closed","id":"lspinue1"}

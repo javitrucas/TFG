@@ -1,0 +1,15 @@
+{"time":"2025-02-26T13:31:24.856991896+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"/home/javitrucas/TFG/wandb/run-20250226_133124-odnceron/logs/debug-core.log"}
+{"time":"2025-02-26T13:31:24.973680755+01:00","level":"INFO","msg":"created new stream","id":"odnceron"}
+{"time":"2025-02-26T13:31:24.973739044+01:00","level":"INFO","msg":"stream: started","id":"odnceron"}
+{"time":"2025-02-26T13:31:24.973764993+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"odnceron"}
+{"time":"2025-02-26T13:31:24.973788023+01:00","level":"INFO","msg":"sender: started","stream_id":"odnceron"}
+{"time":"2025-02-26T13:31:24.973838011+01:00","level":"INFO","msg":"handler: started","stream_id":"odnceron"}
+{"time":"2025-02-26T13:31:25.395651614+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-26T13:31:37.214979934+01:00","level":"INFO","msg":"stream: closing","id":"odnceron"}
+{"time":"2025-02-26T13:31:37.215037721+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-26T13:31:37.216116957+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-02-26T13:31:38.492180452+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-02-26T13:31:40.344858356+01:00","level":"INFO","msg":"handler: closed","stream_id":"odnceron"}
+{"time":"2025-02-26T13:31:40.344941155+01:00","level":"INFO","msg":"sender: closed","stream_id":"odnceron"}
+{"time":"2025-02-26T13:31:40.344933468+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"odnceron"}
+{"time":"2025-02-26T13:31:40.345097661+01:00","level":"INFO","msg":"stream: closed","id":"odnceron"}

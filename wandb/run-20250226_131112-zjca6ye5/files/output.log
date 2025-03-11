@@ -1,0 +1,35 @@
+rsna
+[RSNADataset] Scanning files...
+Traceback (most recent call last):
+  File "/home/javitrucas/TFG/scripts/medical_scripts/medical_main.py", line 37, in <module>
+    train_dataset, val_dataset = load_dataset(config=config, mode="train_val")
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/TFG/scripts/dataset_loader.py", line 37, in load_dataset
+    dataset = RSNADataset(data_path=data_path, processed_data_path=processed_data_path, csv_path=csv_path, n_samples=n_samples, use_slice_distances=config.use_inst_distances, adj_mat_mode=config.adj_mat_mode)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/TFG/data/datasets/RSNADataset.py", line 23, in __init__
+    super(RSNADataset, self).__init__(
+  File "/home/javitrucas/TFG/data/datasets/ProcessedMILDataset.py", line 34, in __init__
+    super(ProcessedMILDataset, self).__init__(**kwargs)
+  File "/home/javitrucas/TFG/data/datasets/MILDataset.py", line 29, in __init__
+    self.data_dict = self._init_data_dict()
+                     ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/TFG/data/datasets/RSNADataset.py", line 52, in _init_data_dict
+    df = pd.read_csv(self.csv_path)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/pandas/io/common.py", line 873, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '././data/datasets/RSNA_ICH/bags_train.csv'

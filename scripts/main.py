@@ -14,10 +14,10 @@ if __name__ == "__main__":
     batch_size = 1            # Tamaño del lote (batch size)
     
     # Directorios para guardar los modelos y las gráficas
-    output_model_dir = './models/new'
-    output_graphs_dir = './output/new/training_graphs'
-    attention_dir = './output/new/attention_images'
-    test_graphs_dir = './output/new/test_graphs'
+    output_model_dir = './models/MNIST/new'
+    output_graphs_dir = './output/MNIST/new/training_graphs'
+    attention_dir = './output/MNIST/new/attention_images'
+    test_graphs_dir = './output/MNIST/new/test_graphs'
     
     # Crear instancia de MNISTMILDataset para generar los datos
     train_dataset = MNISTMILDataset(subset="train", bag_size=bag_size, obj_label=target_digit)

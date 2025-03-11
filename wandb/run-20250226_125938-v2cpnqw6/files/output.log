@@ -1,0 +1,9 @@
+rsna
+Traceback (most recent call last):
+  File "/home/javitrucas/TFG/scripts/medical_scripts/medical_main.py", line 37, in <module>
+    train_dataset, val_dataset = load_dataset(config=config, mode="train_val")
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/TFG/scripts/dataset_loader.py", line 38, in load_dataset
+    dataset = RSNADataset(data_path=data_path, processed_data_path=processed_data_path, csv_path=csv_path, n_samples=n_samples, use_slice_distances=config.use_inst_distances, adj_mat_mode=adj_mat_mode)
+                                                                                                                                                                                            ^^^^^^^^^^^^
+NameError: name 'adj_mat_mode' is not defined

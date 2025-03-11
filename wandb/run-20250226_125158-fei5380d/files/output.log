@@ -1,0 +1,22 @@
+rsna
+Traceback (most recent call last):
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_config.py", line 165, in __getattr__
+    return self.__getitem__(key)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_config.py", line 130, in __getitem__
+    return self._items[key]
+           ~~~~~~~~~~~^^^^^
+KeyError: 'use_inst_distances'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/javitrucas/TFG/scripts/medical_scripts/medical_main.py", line 35, in <module>
+    train_dataset, val_dataset = load_dataset(config=config, mode="train_val")
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/TFG/scripts/dataset_loader.py", line 38, in load_dataset
+    dataset = RSNADataset(data_path=data_path, processed_data_path=processed_data_path, csv_path=csv_path, n_samples=n_samples, use_slice_distances=config.use_inst_distances, adj_mat_mode=config.adj_mat_mode)
+                                                                                                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_config.py", line 167, in __getattr__
+    raise AttributeError(
+AttributeError: <class 'wandb.sdk.wandb_config.Config'> object has no attribute 'use_inst_distances'

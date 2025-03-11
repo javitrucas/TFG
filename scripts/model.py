@@ -21,6 +21,68 @@ class CNNFeatureExtractor(nn.Module):
         return x
 
 class AttentionMechanism(nn.Module):
+    def __init__(self, input_dim, hidden_dim):
+        super(AttentionMechanism, self).__init__()
+        self.attention_layer = nn.Sequential(
+            nn.Linear(input_dim, hidden_dim),
+            nn.Tanh(),
+            nn.Linear(hidden_dim, 1)
+        )
+
+    def forward(self, features, mask=None):
+        """
+        Parámetros:
+        - features: Tensor de forma (batch_size, max_bag_size, feature_dim).
+        - mask: Tensor de forma (batch_size, max_bag_size) -> Máscara para ignorar instancias rellenas.
+        """
+        # Calcular los pesos de atención
+        attention_scores = self.attention_layer(features)  # (batch_size, max_bag_size, 1)
+        attention_scores = attention_scores.squeeze(-1)  # (batch_size, max_bag_size)
+
+        # Aplicar máscara si está presente
+        if mask is not None:
+            attention_scores = attention_scores.masked_fill(~mask.bool(), float('-inf'))
+
+        # Normalizar los pesos de atención
+        attention_weights = F.softmax(attention_scores, dim=1)  # (batch_size, max_bag_size)
+
+        # Calcular la representación del bag como una combinación ponderada de las características
+        bag_representation = torch.bmm(
+            attention_weights.unsqueeze(1),  # (batch_size, 1, max_bag_size)
+            features  # (batch_size, max_bag_size, feature_dim)
+        ).squeeze(1)  # (batch_size, feature_dim)
+
+        return bag_representation, attention_weights
+
+
+class MILModel(nn.Module):
+    def __init__(self, feature_dim):
+        super(MILModel, self).__init__()
+        self.attention = AttentionMechanism(feature_dim, 64)  # Mecanismo de atención
+        self.classifier = nn.Linear(feature_dim, 1)  # Clasificador final
+
+    def forward(self, bag_data, mask=None, adj_mat=None):
+        """
+        Parámetros:
+        - bag_data: Tensor de forma (batch_size, max_bag_size, feature_dim) -> Datos de entrada (embeddings).
+        - mask: Tensor de forma (batch_size, max_bag_size) -> Máscara para ignorar instancias rellenas.
+        """
+        batch_size, max_bag_size, feature_dim = bag_data.shape
+
+        # Aplicar máscara si está presente
+        if mask is not None:
+            mask = mask.bool()  # Convertir a booleano para usar en masked_fill
+
+        # Obtener representación del bag y pesos de atención
+        bag_representation, attention_weights = self.attention(bag_data, mask=mask)
+
+        # Clasificación final
+        output = torch.sigmoid(self.classifier(bag_representation))  # Probabilidad de clase positiva
+        return output, attention_weights
+    
+
+    antiguo_codigo="""
+class AttentionMechanism(nn.Module):
     def __init__(self, input_dim, attention_dim):
         super(AttentionMechanism, self).__init__()
         # Mecanismo de atención
@@ -52,12 +114,6 @@ class MILModel(nn.Module):
         self.classifier = nn.Linear(128, 1)  # Clasificador final
     
     def forward(self, bag_data, mask=None, adj_mat=None):
-        """
-        Parámetros:
-        - bag_data: Tensor de forma (batch_size, max_bag_size, 1, 28, 28) -> Datos de entrada (imágenes).
-        - mask: Tensor de forma (batch_size, max_bag_size) -> Máscara para ignorar instancias rellenas.
-        - adj_mat: Tensor de forma (batch_size, max_bag_size, max_bag_size) -> Matriz de adyacencia (opcional).
-        """
         batch_size, max_bag_size = bag_data.size(0), bag_data.size(1)
         
         # Reorganizar las instancias para procesarlas simultáneamente
@@ -75,3 +131,4 @@ class MILModel(nn.Module):
         # Clasificación final
         output = torch.sigmoid(self.classifier(bag_representation))  # Probabilidad de clase positiva
         return output, attention_weights
+"""
