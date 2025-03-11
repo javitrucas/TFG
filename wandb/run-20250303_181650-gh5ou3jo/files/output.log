@@ -1,0 +1,19 @@
+rsna
+[RSNADataset] Scanning files...
+[RSNADataset] Found 1000 already processed bags
+[RSNADataset] Number of bags found: 1000
+rsna
+[RSNADataset] Scanning files...
+[RSNADataset] Found 150 already processed bags
+[RSNADataset] Number of bags found: 150
+Epoch 1/10, Train Loss: 0.6589, Train Accuracy: 0.6038, Val Loss: 0.6210, Val Accuracy: 0.6700
+Epoch 2/10, Train Loss: 0.5684, Train Accuracy: 0.7125, Val Loss: 0.6862, Val Accuracy: 0.6300
+Epoch 3/10, Train Loss: 0.5257, Train Accuracy: 0.7288, Val Loss: 0.5849, Val Accuracy: 0.6900
+Epoch 4/10, Train Loss: 0.5056, Train Accuracy: 0.7512, Val Loss: 0.5233, Val Accuracy: 0.7300
+Epoch 5/10, Train Loss: 0.4793, Train Accuracy: 0.7788, Val Loss: 0.5189, Val Accuracy: 0.7600
+Epoch 6/10, Train Loss: 0.4741, Train Accuracy: 0.7800, Val Loss: 0.5076, Val Accuracy: 0.7800
+Epoch 7/10, Train Loss: 0.4569, Train Accuracy: 0.7775, Val Loss: 0.5091, Val Accuracy: 0.7400
+Epoch 8/10, Train Loss: 0.4493, Train Accuracy: 0.7775, Val Loss: 0.4950, Val Accuracy: 0.7600
+Epoch 9/10, Train Loss: 0.4498, Train Accuracy: 0.7937, Val Loss: 0.5196, Val Accuracy: 0.7200
+Epoch 10/10, Train Loss: 0.4464, Train Accuracy: 0.7950, Val Loss: 0.5128, Val Accuracy: 0.7500
+Test Accuracy: 0.4800, Test AUC: 0.8832

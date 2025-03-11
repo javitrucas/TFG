@@ -1,0 +1,10 @@
+{"time":"2025-03-03T20:02:03.045884909+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"/home/javitrucas/TFG/wandb/run-20250303_200203-r7w8ol7x/logs/debug-core.log"}
+{"time":"2025-03-03T20:02:03.166156296+01:00","level":"INFO","msg":"created new stream","id":"r7w8ol7x"}
+{"time":"2025-03-03T20:02:03.166232153+01:00","level":"INFO","msg":"stream: started","id":"r7w8ol7x"}
+{"time":"2025-03-03T20:02:03.166256807+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"r7w8ol7x"}
+{"time":"2025-03-03T20:02:03.166308818+01:00","level":"INFO","msg":"sender: started","stream_id":"r7w8ol7x"}
+{"time":"2025-03-03T20:02:03.166296489+01:00","level":"INFO","msg":"handler: started","stream_id":"r7w8ol7x"}
+{"time":"2025-03-03T20:02:03.467166266+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-03T20:02:17.944202059+01:00","level":"INFO","msg":"stream: closing","id":"r7w8ol7x"}
+{"time":"2025-03-03T20:02:17.944310504+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-03T20:02:17.945444209+01:00","level":"INFO","msg":"Stopped system monitor"}

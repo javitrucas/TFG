@@ -1,0 +1,15 @@
+{"time":"2025-03-04T11:15:31.638123828+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"/home/javitrucas/TFG/wandb/run-20250304_111531-nllovrm2/logs/debug-core.log"}
+{"time":"2025-03-04T11:15:31.755995619+01:00","level":"INFO","msg":"created new stream","id":"nllovrm2"}
+{"time":"2025-03-04T11:15:31.75606704+01:00","level":"INFO","msg":"stream: started","id":"nllovrm2"}
+{"time":"2025-03-04T11:15:31.756089564+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"nllovrm2"}
+{"time":"2025-03-04T11:15:31.756147586+01:00","level":"INFO","msg":"sender: started","stream_id":"nllovrm2"}
+{"time":"2025-03-04T11:15:31.75614067+01:00","level":"INFO","msg":"handler: started","stream_id":"nllovrm2"}
+{"time":"2025-03-04T11:15:32.053437077+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-04T11:16:45.988775743+01:00","level":"INFO","msg":"stream: closing","id":"nllovrm2"}
+{"time":"2025-03-04T11:16:45.988846473+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-04T11:16:45.989915392+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-04T11:16:46.937797817+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-04T11:16:47.15550291+01:00","level":"INFO","msg":"handler: closed","stream_id":"nllovrm2"}
+{"time":"2025-03-04T11:16:47.155570893+01:00","level":"INFO","msg":"sender: closed","stream_id":"nllovrm2"}
+{"time":"2025-03-04T11:16:47.155560209+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"nllovrm2"}
+{"time":"2025-03-04T11:16:47.155687843+01:00","level":"INFO","msg":"stream: closed","id":"nllovrm2"}

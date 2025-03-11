@@ -1,0 +1,16 @@
+{"time":"2025-03-04T13:43:56.802534926+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"/home/javitrucas/TFG/wandb/run-20250304_134356-54vezuti/logs/debug-core.log"}
+{"time":"2025-03-04T13:43:56.920686323+01:00","level":"INFO","msg":"created new stream","id":"54vezuti"}
+{"time":"2025-03-04T13:43:56.920749439+01:00","level":"INFO","msg":"stream: started","id":"54vezuti"}
+{"time":"2025-03-04T13:43:56.920782681+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"54vezuti"}
+{"time":"2025-03-04T13:43:56.920819126+01:00","level":"INFO","msg":"handler: started","stream_id":"54vezuti"}
+{"time":"2025-03-04T13:43:56.920852909+01:00","level":"INFO","msg":"sender: started","stream_id":"54vezuti"}
+{"time":"2025-03-04T13:43:57.263483089+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-04T13:46:56.442314286+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-04T13:46:56.44347205+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-04T13:46:57.445531901+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact model","runtime_seconds":1.763003035,"subtasks":[{"desc":"model.pth","runtime_seconds":1.101474669,"progress":"937.8KB/937.8KB"}]},{"desc":"uploading artifact run-54vezuti-confusion_matrix_table","runtime_seconds":1.010909272}],"total_operations":2}}
+{"time":"2025-03-04T13:46:58.403534121+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-04T13:46:59.620425433+01:00","level":"INFO","msg":"stream: closing","id":"54vezuti"}
+{"time":"2025-03-04T13:46:59.62046168+01:00","level":"INFO","msg":"handler: closed","stream_id":"54vezuti"}
+{"time":"2025-03-04T13:46:59.620479693+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"54vezuti"}
+{"time":"2025-03-04T13:46:59.620512832+01:00","level":"INFO","msg":"sender: closed","stream_id":"54vezuti"}
+{"time":"2025-03-04T13:46:59.620612409+01:00","level":"INFO","msg":"stream: closed","id":"54vezuti"}

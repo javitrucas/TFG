@@ -1,0 +1,36 @@
+rsna
+[RSNADataset] Scanning files...
+[RSNADataset] Found 1000 already processed bags
+[RSNADataset] Number of bags found: 1000
+rsna
+[RSNADataset] Scanning files...
+[RSNADataset] Found 150 already processed bags
+[RSNADataset] Number of bags found: 150
+Epoch 1/10, Train Loss: 0.6751, Train Accuracy: 0.6125, Val Loss: 0.6274, Val Accuracy: 0.6650
+Final model saved to ./models/rsna/model.pth
+Epoch 2/10, Train Loss: 0.5958, Train Accuracy: 0.6775, Val Loss: 0.5947, Val Accuracy: 0.6900
+Final model saved to ./models/rsna/model.pth
+Epoch 3/10, Train Loss: 0.5719, Train Accuracy: 0.7137, Val Loss: 0.5502, Val Accuracy: 0.7350
+Final model saved to ./models/rsna/model.pth
+Epoch 4/10, Train Loss: 0.5376, Train Accuracy: 0.7375, Val Loss: 0.5393, Val Accuracy: 0.7400
+Final model saved to ./models/rsna/model.pth
+Epoch 5/10, Train Loss: 0.5165, Train Accuracy: 0.7425, Val Loss: 0.7016, Val Accuracy: 0.6600
+Final model saved to ./models/rsna/model.pth
+Epoch 6/10, Train Loss: 0.5073, Train Accuracy: 0.7475, Val Loss: 0.5168, Val Accuracy: 0.7350
+Final model saved to ./models/rsna/model.pth
+Epoch 7/10, Train Loss: 0.4892, Train Accuracy: 0.7512, Val Loss: 0.5776, Val Accuracy: 0.7200
+Epoch 8/10, Train Loss: 0.4969, Train Accuracy: 0.7712, Val Loss: 0.5562, Val Accuracy: 0.7500
+Final model saved to ./models/rsna/model.pth
+Epoch 9/10, Train Loss: 0.4867, Train Accuracy: 0.7712, Val Loss: 0.6701, Val Accuracy: 0.6800
+Final model saved to ./models/rsna/model.pth
+Epoch 10/10, Train Loss: 0.5040, Train Accuracy: 0.7662, Val Loss: 0.5513, Val Accuracy: 0.7300
+Final model saved to ./models/rsna/model.pth
+Model loaded successfully from ./models/rsna/model.pth
+
+--- Evaluation Results ---
+Optimal Threshold: 0.2021
+Accuracy: 0.7933, AUC: 0.8741
+Precision: 0.7412, Recall: 0.8750, F1-Score: 0.8025
+Confusion Matrix:
+[[56 22]
+ [ 9 63]]

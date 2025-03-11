@@ -1,0 +1,31 @@
+rsna
+[RSNADataset] Scanning files...
+/data/datasets/RSNA_ICH/MIL_processed/original/
+[RSNADataset] Processing and saving data:   5%|█████▏                                                                                                  | 50/1000 [02:40<50:53,  3.21s/it]
+Traceback (most recent call last):
+  File "/home/javitrucas/TFG/scripts/medical_scripts/medical_main.py", line 43, in <module>
+    train_dataset, val_dataset = load_dataset(config=config, mode="train_val")
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/TFG/scripts/medical_scripts/../../scripts/dataset_loader.py", line 37, in load_dataset
+    dataset = RSNADataset(data_path=data_path, processed_data_path=processed_data_path, csv_path=csv_path, n_samples=n_samples, use_slice_distances=config.use_inst_distances, adj_mat_mode=config.adj_mat_mode)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/TFG/scripts/medical_scripts/../../data/datasets/RSNADataset.py", line 23, in __init__
+    super(RSNADataset, self).__init__(
+  File "/home/javitrucas/TFG/scripts/medical_scripts/../../data/datasets/ProcessedMILDataset.py", line 41, in __init__
+    self._process_data()
+  File "/home/javitrucas/TFG/scripts/medical_scripts/../../data/datasets/ProcessedMILDataset.py", line 80, in _process_data
+    bag_feat = self._load_bag_feat(bag_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/TFG/scripts/medical_scripts/../../data/datasets/ProcessedMILDataset.py", line 87, in _load_bag_feat
+    return super(ProcessedMILDataset, self)._load_bag_feat(bag_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/TFG/scripts/medical_scripts/../../data/datasets/MILDataset.py", line 59, in _load_bag_feat
+    data = self._inst_loader(inst_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/TFG/scripts/medical_scripts/../../data/datasets/RSNADataset.py", line 41, in _inst_loader
+    d = np.load(path)
+        ^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/numpy/lib/npyio.py", line 434, in load
+    magic = fid.read(N)
+            ^^^^^^^^^^^
+KeyboardInterrupt

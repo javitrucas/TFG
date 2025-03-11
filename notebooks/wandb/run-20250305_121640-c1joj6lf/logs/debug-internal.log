@@ -1,0 +1,8 @@
+{"time":"2025-03-05T12:16:40.901971765+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"/home/javitrucas/TFG/notebooks/wandb/run-20250305_121640-c1joj6lf/logs/debug-core.log"}
+{"time":"2025-03-05T12:16:41.017519431+01:00","level":"INFO","msg":"created new stream","id":"c1joj6lf"}
+{"time":"2025-03-05T12:16:41.017580172+01:00","level":"INFO","msg":"stream: started","id":"c1joj6lf"}
+{"time":"2025-03-05T12:16:41.017626175+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"c1joj6lf"}
+{"time":"2025-03-05T12:16:41.017661872+01:00","level":"INFO","msg":"handler: started","stream_id":"c1joj6lf"}
+{"time":"2025-03-05T12:16:41.017652555+01:00","level":"INFO","msg":"sender: started","stream_id":"c1joj6lf"}
+{"time":"2025-03-05T12:16:41.296180431+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-05T12:20:19.701377516+01:00","level":"INFO","msg":"Pausing system monitor"}

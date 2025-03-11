@@ -1,0 +1,54 @@
+2025-03-05 12:00:33,208 INFO    MainThread:957971 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /home/javitrucas/TFG/notebooks/wandb/run-20250305_120033-dbn488qt/logs/debug.log
+2025-03-05 12:00:33,208 INFO    MainThread:957971 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /home/javitrucas/TFG/notebooks/wandb/run-20250305_120033-dbn488qt/logs/debug-internal.log
+2025-03-05 12:00:33,209 INFO    MainThread:957971 [wandb_init.py:init():761] calling init triggers
+2025-03-05 12:00:33,209 INFO    MainThread:957971 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'dataset_name': 'rsna-features_resnet18', 'num_epochs': 50, 'learning_rate': 0.0001, 'batch_size': 1, 'val_prop': 0.2, 'seed': 42, 'use_inst_distances': False, 'adj_mat_mode': 'relative', '_wandb': {}}
+2025-03-05 12:00:33,209 INFO    MainThread:957971 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-03-05 12:00:41,459 WARNING MsgRouterThr:957971 [router.py:message_loop():77] message_loop has been closed
+Traceback (most recent call last):
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/interface/router_sock.py", line 28, in _read_message
+    resp = self._sock_client.read_server_response(timeout=1)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 285, in read_server_response
+    data = self._read_packet_bytes(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 270, in _read_packet_bytes
+    raise SockClientClosedError
+wandb.sdk.lib.sock_client.SockClientClosedError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/interface/router.py", line 70, in message_loop
+    msg = self._read_message()
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/interface/router_sock.py", line 30, in _read_message
+    raise MessageRouterClosedError from e
+wandb.sdk.interface.router.MessageRouterClosedError
+2025-03-05 12:00:41,473 INFO    MsgRouterThr:957971 [mailbox.py:close():115] Closing mailbox, abandoning 1 handles.
+2025-03-05 12:00:42,448 INFO    MainThread:957971 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-03-05 12:00:42,449 INFO    MainThread:957971 [wandb_init.py:_pause_backend():564] pausing backend
+2025-03-05 12:01:04,907 INFO    MainThread:957971 [wandb_init.py:_resume_backend():569] resuming backend
+2025-03-05 12:01:05,806 INFO    MainThread:957971 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-03-05 12:01:05,808 INFO    MainThread:957971 [wandb_init.py:_pause_backend():564] pausing backend
+2025-03-05 12:01:06,058 INFO    MainThread:957971 [wandb_init.py:_resume_backend():569] resuming backend
+2025-03-05 12:01:06,313 INFO    MainThread:957971 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-03-05 12:01:06,317 INFO    MainThread:957971 [wandb_init.py:_pause_backend():564] pausing backend
+2025-03-05 12:01:43,923 INFO    MainThread:957971 [wandb_init.py:_resume_backend():569] resuming backend
+2025-03-05 12:01:44,159 INFO    MainThread:957971 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-03-05 12:01:44,160 INFO    MainThread:957971 [wandb_init.py:_pause_backend():564] pausing backend
+2025-03-05 12:01:50,452 INFO    MainThread:957971 [wandb_init.py:_resume_backend():569] resuming backend
+2025-03-05 12:01:50,724 INFO    MainThread:957971 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-03-05 12:01:50,725 INFO    MainThread:957971 [wandb_init.py:_pause_backend():564] pausing backend
+2025-03-05 12:02:00,684 INFO    MainThread:957971 [wandb_init.py:_resume_backend():569] resuming backend
+2025-03-05 12:02:00,923 INFO    MainThread:957971 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-03-05 12:02:00,924 INFO    MainThread:957971 [wandb_init.py:_pause_backend():564] pausing backend
+2025-03-05 12:02:06,474 INFO    MainThread:957971 [wandb_init.py:_resume_backend():569] resuming backend
+2025-03-05 12:02:06,711 INFO    MainThread:957971 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-03-05 12:02:06,712 INFO    MainThread:957971 [wandb_init.py:_pause_backend():564] pausing backend
+2025-03-05 12:02:09,402 INFO    MainThread:957971 [wandb_init.py:_resume_backend():569] resuming backend
+2025-03-05 12:02:09,640 INFO    MainThread:957971 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-03-05 12:02:09,640 INFO    MainThread:957971 [wandb_init.py:_pause_backend():564] pausing backend
+2025-03-05 12:02:19,102 INFO    MainThread:957971 [wandb_init.py:_resume_backend():569] resuming backend
+2025-03-05 12:02:19,352 INFO    MainThread:957971 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-03-05 12:02:19,353 INFO    MainThread:957971 [wandb_init.py:_pause_backend():564] pausing backend

@@ -1,0 +1,21 @@
+rsna
+[RSNADataset] Scanning files...
+[RSNADataset] Found 1000 already processed bags
+[RSNADataset] Number of bags found: 1000
+rsna
+[RSNADataset] Scanning files...
+[RSNADataset] Found 150 already processed bags
+[RSNADataset] Number of bags found: 150
+Traceback (most recent call last):
+  File "/home/javitrucas/TFG/scripts/medical_scripts/medical_main.py", line 59, in <module>
+    model = MILModel(feature_dim=128, dropout_prob=dropout_prob).to("cuda" if torch.cuda.is_available() else "cpu")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/TFG/scripts/medical_scripts/../../scripts/model.py", line 48, in __init__
+    self.feature_extractor = CNNFeatureExtractor()  # Extractor de características
+                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/TFG/scripts/medical_scripts/../../scripts/model.py", line 11, in __init__
+    self.base_model.fc = nn.Linear(self.base_model.fc.in_features, 512)
+                                   ^^^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1931, in __getattr__
+    raise AttributeError(
+AttributeError: 'CNNFeatureExtractor' object has no attribute 'base_model'

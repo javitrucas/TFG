@@ -1,0 +1,74 @@
+rsna
+[RSNADataset] Scanning files...
+[RSNADataset] Found 1000 already processed bags
+[RSNADataset] Number of bags found: 1000
+rsna
+[RSNADataset] Scanning files...
+[RSNADataset] Found 150 already processed bags
+[RSNADataset] Number of bags found: 150
+/home/javitrucas/TFG/scripts/medical_scripts/medical_training.py:30: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  self.scaler = torch.cuda.amp.GradScaler()  # Para entrenamiento mixto de precisión
+/home/javitrucas/TFG/scripts/medical_scripts/medical_training.py:82: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():  # Entrenamiento mixto de precisión
+/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Epoch 1/10, Train Loss: 0.6948, Train Accuracy: 0.5875, Val Loss: 0.6932, Val Accuracy: 0.5900
+Model saved to ./models/rsna/checkpoints/model_epoch_1.pth
+/home/javitrucas/TFG/scripts/medical_scripts/medical_training.py:82: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():  # Entrenamiento mixto de precisión
+/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Epoch 2/10, Train Loss: 0.6932, Train Accuracy: 0.5887, Val Loss: 0.6932, Val Accuracy: 0.5900
+Model saved to ./models/rsna/checkpoints/model_epoch_2.pth
+/home/javitrucas/TFG/scripts/medical_scripts/medical_training.py:82: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():  # Entrenamiento mixto de precisión
+/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Epoch 3/10, Train Loss: 0.6932, Train Accuracy: 0.5887, Val Loss: 0.6932, Val Accuracy: 0.5900
+Model saved to ./models/rsna/checkpoints/model_epoch_3.pth
+/home/javitrucas/TFG/scripts/medical_scripts/medical_training.py:82: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():  # Entrenamiento mixto de precisión
+/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Epoch 4/10, Train Loss: 0.6932, Train Accuracy: 0.5887, Val Loss: 0.6931, Val Accuracy: 0.5900
+Model saved to ./models/rsna/checkpoints/model_epoch_4.pth
+/home/javitrucas/TFG/scripts/medical_scripts/medical_training.py:82: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():  # Entrenamiento mixto de precisión
+/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Epoch 5/10, Train Loss: 0.6931, Train Accuracy: 0.5887, Val Loss: 0.6931, Val Accuracy: 0.5900
+Model saved to ./models/rsna/checkpoints/model_epoch_5.pth
+/home/javitrucas/TFG/scripts/medical_scripts/medical_training.py:82: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():  # Entrenamiento mixto de precisión
+/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Epoch 6/10, Train Loss: 0.6931, Train Accuracy: 0.5887, Val Loss: 0.6931, Val Accuracy: 0.5900
+Model saved to ./models/rsna/checkpoints/model_epoch_6.pth
+/home/javitrucas/TFG/scripts/medical_scripts/medical_training.py:82: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():  # Entrenamiento mixto de precisión
+/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Epoch 7/10, Train Loss: 0.6931, Train Accuracy: 0.5887, Val Loss: 0.6931, Val Accuracy: 0.5900
+Model saved to ./models/rsna/checkpoints/model_epoch_7.pth
+/home/javitrucas/TFG/scripts/medical_scripts/medical_training.py:82: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():  # Entrenamiento mixto de precisión
+/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Epoch 8/10, Train Loss: 0.6931, Train Accuracy: 0.5887, Val Loss: 0.6931, Val Accuracy: 0.5900
+Model saved to ./models/rsna/checkpoints/model_epoch_8.pth
+/home/javitrucas/TFG/scripts/medical_scripts/medical_training.py:82: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():  # Entrenamiento mixto de precisión
+/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Epoch 9/10, Train Loss: 0.6931, Train Accuracy: 0.5887, Val Loss: 0.6931, Val Accuracy: 0.5900
+/home/javitrucas/TFG/scripts/medical_scripts/medical_training.py:82: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():  # Entrenamiento mixto de precisión
+/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Epoch 10/10, Train Loss: 0.6931, Train Accuracy: 0.5887, Val Loss: 0.6931, Val Accuracy: 0.5900
+Model saved to ./models/rsna/checkpoints/model_final.pth
+Umbral óptimo: 0.5183
+Matriz de Confusión:
+[[56 22]
+ [ 7 65]]
+Test Accuracy: 0.8067, Test AUC: 0.8796

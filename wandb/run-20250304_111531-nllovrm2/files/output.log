@@ -1,0 +1,36 @@
+rsna
+[RSNADataset] Scanning files...
+[RSNADataset] Found 1000 already processed bags
+[RSNADataset] Number of bags found: 1000
+rsna
+[RSNADataset] Scanning files...
+[RSNADataset] Found 150 already processed bags
+[RSNADataset] Number of bags found: 150
+Epoch 1/10, Train Loss: 0.6804, Train Accuracy: 0.6000, Val Loss: 0.6104, Val Accuracy: 0.6900
+Final model saved to ./models/rsna/model_final.pth
+Epoch 2/10, Train Loss: 0.5733, Train Accuracy: 0.7188, Val Loss: 0.5676, Val Accuracy: 0.7050
+Final model saved to ./models/rsna/model_final.pth
+Epoch 3/10, Train Loss: 0.5567, Train Accuracy: 0.7212, Val Loss: 0.6276, Val Accuracy: 0.6550
+Final model saved to ./models/rsna/model_final.pth
+Epoch 4/10, Train Loss: 0.5256, Train Accuracy: 0.7350, Val Loss: 0.5533, Val Accuracy: 0.7450
+Final model saved to ./models/rsna/model_final.pth
+Epoch 5/10, Train Loss: 0.5097, Train Accuracy: 0.7412, Val Loss: 0.7350, Val Accuracy: 0.6250
+Epoch 6/10, Train Loss: 0.4983, Train Accuracy: 0.7712, Val Loss: 0.5244, Val Accuracy: 0.7700
+Final model saved to ./models/rsna/model_final.pth
+Epoch 7/10, Train Loss: 0.4680, Train Accuracy: 0.7837, Val Loss: 0.5681, Val Accuracy: 0.7000
+Final model saved to ./models/rsna/model_final.pth
+Epoch 8/10, Train Loss: 0.4906, Train Accuracy: 0.7675, Val Loss: 0.4993, Val Accuracy: 0.7950
+Final model saved to ./models/rsna/model_final.pth
+Epoch 9/10, Train Loss: 0.4563, Train Accuracy: 0.7863, Val Loss: 0.5572, Val Accuracy: 0.7200
+Epoch 10/10, Train Loss: 0.4747, Train Accuracy: 0.7837, Val Loss: 0.7135, Val Accuracy: 0.6600
+Model loaded successfully from ./models/rsna/model.pth
+Traceback (most recent call last):
+  File "/home/javitrucas/TFG/scripts/medical_scripts/medical_main.py", line 75, in <module>
+    evaluator.evaluate()
+  File "/home/javitrucas/TFG/scripts/medical_scripts/medical_evaluation.py", line 69, in evaluate
+    metrics = self._compute_metrics(all_labels, all_probs, all_logits)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/TFG/scripts/medical_scripts/medical_evaluation.py", line 87, in _compute_metrics
+    fpr, tpr, thresholds = roc_curve(labels, probs)
+                           ^^^^^^^^^
+NameError: name 'roc_curve' is not defined

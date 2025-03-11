@@ -1,0 +1,16 @@
+{"time":"2025-03-04T10:37:42.747794509+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"/home/javitrucas/TFG/wandb/run-20250304_103742-plejdpor/logs/debug-core.log"}
+{"time":"2025-03-04T10:37:42.868130353+01:00","level":"INFO","msg":"created new stream","id":"plejdpor"}
+{"time":"2025-03-04T10:37:42.868229464+01:00","level":"INFO","msg":"stream: started","id":"plejdpor"}
+{"time":"2025-03-04T10:37:42.868257658+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"plejdpor"}
+{"time":"2025-03-04T10:37:42.868292376+01:00","level":"INFO","msg":"sender: started","stream_id":"plejdpor"}
+{"time":"2025-03-04T10:37:42.868320031+01:00","level":"INFO","msg":"handler: started","stream_id":"plejdpor"}
+{"time":"2025-03-04T10:37:43.156688812+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-04T10:38:57.187497225+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-04T10:38:57.188591395+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-04T10:38:58.190753564+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-plejdpor-confusion_matrix_table","runtime_seconds":1.010863878}],"total_operations":1}}
+{"time":"2025-03-04T10:38:58.798158068+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-04T10:39:00.055725297+01:00","level":"INFO","msg":"stream: closing","id":"plejdpor"}
+{"time":"2025-03-04T10:39:00.055761295+01:00","level":"INFO","msg":"handler: closed","stream_id":"plejdpor"}
+{"time":"2025-03-04T10:39:00.055777163+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"plejdpor"}
+{"time":"2025-03-04T10:39:00.05581175+01:00","level":"INFO","msg":"sender: closed","stream_id":"plejdpor"}
+{"time":"2025-03-04T10:39:00.055915564+01:00","level":"INFO","msg":"stream: closed","id":"plejdpor"}

@@ -1,0 +1,16 @@
+{"time":"2025-03-03T19:00:05.412374093+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"/home/javitrucas/TFG/wandb/run-20250303_190005-hcave3vs/logs/debug-core.log"}
+{"time":"2025-03-03T19:00:05.527941078+01:00","level":"INFO","msg":"created new stream","id":"hcave3vs"}
+{"time":"2025-03-03T19:00:05.527994937+01:00","level":"INFO","msg":"stream: started","id":"hcave3vs"}
+{"time":"2025-03-03T19:00:05.528026102+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"hcave3vs"}
+{"time":"2025-03-03T19:00:05.528069671+01:00","level":"INFO","msg":"sender: started","stream_id":"hcave3vs"}
+{"time":"2025-03-03T19:00:05.528073615+01:00","level":"INFO","msg":"handler: started","stream_id":"hcave3vs"}
+{"time":"2025-03-03T19:00:05.80444504+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-03T19:01:06.789573562+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-03T19:01:06.790505058+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-03T19:01:07.79253411+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact model","runtime_seconds":2.172613763},{"desc":"uploading artifact run-hcave3vs-confusion_matrix_table","runtime_seconds":1.302127235}],"total_operations":2}}
+{"time":"2025-03-03T19:01:08.080340803+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-03T19:01:09.311095914+01:00","level":"INFO","msg":"stream: closing","id":"hcave3vs"}
+{"time":"2025-03-03T19:01:09.311127867+01:00","level":"INFO","msg":"handler: closed","stream_id":"hcave3vs"}
+{"time":"2025-03-03T19:01:09.311144656+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"hcave3vs"}
+{"time":"2025-03-03T19:01:09.311167101+01:00","level":"INFO","msg":"sender: closed","stream_id":"hcave3vs"}
+{"time":"2025-03-03T19:01:09.311269451+01:00","level":"INFO","msg":"stream: closed","id":"hcave3vs"}

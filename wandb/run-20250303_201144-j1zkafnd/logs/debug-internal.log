@@ -1,0 +1,16 @@
+{"time":"2025-03-03T20:11:44.433434948+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"/home/javitrucas/TFG/wandb/run-20250303_201144-j1zkafnd/logs/debug-core.log"}
+{"time":"2025-03-03T20:11:44.550314585+01:00","level":"INFO","msg":"created new stream","id":"j1zkafnd"}
+{"time":"2025-03-03T20:11:44.55038285+01:00","level":"INFO","msg":"stream: started","id":"j1zkafnd"}
+{"time":"2025-03-03T20:11:44.550436768+01:00","level":"INFO","msg":"handler: started","stream_id":"j1zkafnd"}
+{"time":"2025-03-03T20:11:44.550431015+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"j1zkafnd"}
+{"time":"2025-03-03T20:11:44.550497799+01:00","level":"INFO","msg":"sender: started","stream_id":"j1zkafnd"}
+{"time":"2025-03-03T20:11:44.890519297+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-03T20:12:44.083949942+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-03T20:12:44.084959174+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-03T20:12:45.08685606+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact model","runtime_seconds":2.119475047},{"desc":"uploading artifact run-j1zkafnd-confusion_matrix_table","runtime_seconds":1.307530527}],"total_operations":2}}
+{"time":"2025-03-03T20:12:45.326944615+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-03T20:12:46.544156352+01:00","level":"INFO","msg":"stream: closing","id":"j1zkafnd"}
+{"time":"2025-03-03T20:12:46.544183474+01:00","level":"INFO","msg":"handler: closed","stream_id":"j1zkafnd"}
+{"time":"2025-03-03T20:12:46.544198014+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"j1zkafnd"}
+{"time":"2025-03-03T20:12:46.544227182+01:00","level":"INFO","msg":"sender: closed","stream_id":"j1zkafnd"}
+{"time":"2025-03-03T20:12:46.544303835+01:00","level":"INFO","msg":"stream: closed","id":"j1zkafnd"}

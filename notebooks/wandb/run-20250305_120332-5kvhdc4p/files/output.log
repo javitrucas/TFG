@@ -1,0 +1,64 @@
+rsna
+[RSNADataset] Scanning files...
+[RSNADataset] Found 1000 already processed bags
+[RSNADataset] Number of bags found: 1000
+rsna
+[RSNADataset] Scanning files...
+[RSNADataset] Found 150 already processed bags
+[RSNADataset] Number of bags found: 150
+/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Epoch 1/50, Train Loss: 0.6320, Train Accuracy: 0.6462, Val Loss: 0.8429, Val Accuracy: 0.5900
+Final model saved to ./models/rsna/model.pth
+Epoch 2/50, Train Loss: 0.5713, Train Accuracy: 0.7125, Val Loss: 0.5662, Val Accuracy: 0.7350
+Final model saved to ./models/rsna/model.pth
+Epoch 3/50, Train Loss: 0.5469, Train Accuracy: 0.7200, Val Loss: 0.5424, Val Accuracy: 0.7200
+Final model saved to ./models/rsna/model.pth
+Epoch 4/50, Train Loss: 0.5293, Train Accuracy: 0.7488, Val Loss: 0.5381, Val Accuracy: 0.7300
+Final model saved to ./models/rsna/model.pth
+Epoch 5/50, Train Loss: 0.5133, Train Accuracy: 0.7388, Val Loss: 0.5117, Val Accuracy: 0.7400
+Final model saved to ./models/rsna/model.pth
+Epoch 6/50, Train Loss: 0.4954, Train Accuracy: 0.7650, Val Loss: 0.5160, Val Accuracy: 0.7700
+Final model saved to ./models/rsna/model.pth
+Epoch 7/50, Train Loss: 0.4896, Train Accuracy: 0.7700, Val Loss: 0.5682, Val Accuracy: 0.7200
+Epoch 8/50, Train Loss: 0.4844, Train Accuracy: 0.7800, Val Loss: 0.5588, Val Accuracy: 0.6950
+Final model saved to ./models/rsna/model.pth
+Epoch 9/50, Train Loss: 0.4946, Train Accuracy: 0.7525, Val Loss: 0.4924, Val Accuracy: 0.7750
+Final model saved to ./models/rsna/model.pth
+Epoch 10/50, Train Loss: 0.4888, Train Accuracy: 0.7662, Val Loss: 0.6185, Val Accuracy: 0.6900
+Final model saved to ./models/rsna/model.pth
+Epoch 11/50, Train Loss: 0.4842, Train Accuracy: 0.7750, Val Loss: 0.4963, Val Accuracy: 0.7600
+Epoch 12/50, Train Loss: 0.4781, Train Accuracy: 0.7825, Val Loss: 0.5153, Val Accuracy: 0.7900
+Final model saved to ./models/rsna/model.pth
+Epoch 13/50, Train Loss: 0.4632, Train Accuracy: 0.7987, Val Loss: 0.4791, Val Accuracy: 0.7600
+Final model saved to ./models/rsna/model.pth
+Epoch 14/50, Train Loss: 0.4639, Train Accuracy: 0.7788, Val Loss: 0.4969, Val Accuracy: 0.8050
+Epoch 15/50, Train Loss: 0.4569, Train Accuracy: 0.7875, Val Loss: 0.4963, Val Accuracy: 0.8000
+Final model saved to ./models/rsna/model.pth
+Epoch 16/50, Train Loss: 0.4793, Train Accuracy: 0.7762, Val Loss: 0.4787, Val Accuracy: 0.7850
+Epoch 17/50, Train Loss: 0.4884, Train Accuracy: 0.7788, Val Loss: 0.4736, Val Accuracy: 0.7700
+Final model saved to ./models/rsna/model.pth
+Epoch 18/50, Train Loss: 0.4409, Train Accuracy: 0.7900, Val Loss: 0.4861, Val Accuracy: 0.8150
+Epoch 19/50, Train Loss: 0.4321, Train Accuracy: 0.8075, Val Loss: 0.4750, Val Accuracy: 0.8150
+Epoch 20/50, Train Loss: 0.4588, Train Accuracy: 0.7900, Val Loss: 0.4813, Val Accuracy: 0.7750
+Final model saved to ./models/rsna/model.pth
+Epoch 21/50, Train Loss: 0.4374, Train Accuracy: 0.8037, Val Loss: 0.4867, Val Accuracy: 0.8000
+Epoch 22/50, Train Loss: 0.4543, Train Accuracy: 0.7837, Val Loss: 0.5450, Val Accuracy: 0.7250
+Epoch 23/50, Train Loss: 0.4374, Train Accuracy: 0.8000, Val Loss: 0.4885, Val Accuracy: 0.7700
+Epoch 24/50, Train Loss: 0.4329, Train Accuracy: 0.8037, Val Loss: 0.4708, Val Accuracy: 0.7950
+Final model saved to ./models/rsna/model.pth
+Epoch 25/50, Train Loss: 0.4371, Train Accuracy: 0.7987, Val Loss: 0.4833, Val Accuracy: 0.8100
+Epoch 26/50, Train Loss: 0.4576, Train Accuracy: 0.7950, Val Loss: 0.5533, Val Accuracy: 0.7400
+Epoch 27/50, Train Loss: 0.4280, Train Accuracy: 0.7925, Val Loss: 0.5471, Val Accuracy: 0.7250
+Epoch 28/50, Train Loss: 0.4267, Train Accuracy: 0.7963, Val Loss: 0.4768, Val Accuracy: 0.8050
+Epoch 29/50, Train Loss: 0.4240, Train Accuracy: 0.8013, Val Loss: 0.5457, Val Accuracy: 0.7350
+Early stopping triggered.
+Model loaded successfully from ./models/rsna/model.pth
+
+--- Evaluation Results ---
+Optimal Threshold: 0.2686
+Accuracy: 0.8267, AUC: 0.8757
+Precision: 0.7875, Recall: 0.8750, F1-Score: 0.8289
+Confusion Matrix:
+[[61 17]
+ [ 9 63]]

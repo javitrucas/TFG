@@ -1,6 +1,12 @@
 import os
+import sys
 import torch
 import wandb  # Importar wandb
+import torch.optim as optim
+
+# Agregar el directorio raíz al PYTHONPATH
+sys.path.append(os.path.dirname(os.path.abspath(__file__)) + '/../..')
+
 from scripts.dataset_loader import load_dataset
 from medical_evaluation import ModelEvaluator
 from medical_training import Training
@@ -12,10 +18,10 @@ if __name__ == "__main__":
         project="TFG",  # Nombre del proyecto en wandb
         config={
             "dataset_name": "rsna-features_resnet18",  # Nombre del dataset
-            "num_epochs": 10,                         # Número de épocas
+            "num_epochs": 25,                         # Número de épocas
             "learning_rate": 1e-3,                   # Tasa de aprendizaje
             "batch_size": 1,                         # Tamaño del lote
-            "val_prop": 0.2,                         # Proporción de validación
+            "val_prop": 0.15,                         # Proporción de validación
             "seed": 42,                               # Semilla para reproducibilidad
             "use_inst_distances": False,  
             "adj_mat_mode": "relative"          # No lo uso, pero tengo que poner algo

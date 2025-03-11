@@ -1,0 +1,22 @@
+rsna
+[RSNADataset] Scanning files...
+[RSNADataset] Found 1000 already processed bags
+[RSNADataset] Number of bags found: 1000
+rsna
+[RSNADataset] Scanning files...
+[RSNADataset] Found 150 already processed bags
+[RSNADataset] Number of bags found: 150
+/home/javitrucas/TFG/scripts/medical_scripts/medical_training.py:29: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  self.scaler = torch.cuda.amp.GradScaler()  # Para entrenamiento mixto de precisión
+/home/javitrucas/TFG/scripts/medical_scripts/medical_training.py:81: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():  # Entrenamiento mixto de precisión
+Traceback (most recent call last):
+  File "/home/javitrucas/TFG/scripts/medical_scripts/medical_main.py", line 60, in <module>
+    trainer.train()
+  File "/home/javitrucas/TFG/scripts/medical_scripts/medical_training.py", line 41, in train
+    val_loss, val_accuracy, val_metrics = self._validate_epoch(model, criterion)
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/TFG/scripts/medical_scripts/medical_training.py", line 121, in _validate_epoch
+    precision, recall, f1, _ = precision_recall_fscore_support(all_labels, (np.array(all_probs) > 0.5).astype(int), average='binary')
+                                                                            ^^
+NameError: name 'np' is not defined

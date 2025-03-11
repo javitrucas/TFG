@@ -1,0 +1,16 @@
+{"time":"2025-03-04T11:45:41.198124814+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"/home/javitrucas/TFG/wandb/run-20250304_114541-ybrityi3/logs/debug-core.log"}
+{"time":"2025-03-04T11:45:41.318387756+01:00","level":"INFO","msg":"created new stream","id":"ybrityi3"}
+{"time":"2025-03-04T11:45:41.318456449+01:00","level":"INFO","msg":"stream: started","id":"ybrityi3"}
+{"time":"2025-03-04T11:45:41.318482769+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"ybrityi3"}
+{"time":"2025-03-04T11:45:41.318511932+01:00","level":"INFO","msg":"handler: started","stream_id":"ybrityi3"}
+{"time":"2025-03-04T11:45:41.318527782+01:00","level":"INFO","msg":"sender: started","stream_id":"ybrityi3"}
+{"time":"2025-03-04T11:45:41.613295817+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-04T11:46:05.106773609+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-04T11:46:05.107874008+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-04T11:46:06.10983854+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact model","runtime_seconds":1.647737875,"subtasks":[{"desc":"model.pth","runtime_seconds":0.926829305,"progress":"937.8KB/937.8KB"}]},{"desc":"uploading artifact run-ybrityi3-confusion_matrix_table","runtime_seconds":1.011251194}],"total_operations":2}}
+{"time":"2025-03-04T11:46:06.933474053+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-04T11:46:08.201089894+01:00","level":"INFO","msg":"stream: closing","id":"ybrityi3"}
+{"time":"2025-03-04T11:46:08.201123411+01:00","level":"INFO","msg":"handler: closed","stream_id":"ybrityi3"}
+{"time":"2025-03-04T11:46:08.201140211+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"ybrityi3"}
+{"time":"2025-03-04T11:46:08.201171641+01:00","level":"INFO","msg":"sender: closed","stream_id":"ybrityi3"}
+{"time":"2025-03-04T11:46:08.201273073+01:00","level":"INFO","msg":"stream: closed","id":"ybrityi3"}

@@ -56,28 +56,32 @@ class AttentionMechanism(nn.Module):
 
 
 class MILModel(nn.Module):
-    def __init__(self, feature_dim):
+    def __init__(self, feature_dim, dropout_prob=0.5):
         super(MILModel, self).__init__()
+        self.feature_extractor = CNNFeatureExtractor()  # Extractor de características
+        self.dropout = nn.Dropout(dropout_prob)  # Dropout agregado
         self.attention = AttentionMechanism(feature_dim, 64)  # Mecanismo de atención
         self.classifier = nn.Linear(feature_dim, 1)  # Clasificador final
 
     def forward(self, bag_data, mask=None, adj_mat=None):
-        """
-        Parámetros:
-        - bag_data: Tensor de forma (batch_size, max_bag_size, feature_dim) -> Datos de entrada (embeddings).
-        - mask: Tensor de forma (batch_size, max_bag_size) -> Máscara para ignorar instancias rellenas.
-        """
-        batch_size, max_bag_size, feature_dim = bag_data.shape
+        batch_size, max_bag_size, _ = bag_data.shape
 
-        # Aplicar máscara si está presente
-        if mask is not None:
-            mask = mask.bool()  # Convertir a booleano para usar en masked_fill
+        # Extraer características si los datos son imágenes crudas
+        if bag_data.dim() == 4:  # Si los datos son imágenes (batch_size, channels, height, width)
+            bag_data = bag_data.view(batch_size * max_bag_size, *bag_data.shape[2:])  # Aplanar para procesar cada instancia
+            features = self.feature_extractor(bag_data)  # Extraer características
+            features = features.view(batch_size, max_bag_size, -1)  # Reorganizar en forma de bag
+        else:
+            features = bag_data  # Usar características pre-extraídas
+
+        # Aplicar dropout
+        features = self.dropout(features)
 
         # Obtener representación del bag y pesos de atención
-        bag_representation, attention_weights = self.attention(bag_data, mask=mask)
+        bag_representation, attention_weights = self.attention(features, mask=mask)
 
         # Clasificación final
-        output = torch.sigmoid(self.classifier(bag_representation))  # Probabilidad de clase positiva
+        output = self.classifier(bag_representation)
         return output, attention_weights
     
 

@@ -1,0 +1,27 @@
+rsna
+[RSNADataset] Scanning files...
+[RSNADataset] Found 1000 already processed bags
+[RSNADataset] Number of bags found: 1000
+rsna
+[RSNADataset] Scanning files...
+[RSNADataset] Found 150 already processed bags
+[RSNADataset] Number of bags found: 150
+Epoch 1/1, Train Loss: 0.6448, Train Accuracy: 0.6250, Val Loss: 0.7305, Val Accuracy: 0.5500
+Final model saved to ./models/rsna/model.pth
+Traceback (most recent call last):
+  File "/home/javitrucas/TFG/scripts/medical_scripts/medical_evaluation.py", line 19, in _load_model
+    model = MILModel()  # Replace with the actual model class used in training
+            ^^^^^^^^^^
+TypeError: MILModel.__init__() missing 1 required positional argument: 'feature_dim'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/javitrucas/TFG/scripts/medical_scripts/medical_main.py", line 75, in <module>
+    evaluator.evaluate()
+  File "/home/javitrucas/TFG/scripts/medical_scripts/medical_evaluation.py", line 41, in evaluate
+    model = self._load_model()  # Cargar el modelo
+            ^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/TFG/scripts/medical_scripts/medical_evaluation.py", line 35, in _load_model
+    raise RuntimeError(f"Error loading model from {self.model_path}: {e}")
+RuntimeError: Error loading model from ./models/rsna/model.pth: MILModel.__init__() missing 1 required positional argument: 'feature_dim'
