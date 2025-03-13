@@ -15,3 +15,25 @@ Epoch 2/5
 Train - Loss: 0.6177, Acc: 0.6576, AUC: 0.7008, F1: 0.5374
 Val   - Loss: 0.5830, Acc: 0.7067, AUC: 0.7760, F1: 0.5217
 Final model saved to ./models/rsna_mean/model_mean.pth
+Epoch 3/5
+Train - Loss: 0.5710, Acc: 0.7024, AUC: 0.7551, F1: 0.6028
+Val   - Loss: 0.6052, Acc: 0.6533, AUC: 0.7956, F1: 0.6709
+Final model saved to ./models/rsna_mean/model_mean.pth
+Epoch 4/5
+Train - Loss: 0.5643, Acc: 0.7082, AUC: 0.7704, F1: 0.6173
+Val   - Loss: 0.5305, Acc: 0.7133, AUC: 0.8120, F1: 0.5905
+Final model saved to ./models/rsna_mean/model_mean.pth
+Epoch 5/5
+Train - Loss: 0.5449, Acc: 0.7224, AUC: 0.7873, F1: 0.6467
+Val   - Loss: 0.5216, Acc: 0.7333, AUC: 0.8191, F1: 0.6154
+Final model saved to ./models/rsna_mean/model_mean.pth
+./models/rsna_mean/model_mean.pth
+Model loaded successfully from ./models/rsna_mean/model_mean.pth
+
+--- Evaluation Results ---
+Optimal Threshold: 0.4583
+Accuracy: 0.7933, AUC: 0.8540
+Precision: 0.8060, Recall: 0.7500, F1-Score: 0.7770
+Confusion Matrix:
+[[65 13]
+ [18 54]]
