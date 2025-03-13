@@ -1,64 +1,110 @@
+import os
 import torch
 import numpy as np
-from scripts.model import MILModel
+import matplotlib.pyplot as plt
 from sklearn.metrics import roc_auc_score, confusion_matrix, precision_recall_fscore_support, roc_curve
-
+from scripts.model import MILModel  # Asegúrate de que el modelo incluya pooling_type
 
 class ModelEvaluator:
-    def __init__(self, model_path, test_loader, batch_size, wandb=None):
+    def __init__(
+        self, 
+        model_path, 
+        test_loader, 
+        batch_size, 
+        pooling_type='attention',  # Añadir pooling_type
+        wandb=None
+    ):
         self.model_path = model_path
         self.test_loader = test_loader
         self.batch_size = batch_size
+        self.pooling_type = pooling_type  # Almacenar el tipo de pooling
         self.wandb = wandb
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
+        # Inicializar listas para métricas
+        self.test_loss_curve = []
+        self.test_accuracy_curve = []
+        self.test_recall = []
+        self.test_precision = []
+        self.test_auc_roc = []
+        self.test_f1_score = []
+
+    def _plot_attention_heatmap(self, attention_weights):
+        """
+        Genera un gráfico de barras para visualizar pesos de atención.
+        """
+        if isinstance(attention_weights, torch.Tensor):
+            attention_weights = attention_weights.detach().cpu().numpy()
+        
+        # Crear gráfico de barras
+        fig, ax = plt.subplots(figsize=(10, 6))
+        indices = np.arange(len(attention_weights))
+        ax.bar(indices, attention_weights, color='blue', alpha=0.7)
+        ax.set_title("Attention Weights per Instance")
+        ax.set_xlabel("Instance Index")
+        ax.set_ylabel("Attention Weight")
+        ax.set_xticks(indices)
+        ax.grid(axis='y', linestyle='--', alpha=0.5)
+        return fig
+
     def _load_model(self):
         """
-        Load the model from the saved file.
+        Carga el modelo con el pooling_type correcto.
         """
         try:
-            # Instantiate the model architecture
-            model = MILModel(feature_dim=512).to(self.device)
+            # Inicializar el modelo con el pooling_type
+            model = MILModel(
+                feature_dim=512,  # Ajustar según el paper (ver Tabla 8/9/15/16)
+                pooling_type=self.pooling_type
+            ).to(self.device)
             
-            # Load the state dictionary
             state_dict = torch.load(self.model_path, map_location=self.device, weights_only=True)
-            
-            # Load the state dictionary into the model
             model.load_state_dict(state_dict)
-            
-            # Move the model to the appropriate device
-            model.to(self.device)
-            model.eval()  # Set the model to evaluation mode
-            
+            model.eval()
             print(f"Model loaded successfully from {self.model_path}")
             return model
-        
         except Exception as e:
-            raise RuntimeError(f"Error loading model from {self.model_path}: {e}")
+            raise RuntimeError(f"Error loading model: {e}")
 
     def evaluate(self):
         """
-        Realiza la evaluación del modelo.
+        Realiza la evaluación y devuelve métricas + pesos de atención (si aplica).
         """
-        model = self._load_model()  # Cargar el modelo
-        model.eval()
-
-        all_labels, all_probs = [], []
+        model = self._load_model()
+        criterion = torch.nn.BCEWithLogitsLoss()
+        all_labels, all_probs, attention_weights_list = [], [], []
 
         with torch.no_grad():
             for batch in self.test_loader:
-                bag_data, bag_label = batch[0], batch[1]
-                bag_data, bag_label = bag_data.to(self.device), bag_label.to(self.device)
+                # Desempaquetar batch según el formato del dataset
+                bag_data, bag_label, _, adj_mat, mask = batch  # Ajustar según el dataset_loader
+                bag_data = bag_data.to(self.device)
+                bag_label = bag_label.to(self.device)
+                mask = mask.to(self.device) if mask is not None else None
+                adj_mat = adj_mat.to(self.device) if adj_mat is not None else None
 
-                output, _ = model(bag_data)
+                # Forward pass (incluir mask y adj_mat)
+                output, attention_weights = model(bag_data, mask=mask, adj_mat=adj_mat)
+                
+                # Calcular loss
+                loss = criterion(output.squeeze(-1), bag_label.float())
+                self.test_loss_curve.append(loss.item())
+
+                # Obtener probabilidades y labels
                 probs = torch.sigmoid(output.squeeze(-1)).cpu().numpy()
+                labels = bag_label.cpu().numpy()
                 all_probs.extend(probs)
-                all_labels.extend(bag_label.cpu().numpy())
+                all_labels.extend(labels)
 
+                # Almacenar pesos de atención solo si es necesario
+                if self.pooling_type == 'attention' and attention_weights is not None:
+                    attention_weights_list.append(attention_weights.cpu().numpy())
+
+        # Calcular métricas finales
         all_labels = np.array(all_labels)
         all_probs = np.array(all_probs)
-
-        # Calcular métricas
+        
+        # Calcular optimal threshold usando ROC
         fpr, tpr, thresholds = roc_curve(all_labels, all_probs)
         optimal_idx = np.argmax(tpr - fpr)
         optimal_threshold = thresholds[optimal_idx]
@@ -66,7 +112,11 @@ class ModelEvaluator:
 
         accuracy = np.mean(all_preds == all_labels)
         auc = roc_auc_score(all_labels, all_probs)
-        precision, recall, f1, _ = precision_recall_fscore_support(all_labels, all_preds, average='binary')
+        precision, recall, f1, _ = precision_recall_fscore_support(
+            all_labels, 
+            all_preds, 
+            average='binary'
+        )
         cm = confusion_matrix(all_labels, all_preds)
 
         metrics = {
@@ -81,12 +131,17 @@ class ModelEvaluator:
             "optimal_threshold": optimal_threshold
         }
 
+        # Registrar métricas en wandb
         self._log_metrics(metrics)
-        return metrics
+        
+        #self._plot_attention_heatmap(attention_weights)
+
+        # Devolver métricas y pesos de atención (solo si aplica)
+        return metrics, attention_weights_list
 
     def _log_metrics(self, metrics):
         """
-        Registra las métricas en wandb.
+        Registra métricas en wandb y muestra resultados.
         """
         print("\n--- Evaluation Results ---")
         print(f"Optimal Threshold: {metrics['optimal_threshold']:.4f}")
@@ -96,6 +151,7 @@ class ModelEvaluator:
         print(metrics["confusion_matrix"])
 
         if self.wandb:
+            # Registrar métricas escalares
             self.wandb.log({
                 "test_accuracy": metrics["accuracy"],
                 "test_auc": metrics["auc"],
@@ -108,3 +164,12 @@ class ModelEvaluator:
                     class_names=["Negative", "Positive"]
                 )
             })
+
+            # Registrar heatmaps de atención si existen
+            if self.pooling_type == 'attention':
+                for i, weights in enumerate(metrics.get("attention_weights", [])):
+                    self.wandb.log({
+                        f"attention_weights_bag_{i}": self.wandb.Image(
+                            self._plot_attention_heatmap(weights)
+                        )
+                    })

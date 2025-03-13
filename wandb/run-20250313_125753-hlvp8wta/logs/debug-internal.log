@@ -1,0 +1,16 @@
+{"time":"2025-03-13T12:57:53.525629078+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"/home/javitrucas/TFG/wandb/run-20250313_125753-hlvp8wta/logs/debug-core.log"}
+{"time":"2025-03-13T12:57:53.644890583+01:00","level":"INFO","msg":"created new stream","id":"hlvp8wta"}
+{"time":"2025-03-13T12:57:53.644957697+01:00","level":"INFO","msg":"stream: started","id":"hlvp8wta"}
+{"time":"2025-03-13T12:57:53.645017617+01:00","level":"INFO","msg":"handler: started","stream_id":"hlvp8wta"}
+{"time":"2025-03-13T12:57:53.645016424+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"hlvp8wta"}
+{"time":"2025-03-13T12:57:53.645058074+01:00","level":"INFO","msg":"sender: started","stream_id":"hlvp8wta"}
+{"time":"2025-03-13T12:57:53.94243426+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-13T12:58:40.168698107+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-13T12:58:40.169906231+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-13T12:58:41.171194939+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact model","runtime_seconds":1.713974145,"subtasks":[{"desc":"model_attention.pth","runtime_seconds":1.002737468,"progress":"938.6KB/938.6KB"}]},{"desc":"uploading artifact run-hlvp8wta-confusion_matrix_table","runtime_seconds":1.010279855}],"total_operations":2}}
+{"time":"2025-03-13T12:58:42.245779074+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-13T12:58:43.49035162+01:00","level":"INFO","msg":"stream: closing","id":"hlvp8wta"}
+{"time":"2025-03-13T12:58:43.490379973+01:00","level":"INFO","msg":"handler: closed","stream_id":"hlvp8wta"}
+{"time":"2025-03-13T12:58:43.490396646+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"hlvp8wta"}
+{"time":"2025-03-13T12:58:43.490408587+01:00","level":"INFO","msg":"sender: closed","stream_id":"hlvp8wta"}
+{"time":"2025-03-13T12:58:43.490486227+01:00","level":"INFO","msg":"stream: closed","id":"hlvp8wta"}

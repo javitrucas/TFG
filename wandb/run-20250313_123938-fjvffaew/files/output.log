@@ -1,0 +1,38 @@
+=== Iniciando experimento con pooling_type=max ===
+rsna
+[RSNADataset] Scanning files...
+[RSNADataset] Found 1000 already processed bags
+[RSNADataset] Number of bags found: 1000
+rsna
+[RSNADataset] Scanning files...
+[RSNADataset] Found 150 already processed bags
+[RSNADataset] Number of bags found: 150
+Epoch 1/5
+Train - Loss: 1.3262, Acc: 0.5835, AUC: 0.5871, F1: 0.4620
+Val   - Loss: 0.6003, Acc: 0.6667, AUC: 0.7665, F1: 0.5763
+Final model saved to ./models/rsna_max/model_max.pth
+Epoch 2/5
+Train - Loss: 0.7988, Acc: 0.6647, AUC: 0.7108, F1: 0.5778
+Val   - Loss: 0.5731, Acc: 0.7133, AUC: 0.7958, F1: 0.4941
+Final model saved to ./models/rsna_max/model_max.pth
+Epoch 3/5
+Train - Loss: 0.9551, Acc: 0.7012, AUC: 0.7418, F1: 0.6220
+Val   - Loss: 0.7675, Acc: 0.4933, AUC: 0.7993, F1: 0.6200
+Final model saved to ./models/rsna_max/model_max.pth
+Epoch 4/5
+Train - Loss: 0.8042, Acc: 0.7259, AUC: 0.7855, F1: 0.6507
+Val   - Loss: 0.5392, Acc: 0.7267, AUC: 0.8284, F1: 0.5393
+Final model saved to ./models/rsna_max/model_max.pth
+Epoch 5/5
+Train - Loss: 0.9120, Acc: 0.7000, AUC: 0.7439, F1: 0.6211
+Val   - Loss: 0.5603, Acc: 0.7000, AUC: 0.8493, F1: 0.7134
+Final model saved to ./models/rsna_max/model_max.pth
+Model loaded successfully from ./models/rsna_max/model_max.pth
+
+--- Evaluation Results ---
+Optimal Threshold: 0.6034
+Accuracy: 0.7867, AUC: 0.8444
+Precision: 0.8030, Recall: 0.7361, F1-Score: 0.7681
+Confusion Matrix:
+[[65 13]
+ [19 53]]

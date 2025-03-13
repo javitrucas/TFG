@@ -1,0 +1,14 @@
+=== Iniciando experimento ===
+Target Digit: 3, Bag Size: 10, Epochs: 1, LR: 0.001, Pooling: attention
+Epoch 1/1
+Entrenamiento - Loss: 1587.7785, Accuracy: 0.8325
+Validación - Loss: 131.4240, Accuracy: 0.9592
+=== Iniciando experimento ===
+Target Digit: 3, Bag Size: 10, Epochs: 1, LR: 0.001, Pooling: attention
+Epoch 1/1
+Entrenamiento - Loss: 1265.1477, Accuracy: 0.8765
+Validación - Loss: 129.0133, Accuracy: 0.9542
+Mostrando heatmaps de atención mejorados...
+=== Resultados del experimento ===
+{'accuracy': 0.956, 'f1_score': 0.9684361549497847, 'auc': 0.9914989975232927, 'test_loss': 0.10952748540997624}
+=== Fin del experimento ===

@@ -1,0 +1,103 @@
+rsna
+[RSNADataset] Scanning files...
+[RSNADataset] Found 1000 already processed bags
+[RSNADataset] Number of bags found: 1000
+rsna
+[RSNADataset] Scanning files...
+[RSNADataset] Found 150 already processed bags
+[RSNADataset] Number of bags found: 150
+Epoch 1/50
+Train - Loss: 0.9996, Acc: 0.6062, AUC: 0.6379, F1: 0.5070
+Val   - Loss: 0.6909, Acc: 0.7000, AUC: 0.7930, F1: 0.6970
+Final model saved to ./models/rsna/model.pth
+Epoch 2/50
+Train - Loss: 0.7487, Acc: 0.6837, AUC: 0.7446, F1: 0.6053
+Val   - Loss: 0.8012, Acc: 0.6850, AUC: 0.7974, F1: 0.4425
+Final model saved to ./models/rsna/model.pth
+Epoch 3/50
+Train - Loss: 0.9595, Acc: 0.6562, AUC: 0.7294, F1: 0.5776
+Val   - Loss: 1.2508, Acc: 0.6400, AUC: 0.7909, F1: 0.2340
+Epoch 4/50
+Train - Loss: 0.9763, Acc: 0.6900, AUC: 0.7387, F1: 0.6173
+Val   - Loss: 0.7687, Acc: 0.6550, AUC: 0.7876, F1: 0.6761
+Epoch 5/50
+Train - Loss: 0.8398, Acc: 0.7175, AUC: 0.7748, F1: 0.6424
+Val   - Loss: 0.7388, Acc: 0.6700, AUC: 0.8204, F1: 0.6796
+Final model saved to ./models/rsna/model.pth
+Epoch 6/50
+Train - Loss: 0.7906, Acc: 0.7262, AUC: 0.7788, F1: 0.6626
+Val   - Loss: 1.0025, Acc: 0.6200, AUC: 0.8209, F1: 0.6752
+Final model saved to ./models/rsna/model.pth
+Epoch 7/50
+Train - Loss: 0.8515, Acc: 0.7125, AUC: 0.7695, F1: 0.6406
+Val   - Loss: 2.3266, Acc: 0.4300, AUC: 0.7309, F1: 0.5870
+Epoch 8/50
+Train - Loss: 0.9557, Acc: 0.6950, AUC: 0.7656, F1: 0.6211
+Val   - Loss: 1.9604, Acc: 0.4950, AUC: 0.7911, F1: 0.6160
+Epoch 9/50
+Train - Loss: 0.8791, Acc: 0.7275, AUC: 0.7855, F1: 0.6625
+Val   - Loss: 0.6954, Acc: 0.7150, AUC: 0.8327, F1: 0.7077
+Final model saved to ./models/rsna/model.pth
+Epoch 10/50
+Train - Loss: 1.0593, Acc: 0.7075, AUC: 0.7653, F1: 0.6389
+Val   - Loss: 0.6514, Acc: 0.7550, AUC: 0.8378, F1: 0.6260
+Final model saved to ./models/rsna/model.pth
+Epoch 11/50
+Train - Loss: 0.9115, Acc: 0.7175, AUC: 0.7830, F1: 0.6512
+Val   - Loss: 1.1804, Acc: 0.6800, AUC: 0.8174, F1: 0.3962
+Epoch 12/50
+Train - Loss: 0.8754, Acc: 0.7338, AUC: 0.7974, F1: 0.6687
+Val   - Loss: 0.8562, Acc: 0.7400, AUC: 0.8417, F1: 0.5738
+Final model saved to ./models/rsna/model.pth
+Epoch 13/50
+Train - Loss: 0.8952, Acc: 0.7538, AUC: 0.8014, F1: 0.6983
+Val   - Loss: 1.1838, Acc: 0.6900, AUC: 0.8172, F1: 0.4151
+Epoch 14/50
+Train - Loss: 0.8120, Acc: 0.7312, AUC: 0.8102, F1: 0.6747
+Val   - Loss: 1.0347, Acc: 0.7150, AUC: 0.8327, F1: 0.5128
+Epoch 15/50
+Train - Loss: 0.9263, Acc: 0.7312, AUC: 0.8075, F1: 0.6697
+Val   - Loss: 0.7730, Acc: 0.7500, AUC: 0.8603, F1: 0.7368
+Final model saved to ./models/rsna/model.pth
+Epoch 16/50
+Train - Loss: 0.9640, Acc: 0.7575, AUC: 0.8083, F1: 0.7052
+Val   - Loss: 0.6778, Acc: 0.7700, AUC: 0.8521, F1: 0.7386
+Epoch 17/50
+Train - Loss: 1.0133, Acc: 0.7350, AUC: 0.8035, F1: 0.6817
+Val   - Loss: 0.7018, Acc: 0.7800, AUC: 0.8541, F1: 0.7143
+Epoch 18/50
+Train - Loss: 0.8676, Acc: 0.7588, AUC: 0.8256, F1: 0.7026
+Val   - Loss: 1.0789, Acc: 0.7100, AUC: 0.8621, F1: 0.5000
+Final model saved to ./models/rsna/model.pth
+Epoch 19/50
+Train - Loss: 1.0606, Acc: 0.7338, AUC: 0.7969, F1: 0.6748
+Val   - Loss: 0.6313, Acc: 0.7950, AUC: 0.8587, F1: 0.7574
+Epoch 20/50
+Train - Loss: 1.0151, Acc: 0.7362, AUC: 0.8127, F1: 0.6749
+Val   - Loss: 0.7338, Acc: 0.7100, AUC: 0.8704, F1: 0.7071
+Final model saved to ./models/rsna/model.pth
+Epoch 21/50
+Train - Loss: 0.8564, Acc: 0.7600, AUC: 0.8301, F1: 0.7082
+Val   - Loss: 2.3142, Acc: 0.6200, AUC: 0.8588, F1: 0.1364
+Epoch 22/50
+Train - Loss: 0.8899, Acc: 0.7688, AUC: 0.8314, F1: 0.7149
+Val   - Loss: 0.6152, Acc: 0.8100, AUC: 0.8683, F1: 0.7532
+Epoch 23/50
+Train - Loss: 0.9469, Acc: 0.7462, AUC: 0.8168, F1: 0.6901
+Val   - Loss: 0.6428, Acc: 0.7850, AUC: 0.8633, F1: 0.7261
+Epoch 24/50
+Train - Loss: 0.9133, Acc: 0.7675, AUC: 0.8236, F1: 0.7130
+Val   - Loss: 0.7481, Acc: 0.7650, AUC: 0.8697, F1: 0.6569
+Epoch 25/50
+Train - Loss: 0.8405, Acc: 0.7812, AUC: 0.8507, F1: 0.7328
+Val   - Loss: 1.0742, Acc: 0.7300, AUC: 0.8629, F1: 0.5345
+Early stopping triggered.
+Model loaded successfully from ./models/rsna/model.pth
+
+--- Evaluation Results ---
+Optimal Threshold: 0.7517
+Accuracy: 0.8733, AUC: 0.9261
+Precision: 0.8354, Recall: 0.9167, F1-Score: 0.8742
+Confusion Matrix:
+[[65 13]
+ [ 6 66]]

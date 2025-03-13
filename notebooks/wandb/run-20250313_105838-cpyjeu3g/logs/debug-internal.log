@@ -1,0 +1,16 @@
+{"time":"2025-03-13T10:58:39.010546458+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"/home/javitrucas/TFG/notebooks/wandb/run-20250313_105838-cpyjeu3g/logs/debug-core.log"}
+{"time":"2025-03-13T10:58:39.118896009+01:00","level":"INFO","msg":"created new stream","id":"cpyjeu3g"}
+{"time":"2025-03-13T10:58:39.118930353+01:00","level":"INFO","msg":"stream: started","id":"cpyjeu3g"}
+{"time":"2025-03-13T10:58:39.118939892+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"cpyjeu3g"}
+{"time":"2025-03-13T10:58:39.118947017+01:00","level":"INFO","msg":"sender: started","stream_id":"cpyjeu3g"}
+{"time":"2025-03-13T10:58:39.118951126+01:00","level":"INFO","msg":"handler: started","stream_id":"cpyjeu3g"}
+{"time":"2025-03-13T10:58:39.373720748+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-13T11:01:42.642299568+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-13T11:01:42.642876866+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-13T11:01:43.644234525+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact trained_model","runtime_seconds":1.004218443,"subtasks":[{"desc":"model.pth","runtime_seconds":0.276640839,"progress":"806.5KB/806.5KB"}]}],"total_operations":1}}
+{"time":"2025-03-13T11:01:45.036125821+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-13T11:01:46.277421951+01:00","level":"INFO","msg":"stream: closing","id":"cpyjeu3g"}
+{"time":"2025-03-13T11:01:46.277435982+01:00","level":"INFO","msg":"handler: closed","stream_id":"cpyjeu3g"}
+{"time":"2025-03-13T11:01:46.277443928+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"cpyjeu3g"}
+{"time":"2025-03-13T11:01:46.277448669+01:00","level":"INFO","msg":"sender: closed","stream_id":"cpyjeu3g"}
+{"time":"2025-03-13T11:01:46.277497952+01:00","level":"INFO","msg":"stream: closed","id":"cpyjeu3g"}

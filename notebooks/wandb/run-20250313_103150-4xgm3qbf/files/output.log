@@ -1,0 +1,8 @@
+=== Iniciando experimento ===
+Target Digit: 3, Bag Size: 10, Epochs: 1, LR: 0.001, Pooling: attention
+Epoch 1/1
+Entrenamiento - Loss: 1070.1621, Accuracy: 0.9031
+Validación - Loss: 93.9353, Accuracy: 0.9733
+[34m[1mwandb[0m: [33mWARNING[0m Fatal error while uploading data. Some run data will not be synced, but it will still be written to disk. Use `wandb sync` at the end of the run to try uploading.
+=== Iniciando experimento ===
+Target Digit: 3, Bag Size: 10, Epochs: 1, LR: 0.001, Pooling: attention

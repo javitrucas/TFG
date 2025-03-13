@@ -1,0 +1,16 @@
+{"time":"2025-03-13T12:39:38.333780913+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"/home/javitrucas/TFG/wandb/run-20250313_123938-fjvffaew/logs/debug-core.log"}
+{"time":"2025-03-13T12:39:38.451121906+01:00","level":"INFO","msg":"created new stream","id":"fjvffaew"}
+{"time":"2025-03-13T12:39:38.451186666+01:00","level":"INFO","msg":"stream: started","id":"fjvffaew"}
+{"time":"2025-03-13T12:39:38.451215425+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"fjvffaew"}
+{"time":"2025-03-13T12:39:38.451227695+01:00","level":"INFO","msg":"sender: started","stream_id":"fjvffaew"}
+{"time":"2025-03-13T12:39:38.451245557+01:00","level":"INFO","msg":"handler: started","stream_id":"fjvffaew"}
+{"time":"2025-03-13T12:39:38.775783804+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-13T12:40:08.052796711+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-13T12:40:08.053842451+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-13T12:40:09.054706202+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact model","runtime_seconds":1.621449269,"subtasks":[{"desc":"model_max.pth","runtime_seconds":0.919905433,"progress":"808.6KB/808.6KB"}]},{"desc":"uploading artifact run-fjvffaew-confusion_matrix_table","runtime_seconds":1.009298082}],"total_operations":2}}
+{"time":"2025-03-13T12:40:10.190980371+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-13T12:40:11.391598222+01:00","level":"INFO","msg":"stream: closing","id":"fjvffaew"}
+{"time":"2025-03-13T12:40:11.391626427+01:00","level":"INFO","msg":"handler: closed","stream_id":"fjvffaew"}
+{"time":"2025-03-13T12:40:11.391641436+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"fjvffaew"}
+{"time":"2025-03-13T12:40:11.391665438+01:00","level":"INFO","msg":"sender: closed","stream_id":"fjvffaew"}
+{"time":"2025-03-13T12:40:11.391768069+01:00","level":"INFO","msg":"stream: closed","id":"fjvffaew"}

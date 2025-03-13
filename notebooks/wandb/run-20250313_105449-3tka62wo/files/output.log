@@ -1,0 +1,36 @@
+=== Iniciando experimento ===
+Target Digit: 3, Bag Size: 10, Epochs: 10, LR: 0.001, Pooling: attention
+Epoch 1/10
+Entrenamiento - Loss: 1154.6590, Accuracy: 0.8931
+Validación - Loss: 115.5128, Accuracy: 0.9683
+Epoch 2/10
+Entrenamiento - Loss: 373.7418, Accuracy: 0.9721
+Validación - Loss: 105.4491, Accuracy: 0.9758
+Epoch 3/10
+Entrenamiento - Loss: 283.0328, Accuracy: 0.9812
+Validación - Loss: 74.5884, Accuracy: 0.9800
+Epoch 4/10
+Entrenamiento - Loss: 206.8255, Accuracy: 0.9879
+Validación - Loss: 87.8959, Accuracy: 0.9817
+Epoch 5/10
+Entrenamiento - Loss: 174.0507, Accuracy: 0.9877
+Validación - Loss: 67.1141, Accuracy: 0.9825
+Epoch 6/10
+Entrenamiento - Loss: 133.6137, Accuracy: 0.9904
+Validación - Loss: 48.8147, Accuracy: 0.9867
+Epoch 7/10
+Entrenamiento - Loss: 130.0802, Accuracy: 0.9910
+Validación - Loss: 58.4326, Accuracy: 0.9867
+Epoch 8/10
+Entrenamiento - Loss: 112.3733, Accuracy: 0.9906
+Validación - Loss: 134.0434, Accuracy: 0.9817
+Epoch 9/10
+Entrenamiento - Loss: 95.5024, Accuracy: 0.9946
+Validación - Loss: 64.5368, Accuracy: 0.9858
+Epoch 10/10
+Entrenamiento - Loss: 84.3321, Accuracy: 0.9942
+Validación - Loss: 108.9880, Accuracy: 0.9842
+Mostrando heatmaps de atención mejorados...
+=== Resultados del experimento ===
+{'accuracy': 0.985, 'f1_score': 0.9891696750902527, 'auc': 0.9963769312418919, 'test_loss': 0.07789449004636646}
+=== Fin del experimento ===

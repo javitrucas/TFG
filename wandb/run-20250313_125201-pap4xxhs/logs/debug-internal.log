@@ -1,0 +1,15 @@
+{"time":"2025-03-13T12:52:01.769399898+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"/home/javitrucas/TFG/wandb/run-20250313_125201-pap4xxhs/logs/debug-core.log"}
+{"time":"2025-03-13T12:52:01.885002912+01:00","level":"INFO","msg":"created new stream","id":"pap4xxhs"}
+{"time":"2025-03-13T12:52:01.885065652+01:00","level":"INFO","msg":"stream: started","id":"pap4xxhs"}
+{"time":"2025-03-13T12:52:01.885126393+01:00","level":"INFO","msg":"sender: started","stream_id":"pap4xxhs"}
+{"time":"2025-03-13T12:52:01.885110262+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"pap4xxhs"}
+{"time":"2025-03-13T12:52:01.885164689+01:00","level":"INFO","msg":"handler: started","stream_id":"pap4xxhs"}
+{"time":"2025-03-13T12:52:02.139766944+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-13T12:52:43.508509886+01:00","level":"INFO","msg":"stream: closing","id":"pap4xxhs"}
+{"time":"2025-03-13T12:52:43.508563152+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-13T12:52:43.509615098+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-13T12:52:45.341705375+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-13T12:52:45.564355611+01:00","level":"INFO","msg":"handler: closed","stream_id":"pap4xxhs"}
+{"time":"2025-03-13T12:52:45.564402229+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"pap4xxhs"}
+{"time":"2025-03-13T12:52:45.564430883+01:00","level":"INFO","msg":"sender: closed","stream_id":"pap4xxhs"}
+{"time":"2025-03-13T12:52:45.564491636+01:00","level":"INFO","msg":"stream: closed","id":"pap4xxhs"}

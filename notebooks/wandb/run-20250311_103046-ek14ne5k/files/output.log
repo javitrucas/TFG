@@ -1,0 +1,16 @@
+rsna
+[RSNADataset] Scanning files...
+[RSNADataset] Found 1000 already processed bags
+[RSNADataset] Number of bags found: 1000
+rsna
+[RSNADataset] Scanning files...
+[RSNADataset] Found 150 already processed bags
+[RSNADataset] Number of bags found: 150
+Epoch 1/2
+Train - Loss: 0.6535, Acc: 0.6438, AUC: 0.6441, F1: 0.4956
+Val   - Loss: 0.5943, Acc: 0.6900, AUC: 0.7349, F1: 0.6076
+Final model saved to ./models/rsna/model.pth
+Epoch 2/2
+Train - Loss: 0.5896, Acc: 0.7025, AUC: 0.7454, F1: 0.5966
+Val   - Loss: 0.5805, Acc: 0.7000, AUC: 0.7700, F1: 0.5238
+Final model saved to ./models/rsna/model.pth

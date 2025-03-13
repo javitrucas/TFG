@@ -1,0 +1,45 @@
+=== Iniciando experimento ===
+Target Digit: 3, Bag Size: 10, Epochs: 10, LR: 0.001, Pooling: attention
+Creando datasets...
+Dividiendo el conjunto de entrenamiento en entrenamiento (80%) y validación (20%)...
+Iniciando entrenamiento...
+Epoch 1/10
+Entrenamiento - Loss: 1231.7033, Accuracy: 0.8788
+Validación - Loss: 166.7331, Accuracy: 0.9533
+Epoch 2/10
+Entrenamiento - Loss: 417.9210, Accuracy: 0.9673
+Validación - Loss: 102.8481, Accuracy: 0.9650
+Epoch 3/10
+Entrenamiento - Loss: 282.2891, Accuracy: 0.9798
+Validación - Loss: 68.7080, Accuracy: 0.9792
+Epoch 4/10
+Entrenamiento - Loss: 211.2014, Accuracy: 0.9862
+Validación - Loss: 53.2785, Accuracy: 0.9850
+Epoch 5/10
+Entrenamiento - Loss: 143.9688, Accuracy: 0.9902
+Validación - Loss: 61.2553, Accuracy: 0.9817
+Epoch 6/10
+Entrenamiento - Loss: 144.5116, Accuracy: 0.9906
+Validación - Loss: 51.1520, Accuracy: 0.9842
+Epoch 7/10
+Entrenamiento - Loss: 126.7762, Accuracy: 0.9906
+Validación - Loss: 72.3151, Accuracy: 0.9833
+Epoch 8/10
+Entrenamiento - Loss: 109.3278, Accuracy: 0.9938
+Validación - Loss: 40.5587, Accuracy: 0.9875
+Epoch 9/10
+Entrenamiento - Loss: 94.1664, Accuracy: 0.9944
+Validación - Loss: 82.5515, Accuracy: 0.9783
+Epoch 10/10
+Entrenamiento - Loss: 79.1010, Accuracy: 0.9935
+Validación - Loss: 104.8198, Accuracy: 0.9775
+Registrando métricas de entrenamiento en wandb...
+Evaluando el modelo...
+Generando gráfica de pérdidas durante el entrenamiento...
+Mostrando heatmaps de atención mejorados...
+Generando gráfica de evolución de la atención...
+Generando histograma de distribución de pesos de atención...
+Guardando el modelo como artefacto en wandb...
+=== Resultados del experimento ===
+{'accuracy': 0.985, 'f1_score': 0.9891067538126361, 'auc': 0.9989244014624367, 'test_loss': 0.06115500547213807}
+=== Fin del experimento ===

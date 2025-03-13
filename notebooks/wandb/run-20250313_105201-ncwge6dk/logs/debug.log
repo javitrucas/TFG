@@ -1,0 +1,17 @@
+2025-03-13 10:52:01,481 INFO    MainThread:4180688 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /home/javitrucas/TFG/notebooks/wandb/run-20250313_105201-ncwge6dk/logs/debug.log
+2025-03-13 10:52:01,481 INFO    MainThread:4180688 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /home/javitrucas/TFG/notebooks/wandb/run-20250313_105201-ncwge6dk/logs/debug-internal.log
+2025-03-13 10:52:01,481 INFO    MainThread:4180688 [wandb_init.py:init():761] calling init triggers
+2025-03-13 10:52:01,482 INFO    MainThread:4180688 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'target_digit': 3, 'bag_size': 10, 'num_epochs': 1, 'learning_rate': 0.001, 'pooling_type': 'attention', '_wandb': {}}
+2025-03-13 10:52:01,482 INFO    MainThread:4180688 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-03-13 10:52:49,218 INFO    MainThread:4180688 [wandb_run.py:_finish():2112] finishing run javitrucas-universidad-de-granada/TFG/xretfodc
+2025-03-13 10:52:49,218 ERROR   MainThread:4180688 [jupyter.py:save_history():450] Run pip install nbformat to save notebook history
+2025-03-13 10:52:49,218 INFO    MainThread:4180688 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-03-13 10:52:49,218 INFO    MainThread:4180688 [wandb_init.py:_jupyter_teardown():581] cleaning up jupyter logic
+2025-03-13 10:52:49,218 INFO    MainThread:4180688 [wandb_run.py:_atexit_cleanup():2342] got exitcode: 0
+2025-03-13 10:52:49,218 INFO    MainThread:4180688 [wandb_run.py:_restore():2324] restore
+2025-03-13 10:52:49,218 INFO    MainThread:4180688 [wandb_run.py:_restore():2330] restore done
+2025-03-13 10:52:52,969 INFO    MsgRouterThr:4180688 [mailbox.py:close():115] Closing mailbox, abandoning 1 handles.
+2025-03-13 10:52:52,970 INFO    MainThread:4180688 [wandb_run.py:_footer_history_summary_info():3958] rendering history
+2025-03-13 10:52:52,970 INFO    MainThread:4180688 [wandb_run.py:_footer_history_summary_info():3990] rendering summary
+2025-03-13 10:52:52,971 INFO    MainThread:4180688 [wandb_run.py:_footer_sync_info():3919] logging synced files

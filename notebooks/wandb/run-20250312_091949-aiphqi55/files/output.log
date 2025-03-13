@@ -1,0 +1,71 @@
+rsna
+[RSNADataset] Scanning files...
+[RSNADataset] Found 1000 already processed bags
+[RSNADataset] Number of bags found: 1000
+rsna
+[RSNADataset] Scanning files...
+[RSNADataset] Found 150 already processed bags
+[RSNADataset] Number of bags found: 150
+Epoch 1/50
+Train - Loss: 0.9618, Acc: 0.6188, AUC: 0.6281, F1: 0.5242
+Val   - Loss: 0.6373, Acc: 0.7050, AUC: 0.7909, F1: 0.5124
+Final model saved to ./models/rsna/model.pth
+Epoch 2/50
+Train - Loss: 0.9086, Acc: 0.6575, AUC: 0.7132, F1: 0.5678
+Val   - Loss: 1.0226, Acc: 0.5750, AUC: 0.8069, F1: 0.6383
+Final model saved to ./models/rsna/model.pth
+Epoch 3/50
+Train - Loss: 0.9640, Acc: 0.6725, AUC: 0.7298, F1: 0.5893
+Val   - Loss: 0.6209, Acc: 0.7600, AUC: 0.8137, F1: 0.7209
+Final model saved to ./models/rsna/model.pth
+Epoch 4/50
+Train - Loss: 0.8979, Acc: 0.7100, AUC: 0.7713, F1: 0.6386
+Val   - Loss: 0.9900, Acc: 0.6900, AUC: 0.8135, F1: 0.4151
+/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Epoch 5/50
+Train - Loss: 0.8409, Acc: 0.7075, AUC: 0.7702, F1: 0.6422
+Val   - Loss: 2.1469, Acc: 0.5900, AUC: 0.7660, F1: 0.0000
+Epoch 6/50
+Train - Loss: 0.9228, Acc: 0.6963, AUC: 0.7576, F1: 0.6233
+Val   - Loss: 0.6622, Acc: 0.7300, AUC: 0.8161, F1: 0.5970
+Final model saved to ./models/rsna/model.pth
+Epoch 7/50
+Train - Loss: 0.8872, Acc: 0.7087, AUC: 0.7713, F1: 0.6388
+Val   - Loss: 0.8344, Acc: 0.6950, AUC: 0.8290, F1: 0.7024
+Final model saved to ./models/rsna/model.pth
+Epoch 8/50
+Train - Loss: 0.9074, Acc: 0.7288, AUC: 0.7801, F1: 0.6667
+Val   - Loss: 0.6572, Acc: 0.7300, AUC: 0.8268, F1: 0.6351
+Epoch 9/50
+Train - Loss: 0.7217, Acc: 0.7588, AUC: 0.8259, F1: 0.7044
+Val   - Loss: 0.6352, Acc: 0.7450, AUC: 0.8274, F1: 0.6577
+Epoch 10/50
+Train - Loss: 1.0162, Acc: 0.7063, AUC: 0.7656, F1: 0.6401
+Val   - Loss: 0.8588, Acc: 0.7550, AUC: 0.8485, F1: 0.6080
+Final model saved to ./models/rsna/model.pth
+Epoch 11/50
+Train - Loss: 0.8619, Acc: 0.7388, AUC: 0.8056, F1: 0.6780
+Val   - Loss: 0.8164, Acc: 0.7250, AUC: 0.8462, F1: 0.7208
+Epoch 12/50
+Train - Loss: 0.8998, Acc: 0.7425, AUC: 0.8039, F1: 0.6879
+Val   - Loss: 0.6670, Acc: 0.7500, AUC: 0.8424, F1: 0.6429
+Epoch 13/50
+Train - Loss: 0.9552, Acc: 0.7125, AUC: 0.7861, F1: 0.6417
+Val   - Loss: 0.6405, Acc: 0.7300, AUC: 0.8240, F1: 0.6250
+Epoch 14/50
+Train - Loss: 0.8203, Acc: 0.7450, AUC: 0.8168, F1: 0.6881
+Val   - Loss: 3.2736, Acc: 0.4500, AUC: 0.7635, F1: 0.5985
+Epoch 15/50
+Train - Loss: 0.8544, Acc: 0.7388, AUC: 0.7987, F1: 0.6809
+Val   - Loss: 1.8442, Acc: 0.6250, AUC: 0.8197, F1: 0.1935
+Early stopping triggered.
+Model loaded successfully from ./models/rsna/model.pth
+
+--- Evaluation Results ---
+Optimal Threshold: 0.0726
+Accuracy: 0.8600, AUC: 0.9160
+Precision: 0.8696, Recall: 0.8333, F1-Score: 0.8511
+Confusion Matrix:
+[[69  9]
+ [12 60]]

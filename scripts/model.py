@@ -56,36 +56,60 @@ class AttentionMechanism(nn.Module):
 
 
 class MILModel(nn.Module):
-    def __init__(self, feature_dim, dropout_prob=0.5):
+    def __init__(self, feature_dim=128, dropout_prob=0.5, pooling_type='attention'):
         super(MILModel, self).__init__()
-        self.feature_extractor = CNNFeatureExtractor()  # Extractor de características
-        self.dropout = nn.Dropout(dropout_prob)  # Dropout agregado
-        self.attention = AttentionMechanism(feature_dim, 64)  # Mecanismo de atención
-        self.classifier = nn.Linear(feature_dim, 1)  # Clasificador final
+        self.pooling_type = pooling_type
+        self.feature_extractor = CNNFeatureExtractor()
+        self.dropout = nn.Dropout(dropout_prob)
+        
+        # Inicializar atención solo si es necesario
+        if pooling_type == 'attention':
+            self.attention = AttentionMechanism(feature_dim, hidden_dim=64)
+        else:
+            self.attention = None
+        
+        self.classifier = nn.Linear(feature_dim, 1)
 
     def forward(self, bag_data, mask=None, adj_mat=None):
-        batch_size, max_bag_size, _ = bag_data.shape
-
-        # Extraer características si los datos son imágenes crudas
-        if bag_data.dim() == 4:  # Si los datos son imágenes (batch_size, channels, height, width)
-            bag_data = bag_data.view(batch_size * max_bag_size, *bag_data.shape[2:])  # Aplanar para procesar cada instancia
-            features = self.feature_extractor(bag_data)  # Extraer características
-            features = features.view(batch_size, max_bag_size, -1)  # Reorganizar en forma de bag
+        batch_size, max_bag_size = bag_data.shape[:2]
+        
+        # Extraer características si son imágenes crudas
+        if bag_data.dim() == 4:  # (batch, bag_size, 1, 28, 28)
+            instances = bag_data.view(-1, 1, 28, 28)  # Aplanar para procesar cada instancia
+            features = self.feature_extractor(instances)  # (batch*bag_size, 128)
+            features = features.view(batch_size, max_bag_size, -1)  # (batch, bag_size, 128)
         else:
-            features = bag_data  # Usar características pre-extraídas
+            features = bag_data  # Características pre-extraídas
 
-        # Aplicar dropout
         features = self.dropout(features)
-
-        # Obtener representación del bag y pesos de atención
-        bag_representation, attention_weights = self.attention(features, mask=mask)
+        
+        # Agregación según el tipo de pooling
+        if self.pooling_type == 'attention':
+            bag_repr, attention_weights = self.attention(features, mask)
+        elif self.pooling_type == 'mean':
+            if mask is not None:
+                mask = mask.unsqueeze(-1).float()
+                features = features * mask
+                sum_features = features.sum(dim=1)
+                count = mask.sum(dim=1)
+                bag_repr = sum_features / count.clamp(min=1)  # Evitar división por cero
+            else:
+                bag_repr = features.mean(dim=1)
+            attention_weights = None
+        elif self.pooling_type == 'max':
+            if mask is not None:
+                features = features.masked_fill(~mask.bool().unsqueeze(-1), float('-inf'))
+            bag_repr = features.max(dim=1)[0]
+            attention_weights = None
+        else:
+            raise ValueError(f"Pooling type '{self.pooling_type}' no válido")
 
         # Clasificación final
-        output = self.classifier(bag_representation)
+        output = self.classifier(bag_repr)
         return output, attention_weights
     
 
-    antiguo_codigo="""
+"""
 class AttentionMechanism(nn.Module):
     def __init__(self, input_dim, attention_dim):
         super(AttentionMechanism, self).__init__()

@@ -1,0 +1,16 @@
+{"time":"2025-03-13T10:54:49.803420805+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"/home/javitrucas/TFG/notebooks/wandb/run-20250313_105449-3tka62wo/logs/debug-core.log"}
+{"time":"2025-03-13T10:54:49.922873395+01:00","level":"INFO","msg":"created new stream","id":"3tka62wo"}
+{"time":"2025-03-13T10:54:49.922934228+01:00","level":"INFO","msg":"stream: started","id":"3tka62wo"}
+{"time":"2025-03-13T10:54:49.922957161+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"3tka62wo"}
+{"time":"2025-03-13T10:54:49.922993894+01:00","level":"INFO","msg":"sender: started","stream_id":"3tka62wo"}
+{"time":"2025-03-13T10:54:49.923043849+01:00","level":"INFO","msg":"handler: started","stream_id":"3tka62wo"}
+{"time":"2025-03-13T10:54:50.293460095+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-13T10:58:34.955560467+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-13T10:58:34.956128824+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-13T10:58:35.957172835+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact trained_model","runtime_seconds":1.003600679,"subtasks":[{"desc":"model.pth","runtime_seconds":0.309839895,"progress":"840.0KB/840.0KB"}]},{"desc":"uploading history steps 0-10, summary, console lines 29-35","runtime_seconds":0.171675676}],"total_operations":2}}
+{"time":"2025-03-13T10:58:37.782350688+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-13T10:58:38.970187753+01:00","level":"INFO","msg":"stream: closing","id":"3tka62wo"}
+{"time":"2025-03-13T10:58:38.970197782+01:00","level":"INFO","msg":"handler: closed","stream_id":"3tka62wo"}
+{"time":"2025-03-13T10:58:38.970202862+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"3tka62wo"}
+{"time":"2025-03-13T10:58:38.970207266+01:00","level":"INFO","msg":"sender: closed","stream_id":"3tka62wo"}
+{"time":"2025-03-13T10:58:38.970248509+01:00","level":"INFO","msg":"stream: closed","id":"3tka62wo"}

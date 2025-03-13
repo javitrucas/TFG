@@ -1,0 +1,55 @@
+=== Iniciando experimento con pooling_type=attention ===
+rsna
+[RSNADataset] Scanning files...
+[RSNADataset] Found 1000 already processed bags
+[RSNADataset] Number of bags found: 1000
+rsna
+[RSNADataset] Scanning files...
+[RSNADataset] Found 150 already processed bags
+[RSNADataset] Number of bags found: 150
+Epoch 1/5
+Train - Loss: 0.6602, Acc: 0.6153, AUC: 0.6353, F1: 0.4867
+Val   - Loss: 0.5826, Acc: 0.6933, AUC: 0.7821, F1: 0.4651
+Final model saved to ./models/rsna_attention/model_attention.pth
+Epoch 2/5
+Train - Loss: 0.5550, Acc: 0.7294, AUC: 0.7758, F1: 0.6417
+Val   - Loss: 0.5442, Acc: 0.7333, AUC: 0.8213, F1: 0.5833
+Final model saved to ./models/rsna_attention/model_attention.pth
+Epoch 3/5
+Train - Loss: 0.5471, Acc: 0.7165, AUC: 0.7817, F1: 0.6309
+Val   - Loss: 0.5568, Acc: 0.6933, AUC: 0.8358, F1: 0.4889
+Final model saved to ./models/rsna_attention/model_attention.pth
+Epoch 4/5
+Train - Loss: 0.5153, Acc: 0.7435, AUC: 0.8156, F1: 0.6707
+Val   - Loss: 0.5721, Acc: 0.6800, AUC: 0.8504, F1: 0.4545
+Final model saved to ./models/rsna_attention/model_attention.pth
+Epoch 5/5
+Train - Loss: 0.5012, Acc: 0.7459, AUC: 0.8244, F1: 0.6757
+Val   - Loss: 0.4961, Acc: 0.7800, AUC: 0.8438, F1: 0.6916
+Model loaded successfully from ./models/rsna_attention/model_attention.pth
+
+--- Evaluation Results ---
+Optimal Threshold: 0.3066
+Accuracy: 0.8000, AUC: 0.8670
+Precision: 0.7500, Recall: 0.8750, F1-Score: 0.8077
+Confusion Matrix:
+[[57 21]
+ [ 9 63]]
+Traceback (most recent call last):
+  File "/home/javitrucas/TFG/scripts/medical_scripts/medical_main.py", line 104, in <module>
+    evaluator.evaluate()
+  File "/home/javitrucas/TFG/scripts/medical_scripts/medical_evaluation.py", line 137, in evaluate
+    self._plot_attention_heatmap(attention_weights)
+  File "/home/javitrucas/TFG/scripts/medical_scripts/medical_evaluation.py", line 44, in _plot_attention_heatmap
+    ax.imshow(attention_weights, cmap='viridis', aspect='auto')
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/matplotlib/__init__.py", line 1521, in inner
+    return func(
+           ^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/matplotlib/axes/_axes.py", line 5945, in imshow
+    im.set_data(X)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/matplotlib/image.py", line 675, in set_data
+    self._A = self._normalize_image_array(A)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/matplotlib/image.py", line 643, in _normalize_image_array
+    raise TypeError(f"Invalid shape {A.shape} for image data")
+TypeError: Invalid shape (32,) for image data

@@ -1,0 +1,63 @@
+=== Iniciando experimento con pooling_type=attention ===
+rsna
+[RSNADataset] Scanning files...
+[RSNADataset] Found 1000 already processed bags
+[RSNADataset] Number of bags found: 1000
+rsna
+[RSNADataset] Scanning files...
+[RSNADataset] Found 150 already processed bags
+[RSNADataset] Number of bags found: 150
+Epoch 1/5
+Train - Loss: 0.6612, Acc: 0.6082, AUC: 0.6259, F1: 0.4403
+Val   - Loss: 0.6740, Acc: 0.5600, AUC: 0.7610, F1: 0.6292
+Final model saved to ./models/rsna_attention/model_attention.pth
+Epoch 2/5
+Train - Loss: 0.5782, Acc: 0.6929, AUC: 0.7477, F1: 0.5941
+Val   - Loss: 0.5810, Acc: 0.6733, AUC: 0.7879, F1: 0.4368
+Final model saved to ./models/rsna_attention/model_attention.pth
+Epoch 3/5
+Train - Loss: 0.5562, Acc: 0.7176, AUC: 0.7743, F1: 0.6238
+Val   - Loss: 0.5306, Acc: 0.7400, AUC: 0.8066, F1: 0.6609
+Final model saved to ./models/rsna_attention/model_attention.pth
+Epoch 4/5
+Train - Loss: 0.5306, Acc: 0.7271, AUC: 0.8017, F1: 0.6485
+Val   - Loss: 0.5215, Acc: 0.7467, AUC: 0.8284, F1: 0.7164
+Final model saved to ./models/rsna_attention/model_attention.pth
+Epoch 5/5
+Train - Loss: 0.5176, Acc: 0.7400, AUC: 0.8142, F1: 0.6605
+Val   - Loss: 0.5186, Acc: 0.7667, AUC: 0.8305, F1: 0.7368
+Final model saved to ./models/rsna_attention/model_attention.pth
+Model loaded successfully from ./models/rsna_attention/model_attention.pth
+
+--- Evaluation Results ---
+Optimal Threshold: 0.5324
+Accuracy: 0.7867, AUC: 0.8501
+Precision: 0.7439, Recall: 0.8472, F1-Score: 0.7922
+Confusion Matrix:
+[[57 21]
+ [11 61]]
+Traceback (most recent call last):
+  File "/home/javitrucas/TFG/scripts/medical_scripts/medical_main.py", line 104, in <module>
+    evaluator.evaluate()
+  File "/home/javitrucas/TFG/scripts/medical_scripts/medical_evaluation.py", line 130, in evaluate
+    self._plot_attention_heatmap(attention_weights)
+  File "/home/javitrucas/TFG/scripts/medical_scripts/medical_evaluation.py", line 37, in _plot_attention_heatmap
+    ax.imshow(attention_weights, cmap='viridis', aspect='auto')
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/matplotlib/__init__.py", line 1521, in inner
+    return func(
+           ^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/matplotlib/axes/_axes.py", line 5945, in imshow
+    im.set_data(X)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/matplotlib/image.py", line 675, in set_data
+    self._A = self._normalize_image_array(A)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/matplotlib/image.py", line 636, in _normalize_image_array
+    A = cbook.safe_masked_invalid(A, copy=True)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/matplotlib/cbook.py", line 684, in safe_masked_invalid
+    x = np.array(x, subok=True, copy=copy)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/torch/_tensor.py", line 1149, in __array__
+    return self.numpy()
+           ^^^^^^^^^^^^
+TypeError: can't convert cuda:0 device type tensor to numpy. Use Tensor.cpu() to copy the tensor to host memory first.

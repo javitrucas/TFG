@@ -1,0 +1,47 @@
+2025-03-13 10:49:48,678 INFO    MainThread:4180688 [wandb_setup.py:_flush():67] Current SDK version is 0.19.7
+2025-03-13 10:49:48,678 INFO    MainThread:4180688 [wandb_setup.py:_flush():67] Configure stats pid to 4180688
+2025-03-13 10:49:48,678 INFO    MainThread:4180688 [wandb_setup.py:_flush():67] Loading settings from /home/javitrucas/.config/wandb/settings
+2025-03-13 10:49:48,678 INFO    MainThread:4180688 [wandb_setup.py:_flush():67] Loading settings from /home/javitrucas/TFG/notebooks/wandb/settings
+2025-03-13 10:49:48,678 INFO    MainThread:4180688 [wandb_setup.py:_flush():67] Loading settings from environment variables
+2025-03-13 10:49:48,678 INFO    MainThread:4180688 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /home/javitrucas/TFG/notebooks/wandb/run-20250313_104948-xretfodc/logs/debug.log
+2025-03-13 10:49:48,678 INFO    MainThread:4180688 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /home/javitrucas/TFG/notebooks/wandb/run-20250313_104948-xretfodc/logs/debug-internal.log
+2025-03-13 10:49:48,679 INFO    MainThread:4180688 [wandb_init.py:monkeypatch_ipython():599] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7f182c1d8810>
+2025-03-13 10:49:48,679 INFO    MainThread:4180688 [wandb_init.py:init():761] calling init triggers
+2025-03-13 10:49:48,679 INFO    MainThread:4180688 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'target_digit': 3, 'bag_size': 10, 'num_epochs': 1, 'learning_rate': 0.001, 'pooling_type': 'attention', '_wandb': {}}
+2025-03-13 10:49:48,679 INFO    MainThread:4180688 [wandb_init.py:init():784] starting backend
+2025-03-13 10:49:48,679 INFO    MainThread:4180688 [wandb_init.py:init():788] sending inform_init request
+2025-03-13 10:49:48,683 INFO    MainThread:4180688 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2025-03-13 10:49:48,684 INFO    MainThread:4180688 [wandb_init.py:init():803] backend started and connected
+2025-03-13 10:49:48,687 INFO    MainThread:4180688 [wandb_run.py:_label_probe_notebook():1204] probe notebook
+2025-03-13 10:49:48,693 INFO    MainThread:4180688 [wandb_init.py:init():896] updated telemetry
+2025-03-13 10:49:48,704 INFO    MainThread:4180688 [wandb_init.py:init():920] communicating run to backend with 90.0 second timeout
+2025-03-13 10:49:49,297 INFO    MainThread:4180688 [wandb_init.py:init():995] starting run threads in backend
+2025-03-13 10:49:49,488 INFO    MainThread:4180688 [wandb_run.py:_console_start():2377] atexit reg
+2025-03-13 10:49:49,488 INFO    MainThread:4180688 [wandb_run.py:_redirect():2227] redirect: wrap_raw
+2025-03-13 10:49:49,489 INFO    MainThread:4180688 [wandb_run.py:_redirect():2292] Wrapping output streams.
+2025-03-13 10:49:49,489 INFO    MainThread:4180688 [wandb_run.py:_redirect():2317] Redirects installed.
+2025-03-13 10:49:49,493 INFO    MainThread:4180688 [wandb_init.py:init():1037] run started, returning control to user process
+2025-03-13 10:50:37,402 INFO    MainThread:4180688 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-03-13 10:50:37,402 INFO    MainThread:4180688 [wandb_init.py:_pause_backend():564] pausing backend
+2025-03-13 10:51:59,826 INFO    MainThread:4180688 [wandb_init.py:_resume_backend():569] resuming backend
+2025-03-13 10:51:59,836 INFO    MainThread:4180688 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-03-13 10:51:59,836 INFO    MainThread:4180688 [wandb_init.py:_pause_backend():564] pausing backend
+2025-03-13 10:52:01,475 INFO    MainThread:4180688 [wandb_init.py:_resume_backend():569] resuming backend
+2025-03-13 10:52:01,481 INFO    MainThread:4180688 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /home/javitrucas/TFG/notebooks/wandb/run-20250313_105201-ncwge6dk/logs/debug.log
+2025-03-13 10:52:01,481 INFO    MainThread:4180688 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /home/javitrucas/TFG/notebooks/wandb/run-20250313_105201-ncwge6dk/logs/debug-internal.log
+2025-03-13 10:52:01,481 INFO    MainThread:4180688 [wandb_init.py:init():761] calling init triggers
+2025-03-13 10:52:01,482 INFO    MainThread:4180688 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'target_digit': 3, 'bag_size': 10, 'num_epochs': 1, 'learning_rate': 0.001, 'pooling_type': 'attention', '_wandb': {}}
+2025-03-13 10:52:01,482 INFO    MainThread:4180688 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-03-13 10:52:49,218 INFO    MainThread:4180688 [wandb_run.py:_finish():2112] finishing run javitrucas-universidad-de-granada/TFG/xretfodc
+2025-03-13 10:52:49,218 ERROR   MainThread:4180688 [jupyter.py:save_history():450] Run pip install nbformat to save notebook history
+2025-03-13 10:52:49,218 INFO    MainThread:4180688 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-03-13 10:52:49,218 INFO    MainThread:4180688 [wandb_init.py:_jupyter_teardown():581] cleaning up jupyter logic
+2025-03-13 10:52:49,218 INFO    MainThread:4180688 [wandb_run.py:_atexit_cleanup():2342] got exitcode: 0
+2025-03-13 10:52:49,218 INFO    MainThread:4180688 [wandb_run.py:_restore():2324] restore
+2025-03-13 10:52:49,218 INFO    MainThread:4180688 [wandb_run.py:_restore():2330] restore done
+2025-03-13 10:52:52,969 INFO    MsgRouterThr:4180688 [mailbox.py:close():115] Closing mailbox, abandoning 1 handles.
+2025-03-13 10:52:52,970 INFO    MainThread:4180688 [wandb_run.py:_footer_history_summary_info():3958] rendering history
+2025-03-13 10:52:52,970 INFO    MainThread:4180688 [wandb_run.py:_footer_history_summary_info():3990] rendering summary
+2025-03-13 10:52:52,971 INFO    MainThread:4180688 [wandb_run.py:_footer_sync_info():3919] logging synced files

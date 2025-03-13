@@ -1,0 +1,39 @@
+=== Iniciando experimento con pooling_type=attention ===
+rsna
+[RSNADataset] Scanning files...
+[RSNADataset] Found 1000 already processed bags
+[RSNADataset] Number of bags found: 1000
+rsna
+[RSNADataset] Scanning files...
+[RSNADataset] Found 150 already processed bags
+[RSNADataset] Number of bags found: 150
+Epoch 1/5
+Train - Loss: 0.7038, Acc: 0.6035, AUC: 0.5966, F1: 0.4220
+Val   - Loss: 0.6439, Acc: 0.6133, AUC: 0.7181, F1: 0.1212
+Final model saved to ./models/rsna_attention/model_attention.pth
+Epoch 2/5
+Train - Loss: 0.6000, Acc: 0.6894, AUC: 0.7353, F1: 0.5672
+Val   - Loss: 0.5839, Acc: 0.6733, AUC: 0.7837, F1: 0.3951
+Final model saved to ./models/rsna_attention/model_attention.pth
+Epoch 3/5
+Train - Loss: 0.5588, Acc: 0.7188, AUC: 0.7692, F1: 0.6248
+Val   - Loss: 0.5185, Acc: 0.7400, AUC: 0.8141, F1: 0.6355
+Final model saved to ./models/rsna_attention/model_attention.pth
+Epoch 4/5
+Train - Loss: 0.5542, Acc: 0.7235, AUC: 0.7760, F1: 0.6434
+Val   - Loss: 0.5885, Acc: 0.6600, AUC: 0.8174, F1: 0.3704
+Final model saved to ./models/rsna_attention/model_attention.pth
+Epoch 5/5
+Train - Loss: 0.5281, Acc: 0.7424, AUC: 0.8094, F1: 0.6605
+Val   - Loss: 0.5318, Acc: 0.7000, AUC: 0.8246, F1: 0.5361
+Final model saved to ./models/rsna_attention/model_attention.pth
+./models/rsna_attention/model_attention.pth
+Model loaded successfully from ./models/rsna_attention/model_attention.pth
+
+--- Evaluation Results ---
+Optimal Threshold: 0.3015
+Accuracy: 0.7933, AUC: 0.8515
+Precision: 0.7470, Recall: 0.8611, F1-Score: 0.8000
+Confusion Matrix:
+[[57 21]
+ [10 62]]

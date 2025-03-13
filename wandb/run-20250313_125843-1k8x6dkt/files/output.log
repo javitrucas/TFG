@@ -1,0 +1,17 @@
+=== Iniciando experimento con pooling_type=mean ===
+rsna
+[RSNADataset] Scanning files...
+[RSNADataset] Found 1000 already processed bags
+[RSNADataset] Number of bags found: 1000
+rsna
+[RSNADataset] Scanning files...
+[RSNADataset] Found 150 already processed bags
+[RSNADataset] Number of bags found: 150
+Epoch 1/5
+Train - Loss: 0.6692, Acc: 0.6082, AUC: 0.6276, F1: 0.4550
+Val   - Loss: 0.6142, Acc: 0.6733, AUC: 0.7254, F1: 0.4235
+Final model saved to ./models/rsna_mean/model_mean.pth
+Epoch 2/5
+Train - Loss: 0.6177, Acc: 0.6576, AUC: 0.7008, F1: 0.5374
+Val   - Loss: 0.5830, Acc: 0.7067, AUC: 0.7760, F1: 0.5217
+Final model saved to ./models/rsna_mean/model_mean.pth

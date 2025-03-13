@@ -1,0 +1,15 @@
+{"time":"2025-03-13T10:31:50.28685768+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"/home/javitrucas/TFG/notebooks/wandb/run-20250313_103150-4xgm3qbf/logs/debug-core.log"}
+{"time":"2025-03-13T10:31:50.403909566+01:00","level":"INFO","msg":"created new stream","id":"4xgm3qbf"}
+{"time":"2025-03-13T10:31:50.403968753+01:00","level":"INFO","msg":"stream: started","id":"4xgm3qbf"}
+{"time":"2025-03-13T10:31:50.404167399+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"4xgm3qbf"}
+{"time":"2025-03-13T10:31:50.405584242+01:00","level":"INFO","msg":"handler: started","stream_id":"4xgm3qbf"}
+{"time":"2025-03-13T10:31:50.405094454+01:00","level":"INFO","msg":"sender: started","stream_id":"4xgm3qbf"}
+{"time":"2025-03-13T10:31:50.714248758+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-13T10:32:37.802575846+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-03-13T10:35:21.29155541+01:00","level":"ERROR","msg":"HTTP error","status":404,"method":"POST","url":"https://api.wandb.ai/files/javitrucas-universidad-de-granada/TFG/4xgm3qbf/file_stream"}
+{"time":"2025-03-13T10:35:21.291653977+01:00","level":"ERROR+4","msg":"filestream: fatal error: filestream: failed to upload: 404 Not Found path=files/javitrucas-universidad-de-granada/TFG/4xgm3qbf/file_stream: {\"error\":\"run TFG/4xgm3qbf not found while streaming file\"}"}
+{"time":"2025-03-13T10:36:30.294115045+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-03-13T10:36:30.334572506+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-03-13T10:37:08.708358381+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-03-13T10:37:08.717586142+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-03-13T10:37:12.218232207+01:00","level":"INFO","msg":"Resuming system monitor"}

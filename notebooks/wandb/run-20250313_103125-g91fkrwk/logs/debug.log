@@ -1,0 +1,30 @@
+2025-03-13 10:31:25,385 INFO    MainThread:3209310 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /home/javitrucas/TFG/notebooks/wandb/run-20250313_103125-g91fkrwk/logs/debug.log
+2025-03-13 10:31:25,385 INFO    MainThread:3209310 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /home/javitrucas/TFG/notebooks/wandb/run-20250313_103125-g91fkrwk/logs/debug-internal.log
+2025-03-13 10:31:25,385 INFO    MainThread:3209310 [wandb_init.py:init():761] calling init triggers
+2025-03-13 10:31:25,385 INFO    MainThread:3209310 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'target_digit': 3, 'bag_size': 10, 'num_epochs': 1, 'learning_rate': 0.001, 'pooling_type': 'attention', '_wandb': {}}
+2025-03-13 10:31:25,386 INFO    MainThread:3209310 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-03-13 10:31:27,821 WARNING MsgRouterThr:3209310 [router.py:message_loop():77] message_loop has been closed
+Traceback (most recent call last):
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/interface/router_sock.py", line 28, in _read_message
+    resp = self._sock_client.read_server_response(timeout=1)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 285, in read_server_response
+    data = self._read_packet_bytes(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 270, in _read_packet_bytes
+    raise SockClientClosedError
+wandb.sdk.lib.sock_client.SockClientClosedError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/interface/router.py", line 70, in message_loop
+    msg = self._read_message()
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/interface/router_sock.py", line 30, in _read_message
+    raise MessageRouterClosedError from e
+wandb.sdk.interface.router.MessageRouterClosedError
+2025-03-13 10:31:27,877 INFO    MsgRouterThr:3209310 [mailbox.py:close():115] Closing mailbox, abandoning 1 handles.
+2025-03-13 10:31:28,035 INFO    MainThread:3209310 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-03-13 10:31:28,036 INFO    MainThread:3209310 [wandb_init.py:_pause_backend():564] pausing backend

@@ -1,0 +1,44 @@
+rsna
+[RSNADataset] Scanning files...
+[RSNADataset] Found 1000 already processed bags
+[RSNADataset] Number of bags found: 1000
+rsna
+[RSNADataset] Scanning files...
+[RSNADataset] Found 150 already processed bags
+[RSNADataset] Number of bags found: 150
+Epoch 1/50
+Train - Loss: 0.6850, Acc: 0.5713, AUC: 0.5041, F1: 0.1531
+Val   - Loss: 0.6585, Acc: 0.6000, AUC: 0.6696, F1: 0.0476
+Final model saved to ./models/rsna/model.pth
+Epoch 2/50
+Train - Loss: 0.6504, Acc: 0.6262, AUC: 0.6392, F1: 0.3030
+Val   - Loss: 0.6413, Acc: 0.6100, AUC: 0.7195, F1: 0.0930
+Final model saved to ./models/rsna/model.pth
+Epoch 3/50
+Train - Loss: 0.6397, Acc: 0.6250, AUC: 0.7004, F1: 0.3182
+Val   - Loss: 0.6263, Acc: 0.6900, AUC: 0.7315, F1: 0.4464
+Final model saved to ./models/rsna/model.pth
+Epoch 4/50
+Train - Loss: 0.6159, Acc: 0.6775, AUC: 0.7317, F1: 0.4777
+Val   - Loss: 0.6167, Acc: 0.7100, AUC: 0.7362, F1: 0.5672
+Final model saved to ./models/rsna/model.pth
+Epoch 5/50
+Train - Loss: 0.5978, Acc: 0.7087, AUC: 0.7503, F1: 0.5693
+Val   - Loss: 0.6052, Acc: 0.7200, AUC: 0.7404, F1: 0.6111
+Final model saved to ./models/rsna/model.pth
+Epoch 6/50
+Train - Loss: 0.5829, Acc: 0.7075, AUC: 0.7742, F1: 0.5699
+Val   - Loss: 0.5950, Acc: 0.6850, AUC: 0.7487, F1: 0.5039
+Final model saved to ./models/rsna/model.pth
+Epoch 7/50
+Train - Loss: 0.5666, Acc: 0.7362, AUC: 0.7793, F1: 0.6212
+Val   - Loss: 0.5962, Acc: 0.6700, AUC: 0.7490, F1: 0.4407
+Final model saved to ./models/rsna/model.pth
+Epoch 8/50
+Train - Loss: 0.5461, Acc: 0.7425, AUC: 0.7996, F1: 0.6436
+Val   - Loss: 0.5812, Acc: 0.7100, AUC: 0.7525, F1: 0.5735
+Final model saved to ./models/rsna/model.pth
+Epoch 9/50
+Train - Loss: 0.5384, Acc: 0.7425, AUC: 0.8052, F1: 0.6497
+Val   - Loss: 0.5749, Acc: 0.7150, AUC: 0.7585, F1: 0.6014
+Final model saved to ./models/rsna/model.pth
