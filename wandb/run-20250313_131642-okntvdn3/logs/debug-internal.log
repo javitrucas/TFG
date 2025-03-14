@@ -1,0 +1,15 @@
+{"time":"2025-03-13T13:16:42.876064686+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"/home/javitrucas/TFG/wandb/run-20250313_131642-okntvdn3/logs/debug-core.log"}
+{"time":"2025-03-13T13:16:42.993086561+01:00","level":"INFO","msg":"created new stream","id":"okntvdn3"}
+{"time":"2025-03-13T13:16:42.993146444+01:00","level":"INFO","msg":"stream: started","id":"okntvdn3"}
+{"time":"2025-03-13T13:16:42.993193257+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"okntvdn3"}
+{"time":"2025-03-13T13:16:42.993209043+01:00","level":"INFO","msg":"sender: started","stream_id":"okntvdn3"}
+{"time":"2025-03-13T13:16:42.993210401+01:00","level":"INFO","msg":"handler: started","stream_id":"okntvdn3"}
+{"time":"2025-03-13T13:16:43.281710005+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-13T13:16:56.04627396+01:00","level":"INFO","msg":"stream: closing","id":"okntvdn3"}
+{"time":"2025-03-13T13:16:56.046351039+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-13T13:16:56.047284836+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-13T13:16:56.689673584+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-13T13:16:56.917481514+01:00","level":"INFO","msg":"handler: closed","stream_id":"okntvdn3"}
+{"time":"2025-03-13T13:16:56.917537084+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"okntvdn3"}
+{"time":"2025-03-13T13:16:56.917555145+01:00","level":"INFO","msg":"sender: closed","stream_id":"okntvdn3"}
+{"time":"2025-03-13T13:16:56.917641704+01:00","level":"INFO","msg":"stream: closed","id":"okntvdn3"}

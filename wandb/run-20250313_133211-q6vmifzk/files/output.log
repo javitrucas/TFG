@@ -1,0 +1,54 @@
+=== Iniciando experimento con pooling_type=attention ===
+rsna
+[RSNADataset] Scanning files...
+[RSNADataset] Found 1000 already processed bags
+[RSNADataset] Number of bags found: 1000
+rsna
+[RSNADataset] Scanning files...
+[RSNADataset] Found 150 already processed bags
+[RSNADataset] Number of bags found: 150
+Epoch 1/5
+Train - Loss: 0.6577, Acc: 0.6047, AUC: 0.6286, F1: 0.4305
+Val   - Loss: 0.6640, Acc: 0.5800, AUC: 0.7538, F1: 0.6358
+Final model saved to ./models/rsna_attention/model_attention.pth
+Epoch 2/5
+Train - Loss: 0.5742, Acc: 0.7094, AUC: 0.7603, F1: 0.6061
+Val   - Loss: 0.5468, Acc: 0.7133, AUC: 0.7883, F1: 0.6055
+Final model saved to ./models/rsna_attention/model_attention.pth
+Epoch 3/5
+Train - Loss: 0.5432, Acc: 0.7235, AUC: 0.7883, F1: 0.6423
+Val   - Loss: 0.5245, Acc: 0.7200, AUC: 0.8061, F1: 0.6441
+Final model saved to ./models/rsna_attention/model_attention.pth
+Epoch 4/5
+Train - Loss: 0.5328, Acc: 0.7329, AUC: 0.7988, F1: 0.6502
+Val   - Loss: 0.5170, Acc: 0.7267, AUC: 0.8283, F1: 0.6822
+Final model saved to ./models/rsna_attention/model_attention.pth
+Epoch 5/5
+Train - Loss: 0.5145, Acc: 0.7565, AUC: 0.8132, F1: 0.6820
+Val   - Loss: 0.5008, Acc: 0.7400, AUC: 0.8354, F1: 0.6929
+Final model saved to ./models/rsna_attention/model_attention.pth
+./models/rsna_attention/model_attention.pth
+Model loaded successfully from ./models/rsna_attention/model_attention.pth
+/home/javitrucas/TFG/scripts/medical_scripts/medical_evaluation.py:64: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+  ax.set_xticklabels([''] + ["Negative", "Positive"])
+/home/javitrucas/TFG/scripts/medical_scripts/medical_evaluation.py:65: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+  ax.set_yticklabels([''] + ["Negative", "Positive"])
+Confusion matrix saved at output/attention/confusion_matrix.png
+
+--- Evaluation Results ---
+Optimal Threshold: 0.5382
+Accuracy: 0.8000, AUC: 0.8652
+Precision: 0.7763, Recall: 0.8194, F1-Score: 0.7973
+Confusion Matrix:
+[[61 17]
+ [13 59]]
+Attention heatmap 0 saved at output/attention/attention_heatmap_0.png
+Traceback (most recent call last):
+  File "/home/javitrucas/TFG/scripts/medical_scripts/medical_main.py", line 106, in <module>
+    evaluator.evaluate()
+  File "/home/javitrucas/TFG/scripts/medical_scripts/medical_evaluation.py", line 176, in evaluate
+    image = self._reconstruct_image_from_patches(patches)  # Reconstruir la imagen original
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/TFG/scripts/medical_scripts/medical_evaluation.py", line 224, in _reconstruct_image_from_patches
+    raise NotImplementedError("Implementa la reconstrucción de la imagen según tu estructura de datos.")
+NotImplementedError: Implementa la reconstrucción de la imagen según tu estructura de datos.

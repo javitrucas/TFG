@@ -1,0 +1,20 @@
+=== Iniciando experimento con pooling_type=attention ===
+rsna
+[RSNADataset] Scanning files...
+[RSNADataset] Found 1000 already processed bags
+[RSNADataset] Number of bags found: 1000
+rsna
+[RSNADataset] Scanning files...
+[RSNADataset] Found 150 already processed bags
+[RSNADataset] Number of bags found: 150
+Traceback (most recent call last):
+  File "/home/javitrucas/TFG/scripts/medical_scripts/medical_main.py", line 79, in <module>
+    trainer = Training(
+              ^^^^^^^^^
+  File "/home/javitrucas/TFG/scripts/medical_scripts/medical_training.py", line 32, in __init__
+    self.model = MILModel(pooling_type=self.pooling_type, feature_dim=512).to(self.device)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/TFG/scripts/model.py", line 77, in __init__
+    self.attention_layer = AttentionMechanism(feature_dim=128, hidden_dim=64)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: AttentionMechanism.__init__() got an unexpected keyword argument 'feature_dim'

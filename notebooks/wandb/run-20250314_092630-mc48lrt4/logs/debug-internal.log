@@ -1,0 +1,10 @@
+{"time":"2025-03-14T09:26:30.671292271+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"/home/javitrucas/TFG/notebooks/wandb/run-20250314_092630-mc48lrt4/logs/debug-core.log"}
+{"time":"2025-03-14T09:26:30.788127713+01:00","level":"INFO","msg":"created new stream","id":"mc48lrt4"}
+{"time":"2025-03-14T09:26:30.788186335+01:00","level":"INFO","msg":"stream: started","id":"mc48lrt4"}
+{"time":"2025-03-14T09:26:30.788229869+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"mc48lrt4"}
+{"time":"2025-03-14T09:26:30.788308016+01:00","level":"INFO","msg":"handler: started","stream_id":"mc48lrt4"}
+{"time":"2025-03-14T09:26:30.78825193+01:00","level":"INFO","msg":"sender: started","stream_id":"mc48lrt4"}
+{"time":"2025-03-14T09:26:31.182919693+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-14T09:28:11.37581697+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-03-14T09:29:16.867363504+01:00","level":"ERROR","msg":"HTTP error","status":404,"method":"POST","url":"https://api.wandb.ai/files/javitrucas-universidad-de-granada/TFG/mc48lrt4/file_stream"}
+{"time":"2025-03-14T09:29:16.867452554+01:00","level":"ERROR+4","msg":"filestream: fatal error: filestream: failed to upload: 404 Not Found path=files/javitrucas-universidad-de-granada/TFG/mc48lrt4/file_stream: {\"error\":\"run TFG/mc48lrt4 not found while streaming file\"}"}

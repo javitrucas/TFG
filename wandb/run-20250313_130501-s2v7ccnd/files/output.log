@@ -1,0 +1,48 @@
+=== Iniciando experimento con pooling_type=mean ===
+rsna
+[RSNADataset] Scanning files...
+[RSNADataset] Found 1000 already processed bags
+[RSNADataset] Number of bags found: 1000
+rsna
+[RSNADataset] Scanning files...
+[RSNADataset] Found 150 already processed bags
+[RSNADataset] Number of bags found: 150
+Epoch 1/5
+Train - Loss: 0.6727, Acc: 0.5988, AUC: 0.6101, F1: 0.4382
+Val   - Loss: 0.7702, Acc: 0.4533, AUC: 0.7436, F1: 0.6019
+Final model saved to ./models/rsna_mean/model_mean.pth
+Epoch 2/5
+Train - Loss: 0.6078, Acc: 0.6859, AUC: 0.7254, F1: 0.5873
+Val   - Loss: 0.6403, Acc: 0.6200, AUC: 0.7738, F1: 0.6587
+Final model saved to ./models/rsna_mean/model_mean.pth
+Epoch 3/5
+Train - Loss: 0.5964, Acc: 0.6824, AUC: 0.7318, F1: 0.5781
+Val   - Loss: 0.5711, Acc: 0.7200, AUC: 0.8052, F1: 0.5227
+Final model saved to ./models/rsna_mean/model_mean.pth
+Epoch 4/5
+Train - Loss: 0.5682, Acc: 0.7188, AUC: 0.7607, F1: 0.6248
+Val   - Loss: 0.5991, Acc: 0.6800, AUC: 0.8178, F1: 0.6962
+Final model saved to ./models/rsna_mean/model_mean.pth
+Epoch 5/5
+Train - Loss: 0.5427, Acc: 0.7306, AUC: 0.7901, F1: 0.6536
+Val   - Loss: 0.5124, Acc: 0.7467, AUC: 0.8259, F1: 0.6545
+Final model saved to ./models/rsna_mean/model_mean.pth
+./models/rsna_mean/model_mean.pth
+Model loaded successfully from ./models/rsna_mean/model_mean.pth
+
+--- Evaluation Results ---
+Optimal Threshold: 0.5216
+Accuracy: 0.8067, AUC: 0.8608
+Precision: 0.8644, Recall: 0.7083, F1-Score: 0.7786
+Confusion Matrix:
+[[70  8]
+ [21 51]]
+Traceback (most recent call last):
+  File "/home/javitrucas/TFG/scripts/medical_scripts/medical_main.py", line 106, in <module>
+    evaluator.evaluate()
+  File "/home/javitrucas/TFG/scripts/medical_scripts/medical_evaluation.py", line 141, in evaluate
+    self._plot_attention_heatmap(attention_weights)
+  File "/home/javitrucas/TFG/scripts/medical_scripts/medical_evaluation.py", line 40, in _plot_attention_heatmap
+    if attention_weights.ndim == 2 and attention_weights.shape[0] == 1:
+       ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'ndim'

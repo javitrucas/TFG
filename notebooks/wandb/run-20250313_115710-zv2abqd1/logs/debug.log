@@ -24,3 +24,42 @@ config: {'dataset_name': 'panda', 'num_epochs': 50, 'learning_rate': 0.001, 'bat
 2025-03-13 11:57:11,281 INFO    MainThread:3840889 [wandb_init.py:init():1037] run started, returning control to user process
 2025-03-13 11:57:12,041 INFO    MainThread:3840889 [jupyter.py:save_ipynb():386] not saving jupyter notebook
 2025-03-13 11:57:12,041 INFO    MainThread:3840889 [wandb_init.py:_pause_backend():564] pausing backend
+2025-03-13 13:37:26,987 INFO    MainThread:3840889 [wandb_init.py:_resume_backend():569] resuming backend
+2025-03-13 13:37:26,995 INFO    MainThread:3840889 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /home/javitrucas/TFG/notebooks/wandb/run-20250313_133726-0oof31t9/logs/debug.log
+2025-03-13 13:37:26,995 INFO    MainThread:3840889 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /home/javitrucas/TFG/notebooks/wandb/run-20250313_133726-0oof31t9/logs/debug-internal.log
+2025-03-13 13:37:26,995 INFO    MainThread:3840889 [wandb_init.py:init():761] calling init triggers
+2025-03-13 13:37:26,996 INFO    MainThread:3840889 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'dataset_name': 'panda-patches_512_preset-features_UNI', 'num_epochs': 50, 'learning_rate': 0.001, 'batch_size': 1, 'val_prop': 0.2, 'seed': 42, 'use_inst_distances': False, 'adj_mat_mode': 'relative', '_wandb': {}}
+2025-03-13 13:37:26,996 INFO    MainThread:3840889 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-03-13 13:37:44,355 WARNING MsgRouterThr:3840889 [router.py:message_loop():77] message_loop has been closed
+Traceback (most recent call last):
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 258, in _read_packet_bytes
+    data = self._sock.recv(self._bufsize)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/interface/router_sock.py", line 28, in _read_message
+    resp = self._sock_client.read_server_response(timeout=1)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 285, in read_server_response
+    data = self._read_packet_bytes(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 262, in _read_packet_bytes
+    raise SockClientClosedError from e
+wandb.sdk.lib.sock_client.SockClientClosedError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/interface/router.py", line 70, in message_loop
+    msg = self._read_message()
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/interface/router_sock.py", line 30, in _read_message
+    raise MessageRouterClosedError from e
+wandb.sdk.interface.router.MessageRouterClosedError
+2025-03-13 13:37:44,381 INFO    MsgRouterThr:3840889 [mailbox.py:close():115] Closing mailbox, abandoning 3 handles.
+2025-03-13 13:37:44,769 INFO    MainThread:3840889 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-03-13 13:37:44,769 INFO    MainThread:3840889 [wandb_init.py:_pause_backend():564] pausing backend

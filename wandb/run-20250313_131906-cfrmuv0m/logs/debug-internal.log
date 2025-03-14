@@ -1,0 +1,16 @@
+{"time":"2025-03-13T13:19:06.59753522+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"/home/javitrucas/TFG/wandb/run-20250313_131906-cfrmuv0m/logs/debug-core.log"}
+{"time":"2025-03-13T13:19:06.713319653+01:00","level":"INFO","msg":"created new stream","id":"cfrmuv0m"}
+{"time":"2025-03-13T13:19:06.71349963+01:00","level":"INFO","msg":"stream: started","id":"cfrmuv0m"}
+{"time":"2025-03-13T13:19:06.713529423+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"cfrmuv0m"}
+{"time":"2025-03-13T13:19:06.713547198+01:00","level":"INFO","msg":"handler: started","stream_id":"cfrmuv0m"}
+{"time":"2025-03-13T13:19:06.713587425+01:00","level":"INFO","msg":"sender: started","stream_id":"cfrmuv0m"}
+{"time":"2025-03-13T13:19:07.01668744+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-13T13:19:54.268455169+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-13T13:19:54.269463952+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-13T13:19:55.271151555+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact model","runtime_seconds":1.875190243,"subtasks":[{"desc":"model_attention.pth","runtime_seconds":1.221400387,"progress":"938.6KB/938.6KB"}]},{"desc":"uploading artifact run-cfrmuv0m-confusion_matrix_table","runtime_seconds":1.049235537}],"total_operations":2}}
+{"time":"2025-03-13T13:19:56.183948951+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-13T13:19:57.414522705+01:00","level":"INFO","msg":"stream: closing","id":"cfrmuv0m"}
+{"time":"2025-03-13T13:19:57.414555709+01:00","level":"INFO","msg":"handler: closed","stream_id":"cfrmuv0m"}
+{"time":"2025-03-13T13:19:57.414570638+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"cfrmuv0m"}
+{"time":"2025-03-13T13:19:57.414594001+01:00","level":"INFO","msg":"sender: closed","stream_id":"cfrmuv0m"}
+{"time":"2025-03-13T13:19:57.414678218+01:00","level":"INFO","msg":"stream: closed","id":"cfrmuv0m"}

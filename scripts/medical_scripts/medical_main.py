@@ -17,7 +17,7 @@ from scripts.MIL_utils import MIL_collate_fn
 CONFIGS = [
     {
         "dataset_name": "rsna-features_resnet18",
-        "num_epochs": 5,
+        "num_epochs": 3,
         "learning_rate": 1e-3,
         "batch_size": 1,
         "val_prop": 0.15,

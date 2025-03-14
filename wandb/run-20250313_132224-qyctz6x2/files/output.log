@@ -1,0 +1,142 @@
+=== Iniciando experimento con pooling_type=attention ===
+rsna
+[RSNADataset] Scanning files...
+[RSNADataset] Found 1000 already processed bags
+[RSNADataset] Number of bags found: 1000
+rsna
+[RSNADataset] Scanning files...
+[RSNADataset] Found 150 already processed bags
+[RSNADataset] Number of bags found: 150
+Epoch 1/5
+Train - Loss: 0.6499, Acc: 0.6400, AUC: 0.6447, F1: 0.4900
+Val   - Loss: 0.7283, Acc: 0.5133, AUC: 0.7218, F1: 0.5967
+Final model saved to ./models/rsna_attention/model_attention.pth
+Epoch 2/5
+Train - Loss: 0.5744, Acc: 0.6988, AUC: 0.7575, F1: 0.6037
+Val   - Loss: 0.6400, Acc: 0.6400, AUC: 0.7830, F1: 0.2703
+Final model saved to ./models/rsna_attention/model_attention.pth
+Epoch 3/5
+Train - Loss: 0.5503, Acc: 0.7247, AUC: 0.7846, F1: 0.6411
+Val   - Loss: 0.5163, Acc: 0.7533, AUC: 0.8299, F1: 0.6542
+Final model saved to ./models/rsna_attention/model_attention.pth
+Epoch 4/5
+Train - Loss: 0.5155, Acc: 0.7647, AUC: 0.8162, F1: 0.6914
+Val   - Loss: 0.5805, Acc: 0.6800, AUC: 0.8301, F1: 0.4419
+Final model saved to ./models/rsna_attention/model_attention.pth
+Epoch 5/5
+Train - Loss: 0.5086, Acc: 0.7471, AUC: 0.8164, F1: 0.6687
+Val   - Loss: 0.5791, Acc: 0.7067, AUC: 0.8367, F1: 0.7179
+Final model saved to ./models/rsna_attention/model_attention.pth
+./models/rsna_attention/model_attention.pth
+Model loaded successfully from ./models/rsna_attention/model_attention.pth
+/home/javitrucas/TFG/scripts/medical_scripts/medical_evaluation.py:60: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+  ax.set_xticklabels([''] + ["Negative", "Positive"])
+/home/javitrucas/TFG/scripts/medical_scripts/medical_evaluation.py:61: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+  ax.set_yticklabels([''] + ["Negative", "Positive"])
+Confusion matrix saved at output/attention/confusion_matrix.png
+
+--- Evaluation Results ---
+Optimal Threshold: 0.6501
+Accuracy: 0.8000, AUC: 0.8529
+Precision: 0.7625, Recall: 0.8472, F1-Score: 0.8026
+Confusion Matrix:
+[[59 19]
+ [11 61]]
+Attention heatmap 0 saved at output/attention/attention_heatmap_0.png
+Attention heatmap 1 saved at output/attention/attention_heatmap_1.png
+Attention heatmap 2 saved at output/attention/attention_heatmap_2.png
+Attention heatmap 3 saved at output/attention/attention_heatmap_3.png
+Attention heatmap 4 saved at output/attention/attention_heatmap_4.png
+Attention heatmap 5 saved at output/attention/attention_heatmap_5.png
+Attention heatmap 6 saved at output/attention/attention_heatmap_6.png
+Attention heatmap 7 saved at output/attention/attention_heatmap_7.png
+Attention heatmap 8 saved at output/attention/attention_heatmap_8.png
+Attention heatmap 9 saved at output/attention/attention_heatmap_9.png
+Attention heatmap 10 saved at output/attention/attention_heatmap_10.png
+Attention heatmap 11 saved at output/attention/attention_heatmap_11.png
+Attention heatmap 12 saved at output/attention/attention_heatmap_12.png
+Attention heatmap 13 saved at output/attention/attention_heatmap_13.png
+Attention heatmap 14 saved at output/attention/attention_heatmap_14.png
+Attention heatmap 15 saved at output/attention/attention_heatmap_15.png
+Attention heatmap 16 saved at output/attention/attention_heatmap_16.png
+Attention heatmap 17 saved at output/attention/attention_heatmap_17.png
+Attention heatmap 18 saved at output/attention/attention_heatmap_18.png
+Attention heatmap 19 saved at output/attention/attention_heatmap_19.png
+Attention heatmap 20 saved at output/attention/attention_heatmap_20.png
+Attention heatmap 21 saved at output/attention/attention_heatmap_21.png
+Attention heatmap 22 saved at output/attention/attention_heatmap_22.png
+Attention heatmap 23 saved at output/attention/attention_heatmap_23.png
+Attention heatmap 24 saved at output/attention/attention_heatmap_24.png
+Attention heatmap 25 saved at output/attention/attention_heatmap_25.png
+Attention heatmap 26 saved at output/attention/attention_heatmap_26.png
+Attention heatmap 27 saved at output/attention/attention_heatmap_27.png
+Attention heatmap 28 saved at output/attention/attention_heatmap_28.png
+Attention heatmap 29 saved at output/attention/attention_heatmap_29.png
+Attention heatmap 30 saved at output/attention/attention_heatmap_30.png
+Attention heatmap 31 saved at output/attention/attention_heatmap_31.png
+Attention heatmap 32 saved at output/attention/attention_heatmap_32.png
+Attention heatmap 33 saved at output/attention/attention_heatmap_33.png
+Attention heatmap 34 saved at output/attention/attention_heatmap_34.png
+Attention heatmap 35 saved at output/attention/attention_heatmap_35.png
+Traceback (most recent call last):
+  File "/home/javitrucas/TFG/scripts/medical_scripts/medical_main.py", line 106, in <module>
+    evaluator.evaluate()
+  File "/home/javitrucas/TFG/scripts/medical_scripts/medical_evaluation.py", line 166, in evaluate
+    fig.savefig(filepath)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/matplotlib/figure.py", line 3490, in savefig
+    self.canvas.print_figure(fname, **kwargs)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/matplotlib/backend_bases.py", line 2184, in print_figure
+    result = print_method(
+             ^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/matplotlib/backend_bases.py", line 2040, in <lambda>
+    print_method = functools.wraps(meth)(lambda *args, **kwargs: meth(
+                                                                 ^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/matplotlib/backends/backend_agg.py", line 481, in print_png
+    self._print_pil(filename_or_obj, "png", pil_kwargs, metadata)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/matplotlib/backends/backend_agg.py", line 429, in _print_pil
+    FigureCanvasAgg.draw(self)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/matplotlib/backends/backend_agg.py", line 382, in draw
+    self.figure.draw(self.renderer)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/matplotlib/artist.py", line 94, in draw_wrapper
+    result = draw(artist, renderer, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/matplotlib/artist.py", line 71, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/matplotlib/figure.py", line 3257, in draw
+    mimage._draw_list_compositing_images(
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/matplotlib/image.py", line 134, in _draw_list_compositing_images
+    a.draw(renderer)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/matplotlib/artist.py", line 71, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/matplotlib/axes/_base.py", line 3145, in draw
+    self._update_title_position(renderer)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/matplotlib/axes/_base.py", line 3089, in _update_title_position
+    ax.yaxis.get_tightbbox(renderer)  # update offsetText
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/matplotlib/axis.py", line 1367, in get_tightbbox
+    tlb1, tlb2 = self._get_ticklabel_bboxes(ticks_to_draw, renderer)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/matplotlib/axis.py", line 1343, in _get_ticklabel_bboxes
+    return ([tick.label1.get_window_extent(renderer)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/matplotlib/axis.py", line 1343, in <listcomp>
+    return ([tick.label1.get_window_extent(renderer)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/matplotlib/text.py", line 969, in get_window_extent
+    bbox, info, descent = self._get_layout(self._renderer)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/matplotlib/text.py", line 503, in _get_layout
+    bbox = Bbox.from_bounds(xmin, ymin, width, height)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/matplotlib/transforms.py", line 802, in from_bounds
+    return Bbox.from_extents(x0, y0, x0 + width, y0 + height)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/matplotlib/transforms.py", line 820, in from_extents
+    bbox = Bbox(np.reshape(args, (2, 2)))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/matplotlib/transforms.py", line 767, in __init__
+    self._points_orig = self._points.copy()
+                        ^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

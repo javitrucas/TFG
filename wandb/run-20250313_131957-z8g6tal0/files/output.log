@@ -1,0 +1,39 @@
+=== Iniciando experimento con pooling_type=mean ===
+rsna
+[RSNADataset] Scanning files...
+[RSNADataset] Found 1000 already processed bags
+[RSNADataset] Number of bags found: 1000
+rsna
+[RSNADataset] Scanning files...
+[RSNADataset] Found 150 already processed bags
+[RSNADataset] Number of bags found: 150
+Epoch 1/5
+Train - Loss: 0.6633, Acc: 0.6176, AUC: 0.6295, F1: 0.4681
+Val   - Loss: 0.5956, Acc: 0.7000, AUC: 0.7416, F1: 0.6018
+Final model saved to ./models/rsna_mean/model_mean.pth
+Epoch 2/5
+Train - Loss: 0.6241, Acc: 0.6682, AUC: 0.6965, F1: 0.5580
+Val   - Loss: 0.6242, Acc: 0.6600, AUC: 0.7709, F1: 0.6752
+Final model saved to ./models/rsna_mean/model_mean.pth
+Epoch 3/5
+Train - Loss: 0.5854, Acc: 0.6918, AUC: 0.7436, F1: 0.5944
+Val   - Loss: 0.6902, Acc: 0.6333, AUC: 0.8026, F1: 0.2029
+Final model saved to ./models/rsna_mean/model_mean.pth
+Epoch 4/5
+Train - Loss: 0.5513, Acc: 0.7188, AUC: 0.7833, F1: 0.6212
+Val   - Loss: 0.5287, Acc: 0.7267, AUC: 0.8138, F1: 0.6168
+Final model saved to ./models/rsna_mean/model_mean.pth
+Epoch 5/5
+Train - Loss: 0.5621, Acc: 0.7306, AUC: 0.7782, F1: 0.6514
+Val   - Loss: 0.5104, Acc: 0.7600, AUC: 0.8327, F1: 0.6842
+Final model saved to ./models/rsna_mean/model_mean.pth
+./models/rsna_mean/model_mean.pth
+Model loaded successfully from ./models/rsna_mean/model_mean.pth
+
+--- Evaluation Results ---
+Optimal Threshold: 0.5492
+Accuracy: 0.8000, AUC: 0.8649
+Precision: 0.8182, Recall: 0.7500, F1-Score: 0.7826
+Confusion Matrix:
+[[66 12]
+ [18 54]]

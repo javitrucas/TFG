@@ -1,0 +1,61 @@
+=== Iniciando experimento con pooling_type=attention ===
+rsna
+[RSNADataset] Scanning files...
+[RSNADataset] Found 1000 already processed bags
+[RSNADataset] Number of bags found: 1000
+rsna
+[RSNADataset] Scanning files...
+[RSNADataset] Found 150 already processed bags
+[RSNADataset] Number of bags found: 150
+Epoch 1/5
+Train - Loss: 0.6544, Acc: 0.6306, AUC: 0.6445, F1: 0.4903
+Val   - Loss: 0.6020, Acc: 0.7000, AUC: 0.7256, F1: 0.6018
+Final model saved to ./models/rsna_attention/model_attention.pth
+Epoch 2/5
+Train - Loss: 0.5859, Acc: 0.6906, AUC: 0.7495, F1: 0.5832
+Val   - Loss: 0.5607, Acc: 0.7267, AUC: 0.7727, F1: 0.6239
+Final model saved to ./models/rsna_attention/model_attention.pth
+Epoch 3/5
+Train - Loss: 0.5647, Acc: 0.7118, AUC: 0.7684, F1: 0.6237
+Val   - Loss: 0.5387, Acc: 0.7400, AUC: 0.7927, F1: 0.6549
+Final model saved to ./models/rsna_attention/model_attention.pth
+Epoch 4/5
+Train - Loss: 0.5311, Acc: 0.7565, AUC: 0.8001, F1: 0.6840
+Val   - Loss: 0.5593, Acc: 0.7333, AUC: 0.8332, F1: 0.7260
+Final model saved to ./models/rsna_attention/model_attention.pth
+Epoch 5/5
+Train - Loss: 0.5152, Acc: 0.7494, AUC: 0.8157, F1: 0.6718
+Val   - Loss: 0.6076, Acc: 0.6667, AUC: 0.8367, F1: 0.3750
+Final model saved to ./models/rsna_attention/model_attention.pth
+./models/rsna_attention/model_attention.pth
+Model loaded successfully from ./models/rsna_attention/model_attention.pth
+
+--- Evaluation Results ---
+Optimal Threshold: 0.2058
+Accuracy: 0.8133, AUC: 0.8575
+Precision: 0.7683, Recall: 0.8750, F1-Score: 0.8182
+Confusion Matrix:
+[[59 19]
+ [ 9 63]]
+Traceback (most recent call last):
+  File "/home/javitrucas/TFG/scripts/medical_scripts/medical_main.py", line 106, in <module>
+    evaluator.evaluate()
+  File "/home/javitrucas/TFG/scripts/medical_scripts/medical_evaluation.py", line 146, in evaluate
+    fig = self._plot_heatmap(weights, 'attention')
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/TFG/scripts/medical_scripts/medical_evaluation.py", line 47, in _plot_heatmap
+    ax.bar(indices, weights, color='blue', alpha=0.7)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/matplotlib/__init__.py", line 1521, in inner
+    return func(
+           ^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/matplotlib/axes/_axes.py", line 2635, in bar
+    r = mpatches.Rectangle(
+        ^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/matplotlib/patches.py", line 772, in __init__
+    super().__init__(**kwargs)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/matplotlib/patches.py", line 92, in __init__
+    self.set_linewidth(linewidth)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/matplotlib/patches.py", line 439, in set_linewidth
+    self._linewidth = float(w)
+                      ^^^^^^^^
+TypeError: only length-1 arrays can be converted to Python scalars

@@ -4,6 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.metrics import roc_auc_score, confusion_matrix, precision_recall_fscore_support, roc_curve
 from scripts.model import MILModel  # Asegúrate de que el modelo incluya pooling_type
+from scripts.medical_scripts.visualization_helper import VisualizationHelper  # Importar la nueva clase
 
 class ModelEvaluator:
     def __init__(
@@ -29,23 +30,47 @@ class ModelEvaluator:
         self.test_auc_roc = []
         self.test_f1_score = []
 
+        # Crear directorio de salida según el tipo de pooling
+        self.output_dir = f"output/{self.pooling_type}"
+        os.makedirs(self.output_dir, exist_ok=True)
+
+        # Inicializar el helper de visualización
+        self.visualization_helper = VisualizationHelper(self.output_dir)
+
     def _plot_attention_heatmap(self, attention_weights):
         """
-        Genera un gráfico de barras para visualizar pesos de atención.
+        Genera un heatmap de atención para visualización y guardado.
         """
         if isinstance(attention_weights, torch.Tensor):
             attention_weights = attention_weights.detach().cpu().numpy()
-        
-        # Crear gráfico de barras
-        fig, ax = plt.subplots(figsize=(10, 6))
-        indices = np.arange(len(attention_weights))
-        ax.bar(indices, attention_weights, color='blue', alpha=0.7)
-        ax.set_title("Attention Weights per Instance")
-        ax.set_xlabel("Instance Index")
-        ax.set_ylabel("Attention Weight")
-        ax.set_xticks(indices)
-        ax.grid(axis='y', linestyle='--', alpha=0.5)
+
+        fig, ax = plt.subplots(figsize=(6, 6))
+        cax = ax.imshow(attention_weights, cmap='viridis', aspect='auto')
+        fig.colorbar(cax, ax=ax)
+        ax.set_title("Attention Weights")
+        ax.set_xlabel("Instances")
+        ax.set_ylabel("Bags")
         return fig
+
+    def _save_confusion_matrix(self, cm, filename):
+        """
+        Guarda la matriz de confusión como una imagen.
+        """
+        fig, ax = plt.subplots(figsize=(6, 6))
+        cax = ax.matshow(cm, cmap='Blues')
+        fig.colorbar(cax)
+
+        # Etiquetas
+        ax.set_xticklabels([''] + ["Negative", "Positive"])
+        ax.set_yticklabels([''] + ["Negative", "Positive"])
+        ax.set_xlabel('Predicted')
+        ax.set_ylabel('True')
+
+        # Guardar la matriz de confusión
+        filepath = os.path.join(self.output_dir, filename)
+        plt.savefig(filepath)
+        plt.close(fig)
+        print(f"Confusion matrix saved at {filepath}")
 
     def _load_model(self):
         """
@@ -72,12 +97,12 @@ class ModelEvaluator:
         """
         model = self._load_model()
         criterion = torch.nn.BCEWithLogitsLoss()
-        all_labels, all_probs, attention_weights_list = [], [], []
+        all_labels, all_probs, attention_weights_list, all_patches = [], [], [], []
 
         with torch.no_grad():
             for batch in self.test_loader:
                 # Desempaquetar batch según el formato del dataset
-                bag_data, bag_label, _, adj_mat, mask = batch  # Ajustar según el dataset_loader
+                bag_data, bag_label, patches, adj_mat, mask = batch  # Asumimos que 'patches' está disponible
                 bag_data = bag_data.to(self.device)
                 bag_label = bag_label.to(self.device)
                 mask = mask.to(self.device) if mask is not None else None
@@ -96,9 +121,10 @@ class ModelEvaluator:
                 all_probs.extend(probs)
                 all_labels.extend(labels)
 
-                # Almacenar pesos de atención solo si es necesario
+                # Almacenar pesos de atención y parches solo si es necesario
                 if self.pooling_type == 'attention' and attention_weights is not None:
                     attention_weights_list.append(attention_weights.cpu().numpy())
+                    all_patches.append(patches)  # Guardar los parches para visualización
 
         # Calcular métricas finales
         all_labels = np.array(all_labels)
@@ -131,10 +157,24 @@ class ModelEvaluator:
             "optimal_threshold": optimal_threshold
         }
 
+        # Guardar la matriz de confusión
+        self._save_confusion_matrix(cm, "confusion_matrix.png")
+
         # Registrar métricas en wandb
         self._log_metrics(metrics)
         
-        #self._plot_attention_heatmap(attention_weights)
+        # Guardar heatmap de atención si aplica
+        if self.pooling_type == 'attention':
+            for i, (weights, patches) in enumerate(zip(attention_weights_list[:5], all_patches[:5])):
+                fig = self._plot_attention_heatmap(weights)
+                filepath = os.path.join(self.output_dir, f"attention_heatmap_{i}.png")
+                fig.savefig(filepath)
+                plt.close(fig)
+                print(f"Attention heatmap {i} saved at {filepath}")
+
+                # Visualizar atención en las imágenes originales
+                # image = self._reconstruct_image_from_patches(patches)  # Reconstruir la imagen original
+                # self.visualization_helper.plot_attention_on_image(image, patches, weights, bag_id=i)
 
         # Devolver métricas y pesos de atención (solo si aplica)
         return metrics, attention_weights_list
@@ -173,3 +213,11 @@ class ModelEvaluator:
                             self._plot_attention_heatmap(weights)
                         )
                     })
+
+    def _reconstruct_image_from_patches(self, patches):
+        """
+        Reconstruye la imagen original a partir de los parches.
+        Esto depende de cómo estén organizados tus datos.
+        """
+        # Implementar la lógica para reconstruir la imagen aquí
+        raise NotImplementedError("Implementa la reconstrucción de la imagen según tu estructura de datos.")
