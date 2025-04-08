@@ -1,0 +1,10 @@
+{"time":"2025-03-14T12:11:47.569082253+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"/home/javitrucas/TFG/notebooks/wandb/run-20250314_121147-k1yxauky/logs/debug-core.log"}
+{"time":"2025-03-14T12:11:47.685571928+01:00","level":"INFO","msg":"created new stream","id":"k1yxauky"}
+{"time":"2025-03-14T12:11:47.685636807+01:00","level":"INFO","msg":"stream: started","id":"k1yxauky"}
+{"time":"2025-03-14T12:11:47.685681401+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"k1yxauky"}
+{"time":"2025-03-14T12:11:47.685698231+01:00","level":"INFO","msg":"handler: started","stream_id":"k1yxauky"}
+{"time":"2025-03-14T12:11:47.685736817+01:00","level":"INFO","msg":"sender: started","stream_id":"k1yxauky"}
+{"time":"2025-03-14T12:11:48.015901663+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-14T12:11:48.976198806+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-03-14T12:13:38.832461794+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-03-14T12:13:39.035816515+01:00","level":"INFO","msg":"Pausing system monitor"}

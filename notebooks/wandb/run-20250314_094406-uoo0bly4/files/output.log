@@ -1,0 +1,12 @@
+panda
+[WSIDataset] Scanning files...
+[WSIDataset] Building data dict: 100%|██████████| 8822/8822 [00:58<00:00, 151.88it/s]
+[WSIDataset] Skipped 5 bags
+[WSIDataset] Found 8817 already processed bags
+panda
+[WSIDataset] Scanning files...
+[WSIDataset] Building data dict: 100%|██████████| 1794/1794 [00:15<00:00, 118.81it/s]
+[WSIDataset] Skipped 0 bags
+[WSIDataset] Found 1794 already processed bags
+rsna
+[RSNADataset] Scanning files...

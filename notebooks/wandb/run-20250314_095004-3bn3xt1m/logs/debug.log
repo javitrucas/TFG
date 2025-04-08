@@ -1,0 +1,9 @@
+2025-03-14 09:50:04,451 INFO    MainThread:3892445 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /home/javitrucas/TFG/notebooks/wandb/run-20250314_095004-3bn3xt1m/logs/debug.log
+2025-03-14 09:50:04,451 INFO    MainThread:3892445 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /home/javitrucas/TFG/notebooks/wandb/run-20250314_095004-3bn3xt1m/logs/debug-internal.log
+2025-03-14 09:50:04,451 INFO    MainThread:3892445 [wandb_init.py:init():761] calling init triggers
+2025-03-14 09:50:04,452 INFO    MainThread:3892445 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'dataset_name': 'rsna-features_resnet18', 'num_epochs': 5, 'learning_rate': 0.001, 'batch_size': 1, 'val_prop': 0.2, 'seed': 42, 'use_inst_distances': False, 'adj_mat_mode': 'relative', '_wandb': {}}
+2025-03-14 09:50:04,452 INFO    MainThread:3892445 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-03-14 09:50:26,406 INFO    MainThread:3892445 [wandb_run.py:_config_callback():1261] config_cb ('_wandb', 'visualize', 'val_confusion_matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': 'Confusion Matrix Curve'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'val_confusion_matrix_table'}], 'fields': []}]}]}}} None
+2025-03-14 09:50:27,395 INFO    MainThread:3892445 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-03-14 09:50:27,396 INFO    MainThread:3892445 [wandb_init.py:_pause_backend():564] pausing backend

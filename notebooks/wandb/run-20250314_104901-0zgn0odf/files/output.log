@@ -1,0 +1,15 @@
+panda
+[WSIDataset] Scanning files...
+[WSIDataset] Building data dict: 100%|██████████| 8822/8822 [01:16<00:00, 115.77it/s]
+[WSIDataset] Skipped 5 bags
+[WSIDataset] Found 8817 already processed bags
+panda
+[WSIDataset] Scanning files...
+[WSIDataset] Building data dict: 100%|██████████| 1794/1794 [00:16<00:00, 111.33it/s]
+[WSIDataset] Skipped 0 bags
+[WSIDataset] Found 1794 already processed bags
+Epoch 1/1
+Train - Loss: 0.2564, Acc: 0.9117, AUC: 0.9629, F1: 0.9395
+Val   - Loss: 0.1840, Acc: 0.9303, AUC: 0.9769, F1: 0.9521
+Final model saved to ./models/panda/model_attention.pth
+[34m[1mwandb[0m: [33mWARNING[0m Fatal error while uploading data. Some run data will not be synced, but it will still be written to disk. Use `wandb sync` at the end of the run to try uploading.

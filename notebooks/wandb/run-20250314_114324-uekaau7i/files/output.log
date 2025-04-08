@@ -1,0 +1,66 @@
+panda
+[WSIDataset] Scanning files...
+[WSIDataset] Building data dict: 100%|██████████| 8822/8822 [00:54<00:00, 163.24it/s]
+[WSIDataset] Skipped 5 bags
+[WSIDataset] Found 8817 already processed bags
+panda
+[WSIDataset] Scanning files...
+[WSIDataset] Building data dict: 100%|██████████| 1794/1794 [00:12<00:00, 147.89it/s]
+[WSIDataset] Skipped 0 bags
+[WSIDataset] Found 1794 already processed bags
+Epoch 1/1
+Train - Loss: 0.2469, Acc: 0.9163, AUC: 0.9656, F1: 0.9426
+Val   - Loss: 0.2824, Acc: 0.9201, AUC: 0.9726, F1: 0.9455
+Final model saved to ./models/panda/model_attention.pth
+Model loaded successfully from ./models/panda/model.pth
+/home/javitrucas/TFG/scripts/medical_scripts/medical_evaluation.py:64: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+  ax.set_xticklabels([''] + ["Negative", "Positive"])
+/home/javitrucas/TFG/scripts/medical_scripts/medical_evaluation.py:65: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+  ax.set_yticklabels([''] + ["Negative", "Positive"])
+Confusion matrix saved at output/attention/confusion_matrix.png
+
+--- Evaluation Results ---
+Optimal Threshold: 0.9820
+Accuracy: 0.9225, AUC: 0.9728
+Precision: 0.9793, Recall: 0.9121, F1-Score: 0.9445
+Confusion Matrix:
+[[ 472   25]
+ [ 114 1183]]
+Attention heatmap 0 saved at output/attention/attention_heatmap_0.png
+Attention heatmap 1 saved at output/attention/attention_heatmap_1.png
+Attention heatmap 2 saved at output/attention/attention_heatmap_2.png
+Attention heatmap 3 saved at output/attention/attention_heatmap_3.png
+Attention heatmap 4 saved at output/attention/attention_heatmap_4.png
+panda
+[WSIDataset] Scanning files...
+[WSIDataset] Building data dict: 100%|██████████| 8822/8822 [00:55<00:00, 157.83it/s]
+[WSIDataset] Skipped 5 bags
+[WSIDataset] Found 8817 already processed bags
+panda
+[WSIDataset] Scanning files...
+[WSIDataset] Building data dict: 100%|██████████| 1794/1794 [00:12<00:00, 142.79it/s]
+[WSIDataset] Skipped 0 bags
+[WSIDataset] Found 1794 already processed bags
+Epoch 1/1
+Train - Loss: 0.2547, Acc: 0.9108, AUC: 0.9636, F1: 0.9389
+Val   - Loss: 0.3748, Acc: 0.8294, AUC: 0.9825, F1: 0.8943
+Final model saved to ./models/panda/model_attention.pth
+Model loaded successfully from ./models/panda/model.pth
+/home/javitrucas/TFG/scripts/medical_scripts/medical_evaluation.py:64: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+  ax.set_xticklabels([''] + ["Negative", "Positive"])
+/home/javitrucas/TFG/scripts/medical_scripts/medical_evaluation.py:65: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+  ax.set_yticklabels([''] + ["Negative", "Positive"])
+Confusion matrix saved at output/attention/confusion_matrix.png
+
+--- Evaluation Results ---
+Optimal Threshold: 0.9926
+Accuracy: 0.9431, AUC: 0.9839
+Precision: 0.9910, Recall: 0.9298, F1-Score: 0.9594
+Confusion Matrix:
+[[ 486   11]
+ [  91 1206]]
+Attention heatmap 0 saved at output/attention/attention_heatmap_0.png
+Attention heatmap 1 saved at output/attention/attention_heatmap_1.png
+Attention heatmap 2 saved at output/attention/attention_heatmap_2.png
+Attention heatmap 3 saved at output/attention/attention_heatmap_3.png
+Attention heatmap 4 saved at output/attention/attention_heatmap_4.png

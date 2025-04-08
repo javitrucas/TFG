@@ -1,0 +1,18 @@
+{"time":"2025-03-14T10:49:01.038541694+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"/home/javitrucas/TFG/notebooks/wandb/run-20250314_104901-0zgn0odf/logs/debug-core.log"}
+{"time":"2025-03-14T10:49:01.153970524+01:00","level":"INFO","msg":"created new stream","id":"0zgn0odf"}
+{"time":"2025-03-14T10:49:01.154029325+01:00","level":"INFO","msg":"stream: started","id":"0zgn0odf"}
+{"time":"2025-03-14T10:49:01.154073521+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"0zgn0odf"}
+{"time":"2025-03-14T10:49:01.154103708+01:00","level":"INFO","msg":"sender: started","stream_id":"0zgn0odf"}
+{"time":"2025-03-14T10:49:01.154095403+01:00","level":"INFO","msg":"handler: started","stream_id":"0zgn0odf"}
+{"time":"2025-03-14T10:49:01.477001687+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-14T10:49:02.557876203+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-03-14T10:51:28.486214391+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-03-14T10:51:28.613440727+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-03-14T10:51:34.466085383+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-03-14T10:51:34.591988445+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-03-14T10:51:40.695250514+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-03-14T10:51:40.701302135+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-03-14T10:51:43.376733186+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-03-14T10:59:46.551689743+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-03-14T11:21:47.035455407+01:00","level":"ERROR","msg":"HTTP error","status":404,"method":"POST","url":"https://api.wandb.ai/files/javitrucas-universidad-de-granada/TFG/0zgn0odf/file_stream"}
+{"time":"2025-03-14T11:21:47.035559757+01:00","level":"ERROR+4","msg":"filestream: fatal error: filestream: failed to upload: 404 Not Found path=files/javitrucas-universidad-de-granada/TFG/0zgn0odf/file_stream: {\"error\":\"run TFG/0zgn0odf not found while streaming file\"}"}

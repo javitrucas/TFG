@@ -1,0 +1,117 @@
+2025-03-14 11:55:37,039 INFO    MainThread:3917922 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /home/javitrucas/TFG/notebooks/wandb/run-20250314_115537-sbuzdgxx/logs/debug.log
+2025-03-14 11:55:37,039 INFO    MainThread:3917922 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /home/javitrucas/TFG/notebooks/wandb/run-20250314_115537-sbuzdgxx/logs/debug-internal.log
+2025-03-14 11:55:37,040 INFO    MainThread:3917922 [wandb_init.py:monkeypatch_ipython():599] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7f2350682150>
+2025-03-14 11:55:37,040 INFO    MainThread:3917922 [wandb_init.py:init():761] calling init triggers
+2025-03-14 11:55:37,040 INFO    MainThread:3917922 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'dataset_name': 'rsna-features_resnet50', 'input_feature_dim': 512, 'feature_dim': 128, 'pooling_type': 'attention', 'num_epochs': 50, 'learning_rate': 0.001, 'batch_size': 1, 'val_prop': 0.2, 'seed': 42, 'use_inst_distances': False, 'adj_mat_mode': 'relative', '_wandb': {}}
+2025-03-14 11:55:37,040 INFO    MainThread:3917922 [wandb_init.py:init():784] starting backend
+2025-03-14 11:55:37,040 INFO    MainThread:3917922 [wandb_init.py:init():788] sending inform_init request
+2025-03-14 11:55:37,042 INFO    MainThread:3917922 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2025-03-14 11:55:37,043 INFO    MainThread:3917922 [wandb_init.py:init():803] backend started and connected
+2025-03-14 11:55:37,046 INFO    MainThread:3917922 [wandb_run.py:_label_probe_notebook():1204] probe notebook
+2025-03-14 11:55:37,059 INFO    MainThread:3917922 [wandb_init.py:init():896] updated telemetry
+2025-03-14 11:55:37,070 INFO    MainThread:3917922 [wandb_init.py:init():920] communicating run to backend with 90.0 second timeout
+2025-03-14 11:55:37,424 INFO    MainThread:3917922 [wandb_init.py:init():995] starting run threads in backend
+2025-03-14 11:55:37,623 INFO    MainThread:3917922 [wandb_run.py:_console_start():2377] atexit reg
+2025-03-14 11:55:37,623 INFO    MainThread:3917922 [wandb_run.py:_redirect():2227] redirect: wrap_raw
+2025-03-14 11:55:37,624 INFO    MainThread:3917922 [wandb_run.py:_redirect():2292] Wrapping output streams.
+2025-03-14 11:55:37,624 INFO    MainThread:3917922 [wandb_run.py:_redirect():2317] Redirects installed.
+2025-03-14 11:55:37,632 INFO    MainThread:3917922 [wandb_init.py:init():1037] run started, returning control to user process
+2025-03-14 11:55:37,879 INFO    MainThread:3917922 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-03-14 11:55:37,880 INFO    MainThread:3917922 [wandb_init.py:_pause_backend():564] pausing backend
+2025-03-14 11:56:05,678 INFO    MainThread:3917922 [wandb_init.py:_resume_backend():569] resuming backend
+2025-03-14 11:56:05,685 INFO    MainThread:3917922 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /home/javitrucas/TFG/notebooks/wandb/run-20250314_115605-0c7c8mwd/logs/debug.log
+2025-03-14 11:56:05,686 INFO    MainThread:3917922 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /home/javitrucas/TFG/notebooks/wandb/run-20250314_115605-0c7c8mwd/logs/debug-internal.log
+2025-03-14 11:56:05,686 INFO    MainThread:3917922 [wandb_init.py:init():761] calling init triggers
+2025-03-14 11:56:05,686 INFO    MainThread:3917922 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'dataset_name': 'rsna-features_resnet18', 'input_feature_dim': 512, 'feature_dim': 128, 'pooling_type': 'attention', 'num_epochs': 50, 'learning_rate': 0.001, 'batch_size': 1, 'val_prop': 0.2, 'seed': 42, 'use_inst_distances': False, 'adj_mat_mode': 'relative', '_wandb': {}}
+2025-03-14 11:56:05,686 INFO    MainThread:3917922 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-03-14 11:56:05,887 INFO    MainThread:3917922 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-03-14 11:56:05,888 INFO    MainThread:3917922 [wandb_init.py:_pause_backend():564] pausing backend
+2025-03-14 11:56:15,425 INFO    MainThread:3917922 [wandb_init.py:_resume_backend():569] resuming backend
+2025-03-14 11:56:15,433 INFO    MainThread:3917922 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /home/javitrucas/TFG/notebooks/wandb/run-20250314_115615-ft7qvy6p/logs/debug.log
+2025-03-14 11:56:15,433 INFO    MainThread:3917922 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /home/javitrucas/TFG/notebooks/wandb/run-20250314_115615-ft7qvy6p/logs/debug-internal.log
+2025-03-14 11:56:15,434 INFO    MainThread:3917922 [wandb_init.py:init():761] calling init triggers
+2025-03-14 11:56:15,434 INFO    MainThread:3917922 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'dataset_name': 'rsna-features_resnet18', 'num_epochs': 5, 'learning_rate': 0.001, 'batch_size': 1, 'val_prop': 0.2, 'seed': 42, 'use_inst_distances': False, 'adj_mat_mode': 'relative', '_wandb': {}}
+2025-03-14 11:56:15,434 INFO    MainThread:3917922 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-03-14 11:56:15,557 INFO    MainThread:3917922 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-03-14 11:56:15,558 INFO    MainThread:3917922 [wandb_init.py:_pause_backend():564] pausing backend
+2025-03-14 11:59:09,797 INFO    MainThread:3917922 [wandb_init.py:_resume_backend():569] resuming backend
+2025-03-14 11:59:09,805 INFO    MainThread:3917922 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /home/javitrucas/TFG/notebooks/wandb/run-20250314_115909-jfag57dy/logs/debug.log
+2025-03-14 11:59:09,806 INFO    MainThread:3917922 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /home/javitrucas/TFG/notebooks/wandb/run-20250314_115909-jfag57dy/logs/debug-internal.log
+2025-03-14 11:59:09,806 INFO    MainThread:3917922 [wandb_init.py:init():761] calling init triggers
+2025-03-14 11:59:09,806 INFO    MainThread:3917922 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'dataset_name': 'rsna-features_resnet18', 'input_feature_dim': 512, 'feature_dim': 128, 'pooling_type': 'attention', 'num_epochs': 50, 'learning_rate': 0.001, 'batch_size': 1, 'val_prop': 0.2, 'seed': 42, 'use_inst_distances': False, 'adj_mat_mode': 'relative', '_wandb': {}}
+2025-03-14 11:59:09,806 INFO    MainThread:3917922 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-03-14 11:59:09,997 INFO    MainThread:3917922 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-03-14 11:59:09,998 INFO    MainThread:3917922 [wandb_init.py:_pause_backend():564] pausing backend
+2025-03-14 12:05:00,967 INFO    MainThread:3917922 [wandb_init.py:_resume_backend():569] resuming backend
+2025-03-14 12:05:01,125 INFO    MainThread:3917922 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-03-14 12:05:01,126 INFO    MainThread:3917922 [wandb_init.py:_pause_backend():564] pausing backend
+2025-03-14 12:05:03,766 INFO    MainThread:3917922 [wandb_init.py:_resume_backend():569] resuming backend
+2025-03-14 12:05:03,920 INFO    MainThread:3917922 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-03-14 12:05:03,921 INFO    MainThread:3917922 [wandb_init.py:_pause_backend():564] pausing backend
+2025-03-14 12:05:06,536 INFO    MainThread:3917922 [wandb_init.py:_resume_backend():569] resuming backend
+2025-03-14 12:05:06,544 INFO    MainThread:3917922 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /home/javitrucas/TFG/notebooks/wandb/run-20250314_120506-m3jcgwfs/logs/debug.log
+2025-03-14 12:05:06,544 INFO    MainThread:3917922 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /home/javitrucas/TFG/notebooks/wandb/run-20250314_120506-m3jcgwfs/logs/debug-internal.log
+2025-03-14 12:05:06,544 INFO    MainThread:3917922 [wandb_init.py:init():761] calling init triggers
+2025-03-14 12:05:06,545 INFO    MainThread:3917922 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'dataset_name': 'rsna-features_resnet18', 'input_feature_dim': 512, 'feature_dim': 128, 'pooling_type': 'attention', 'num_epochs': 50, 'learning_rate': 0.001, 'batch_size': 1, 'val_prop': 0.2, 'seed': 42, 'use_inst_distances': False, 'adj_mat_mode': 'relative', '_wandb': {}}
+2025-03-14 12:05:06,545 INFO    MainThread:3917922 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-03-14 12:05:06,735 INFO    MainThread:3917922 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-03-14 12:05:06,736 INFO    MainThread:3917922 [wandb_init.py:_pause_backend():564] pausing backend
+2025-03-14 12:06:16,829 INFO    MainThread:3917922 [wandb_init.py:_resume_backend():569] resuming backend
+2025-03-14 12:06:16,836 INFO    MainThread:3917922 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-03-14 12:06:16,837 INFO    MainThread:3917922 [wandb_init.py:_pause_backend():564] pausing backend
+2025-03-14 12:06:18,769 INFO    MainThread:3917922 [wandb_init.py:_resume_backend():569] resuming backend
+2025-03-14 12:06:18,776 INFO    MainThread:3917922 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-03-14 12:06:18,776 INFO    MainThread:3917922 [wandb_init.py:_pause_backend():564] pausing backend
+2025-03-14 12:06:28,116 INFO    MainThread:3917922 [wandb_init.py:_resume_backend():569] resuming backend
+2025-03-14 12:06:28,123 INFO    MainThread:3917922 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /home/javitrucas/TFG/notebooks/wandb/run-20250314_120628-lr5bege8/logs/debug.log
+2025-03-14 12:06:28,124 INFO    MainThread:3917922 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /home/javitrucas/TFG/notebooks/wandb/run-20250314_120628-lr5bege8/logs/debug-internal.log
+2025-03-14 12:06:28,124 INFO    MainThread:3917922 [wandb_init.py:init():761] calling init triggers
+2025-03-14 12:06:28,124 INFO    MainThread:3917922 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'dataset_name': 'rsna-features_resnet18', 'input_feature_dim': 512, 'feature_dim': 128, 'pooling_type': 'attention', 'num_epochs': 50, 'learning_rate': 0.001, 'batch_size': 1, 'val_prop': 0.2, 'seed': 42, 'use_inst_distances': False, 'adj_mat_mode': 'relative', '_wandb': {}}
+2025-03-14 12:06:28,124 INFO    MainThread:3917922 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-03-14 12:06:28,332 INFO    MainThread:3917922 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-03-14 12:06:28,333 INFO    MainThread:3917922 [wandb_init.py:_pause_backend():564] pausing backend
+2025-03-14 12:06:40,694 INFO    MainThread:3917922 [wandb_init.py:_resume_backend():569] resuming backend
+2025-03-14 12:06:40,701 INFO    MainThread:3917922 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-03-14 12:06:40,702 INFO    MainThread:3917922 [wandb_init.py:_pause_backend():564] pausing backend
+2025-03-14 12:07:54,876 INFO    MainThread:3917922 [wandb_init.py:_resume_backend():569] resuming backend
+2025-03-14 12:07:54,884 INFO    MainThread:3917922 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /home/javitrucas/TFG/notebooks/wandb/run-20250314_120754-lvkwtiq1/logs/debug.log
+2025-03-14 12:07:54,884 INFO    MainThread:3917922 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /home/javitrucas/TFG/notebooks/wandb/run-20250314_120754-lvkwtiq1/logs/debug-internal.log
+2025-03-14 12:07:54,884 INFO    MainThread:3917922 [wandb_init.py:init():761] calling init triggers
+2025-03-14 12:07:54,885 INFO    MainThread:3917922 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'dataset_name': 'rsna-features_resnet18', 'pooling_type': 'attention', 'num_epochs': 50, 'learning_rate': 0.001, 'batch_size': 1, 'val_prop': 0.2, 'seed': 42, 'use_inst_distances': False, 'adj_mat_mode': 'relative', '_wandb': {}}
+2025-03-14 12:07:54,885 INFO    MainThread:3917922 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-03-14 12:07:55,003 INFO    MainThread:3917922 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-03-14 12:07:55,003 INFO    MainThread:3917922 [wandb_init.py:_pause_backend():564] pausing backend
+2025-03-14 12:08:06,628 INFO    MainThread:3917922 [wandb_init.py:_resume_backend():569] resuming backend
+2025-03-14 12:08:06,635 INFO    MainThread:3917922 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /home/javitrucas/TFG/notebooks/wandb/run-20250314_120806-jcim3err/logs/debug.log
+2025-03-14 12:08:06,636 INFO    MainThread:3917922 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /home/javitrucas/TFG/notebooks/wandb/run-20250314_120806-jcim3err/logs/debug-internal.log
+2025-03-14 12:08:06,636 INFO    MainThread:3917922 [wandb_init.py:init():761] calling init triggers
+2025-03-14 12:08:06,636 INFO    MainThread:3917922 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'dataset_name': 'rsna-features_resnet18', 'num_epochs': 50, 'learning_rate': 0.001, 'batch_size': 1, 'val_prop': 0.2, 'seed': 42, 'use_inst_distances': False, 'adj_mat_mode': 'relative', '_wandb': {}}
+2025-03-14 12:08:06,637 INFO    MainThread:3917922 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-03-14 12:08:06,758 INFO    MainThread:3917922 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-03-14 12:08:06,759 INFO    MainThread:3917922 [wandb_init.py:_pause_backend():564] pausing backend
+2025-03-14 12:08:55,410 INFO    MainThread:3917922 [wandb_init.py:_resume_backend():569] resuming backend
+2025-03-14 12:08:55,417 INFO    MainThread:3917922 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /home/javitrucas/TFG/notebooks/wandb/run-20250314_120855-wah4qqxy/logs/debug.log
+2025-03-14 12:08:55,418 INFO    MainThread:3917922 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /home/javitrucas/TFG/notebooks/wandb/run-20250314_120855-wah4qqxy/logs/debug-internal.log
+2025-03-14 12:08:55,418 INFO    MainThread:3917922 [wandb_init.py:init():761] calling init triggers
+2025-03-14 12:08:55,418 INFO    MainThread:3917922 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'dataset_name': 'rsna-features_resnet18', 'input_feature_dim': 512, 'feature_dim': 128, 'pooling_type': 'attention', 'num_epochs': 50, 'learning_rate': 0.001, 'batch_size': 1, 'val_prop': 0.2, 'seed': 42, 'use_inst_distances': False, 'adj_mat_mode': 'relative', '_wandb': {}}
+2025-03-14 12:08:55,419 INFO    MainThread:3917922 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-03-14 12:08:55,609 INFO    MainThread:3917922 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-03-14 12:08:55,610 INFO    MainThread:3917922 [wandb_init.py:_pause_backend():564] pausing backend
+2025-03-14 12:11:05,951 INFO    MainThread:3917922 [wandb_init.py:_resume_backend():569] resuming backend
+2025-03-14 12:11:05,959 INFO    MainThread:3917922 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /home/javitrucas/TFG/notebooks/wandb/run-20250314_121105-verct4qv/logs/debug.log
+2025-03-14 12:11:05,959 INFO    MainThread:3917922 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /home/javitrucas/TFG/notebooks/wandb/run-20250314_121105-verct4qv/logs/debug-internal.log
+2025-03-14 12:11:05,960 INFO    MainThread:3917922 [wandb_init.py:init():761] calling init triggers
+2025-03-14 12:11:05,960 INFO    MainThread:3917922 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'dataset_name': 'rsna-features_resnet18', 'input_feature_dim': 512, 'feature_dim': 128, 'pooling_type': 'attention', 'num_epochs': 50, 'learning_rate': 0.001, 'batch_size': 1, 'val_prop': 0.2, 'seed': 42, 'use_inst_distances': False, 'adj_mat_mode': 'relative', '_wandb': {}}
+2025-03-14 12:11:05,960 INFO    MainThread:3917922 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-03-14 12:11:06,153 INFO    MainThread:3917922 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-03-14 12:11:06,153 INFO    MainThread:3917922 [wandb_init.py:_pause_backend():564] pausing backend

@@ -13,7 +13,9 @@ class Training:
         num_epochs, 
         learning_rate, 
         output_model_dir, 
-        pooling_type='attention',  # Añadir pooling_type
+        pooling_type='attention', 
+        input_feature_dim=None,  # Añadir input_feature_dim
+        feature_dim=128,        # Añadir feature_dim
         patience=5, 
         wandb=None
     ):
@@ -22,14 +24,20 @@ class Training:
         self.num_epochs = num_epochs
         self.learning_rate = learning_rate
         self.output_model_dir = output_model_dir
-        self.pooling_type = pooling_type  # Almacenar el tipo de pooling
+        self.pooling_type = pooling_type
+        self.input_feature_dim = input_feature_dim  # Almacenar input_feature_dim
+        self.feature_dim = feature_dim              # Almacenar feature_dim
         self.patience = patience
         self.wandb = wandb
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         self.scaler = torch.amp.GradScaler('cuda')
         
-        # Inicializar el modelo con el pooling_type
-        self.model = MILModel(pooling_type=self.pooling_type, feature_dim=512).to(self.device)
+        # Inicializar el modelo con los parámetros de la configuración
+        self.model = MILModel(
+            pooling_type=self.pooling_type,
+            input_feature_dim=self.input_feature_dim,  # Usar input_feature_dim de la config
+            feature_dim=self.feature_dim               # Usar feature_dim de la config
+        ).to(self.device)
         
         # Listas para métricas
         self.train_loss_curve = []

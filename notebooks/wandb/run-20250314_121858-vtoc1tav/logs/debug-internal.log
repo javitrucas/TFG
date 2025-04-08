@@ -1,0 +1,18 @@
+{"time":"2025-03-14T12:18:58.626081777+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"/home/javitrucas/TFG/notebooks/wandb/run-20250314_121858-vtoc1tav/logs/debug-core.log"}
+{"time":"2025-03-14T12:18:58.742598641+01:00","level":"INFO","msg":"created new stream","id":"vtoc1tav"}
+{"time":"2025-03-14T12:18:58.742663387+01:00","level":"INFO","msg":"stream: started","id":"vtoc1tav"}
+{"time":"2025-03-14T12:18:58.742692848+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"vtoc1tav"}
+{"time":"2025-03-14T12:18:58.742711681+01:00","level":"INFO","msg":"handler: started","stream_id":"vtoc1tav"}
+{"time":"2025-03-14T12:18:58.742718194+01:00","level":"INFO","msg":"sender: started","stream_id":"vtoc1tav"}
+{"time":"2025-03-14T12:18:59.124751919+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-14T12:19:14.207530706+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-03-14T12:20:02.235290922+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-03-14T12:23:07.959307802+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-14T12:23:07.960451917+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-14T12:23:08.598011961+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-14T12:23:08.872356323+01:00","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2025-03-14T12:23:09.885968278+01:00","level":"INFO","msg":"stream: closing","id":"vtoc1tav"}
+{"time":"2025-03-14T12:23:09.886009066+01:00","level":"INFO","msg":"handler: closed","stream_id":"vtoc1tav"}
+{"time":"2025-03-14T12:23:09.886032993+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"vtoc1tav"}
+{"time":"2025-03-14T12:23:09.886043353+01:00","level":"INFO","msg":"sender: closed","stream_id":"vtoc1tav"}
+{"time":"2025-03-14T12:23:09.886186075+01:00","level":"INFO","msg":"stream: closed","id":"vtoc1tav"}

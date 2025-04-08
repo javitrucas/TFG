@@ -1,0 +1,44 @@
+panda
+[WSIDataset] Scanning files...
+[WSIDataset] Building data dict: 100%|██████████| 8822/8822 [01:12<00:00, 121.54it/s]
+[WSIDataset] Skipped 5 bags
+[WSIDataset] Found 8817 already processed bags
+panda
+[WSIDataset] Scanning files...
+[WSIDataset] Building data dict: 100%|██████████| 1794/1794 [00:16<00:00, 111.55it/s]
+[WSIDataset] Skipped 0 bags
+[WSIDataset] Found 1794 already processed bags
+Epoch 1/15
+Train - Loss: 0.2046, Acc: 0.9219, AUC: 0.9690, F1: 0.9458
+Val   - Loss: 0.2049, Acc: 0.9206, AUC: 0.9823, F1: 0.9432
+Final model saved to ./models/panda/model_max.pth
+Epoch 2/15
+Train - Loss: 0.1611, Acc: 0.9386, AUC: 0.9802, F1: 0.9574
+Val   - Loss: 0.2327, Acc: 0.9320, AUC: 0.9730, F1: 0.9522
+Epoch 3/15
+Train - Loss: 0.1457, Acc: 0.9441, AUC: 0.9832, F1: 0.9613
+Val   - Loss: 0.3003, Acc: 0.9410, AUC: 0.9733, F1: 0.9583
+Epoch 4/15
+Train - Loss: 0.1307, Acc: 0.9522, AUC: 0.9868, F1: 0.9669
+Val   - Loss: 0.2313, Acc: 0.9427, AUC: 0.9761, F1: 0.9603
+Epoch 5/15
+Train - Loss: 0.1255, Acc: 0.9549, AUC: 0.9874, F1: 0.9687
+Val   - Loss: 0.7719, Acc: 0.8141, AUC: 0.9563, F1: 0.8838
+Epoch 6/15
+Train - Loss: 0.1202, Acc: 0.9577, AUC: 0.9892, F1: 0.9707
+Val   - Loss: 0.7137, Acc: 0.8158, AUC: 0.9415, F1: 0.8827
+Early stopping triggered.
+Model loaded successfully from ./models/panda/model.pth
+/home/javitrucas/TFG/scripts/medical_scripts/medical_evaluation.py:64: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+  ax.set_xticklabels([''] + ["Negative", "Positive"])
+/home/javitrucas/TFG/scripts/medical_scripts/medical_evaluation.py:65: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+  ax.set_yticklabels([''] + ["Negative", "Positive"])
+Confusion matrix saved at output/max/confusion_matrix.png
+
+--- Evaluation Results ---
+Optimal Threshold: 0.9991
+Accuracy: 0.8891, AUC: 0.9437
+Precision: 0.9791, Recall: 0.8651, F1-Score: 0.9185
+Confusion Matrix:
+[[ 473   24]
+ [ 175 1122]]

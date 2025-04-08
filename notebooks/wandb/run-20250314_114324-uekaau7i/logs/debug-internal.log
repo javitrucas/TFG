@@ -1,0 +1,20 @@
+{"time":"2025-03-14T11:43:24.88249727+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"/home/javitrucas/TFG/notebooks/wandb/run-20250314_114324-uekaau7i/logs/debug-core.log"}
+{"time":"2025-03-14T11:43:25.001137369+01:00","level":"INFO","msg":"created new stream","id":"uekaau7i"}
+{"time":"2025-03-14T11:43:25.001209933+01:00","level":"INFO","msg":"stream: started","id":"uekaau7i"}
+{"time":"2025-03-14T11:43:25.001274531+01:00","level":"INFO","msg":"handler: started","stream_id":"uekaau7i"}
+{"time":"2025-03-14T11:43:25.001323044+01:00","level":"INFO","msg":"sender: started","stream_id":"uekaau7i"}
+{"time":"2025-03-14T11:43:25.001273674+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"uekaau7i"}
+{"time":"2025-03-14T11:43:25.463894092+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-14T11:47:50.889311164+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-03-14T11:50:42.231060105+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-03-14T11:50:42.237898439+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-03-14T11:50:44.348834944+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-03-14T11:54:43.940421241+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-14T11:54:43.941465499+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-14T11:54:44.579386677+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-14T11:54:44.944496866+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading history steps 3-3, summary, console lines 48-65","runtime_seconds":0.418668847}],"total_operations":1}}
+{"time":"2025-03-14T11:54:46.214294562+01:00","level":"INFO","msg":"stream: closing","id":"uekaau7i"}
+{"time":"2025-03-14T11:54:46.214325129+01:00","level":"INFO","msg":"handler: closed","stream_id":"uekaau7i"}
+{"time":"2025-03-14T11:54:46.214351998+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"uekaau7i"}
+{"time":"2025-03-14T11:54:46.214372086+01:00","level":"INFO","msg":"sender: closed","stream_id":"uekaau7i"}
+{"time":"2025-03-14T11:54:46.214524884+01:00","level":"INFO","msg":"stream: closed","id":"uekaau7i"}

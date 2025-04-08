@@ -4,7 +4,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.metrics import roc_auc_score, confusion_matrix, precision_recall_fscore_support, roc_curve
 from scripts.model import MILModel  # Asegúrate de que el modelo incluya pooling_type
-from scripts.medical_scripts.visualization_helper import VisualizationHelper  # Importar la nueva clase
 
 class ModelEvaluator:
     def __init__(
@@ -13,12 +12,16 @@ class ModelEvaluator:
         test_loader, 
         batch_size, 
         pooling_type='attention',  # Añadir pooling_type
+        input_feature_dim=None,  # Añadir parámetro
+        feature_dim=128,        # Añadir parámetro
         wandb=None
     ):
         self.model_path = model_path
         self.test_loader = test_loader
         self.batch_size = batch_size
         self.pooling_type = pooling_type  # Almacenar el tipo de pooling
+        self.input_feature_dim = input_feature_dim  # Almacenar input_feature_dim
+        self.feature_dim = feature_dim              # Almacenar feature_dim
         self.wandb = wandb
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
@@ -33,9 +36,6 @@ class ModelEvaluator:
         # Crear directorio de salida según el tipo de pooling
         self.output_dir = f"output/{self.pooling_type}"
         os.makedirs(self.output_dir, exist_ok=True)
-
-        # Inicializar el helper de visualización
-        self.visualization_helper = VisualizationHelper(self.output_dir)
 
     def _plot_attention_heatmap(self, attention_weights):
         """
@@ -73,18 +73,16 @@ class ModelEvaluator:
         print(f"Confusion matrix saved at {filepath}")
 
     def _load_model(self):
-        """
-        Carga el modelo con el pooling_type correcto.
-        """
         try:
-            # Inicializar el modelo con el pooling_type
+            # Inicializar el modelo con los mismos parámetros usados en entrenamiento
             model = MILModel(
-                feature_dim=512,  # Ajustar según el paper (ver Tabla 8/9/15/16)
-                pooling_type=self.pooling_type
+                pooling_type=self.pooling_type,
+                input_feature_dim=self.input_feature_dim,  # Usar input_feature_dim de la config
+                feature_dim=self.feature_dim               # Usar feature_dim de la config
             ).to(self.device)
             
             state_dict = torch.load(self.model_path, map_location=self.device, weights_only=True)
-            model.load_state_dict(state_dict)
+            model.load_state_dict(state_dict, strict=True)  # strict=True para detectar incompatibilidades
             model.eval()
             print(f"Model loaded successfully from {self.model_path}")
             return model

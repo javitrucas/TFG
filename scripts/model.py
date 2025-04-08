@@ -19,7 +19,7 @@ class CNNFeatureExtractor(nn.Module):
         x = x.view(x.size(0), -1)  # Aplanar el tensor
         x = F.relu(self.fc(x))  # Capa fully connected
         return x
-
+        
 class AttentionMechanism(nn.Module):
     def __init__(self, input_dim, hidden_dim):
         super(AttentionMechanism, self).__init__()
@@ -54,35 +54,51 @@ class AttentionMechanism(nn.Module):
 
         return bag_representation, attention_weights
 
-
 class MILModel(nn.Module):
-    def __init__(self, feature_dim=128, dropout_prob=0.5, pooling_type='attention'):
+    def __init__(self, feature_dim=128, dropout_prob=0.5, pooling_type='attention', input_feature_dim=None):
+        """
+        Parámetros:
+        - feature_dim: Dimensión de las características finales después de cualquier reducción.
+        - dropout_prob: Probabilidad de dropout.
+        - pooling_type: Tipo de pooling ('attention', 'mean', 'max').
+        - input_feature_dim: Dimensión de las características de entrada (opcional).
+        """
         super(MILModel, self).__init__()
         self.pooling_type = pooling_type
-        self.feature_extractor = CNNFeatureExtractor()
+        self.feature_extractor = CNNFeatureExtractor() if input_feature_dim is None else None
         self.dropout = nn.Dropout(dropout_prob)
-        
+
+        # Reducción de dimensionalidad si es necesario
+        if input_feature_dim is not None and input_feature_dim != feature_dim:
+            self.feature_reduction = nn.Linear(input_feature_dim, feature_dim)
+        else:
+            self.feature_reduction = None
+
         # Inicializar atención solo si es necesario
         if pooling_type == 'attention':
             self.attention = AttentionMechanism(feature_dim, hidden_dim=64)
         else:
             self.attention = None
-        
+
         self.classifier = nn.Linear(feature_dim, 1)
 
     def forward(self, bag_data, mask=None, adj_mat=None):
         batch_size, max_bag_size = bag_data.shape[:2]
-        
+
         # Extraer características si son imágenes crudas
-        if bag_data.dim() == 4:  # (batch, bag_size, 1, 28, 28)
-            instances = bag_data.view(-1, 1, 28, 28)  # Aplanar para procesar cada instancia
+        if bag_data.dim() == 5:  # (batch, bag_size, channels, height, width)
+            instances = bag_data.view(-1, *bag_data.shape[2:])  # Aplanar para procesar cada instancia
             features = self.feature_extractor(instances)  # (batch*bag_size, 128)
             features = features.view(batch_size, max_bag_size, -1)  # (batch, bag_size, 128)
         else:
             features = bag_data  # Características pre-extraídas
 
+        # Reducción de dimensionalidad si es necesario
+        if self.feature_reduction is not None:
+            features = self.feature_reduction(features)
+
         features = self.dropout(features)
-        
+
         # Agregación según el tipo de pooling
         if self.pooling_type == 'attention':
             bag_repr, attention_weights = self.attention(features, mask)

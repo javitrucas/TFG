@@ -1,0 +1,10 @@
+{"time":"2025-04-07T19:14:12.501166874+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"/home/javitrucas/TFG/notebooks/wandb/run-20250407_191412-30pr1gv3/logs/debug-core.log"}
+{"time":"2025-04-07T19:14:12.749883588+02:00","level":"INFO","msg":"created new stream","id":"30pr1gv3"}
+{"time":"2025-04-07T19:14:12.7499588+02:00","level":"INFO","msg":"stream: started","id":"30pr1gv3"}
+{"time":"2025-04-07T19:14:12.749992484+02:00","level":"INFO","msg":"handler: started","stream_id":"30pr1gv3"}
+{"time":"2025-04-07T19:14:12.749998465+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"30pr1gv3"}
+{"time":"2025-04-07T19:14:12.750002422+02:00","level":"INFO","msg":"sender: started","stream_id":"30pr1gv3"}
+{"time":"2025-04-07T19:14:13.040006916+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-07T19:14:14.790421627+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-07T19:20:28.825112191+02:00","level":"ERROR","msg":"HTTP error","status":404,"method":"POST","url":"https://api.wandb.ai/files/javitrucas-universidad-de-granada/TFG/30pr1gv3/file_stream"}
+{"time":"2025-04-07T19:20:28.825290983+02:00","level":"ERROR+4","msg":"filestream: fatal error: filestream: failed to upload: 404 Not Found path=files/javitrucas-universidad-de-granada/TFG/30pr1gv3/file_stream: {\"error\":\"run TFG/30pr1gv3 not found while streaming file\"}"}

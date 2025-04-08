@@ -1,0 +1,61 @@
+rsna
+[RSNADataset] Scanning files...
+[RSNADataset] Found 1000 already processed bags
+[RSNADataset] Number of bags found: 1000
+rsna
+[RSNADataset] Scanning files...
+[RSNADataset] Found 150 already processed bags
+[RSNADataset] Number of bags found: 150
+Epoch 1/50
+Train - Loss: 19.1920, Acc: 0.5200, AUC: 0.5164, F1: 0.4164
+Val   - Loss: 7.0876, Acc: 0.5900, AUC: 0.6199, F1: 0.5543
+Final model saved to ./models/rsna/model_attention.pth
+/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Epoch 2/50
+Train - Loss: 43.5664, Acc: 0.5238, AUC: 0.5197, F1: 0.4219
+Val   - Loss: 23.5130, Acc: 0.5900, AUC: 0.6465, F1: 0.0000
+Final model saved to ./models/rsna/model_attention.pth
+/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Epoch 3/50
+Train - Loss: 26.0619, Acc: 0.5800, AUC: 0.5835, F1: 0.4909
+Val   - Loss: 25.5788, Acc: 0.5900, AUC: 0.6843, F1: 0.0000
+Final model saved to ./models/rsna/model_attention.pth
+Epoch 4/50
+Train - Loss: 21.7803, Acc: 0.5913, AUC: 0.5769, F1: 0.5038
+Val   - Loss: 12.0112, Acc: 0.5750, AUC: 0.6666, F1: 0.3511
+Epoch 5/50
+Train - Loss: 21.5347, Acc: 0.5675, AUC: 0.5659, F1: 0.4758
+Val   - Loss: 36.1433, Acc: 0.4100, AUC: 0.5030, F1: 0.5816
+Epoch 6/50
+Train - Loss: 33.6021, Acc: 0.5650, AUC: 0.5515, F1: 0.4711
+Val   - Loss: 23.8366, Acc: 0.4400, AUC: 0.5506, F1: 0.5912
+Epoch 7/50
+Train - Loss: 44.1754, Acc: 0.5463, AUC: 0.5261, F1: 0.4492
+Val   - Loss: 63.4490, Acc: 0.4100, AUC: 0.5085, F1: 0.5816
+/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Epoch 8/50
+Train - Loss: 54.6060, Acc: 0.5825, AUC: 0.5744, F1: 0.4893
+Val   - Loss: 73.4114, Acc: 0.5900, AUC: 0.5000, F1: 0.0000
+Early stopping triggered.
+Model loaded successfully from ./models/rsna/model.pth
+/home/javitrucas/TFG/scripts/medical_scripts/medical_evaluation.py:64: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+  ax.set_xticklabels([''] + ["Negative", "Positive"])
+/home/javitrucas/TFG/scripts/medical_scripts/medical_evaluation.py:65: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+  ax.set_yticklabels([''] + ["Negative", "Positive"])
+Confusion matrix saved at output/attention/confusion_matrix.png
+
+--- Evaluation Results ---
+Optimal Threshold: 0.0000
+Accuracy: 0.5200, AUC: 0.5011
+Precision: 0.5000, Recall: 0.0139, F1-Score: 0.0270
+Confusion Matrix:
+[[77  1]
+ [71  1]]
+Attention heatmap 0 saved at output/attention/attention_heatmap_0.png
+Attention heatmap 1 saved at output/attention/attention_heatmap_1.png
+Attention heatmap 2 saved at output/attention/attention_heatmap_2.png
+Attention heatmap 3 saved at output/attention/attention_heatmap_3.png
+Attention heatmap 4 saved at output/attention/attention_heatmap_4.png

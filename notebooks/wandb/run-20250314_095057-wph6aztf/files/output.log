@@ -1,0 +1,47 @@
+rsna
+[RSNADataset] Scanning files...
+[RSNADataset] Found 1000 already processed bags
+[RSNADataset] Number of bags found: 1000
+rsna
+[RSNADataset] Scanning files...
+[RSNADataset] Found 150 already processed bags
+[RSNADataset] Number of bags found: 150
+Epoch 1/5
+Train - Loss: 0.6784, Acc: 0.6000, AUC: 0.6273, F1: 0.4444
+Val   - Loss: 0.5926, Acc: 0.6600, AUC: 0.7349, F1: 0.5750
+Final model saved to ./models/rsna/model_attention.pth
+Epoch 2/5
+Train - Loss: 0.5702, Acc: 0.7000, AUC: 0.7665, F1: 0.6129
+Val   - Loss: 0.5703, Acc: 0.7100, AUC: 0.7660, F1: 0.5915
+Final model saved to ./models/rsna/model_attention.pth
+Epoch 3/5
+Train - Loss: 0.5467, Acc: 0.7438, AUC: 0.7856, F1: 0.6612
+Val   - Loss: 0.5508, Acc: 0.7200, AUC: 0.8065, F1: 0.5692
+Final model saved to ./models/rsna/model_attention.pth
+Epoch 4/5
+Train - Loss: 0.5152, Acc: 0.7525, AUC: 0.8133, F1: 0.6786
+Val   - Loss: 0.5447, Acc: 0.7300, AUC: 0.8109, F1: 0.5970
+Final model saved to ./models/rsna/model_attention.pth
+Epoch 5/5
+Train - Loss: 0.5099, Acc: 0.7562, AUC: 0.8209, F1: 0.6809
+Val   - Loss: 0.6364, Acc: 0.6650, AUC: 0.8236, F1: 0.6884
+Final model saved to ./models/rsna/model_attention.pth
+Model loaded successfully from ./models/rsna/model.pth
+/home/javitrucas/TFG/scripts/medical_scripts/medical_evaluation.py:64: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+  ax.set_xticklabels([''] + ["Negative", "Positive"])
+/home/javitrucas/TFG/scripts/medical_scripts/medical_evaluation.py:65: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+  ax.set_yticklabels([''] + ["Negative", "Positive"])
+Confusion matrix saved at output/attention/confusion_matrix.png
+
+--- Evaluation Results ---
+Optimal Threshold: 0.0726
+Accuracy: 0.8600, AUC: 0.9160
+Precision: 0.8696, Recall: 0.8333, F1-Score: 0.8511
+Confusion Matrix:
+[[69  9]
+ [12 60]]
+Attention heatmap 0 saved at output/attention/attention_heatmap_0.png
+Attention heatmap 1 saved at output/attention/attention_heatmap_1.png
+Attention heatmap 2 saved at output/attention/attention_heatmap_2.png
+Attention heatmap 3 saved at output/attention/attention_heatmap_3.png
+Attention heatmap 4 saved at output/attention/attention_heatmap_4.png

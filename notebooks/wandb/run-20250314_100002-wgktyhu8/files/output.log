@@ -1,0 +1,37 @@
+panda
+[WSIDataset] Scanning files...
+[WSIDataset] Building data dict: 100%|██████████| 8822/8822 [00:58<00:00, 151.26it/s]
+[WSIDataset] Skipped 5 bags
+[WSIDataset] Found 8817 already processed bags
+panda
+[WSIDataset] Scanning files...
+[WSIDataset] Building data dict: 100%|██████████| 1794/1794 [00:13<00:00, 130.99it/s]
+[WSIDataset] Skipped 0 bags
+[WSIDataset] Found 1794 already processed bags
+Epoch 1/10
+Train - Loss: 0.2431, Acc: 0.9127, AUC: 0.9644, F1: 0.9401
+Val   - Loss: 0.1537, Acc: 0.9416, AUC: 0.9850, F1: 0.9600
+Final model saved to ./models/panda/model_attention.pth
+Epoch 2/10
+Train - Loss: 0.2241, Acc: 0.9251, AUC: 0.9751, F1: 0.9487
+Val   - Loss: 0.2572, Acc: 0.9257, AUC: 0.9831, F1: 0.9502
+Epoch 3/10
+Train - Loss: 0.2445, Acc: 0.9325, AUC: 0.9760, F1: 0.9537
+Val   - Loss: 0.2723, Acc: 0.9235, AUC: 0.9852, F1: 0.9448
+Final model saved to ./models/panda/model_attention.pth
+Epoch 4/10
+Train - Loss: 0.2613, Acc: 0.9281, AUC: 0.9741, F1: 0.9506
+Val   - Loss: 0.7837, Acc: 0.7698, AUC: 0.9662, F1: 0.8621
+Epoch 5/10
+Train - Loss: 0.2746, Acc: 0.9321, AUC: 0.9769, F1: 0.9534
+Val   - Loss: 0.2767, Acc: 0.8991, AUC: 0.9815, F1: 0.9342
+Epoch 6/10
+Train - Loss: 0.2721, Acc: 0.9318, AUC: 0.9766, F1: 0.9532
+Val   - Loss: 0.5031, Acc: 0.8594, AUC: 0.9666, F1: 0.9107
+Epoch 7/10
+Train - Loss: 0.3165, Acc: 0.9331, AUC: 0.9743, F1: 0.9540
+Val   - Loss: 0.2542, Acc: 0.9433, AUC: 0.9844, F1: 0.9614
+Epoch 8/10
+Train - Loss: 0.3288, Acc: 0.9305, AUC: 0.9740, F1: 0.9524
+Val   - Loss: 0.5871, Acc: 0.9121, AUC: 0.9715, F1: 0.9422
+Early stopping triggered.

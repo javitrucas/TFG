@@ -1,0 +1,28 @@
+panda
+[WSIDataset] Scanning files...
+[WSIDataset] Building data dict: 100%|██████████| 8822/8822 [01:16<00:00, 115.78it/s]
+[WSIDataset] Skipped 5 bags
+[WSIDataset] Found 8817 already processed bags
+panda
+[WSIDataset] Scanning files...
+[WSIDataset] Building data dict: 100%|██████████| 1794/1794 [00:15<00:00, 115.36it/s]
+[WSIDataset] Skipped 0 bags
+[WSIDataset] Found 1794 already processed bags
+Epoch 1/1
+Train - Loss: 0.2394, Acc: 0.9127, AUC: 0.9662, F1: 0.9400
+Val   - Loss: 0.1791, Acc: 0.9263, AUC: 0.9842, F1: 0.9505
+Final model saved to ./models/panda/model_attention.pth
+panda
+[WSIDataset] Scanning files...
+[WSIDataset] Building data dict: 100%|██████████| 8822/8822 [00:55<00:00, 159.76it/s]
+[WSIDataset] Skipped 5 bags
+[WSIDataset] Found 8817 already processed bags
+panda
+[WSIDataset] Scanning files...
+[WSIDataset] Building data dict: 100%|██████████| 1794/1794 [00:12<00:00, 147.65it/s]
+[WSIDataset] Skipped 0 bags
+[WSIDataset] Found 1794 already processed bags
+Epoch 1/1
+Train - Loss: 0.2584, Acc: 0.9061, AUC: 0.9605, F1: 0.9357
+Val   - Loss: 0.2424, Acc: 0.9093, AUC: 0.9779, F1: 0.9401
+Final model saved to ./models/panda/model_attention.pth

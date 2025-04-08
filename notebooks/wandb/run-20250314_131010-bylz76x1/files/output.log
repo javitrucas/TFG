@@ -1,0 +1,48 @@
+panda
+[WSIDataset] Scanning files...
+[WSIDataset] Building data dict: 100%|██████████| 8822/8822 [00:54<00:00, 161.52it/s]
+[WSIDataset] Skipped 5 bags
+[WSIDataset] Found 8817 already processed bags
+panda
+[WSIDataset] Scanning files...
+[WSIDataset] Building data dict: 100%|██████████| 1794/1794 [00:12<00:00, 146.38it/s]
+[WSIDataset] Skipped 0 bags
+[WSIDataset] Found 1794 already processed bags
+Epoch 1/15
+Train - Loss: 0.2081, Acc: 0.9241, AUC: 0.9687, F1: 0.9473
+Val   - Loss: 0.1864, Acc: 0.9439, AUC: 0.9745, F1: 0.9607
+Final model saved to ./models/panda/model_max.pth
+Epoch 2/15
+Train - Loss: 0.1611, Acc: 0.9396, AUC: 0.9799, F1: 0.9581
+Val   - Loss: 0.1994, Acc: 0.9365, AUC: 0.9789, F1: 0.9552
+Final model saved to ./models/panda/model_max.pth
+Epoch 3/15
+Train - Loss: 0.1541, Acc: 0.9448, AUC: 0.9818, F1: 0.9617
+Val   - Loss: 0.5625, Acc: 0.8741, AUC: 0.9733, F1: 0.9059
+Epoch 4/15
+Train - Loss: 0.1438, Acc: 0.9509, AUC: 0.9853, F1: 0.9660
+Val   - Loss: 0.3288, Acc: 0.9342, AUC: 0.9747, F1: 0.9531
+Epoch 5/15
+Train - Loss: 0.1333, Acc: 0.9534, AUC: 0.9865, F1: 0.9677
+Val   - Loss: 0.3397, Acc: 0.9376, AUC: 0.9779, F1: 0.9556
+Epoch 6/15
+Train - Loss: 0.1250, Acc: 0.9549, AUC: 0.9883, F1: 0.9688
+Val   - Loss: 0.3638, Acc: 0.9320, AUC: 0.9719, F1: 0.9516
+Epoch 7/15
+Train - Loss: 0.1190, Acc: 0.9556, AUC: 0.9892, F1: 0.9693
+Val   - Loss: 0.3020, Acc: 0.9393, AUC: 0.9736, F1: 0.9578
+Early stopping triggered.
+Model loaded successfully from ./models/panda/model.pth
+/home/javitrucas/TFG/scripts/medical_scripts/medical_evaluation.py:64: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+  ax.set_xticklabels([''] + ["Negative", "Positive"])
+/home/javitrucas/TFG/scripts/medical_scripts/medical_evaluation.py:65: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+  ax.set_yticklabels([''] + ["Negative", "Positive"])
+Confusion matrix saved at output/max/confusion_matrix.png
+
+--- Evaluation Results ---
+Optimal Threshold: 0.7993
+Accuracy: 0.9437, AUC: 0.9731
+Precision: 0.9830, Recall: 0.9383, F1-Score: 0.9602
+Confusion Matrix:
+[[ 476   21]
+ [  80 1217]]
