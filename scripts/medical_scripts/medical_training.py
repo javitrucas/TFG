@@ -3,7 +3,7 @@ import torch
 import wandb
 import numpy as np
 from sklearn.metrics import roc_auc_score, confusion_matrix, precision_recall_fscore_support
-from scripts.model import MILModel  # Asegúrate de que MILModel acepte pooling_type
+from scripts.model import MILModel  
 
 class Training:
     def __init__(
