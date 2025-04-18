@@ -1,0 +1,17 @@
+2025-04-18 11:22:53,764 INFO    MainThread:1741505 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /home/javitrucas/TFG/notebooks/wandb/run-20250418_112253-6zhyyolq/logs/debug.log
+2025-04-18 11:22:53,764 INFO    MainThread:1741505 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /home/javitrucas/TFG/notebooks/wandb/run-20250418_112253-6zhyyolq/logs/debug-internal.log
+2025-04-18 11:22:53,765 INFO    MainThread:1741505 [wandb_init.py:init():761] calling init triggers
+2025-04-18 11:22:53,765 INFO    MainThread:1741505 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'dataset_name': 'panda-patches_512_preset-features_UNI', 'input_feature_dim': 1024, 'feature_dim': 128, 'pooling_type': 'attention', 'num_epochs': 15, 'learning_rate': 0.001, 'batch_size': 1, 'val_prop': 0.2, 'seed': 42, 'use_inst_distances': False, 'adj_mat_mode': 'relative', '_wandb': {}}
+2025-04-18 11:22:53,765 INFO    MainThread:1741505 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-04-18 11:22:54,013 INFO    MainThread:1741505 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-04-18 11:22:54,013 INFO    MainThread:1741505 [wandb_init.py:_pause_backend():564] pausing backend
+2025-04-18 11:23:20,448 INFO    MainThread:1741505 [wandb_init.py:_resume_backend():569] resuming backend
+2025-04-18 11:23:20,456 INFO    MainThread:1741505 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /home/javitrucas/TFG/notebooks/wandb/run-20250418_112320-yzvxcg3i/logs/debug.log
+2025-04-18 11:23:20,457 INFO    MainThread:1741505 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /home/javitrucas/TFG/notebooks/wandb/run-20250418_112320-yzvxcg3i/logs/debug-internal.log
+2025-04-18 11:23:20,457 INFO    MainThread:1741505 [wandb_init.py:init():761] calling init triggers
+2025-04-18 11:23:20,457 INFO    MainThread:1741505 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'dataset_name': 'panda-patches_512_preset-features_UNI', 'input_feature_dim': 1024, 'feature_dim': 128, 'pooling_type': 'attention', 'num_epochs': 15, 'learning_rate': 0.001, 'batch_size': 1, 'val_prop': 0.2, 'seed': 42, 'use_inst_distances': False, 'adj_mat_mode': 'relative', '_wandb': {}}
+2025-04-18 11:23:20,457 INFO    MainThread:1741505 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-04-18 11:23:20,699 INFO    MainThread:1741505 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-04-18 11:23:20,700 INFO    MainThread:1741505 [wandb_init.py:_pause_backend():564] pausing backend
