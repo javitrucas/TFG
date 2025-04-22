@@ -1,0 +1,16 @@
+{"time":"2025-04-21T20:15:55.185694912+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"/home/javitrucas/TFG/notebooks/wandb/run-20250421_201555-h4zlfker/logs/debug-core.log"}
+{"time":"2025-04-21T20:15:55.295598168+02:00","level":"INFO","msg":"created new stream","id":"h4zlfker"}
+{"time":"2025-04-21T20:15:55.295637895+02:00","level":"INFO","msg":"stream: started","id":"h4zlfker"}
+{"time":"2025-04-21T20:15:55.295654211+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"h4zlfker"}
+{"time":"2025-04-21T20:15:55.295662664+02:00","level":"INFO","msg":"sender: started","stream_id":"h4zlfker"}
+{"time":"2025-04-21T20:15:55.295669521+02:00","level":"INFO","msg":"handler: started","stream_id":"h4zlfker"}
+{"time":"2025-04-21T20:15:55.554767857+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-21T20:21:34.765061806+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-21T20:21:34.765742383+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-21T20:21:35.7679476+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-h4zlfker-confusion_matrix_table","runtime_seconds":1.007380021}],"total_operations":1}}
+{"time":"2025-04-21T20:21:36.241193726+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-21T20:21:37.459174128+02:00","level":"INFO","msg":"stream: closing","id":"h4zlfker"}
+{"time":"2025-04-21T20:21:37.459202967+02:00","level":"INFO","msg":"handler: closed","stream_id":"h4zlfker"}
+{"time":"2025-04-21T20:21:37.45921511+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"h4zlfker"}
+{"time":"2025-04-21T20:21:37.459224238+02:00","level":"INFO","msg":"sender: closed","stream_id":"h4zlfker"}
+{"time":"2025-04-21T20:21:37.459306609+02:00","level":"INFO","msg":"stream: closed","id":"h4zlfker"}

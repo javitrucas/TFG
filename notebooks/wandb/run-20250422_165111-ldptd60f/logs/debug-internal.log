@@ -1,0 +1,7 @@
+{"time":"2025-04-22T16:51:11.067976727+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"/home/javitrucas/TFG/notebooks/wandb/run-20250422_165111-ldptd60f/logs/debug-core.log"}
+{"time":"2025-04-22T16:51:11.185198111+02:00","level":"INFO","msg":"created new stream","id":"ldptd60f"}
+{"time":"2025-04-22T16:51:11.185258666+02:00","level":"INFO","msg":"stream: started","id":"ldptd60f"}
+{"time":"2025-04-22T16:51:11.185292966+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"ldptd60f"}
+{"time":"2025-04-22T16:51:11.185311452+02:00","level":"INFO","msg":"sender: started","stream_id":"ldptd60f"}
+{"time":"2025-04-22T16:51:11.185298431+02:00","level":"INFO","msg":"handler: started","stream_id":"ldptd60f"}
+{"time":"2025-04-22T16:51:11.729256562+02:00","level":"INFO","msg":"Starting system monitor"}

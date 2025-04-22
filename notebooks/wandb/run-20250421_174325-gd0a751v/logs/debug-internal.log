@@ -1,0 +1,17 @@
+{"time":"2025-04-21T17:43:25.705968299+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"/home/javitrucas/TFG/notebooks/wandb/run-20250421_174325-gd0a751v/logs/debug-core.log"}
+{"time":"2025-04-21T17:43:25.824777437+02:00","level":"INFO","msg":"created new stream","id":"gd0a751v"}
+{"time":"2025-04-21T17:43:25.824834473+02:00","level":"INFO","msg":"stream: started","id":"gd0a751v"}
+{"time":"2025-04-21T17:43:25.824864679+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"gd0a751v"}
+{"time":"2025-04-21T17:43:25.824877275+02:00","level":"INFO","msg":"sender: started","stream_id":"gd0a751v"}
+{"time":"2025-04-21T17:43:25.824900682+02:00","level":"INFO","msg":"handler: started","stream_id":"gd0a751v"}
+{"time":"2025-04-21T17:43:26.099863493+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-21T17:43:26.403562269+02:00","level":"ERROR","msg":"file transfer: upload: failed to upload: 400 Bad Request","task":"DefaultUploadTask{FileKind: 1, Path: /home/javitrucas/TFG/notebooks/wandb/run-20250421_174325-gd0a751v/files/wandb-metadata.json, Name: wandb-metadata.json, Url: https://storage.googleapis.com/wandb-production.appspot.com/javitrucas-universidad-de-granada/TFG/gd0a751v/wandb-metadata.json?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com%2F20250421%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20250421T154326Z&X-Goog-Expires=86399&X-Goog-Signature=6d4e4063efa04afbccb0000394e9c766bc52f1d395adcdbc19a7fadf5bf1a57e8826b233da0196679b6389713c3549d4dec8c2b243803cec2fd77ed449a6badb87c518a8b5052ba64a9396b0376f9a5690a128b17a2ebbaaa9ab6ec3c542e7b832e7206fef8fca98c1cafb3d3b435d37105c9b196a2ea20f5cb99f2d8ee29db60ecc9c6ec1eb88684ad83d5e1ae19f498c7101e07722efd3b9e23cbd3934345bca7afd085068627516bb4adeeabaeaf7a9aa5bf30e634bd073631052ffb1430b9e2ab5c3facc399f662ea65c924c91a647f10a1356665c3bae7e6bd06fc99a10c484df3d1379f20d4caaf45eac7d4cab03d05ce4a9d1e2cb13e9de46ea293df2&X-Goog-SignedHeaders=host&X-User=javitrucas, Size: 611}"}
+{"time":"2025-04-21T17:47:45.876847078+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-21T17:47:45.877849228+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-21T17:47:46.488174786+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-21T17:47:46.692837297+02:00","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2025-04-21T17:47:47.703405582+02:00","level":"INFO","msg":"stream: closing","id":"gd0a751v"}
+{"time":"2025-04-21T17:47:47.703437327+02:00","level":"INFO","msg":"handler: closed","stream_id":"gd0a751v"}
+{"time":"2025-04-21T17:47:47.703451913+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"gd0a751v"}
+{"time":"2025-04-21T17:47:47.703494952+02:00","level":"INFO","msg":"sender: closed","stream_id":"gd0a751v"}
+{"time":"2025-04-21T17:47:47.703554089+02:00","level":"INFO","msg":"stream: closed","id":"gd0a751v"}

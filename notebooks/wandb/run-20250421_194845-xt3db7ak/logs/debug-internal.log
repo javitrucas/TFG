@@ -1,0 +1,16 @@
+{"time":"2025-04-21T19:48:45.25984703+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"/home/javitrucas/TFG/notebooks/wandb/run-20250421_194845-xt3db7ak/logs/debug-core.log"}
+{"time":"2025-04-21T19:48:45.375091289+02:00","level":"INFO","msg":"created new stream","id":"xt3db7ak"}
+{"time":"2025-04-21T19:48:45.375141399+02:00","level":"INFO","msg":"stream: started","id":"xt3db7ak"}
+{"time":"2025-04-21T19:48:45.375159033+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"xt3db7ak"}
+{"time":"2025-04-21T19:48:45.375178095+02:00","level":"INFO","msg":"handler: started","stream_id":"xt3db7ak"}
+{"time":"2025-04-21T19:48:45.375165715+02:00","level":"INFO","msg":"sender: started","stream_id":"xt3db7ak"}
+{"time":"2025-04-21T19:48:45.629743727+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-21T19:55:14.423794491+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-21T19:55:14.42822995+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-21T19:55:15.427520005+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-xt3db7ak-confusion_matrix_table","runtime_seconds":1.009362543,"subtasks":[{"desc":"confusion_matrix_table.table.json","runtime_seconds":0.163587581,"progress":"629B/629B"}]}],"total_operations":1}}
+{"time":"2025-04-21T19:55:16.17388587+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-21T19:55:17.490569043+02:00","level":"INFO","msg":"stream: closing","id":"xt3db7ak"}
+{"time":"2025-04-21T19:55:17.49060465+02:00","level":"INFO","msg":"handler: closed","stream_id":"xt3db7ak"}
+{"time":"2025-04-21T19:55:17.490619989+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"xt3db7ak"}
+{"time":"2025-04-21T19:55:17.490633174+02:00","level":"INFO","msg":"sender: closed","stream_id":"xt3db7ak"}
+{"time":"2025-04-21T19:55:17.490713727+02:00","level":"INFO","msg":"stream: closed","id":"xt3db7ak"}

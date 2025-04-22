@@ -1,3 +1,14 @@
 panda
 [WSIDataset] Scanning files...
-[WSIDataset] Building data dict:   3%|▎         | 230/8822 [01:15<44:28,  3.22it/s]  
+[WSIDataset] Building data dict: 100%|██████████| 8822/8822 [43:29<00:00,  3.38it/s] 
+[WSIDataset] Skipped 5 bags
+[WSIDataset] Found 8817 already processed bags
+panda
+[WSIDataset] Scanning files...
+[WSIDataset] Building data dict: 100%|██████████| 1794/1794 [08:31<00:00,  3.51it/s]
+[WSIDataset] Skipped 0 bags
+[WSIDataset] Found 1794 already processed bags
+Epoch 1/15
+Train - Loss: 0.2470, Acc: 0.9144, AUC: 0.9649, F1: 0.9412
+Val   - Loss: 0.1827, Acc: 0.9427, AUC: 0.9838, F1: 0.9607
+Final model saved to ./models/panda/model_attention.pth

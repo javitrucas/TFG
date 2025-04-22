@@ -1,0 +1,74 @@
+rsna
+[RSNADataset] Scanning files...
+[RSNADataset] Found 1000 already processed bags
+[RSNADataset] Number of bags found: 1000
+rsna
+[RSNADataset] Scanning files...
+[RSNADataset] Found 150 already processed bags
+[RSNADataset] Number of bags found: 150
+Epoch 1/50
+Train - Loss: 0.7253, Acc: 0.6112, AUC: 0.6144, F1: 0.4773
+Val   - Loss: 0.6172, Acc: 0.6700, AUC: 0.7580, F1: 0.6489
+Final model saved to ./models/rsna/attention/model_attention.pth
+/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Epoch 2/50
+Train - Loss: 0.6097, Acc: 0.6837, AUC: 0.7324, F1: 0.5965
+Val   - Loss: 0.7408, Acc: 0.5900, AUC: 0.7862, F1: 0.0000
+Final model saved to ./models/rsna/attention/model_attention.pth
+Epoch 3/50
+Train - Loss: 0.5798, Acc: 0.7063, AUC: 0.7641, F1: 0.6077
+Val   - Loss: 0.5710, Acc: 0.7050, AUC: 0.7760, F1: 0.5042
+Epoch 4/50
+Train - Loss: 0.5499, Acc: 0.7238, AUC: 0.7887, F1: 0.6418
+Val   - Loss: 0.6640, Acc: 0.6100, AUC: 0.8152, F1: 0.6638
+Final model saved to ./models/rsna/attention/model_attention.pth
+Epoch 5/50
+Train - Loss: 0.5145, Acc: 0.7525, AUC: 0.8220, F1: 0.6827
+Val   - Loss: 0.5600, Acc: 0.7000, AUC: 0.7822, F1: 0.6386
+Epoch 6/50
+Train - Loss: 0.5228, Acc: 0.7575, AUC: 0.8209, F1: 0.6891
+Val   - Loss: 0.5476, Acc: 0.7450, AUC: 0.8304, F1: 0.7330
+Final model saved to ./models/rsna/attention/model_attention.pth
+Epoch 7/50
+Train - Loss: 0.5136, Acc: 0.7712, AUC: 0.8288, F1: 0.7081
+Val   - Loss: 0.5189, Acc: 0.7500, AUC: 0.8216, F1: 0.6622
+Epoch 8/50
+Train - Loss: 0.4860, Acc: 0.7650, AUC: 0.8460, F1: 0.7035
+Val   - Loss: 0.6105, Acc: 0.6700, AUC: 0.8353, F1: 0.6944
+Final model saved to ./models/rsna/attention/model_attention.pth
+Epoch 9/50
+Train - Loss: 0.5135, Acc: 0.7638, AUC: 0.8357, F1: 0.7051
+Val   - Loss: 0.5451, Acc: 0.7350, AUC: 0.8203, F1: 0.5891
+Epoch 10/50
+Train - Loss: 0.4886, Acc: 0.7788, AUC: 0.8501, F1: 0.7195
+Val   - Loss: 0.5667, Acc: 0.7450, AUC: 0.8183, F1: 0.7182
+Epoch 11/50
+Train - Loss: 0.4560, Acc: 0.7975, AUC: 0.8648, F1: 0.7469
+Val   - Loss: 0.6198, Acc: 0.7050, AUC: 0.8152, F1: 0.4957
+Epoch 12/50
+Train - Loss: 0.4988, Acc: 0.7825, AUC: 0.8505, F1: 0.7364
+Val   - Loss: 0.5411, Acc: 0.7450, AUC: 0.8271, F1: 0.6483
+Epoch 13/50
+Train - Loss: 0.4884, Acc: 0.7700, AUC: 0.8543, F1: 0.7134
+Val   - Loss: 0.5265, Acc: 0.7500, AUC: 0.8333, F1: 0.7191
+Early stopping triggered.
+Model loaded successfully from ./models/rsna/attention/model.pth
+/home/javitrucas/TFG/scripts/medical_scripts/medical_evaluation.py:64: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+  ax.set_xticklabels([''] + ["Negative", "Positive"])
+/home/javitrucas/TFG/scripts/medical_scripts/medical_evaluation.py:65: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+  ax.set_yticklabels([''] + ["Negative", "Positive"])
+Confusion matrix saved at output/attention/confusion_matrix.png
+
+--- Evaluation Results ---
+Optimal Threshold: 0.4605
+Accuracy: 0.8333, AUC: 0.8850
+Precision: 0.7975, Recall: 0.8750, F1-Score: 0.8344
+Confusion Matrix:
+[[62 16]
+ [ 9 63]]
+Attention heatmap 0 saved at output/attention/attention_heatmap_0.png
+Attention heatmap 1 saved at output/attention/attention_heatmap_1.png
+Attention heatmap 2 saved at output/attention/attention_heatmap_2.png
+Attention heatmap 3 saved at output/attention/attention_heatmap_3.png
+Attention heatmap 4 saved at output/attention/attention_heatmap_4.png

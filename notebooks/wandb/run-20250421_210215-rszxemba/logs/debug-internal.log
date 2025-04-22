@@ -1,0 +1,16 @@
+{"time":"2025-04-21T21:02:15.194789673+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"/home/javitrucas/TFG/notebooks/wandb/run-20250421_210215-rszxemba/logs/debug-core.log"}
+{"time":"2025-04-21T21:02:15.307315143+02:00","level":"INFO","msg":"created new stream","id":"rszxemba"}
+{"time":"2025-04-21T21:02:15.307365828+02:00","level":"INFO","msg":"stream: started","id":"rszxemba"}
+{"time":"2025-04-21T21:02:15.307387051+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"rszxemba"}
+{"time":"2025-04-21T21:02:15.307400077+02:00","level":"INFO","msg":"sender: started","stream_id":"rszxemba"}
+{"time":"2025-04-21T21:02:15.307413703+02:00","level":"INFO","msg":"handler: started","stream_id":"rszxemba"}
+{"time":"2025-04-21T21:02:15.59565741+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-21T21:07:02.213107376+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-21T21:07:02.213881149+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-21T21:07:03.21659908+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-rszxemba-confusion_matrix_table","runtime_seconds":1.009209354}],"total_operations":1}}
+{"time":"2025-04-21T21:07:03.896572228+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-21T21:07:05.132194966+02:00","level":"INFO","msg":"stream: closing","id":"rszxemba"}
+{"time":"2025-04-21T21:07:05.132223698+02:00","level":"INFO","msg":"handler: closed","stream_id":"rszxemba"}
+{"time":"2025-04-21T21:07:05.132237632+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"rszxemba"}
+{"time":"2025-04-21T21:07:05.13225066+02:00","level":"INFO","msg":"sender: closed","stream_id":"rszxemba"}
+{"time":"2025-04-21T21:07:05.132335243+02:00","level":"INFO","msg":"stream: closed","id":"rszxemba"}

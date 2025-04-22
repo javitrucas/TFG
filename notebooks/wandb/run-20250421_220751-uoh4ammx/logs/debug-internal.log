@@ -1,0 +1,7 @@
+{"time":"2025-04-21T22:07:51.679748017+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"/home/javitrucas/TFG/notebooks/wandb/run-20250421_220751-uoh4ammx/logs/debug-core.log"}
+{"time":"2025-04-21T22:07:51.788998078+02:00","level":"INFO","msg":"created new stream","id":"uoh4ammx"}
+{"time":"2025-04-21T22:07:51.789036484+02:00","level":"INFO","msg":"stream: started","id":"uoh4ammx"}
+{"time":"2025-04-21T22:07:51.789055494+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"uoh4ammx"}
+{"time":"2025-04-21T22:07:51.789066516+02:00","level":"INFO","msg":"handler: started","stream_id":"uoh4ammx"}
+{"time":"2025-04-21T22:07:51.789079551+02:00","level":"INFO","msg":"sender: started","stream_id":"uoh4ammx"}
+{"time":"2025-04-21T22:07:52.0559607+02:00","level":"INFO","msg":"Starting system monitor"}

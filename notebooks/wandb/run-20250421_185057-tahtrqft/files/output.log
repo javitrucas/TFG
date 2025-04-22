@@ -1,0 +1,90 @@
+rsna
+[RSNADataset] Scanning files...
+[RSNADataset] Found 1000 already processed bags
+[RSNADataset] Number of bags found: 1000
+rsna
+[RSNADataset] Scanning files...
+[RSNADataset] Found 150 already processed bags
+[RSNADataset] Number of bags found: 150
+Epoch 1/50
+Train - Loss: 0.7268, Acc: 0.6088, AUC: 0.5863, F1: 0.4686
+Val   - Loss: 0.5891, Acc: 0.7000, AUC: 0.7884, F1: 0.5238
+Final model saved to ./models/rsna/mean/model_mean.pth
+Epoch 2/50
+Train - Loss: 0.6134, Acc: 0.6538, AUC: 0.7090, F1: 0.5281
+Val   - Loss: 0.5446, Acc: 0.7450, AUC: 0.8032, F1: 0.6434
+Final model saved to ./models/rsna/mean/model_mean.pth
+/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Epoch 3/50
+Train - Loss: 0.5824, Acc: 0.6887, AUC: 0.7500, F1: 0.5925
+Val   - Loss: 0.9694, Acc: 0.5900, AUC: 0.8286, F1: 0.0000
+Final model saved to ./models/rsna/mean/model_mean.pth
+Epoch 4/50
+Train - Loss: 0.5740, Acc: 0.7075, AUC: 0.7561, F1: 0.6139
+Val   - Loss: 0.5733, Acc: 0.6650, AUC: 0.8394, F1: 0.3495
+Final model saved to ./models/rsna/mean/model_mean.pth
+Epoch 5/50
+Train - Loss: 0.5522, Acc: 0.7212, AUC: 0.7831, F1: 0.6362
+Val   - Loss: 0.5820, Acc: 0.6900, AUC: 0.8399, F1: 0.7048
+Final model saved to ./models/rsna/mean/model_mean.pth
+Epoch 6/50
+Train - Loss: 0.5132, Acc: 0.7575, AUC: 0.8209, F1: 0.6901
+Val   - Loss: 0.6482, Acc: 0.6600, AUC: 0.8510, F1: 0.3200
+Final model saved to ./models/rsna/mean/model_mean.pth
+Epoch 7/50
+Train - Loss: 0.5170, Acc: 0.7350, AUC: 0.8141, F1: 0.6613
+Val   - Loss: 0.5992, Acc: 0.7000, AUC: 0.8531, F1: 0.7196
+Final model saved to ./models/rsna/mean/model_mean.pth
+Epoch 8/50
+Train - Loss: 0.4996, Acc: 0.7525, AUC: 0.8259, F1: 0.6806
+Val   - Loss: 0.5448, Acc: 0.7050, AUC: 0.8568, F1: 0.5124
+Final model saved to ./models/rsna/mean/model_mean.pth
+Epoch 9/50
+Train - Loss: 0.4952, Acc: 0.7538, AUC: 0.8357, F1: 0.6828
+Val   - Loss: 0.4764, Acc: 0.7900, AUC: 0.8681, F1: 0.7586
+Final model saved to ./models/rsna/mean/model_mean.pth
+Epoch 10/50
+Train - Loss: 0.4891, Acc: 0.7625, AUC: 0.8360, F1: 0.6975
+Val   - Loss: 0.4564, Acc: 0.7950, AUC: 0.8663, F1: 0.7320
+Epoch 11/50
+Train - Loss: 0.4953, Acc: 0.7712, AUC: 0.8339, F1: 0.7100
+Val   - Loss: 0.4824, Acc: 0.7650, AUC: 0.8680, F1: 0.6519
+Epoch 12/50
+Train - Loss: 0.4763, Acc: 0.7788, AUC: 0.8441, F1: 0.7131
+Val   - Loss: 0.4637, Acc: 0.8050, AUC: 0.8738, F1: 0.7607
+Final model saved to ./models/rsna/mean/model_mean.pth
+Epoch 13/50
+Train - Loss: 0.4739, Acc: 0.7750, AUC: 0.8500, F1: 0.7143
+Val   - Loss: 0.5076, Acc: 0.7600, AUC: 0.8784, F1: 0.7500
+Final model saved to ./models/rsna/mean/model_mean.pth
+Epoch 14/50
+Train - Loss: 0.4752, Acc: 0.7750, AUC: 0.8498, F1: 0.7143
+Val   - Loss: 0.6357, Acc: 0.6800, AUC: 0.8735, F1: 0.7091
+Epoch 15/50
+Train - Loss: 0.4679, Acc: 0.7762, AUC: 0.8550, F1: 0.7207
+Val   - Loss: 0.5039, Acc: 0.7750, AUC: 0.8756, F1: 0.6617
+Epoch 16/50
+Train - Loss: 0.4526, Acc: 0.7863, AUC: 0.8621, F1: 0.7220
+Val   - Loss: 0.5792, Acc: 0.7200, AUC: 0.8734, F1: 0.7358
+Epoch 17/50
+Train - Loss: 0.4542, Acc: 0.7900, AUC: 0.8629, F1: 0.7350
+Val   - Loss: 0.6874, Acc: 0.6800, AUC: 0.8758, F1: 0.4074
+Epoch 18/50
+Train - Loss: 0.4552, Acc: 0.7837, AUC: 0.8652, F1: 0.7250
+Val   - Loss: 0.4852, Acc: 0.7800, AUC: 0.8759, F1: 0.6765
+Early stopping triggered.
+Model loaded successfully from ./models/rsna/mean/model.pth
+/home/javitrucas/TFG/scripts/medical_scripts/medical_evaluation.py:64: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+  ax.set_xticklabels([''] + ["Negative", "Positive"])
+/home/javitrucas/TFG/scripts/medical_scripts/medical_evaluation.py:65: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+  ax.set_yticklabels([''] + ["Negative", "Positive"])
+Confusion matrix saved at output/mean/confusion_matrix.png
+
+--- Evaluation Results ---
+Optimal Threshold: 0.3576
+Accuracy: 0.8400, AUC: 0.9054
+Precision: 0.8871, Recall: 0.7639, F1-Score: 0.8209
+Confusion Matrix:
+[[71  7]
+ [17 55]]

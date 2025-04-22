@@ -1,0 +1,16 @@
+{"time":"2025-04-22T02:47:34.884582184+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"/home/javitrucas/TFG/notebooks/wandb/run-20250422_024734-qyalovhw/logs/debug-core.log"}
+{"time":"2025-04-22T02:47:34.993161233+02:00","level":"INFO","msg":"created new stream","id":"qyalovhw"}
+{"time":"2025-04-22T02:47:34.993190343+02:00","level":"INFO","msg":"stream: started","id":"qyalovhw"}
+{"time":"2025-04-22T02:47:34.993199174+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"qyalovhw"}
+{"time":"2025-04-22T02:47:34.993209201+02:00","level":"INFO","msg":"sender: started","stream_id":"qyalovhw"}
+{"time":"2025-04-22T02:47:34.993202755+02:00","level":"INFO","msg":"handler: started","stream_id":"qyalovhw"}
+{"time":"2025-04-22T02:47:35.318411914+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-22T02:48:18.742427101+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-22T02:48:18.743568376+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-22T02:48:19.509800952+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-22T02:48:19.704029741+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading summary, console lines 9-14","runtime_seconds":0.194143278}],"total_operations":1}}
+{"time":"2025-04-22T02:48:20.733185292+02:00","level":"INFO","msg":"stream: closing","id":"qyalovhw"}
+{"time":"2025-04-22T02:48:20.73319782+02:00","level":"INFO","msg":"handler: closed","stream_id":"qyalovhw"}
+{"time":"2025-04-22T02:48:20.733205051+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"qyalovhw"}
+{"time":"2025-04-22T02:48:20.733212673+02:00","level":"INFO","msg":"sender: closed","stream_id":"qyalovhw"}
+{"time":"2025-04-22T02:48:20.733255987+02:00","level":"INFO","msg":"stream: closed","id":"qyalovhw"}

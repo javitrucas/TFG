@@ -1,0 +1,16 @@
+{"time":"2025-04-21T19:18:56.872654682+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"/home/javitrucas/TFG/notebooks/wandb/run-20250421_191856-iot75ouj/logs/debug-core.log"}
+{"time":"2025-04-21T19:18:56.981838099+02:00","level":"INFO","msg":"created new stream","id":"iot75ouj"}
+{"time":"2025-04-21T19:18:56.98187504+02:00","level":"INFO","msg":"stream: started","id":"iot75ouj"}
+{"time":"2025-04-21T19:18:56.981896648+02:00","level":"INFO","msg":"handler: started","stream_id":"iot75ouj"}
+{"time":"2025-04-21T19:18:56.981909826+02:00","level":"INFO","msg":"sender: started","stream_id":"iot75ouj"}
+{"time":"2025-04-21T19:18:56.981894012+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"iot75ouj"}
+{"time":"2025-04-21T19:18:57.230635015+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-21T19:23:57.239392702+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-21T19:23:57.247371125+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-21T19:23:58.242710681+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-iot75ouj-confusion_matrix_table","runtime_seconds":1.008755232,"subtasks":[{"desc":"confusion_matrix_table.table.json","runtime_seconds":0.420150871,"progress":"629B/629B"}]}],"total_operations":1}}
+{"time":"2025-04-21T19:23:59.367313078+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-21T19:24:00.5600287+02:00","level":"INFO","msg":"stream: closing","id":"iot75ouj"}
+{"time":"2025-04-21T19:24:00.560059269+02:00","level":"INFO","msg":"handler: closed","stream_id":"iot75ouj"}
+{"time":"2025-04-21T19:24:00.560074193+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"iot75ouj"}
+{"time":"2025-04-21T19:24:00.560086301+02:00","level":"INFO","msg":"sender: closed","stream_id":"iot75ouj"}
+{"time":"2025-04-21T19:24:00.560227795+02:00","level":"INFO","msg":"stream: closed","id":"iot75ouj"}

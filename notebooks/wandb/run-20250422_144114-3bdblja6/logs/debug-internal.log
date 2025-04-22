@@ -1,0 +1,7 @@
+{"time":"2025-04-22T14:41:14.972466443+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"/home/javitrucas/TFG/notebooks/wandb/run-20250422_144114-3bdblja6/logs/debug-core.log"}
+{"time":"2025-04-22T14:41:15.087100362+02:00","level":"INFO","msg":"created new stream","id":"3bdblja6"}
+{"time":"2025-04-22T14:41:15.087156129+02:00","level":"INFO","msg":"stream: started","id":"3bdblja6"}
+{"time":"2025-04-22T14:41:15.087188739+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"3bdblja6"}
+{"time":"2025-04-22T14:41:15.087224514+02:00","level":"INFO","msg":"handler: started","stream_id":"3bdblja6"}
+{"time":"2025-04-22T14:41:15.087193594+02:00","level":"INFO","msg":"sender: started","stream_id":"3bdblja6"}
+{"time":"2025-04-22T14:41:15.458193121+02:00","level":"INFO","msg":"Starting system monitor"}

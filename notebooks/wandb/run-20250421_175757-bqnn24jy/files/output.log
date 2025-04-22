@@ -1,0 +1,172 @@
+rsna
+[RSNADataset] Scanning files...
+[RSNADataset] Found 1000 already processed bags
+[RSNADataset] Number of bags found: 1000
+rsna
+[RSNADataset] Scanning files...
+[RSNADataset] Found 150 already processed bags
+[RSNADataset] Number of bags found: 150
+Epoch 1/50
+Train - Loss: 0.6761, Acc: 0.5887, AUC: 0.5639, F1: 0.2925
+Val   - Loss: 0.6367, Acc: 0.6550, AUC: 0.7084, F1: 0.5917
+Final model saved to ./models/rsna/attention/model_attention.pth
+Epoch 2/50
+Train - Loss: 0.6063, Acc: 0.6725, AUC: 0.7138, F1: 0.5483
+Val   - Loss: 0.6080, Acc: 0.6700, AUC: 0.7389, F1: 0.6292
+Final model saved to ./models/rsna/attention/model_attention.pth
+Epoch 3/50
+Train - Loss: 0.5652, Acc: 0.7188, AUC: 0.7695, F1: 0.6206
+Val   - Loss: 0.6643, Acc: 0.6300, AUC: 0.7703, F1: 0.6667
+Final model saved to ./models/rsna/attention/model_attention.pth
+Epoch 4/50
+Train - Loss: 0.5375, Acc: 0.7262, AUC: 0.7958, F1: 0.6404
+Val   - Loss: 0.5917, Acc: 0.7100, AUC: 0.7898, F1: 0.7010
+Final model saved to ./models/rsna/attention/model_attention.pth
+Epoch 5/50
+Train - Loss: 0.5205, Acc: 0.7400, AUC: 0.8138, F1: 0.6556
+Val   - Loss: 0.5433, Acc: 0.7250, AUC: 0.7926, F1: 0.6497
+Final model saved to ./models/rsna/attention/model_attention.pth
+Epoch 6/50
+Train - Loss: 0.4989, Acc: 0.7538, AUC: 0.8308, F1: 0.6755
+Val   - Loss: 0.5352, Acc: 0.7250, AUC: 0.8012, F1: 0.6626
+Final model saved to ./models/rsna/attention/model_attention.pth
+Epoch 7/50
+Train - Loss: 0.4871, Acc: 0.7375, AUC: 0.8370, F1: 0.6613
+Val   - Loss: 0.5361, Acc: 0.7200, AUC: 0.8043, F1: 0.6543
+Final model saved to ./models/rsna/attention/model_attention.pth
+Epoch 8/50
+Train - Loss: 0.4843, Acc: 0.7512, AUC: 0.8425, F1: 0.6816
+Val   - Loss: 0.5389, Acc: 0.7250, AUC: 0.8095, F1: 0.6784
+Final model saved to ./models/rsna/attention/model_attention.pth
+Epoch 9/50
+Train - Loss: 0.4745, Acc: 0.7588, AUC: 0.8487, F1: 0.6951
+Val   - Loss: 0.6381, Acc: 0.6650, AUC: 0.8097, F1: 0.3853
+Final model saved to ./models/rsna/attention/model_attention.pth
+Epoch 10/50
+Train - Loss: 0.4697, Acc: 0.7725, AUC: 0.8474, F1: 0.7055
+Val   - Loss: 0.5298, Acc: 0.7100, AUC: 0.8125, F1: 0.6081
+Final model saved to ./models/rsna/attention/model_attention.pth
+Epoch 11/50
+Train - Loss: 0.4681, Acc: 0.7725, AUC: 0.8501, F1: 0.7120
+Val   - Loss: 0.5143, Acc: 0.7300, AUC: 0.8240, F1: 0.6538
+Final model saved to ./models/rsna/attention/model_attention.pth
+Epoch 12/50
+Train - Loss: 0.4516, Acc: 0.7837, AUC: 0.8632, F1: 0.7232
+Val   - Loss: 0.5129, Acc: 0.7350, AUC: 0.8310, F1: 0.6864
+Final model saved to ./models/rsna/attention/model_attention.pth
+Epoch 13/50
+Train - Loss: 0.4338, Acc: 0.8063, AUC: 0.8772, F1: 0.7520
+Val   - Loss: 0.5252, Acc: 0.7600, AUC: 0.8364, F1: 0.7303
+Final model saved to ./models/rsna/attention/model_attention.pth
+Epoch 14/50
+Train - Loss: 0.4368, Acc: 0.8063, AUC: 0.8744, F1: 0.7536
+Val   - Loss: 0.5209, Acc: 0.7450, AUC: 0.8407, F1: 0.6383
+Final model saved to ./models/rsna/attention/model_attention.pth
+Epoch 15/50
+Train - Loss: 0.4362, Acc: 0.7937, AUC: 0.8720, F1: 0.7343
+Val   - Loss: 0.5031, Acc: 0.7400, AUC: 0.8389, F1: 0.6941
+Epoch 16/50
+Train - Loss: 0.4438, Acc: 0.8037, AUC: 0.8706, F1: 0.7504
+Val   - Loss: 0.4918, Acc: 0.7450, AUC: 0.8468, F1: 0.6946
+Final model saved to ./models/rsna/attention/model_attention.pth
+Epoch 17/50
+Train - Loss: 0.4141, Acc: 0.8225, AUC: 0.8878, F1: 0.7717
+Val   - Loss: 0.4912, Acc: 0.7800, AUC: 0.8504, F1: 0.7067
+Final model saved to ./models/rsna/attention/model_attention.pth
+Epoch 18/50
+Train - Loss: 0.4167, Acc: 0.8113, AUC: 0.8881, F1: 0.7622
+Val   - Loss: 0.4789, Acc: 0.7550, AUC: 0.8571, F1: 0.7101
+Final model saved to ./models/rsna/attention/model_attention.pth
+Epoch 19/50
+Train - Loss: 0.4130, Acc: 0.8025, AUC: 0.8905, F1: 0.7508
+Val   - Loss: 0.4795, Acc: 0.7750, AUC: 0.8555, F1: 0.7097
+Epoch 20/50
+Train - Loss: 0.4032, Acc: 0.8237, AUC: 0.8937, F1: 0.7780
+Val   - Loss: 0.4714, Acc: 0.7800, AUC: 0.8582, F1: 0.7284
+Final model saved to ./models/rsna/attention/model_attention.pth
+Epoch 21/50
+Train - Loss: 0.3933, Acc: 0.8263, AUC: 0.8992, F1: 0.7811
+Val   - Loss: 0.4887, Acc: 0.7700, AUC: 0.8573, F1: 0.7356
+Epoch 22/50
+Train - Loss: 0.3910, Acc: 0.8200, AUC: 0.9006, F1: 0.7722
+Val   - Loss: 0.4929, Acc: 0.7700, AUC: 0.8592, F1: 0.6806
+Final model saved to ./models/rsna/attention/model_attention.pth
+Epoch 23/50
+Train - Loss: 0.3847, Acc: 0.8350, AUC: 0.9055, F1: 0.7918
+Val   - Loss: 0.4981, Acc: 0.7650, AUC: 0.8630, F1: 0.7403
+Final model saved to ./models/rsna/attention/model_attention.pth
+Epoch 24/50
+Train - Loss: 0.3843, Acc: 0.8425, AUC: 0.9051, F1: 0.8013
+Val   - Loss: 0.4940, Acc: 0.7800, AUC: 0.8707, F1: 0.7708
+Final model saved to ./models/rsna/attention/model_attention.pth
+Epoch 25/50
+Train - Loss: 0.3782, Acc: 0.8225, AUC: 0.9062, F1: 0.7739
+Val   - Loss: 0.4974, Acc: 0.7900, AUC: 0.8677, F1: 0.7789
+Epoch 26/50
+Train - Loss: 0.3682, Acc: 0.8425, AUC: 0.9140, F1: 0.8056
+Val   - Loss: 0.4750, Acc: 0.7950, AUC: 0.8656, F1: 0.7285
+Epoch 27/50
+Train - Loss: 0.3601, Acc: 0.8350, AUC: 0.9158, F1: 0.7918
+Val   - Loss: 0.4484, Acc: 0.7900, AUC: 0.8717, F1: 0.7375
+Final model saved to ./models/rsna/attention/model_attention.pth
+Epoch 28/50
+Train - Loss: 0.3577, Acc: 0.8363, AUC: 0.9179, F1: 0.7956
+Val   - Loss: 0.4759, Acc: 0.7850, AUC: 0.8640, F1: 0.7152
+Epoch 29/50
+Train - Loss: 0.3546, Acc: 0.8575, AUC: 0.9200, F1: 0.8202
+Val   - Loss: 0.5090, Acc: 0.7850, AUC: 0.8637, F1: 0.6950
+Epoch 30/50
+Train - Loss: 0.3597, Acc: 0.8438, AUC: 0.9170, F1: 0.8050
+Val   - Loss: 0.5084, Acc: 0.7750, AUC: 0.8675, F1: 0.6715
+Epoch 31/50
+Train - Loss: 0.3461, Acc: 0.8475, AUC: 0.9236, F1: 0.8070
+Val   - Loss: 0.4615, Acc: 0.8050, AUC: 0.8743, F1: 0.7383
+Final model saved to ./models/rsna/attention/model_attention.pth
+Epoch 32/50
+Train - Loss: 0.3511, Acc: 0.8438, AUC: 0.9201, F1: 0.8038
+Val   - Loss: 0.4766, Acc: 0.7800, AUC: 0.8635, F1: 0.7105
+Epoch 33/50
+Train - Loss: 0.3528, Acc: 0.8425, AUC: 0.9186, F1: 0.7941
+Val   - Loss: 0.4733, Acc: 0.8000, AUC: 0.8716, F1: 0.7674
+Epoch 34/50
+Train - Loss: 0.3535, Acc: 0.8475, AUC: 0.9178, F1: 0.8100
+Val   - Loss: 0.4673, Acc: 0.8050, AUC: 0.8718, F1: 0.7665
+Epoch 35/50
+Train - Loss: 0.3304, Acc: 0.8575, AUC: 0.9297, F1: 0.8219
+Val   - Loss: 0.4913, Acc: 0.7850, AUC: 0.8745, F1: 0.7701
+Final model saved to ./models/rsna/attention/model_attention.pth
+Epoch 36/50
+Train - Loss: 0.3242, Acc: 0.8662, AUC: 0.9303, F1: 0.8326
+Val   - Loss: 0.4814, Acc: 0.7850, AUC: 0.8737, F1: 0.7114
+Epoch 37/50
+Train - Loss: 0.3297, Acc: 0.8625, AUC: 0.9313, F1: 0.8287
+Val   - Loss: 0.4728, Acc: 0.7800, AUC: 0.8690, F1: 0.7179
+Epoch 38/50
+Train - Loss: 0.3174, Acc: 0.8638, AUC: 0.9352, F1: 0.8289
+Val   - Loss: 0.4876, Acc: 0.8100, AUC: 0.8709, F1: 0.7865
+Epoch 39/50
+Train - Loss: 0.3328, Acc: 0.8650, AUC: 0.9281, F1: 0.8323
+Val   - Loss: 0.4884, Acc: 0.8100, AUC: 0.8711, F1: 0.7841
+Epoch 40/50
+Train - Loss: 0.3282, Acc: 0.8588, AUC: 0.9290, F1: 0.8215
+Val   - Loss: 0.4956, Acc: 0.8100, AUC: 0.8698, F1: 0.7865
+Early stopping triggered.
+Model loaded successfully from ./models/rsna/attention/model.pth
+/home/javitrucas/TFG/scripts/medical_scripts/medical_evaluation.py:64: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+  ax.set_xticklabels([''] + ["Negative", "Positive"])
+/home/javitrucas/TFG/scripts/medical_scripts/medical_evaluation.py:65: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+  ax.set_yticklabels([''] + ["Negative", "Positive"])
+Confusion matrix saved at output/attention/confusion_matrix.png
+
+--- Evaluation Results ---
+Optimal Threshold: 0.7504
+Accuracy: 0.8133, AUC: 0.8871
+Precision: 0.9074, Recall: 0.6806, F1-Score: 0.7778
+Confusion Matrix:
+[[73  5]
+ [23 49]]
+Attention heatmap 0 saved at output/attention/attention_heatmap_0.png
+Attention heatmap 1 saved at output/attention/attention_heatmap_1.png
+Attention heatmap 2 saved at output/attention/attention_heatmap_2.png
+Attention heatmap 3 saved at output/attention/attention_heatmap_3.png
+Attention heatmap 4 saved at output/attention/attention_heatmap_4.png

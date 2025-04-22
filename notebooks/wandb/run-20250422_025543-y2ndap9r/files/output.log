@@ -1,0 +1,15 @@
+Epoch 1/5
+Entrenamiento - Loss: 826.7291, Accuracy: 0.8925
+Validación - Loss: 184.4332, Accuracy: 0.9033
+Epoch 2/5
+Entrenamiento - Loss: 787.8396, Accuracy: 0.8942
+Validación - Loss: 173.5950, Accuracy: 0.9033
+Epoch 3/5
+Entrenamiento - Loss: 734.0109, Accuracy: 0.8942
+Validación - Loss: 168.7378, Accuracy: 0.9033
+Epoch 4/5
+Entrenamiento - Loss: 629.7644, Accuracy: 0.8942
+Validación - Loss: 139.4167, Accuracy: 0.9033
+Epoch 5/5
+Entrenamiento - Loss: 493.8399, Accuracy: 0.8988
+Validación - Loss: 98.5533, Accuracy: 0.9200

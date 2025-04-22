@@ -1,0 +1,30 @@
+Epoch 1/10
+Entrenamiento - Loss: 537.0535, Accuracy: 0.9141
+Validación - Loss: 42.1799, Accuracy: 0.9900
+Epoch 2/10
+Entrenamiento - Loss: 150.7283, Accuracy: 0.9825
+Validación - Loss: 31.7135, Accuracy: 0.9838
+Epoch 3/10
+Entrenamiento - Loss: 108.7803, Accuracy: 0.9906
+Validación - Loss: 27.9742, Accuracy: 0.9888
+Epoch 4/10
+Entrenamiento - Loss: 81.6036, Accuracy: 0.9906
+Validación - Loss: 31.4125, Accuracy: 0.9850
+Epoch 5/10
+Entrenamiento - Loss: 75.9163, Accuracy: 0.9925
+Validación - Loss: 31.3752, Accuracy: 0.9850
+Epoch 6/10
+Entrenamiento - Loss: 51.2208, Accuracy: 0.9944
+Validación - Loss: 26.5776, Accuracy: 0.9912
+Epoch 7/10
+Entrenamiento - Loss: 34.8716, Accuracy: 0.9956
+Validación - Loss: 21.5800, Accuracy: 0.9900
+Epoch 8/10
+Entrenamiento - Loss: 36.8911, Accuracy: 0.9962
+Validación - Loss: 37.0922, Accuracy: 0.9850
+Epoch 9/10
+Entrenamiento - Loss: 18.7815, Accuracy: 0.9981
+Validación - Loss: 52.9590, Accuracy: 0.9788
+Epoch 10/10
+Entrenamiento - Loss: 20.2888, Accuracy: 0.9991
+Validación - Loss: 49.1179, Accuracy: 0.9862

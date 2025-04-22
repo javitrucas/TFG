@@ -1,0 +1,16 @@
+{"time":"2025-04-21T21:27:08.849815182+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"/home/javitrucas/TFG/notebooks/wandb/run-20250421_212708-bpw1gogg/logs/debug-core.log"}
+{"time":"2025-04-21T21:27:08.965218742+02:00","level":"INFO","msg":"created new stream","id":"bpw1gogg"}
+{"time":"2025-04-21T21:27:08.965267335+02:00","level":"INFO","msg":"stream: started","id":"bpw1gogg"}
+{"time":"2025-04-21T21:27:08.965290576+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"bpw1gogg"}
+{"time":"2025-04-21T21:27:08.96530249+02:00","level":"INFO","msg":"sender: started","stream_id":"bpw1gogg"}
+{"time":"2025-04-21T21:27:08.965342744+02:00","level":"INFO","msg":"handler: started","stream_id":"bpw1gogg"}
+{"time":"2025-04-21T21:27:09.250199037+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-21T21:32:55.99249081+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-21T21:32:55.993350054+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-21T21:32:56.995658625+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-bpw1gogg-confusion_matrix_table","runtime_seconds":1.008964145}],"total_operations":1}}
+{"time":"2025-04-21T21:32:57.492998178+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-21T21:32:58.712873627+02:00","level":"INFO","msg":"stream: closing","id":"bpw1gogg"}
+{"time":"2025-04-21T21:32:58.712905724+02:00","level":"INFO","msg":"handler: closed","stream_id":"bpw1gogg"}
+{"time":"2025-04-21T21:32:58.712921773+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"bpw1gogg"}
+{"time":"2025-04-21T21:32:58.712940919+02:00","level":"INFO","msg":"sender: closed","stream_id":"bpw1gogg"}
+{"time":"2025-04-21T21:32:58.713029677+02:00","level":"INFO","msg":"stream: closed","id":"bpw1gogg"}

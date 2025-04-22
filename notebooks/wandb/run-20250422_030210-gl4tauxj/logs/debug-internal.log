@@ -1,0 +1,16 @@
+{"time":"2025-04-22T03:02:10.380637742+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"/home/javitrucas/TFG/notebooks/wandb/run-20250422_030210-gl4tauxj/logs/debug-core.log"}
+{"time":"2025-04-22T03:02:10.488003377+02:00","level":"INFO","msg":"created new stream","id":"gl4tauxj"}
+{"time":"2025-04-22T03:02:10.48803543+02:00","level":"INFO","msg":"stream: started","id":"gl4tauxj"}
+{"time":"2025-04-22T03:02:10.488043677+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"gl4tauxj"}
+{"time":"2025-04-22T03:02:10.488054706+02:00","level":"INFO","msg":"sender: started","stream_id":"gl4tauxj"}
+{"time":"2025-04-22T03:02:10.488065217+02:00","level":"INFO","msg":"handler: started","stream_id":"gl4tauxj"}
+{"time":"2025-04-22T03:02:10.826901921+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-22T03:03:47.010558608+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-22T03:03:47.011172096+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-22T03:03:47.742108458+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-22T03:03:47.927032013+02:00","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2025-04-22T03:03:48.930703687+02:00","level":"INFO","msg":"stream: closing","id":"gl4tauxj"}
+{"time":"2025-04-22T03:03:48.930716025+02:00","level":"INFO","msg":"handler: closed","stream_id":"gl4tauxj"}
+{"time":"2025-04-22T03:03:48.930722209+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"gl4tauxj"}
+{"time":"2025-04-22T03:03:48.930736585+02:00","level":"INFO","msg":"sender: closed","stream_id":"gl4tauxj"}
+{"time":"2025-04-22T03:03:48.93077818+02:00","level":"INFO","msg":"stream: closed","id":"gl4tauxj"}

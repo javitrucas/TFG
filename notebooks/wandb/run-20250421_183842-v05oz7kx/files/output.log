@@ -1,0 +1,87 @@
+rsna
+[RSNADataset] Scanning files...
+[RSNADataset] Found 1000 already processed bags
+[RSNADataset] Number of bags found: 1000
+rsna
+[RSNADataset] Scanning files...
+[RSNADataset] Found 150 already processed bags
+[RSNADataset] Number of bags found: 150
+/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Epoch 1/50
+Train - Loss: 0.6667, Acc: 0.5938, AUC: 0.6041, F1: 0.4037
+Val   - Loss: 0.6446, Acc: 0.5900, AUC: 0.7298, F1: 0.0000
+Final model saved to ./models/rsna/attention/model_attention.pth
+Epoch 2/50
+Train - Loss: 0.6019, Acc: 0.6787, AUC: 0.7277, F1: 0.5530
+Val   - Loss: 0.5858, Acc: 0.7050, AUC: 0.7564, F1: 0.5426
+Final model saved to ./models/rsna/attention/model_attention.pth
+Epoch 3/50
+Train - Loss: 0.5527, Acc: 0.7212, AUC: 0.7791, F1: 0.6277
+Val   - Loss: 0.6555, Acc: 0.6500, AUC: 0.7765, F1: 0.3000
+Final model saved to ./models/rsna/attention/model_attention.pth
+Epoch 4/50
+Train - Loss: 0.5169, Acc: 0.7488, AUC: 0.8095, F1: 0.6656
+Val   - Loss: 0.5545, Acc: 0.7400, AUC: 0.7966, F1: 0.6000
+Final model saved to ./models/rsna/attention/model_attention.pth
+Epoch 5/50
+Train - Loss: 0.4914, Acc: 0.7650, AUC: 0.8348, F1: 0.6918
+Val   - Loss: 0.5283, Acc: 0.7350, AUC: 0.8148, F1: 0.6901
+Final model saved to ./models/rsna/attention/model_attention.pth
+Epoch 6/50
+Train - Loss: 0.4769, Acc: 0.7712, AUC: 0.8499, F1: 0.7053
+Val   - Loss: 0.5126, Acc: 0.7550, AUC: 0.8193, F1: 0.6755
+Final model saved to ./models/rsna/attention/model_attention.pth
+Epoch 7/50
+Train - Loss: 0.4601, Acc: 0.7863, AUC: 0.8583, F1: 0.7255
+Val   - Loss: 0.5178, Acc: 0.7450, AUC: 0.8205, F1: 0.6871
+Final model saved to ./models/rsna/attention/model_attention.pth
+Epoch 8/50
+Train - Loss: 0.4391, Acc: 0.7925, AUC: 0.8751, F1: 0.7314
+Val   - Loss: 0.5185, Acc: 0.7450, AUC: 0.8204, F1: 0.6531
+Epoch 9/50
+Train - Loss: 0.4263, Acc: 0.8063, AUC: 0.8797, F1: 0.7536
+Val   - Loss: 0.5152, Acc: 0.7650, AUC: 0.8295, F1: 0.7219
+Final model saved to ./models/rsna/attention/model_attention.pth
+Epoch 10/50
+Train - Loss: 0.4125, Acc: 0.8175, AUC: 0.8884, F1: 0.7697
+Val   - Loss: 0.5152, Acc: 0.7500, AUC: 0.8224, F1: 0.6622
+Epoch 11/50
+Train - Loss: 0.4154, Acc: 0.8237, AUC: 0.8884, F1: 0.7780
+Val   - Loss: 0.5074, Acc: 0.7650, AUC: 0.8329, F1: 0.7044
+Final model saved to ./models/rsna/attention/model_attention.pth
+Epoch 12/50
+Train - Loss: 0.3846, Acc: 0.8263, AUC: 0.9061, F1: 0.7790
+Val   - Loss: 0.5053, Acc: 0.7550, AUC: 0.8321, F1: 0.6918
+Epoch 13/50
+Train - Loss: 0.3919, Acc: 0.8250, AUC: 0.9010, F1: 0.7792
+Val   - Loss: 0.5270, Acc: 0.7350, AUC: 0.8260, F1: 0.6345
+Epoch 14/50
+Train - Loss: 0.3893, Acc: 0.8337, AUC: 0.9023, F1: 0.7899
+Val   - Loss: 0.5238, Acc: 0.7800, AUC: 0.8304, F1: 0.7067
+Epoch 15/50
+Train - Loss: 0.3904, Acc: 0.8300, AUC: 0.9029, F1: 0.7848
+Val   - Loss: 0.6336, Acc: 0.7200, AUC: 0.8283, F1: 0.5410
+Epoch 16/50
+Train - Loss: 0.3876, Acc: 0.8375, AUC: 0.9016, F1: 0.7956
+Val   - Loss: 0.5609, Acc: 0.7250, AUC: 0.8307, F1: 0.5985
+Early stopping triggered.
+Model loaded successfully from ./models/rsna/attention/model.pth
+/home/javitrucas/TFG/scripts/medical_scripts/medical_evaluation.py:64: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+  ax.set_xticklabels([''] + ["Negative", "Positive"])
+/home/javitrucas/TFG/scripts/medical_scripts/medical_evaluation.py:65: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+  ax.set_yticklabels([''] + ["Negative", "Positive"])
+Confusion matrix saved at output/attention/confusion_matrix.png
+
+--- Evaluation Results ---
+Optimal Threshold: 0.1572
+Accuracy: 0.8200, AUC: 0.8987
+Precision: 0.7647, Recall: 0.9028, F1-Score: 0.8280
+Confusion Matrix:
+[[58 20]
+ [ 7 65]]
+Attention heatmap 0 saved at output/attention/attention_heatmap_0.png
+Attention heatmap 1 saved at output/attention/attention_heatmap_1.png
+Attention heatmap 2 saved at output/attention/attention_heatmap_2.png
+Attention heatmap 3 saved at output/attention/attention_heatmap_3.png
+Attention heatmap 4 saved at output/attention/attention_heatmap_4.png

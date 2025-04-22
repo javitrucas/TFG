@@ -1,0 +1,16 @@
+{"time":"2025-04-22T02:04:40.007558415+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"/home/javitrucas/TFG/notebooks/wandb/run-20250422_020439-txmeorsm/logs/debug-core.log"}
+{"time":"2025-04-22T02:04:40.114698321+02:00","level":"INFO","msg":"created new stream","id":"txmeorsm"}
+{"time":"2025-04-22T02:04:40.114725263+02:00","level":"INFO","msg":"stream: started","id":"txmeorsm"}
+{"time":"2025-04-22T02:04:40.114736338+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"txmeorsm"}
+{"time":"2025-04-22T02:04:40.114740487+02:00","level":"INFO","msg":"handler: started","stream_id":"txmeorsm"}
+{"time":"2025-04-22T02:04:40.114755014+02:00","level":"INFO","msg":"sender: started","stream_id":"txmeorsm"}
+{"time":"2025-04-22T02:04:40.3805083+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-22T02:06:45.431319839+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-22T02:06:45.431838482+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-22T02:06:46.348798409+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-22T02:06:46.433100409+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading summary, console lines 27-29","runtime_seconds":0.084228652}],"total_operations":1}}
+{"time":"2025-04-22T02:06:47.580755918+02:00","level":"INFO","msg":"stream: closing","id":"txmeorsm"}
+{"time":"2025-04-22T02:06:47.580771719+02:00","level":"INFO","msg":"handler: closed","stream_id":"txmeorsm"}
+{"time":"2025-04-22T02:06:47.580779456+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"txmeorsm"}
+{"time":"2025-04-22T02:06:47.580786643+02:00","level":"INFO","msg":"sender: closed","stream_id":"txmeorsm"}
+{"time":"2025-04-22T02:06:47.580839949+02:00","level":"INFO","msg":"stream: closed","id":"txmeorsm"}

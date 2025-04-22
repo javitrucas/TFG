@@ -1,0 +1,1 @@
+{"columns": ["Actual", "Predicted", "nPredictions"], "data": [["Negative", "Negative", 109.0], ["Negative", "Positive", 9.0], ["Positive", "Negative", 36.0], ["Positive", "Positive", 46.0]]}

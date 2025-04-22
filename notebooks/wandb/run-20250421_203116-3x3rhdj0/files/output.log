@@ -1,0 +1,160 @@
+rsna
+[RSNADataset] Scanning files...
+[RSNADataset] Found 1000 already processed bags
+[RSNADataset] Number of bags found: 1000
+rsna
+[RSNADataset] Scanning files...
+[RSNADataset] Found 150 already processed bags
+[RSNADataset] Number of bags found: 150
+Epoch 1/50
+Train - Loss: 0.7168, Acc: 0.6075, AUC: 0.5888, F1: 0.2765
+Val   - Loss: 0.6613, Acc: 0.6250, AUC: 0.6915, F1: 0.2268
+Final model saved to ./models/rsna/max/model_max.pth
+Epoch 2/50
+Train - Loss: 0.6063, Acc: 0.6750, AUC: 0.7484, F1: 0.5000
+Val   - Loss: 0.6790, Acc: 0.5850, AUC: 0.7416, F1: 0.6498
+Final model saved to ./models/rsna/max/model_max.pth
+Epoch 3/50
+Train - Loss: 0.5792, Acc: 0.7163, AUC: 0.7727, F1: 0.6038
+Val   - Loss: 0.6775, Acc: 0.5950, AUC: 0.7570, F1: 0.6582
+Final model saved to ./models/rsna/max/model_max.pth
+Epoch 4/50
+Train - Loss: 0.5464, Acc: 0.7550, AUC: 0.8072, F1: 0.6711
+Val   - Loss: 0.5759, Acc: 0.7050, AUC: 0.7682, F1: 0.5931
+Final model saved to ./models/rsna/max/model_max.pth
+Epoch 5/50
+Train - Loss: 0.5439, Acc: 0.7438, AUC: 0.8108, F1: 0.6645
+Val   - Loss: 0.5724, Acc: 0.6850, AUC: 0.7741, F1: 0.5987
+Final model saved to ./models/rsna/max/model_max.pth
+Epoch 6/50
+Train - Loss: 0.5250, Acc: 0.7462, AUC: 0.8175, F1: 0.6793
+Val   - Loss: 0.7355, Acc: 0.5700, AUC: 0.7695, F1: 0.6446
+Epoch 7/50
+Train - Loss: 0.5234, Acc: 0.7612, AUC: 0.8134, F1: 0.7030
+Val   - Loss: 0.6665, Acc: 0.6200, AUC: 0.7740, F1: 0.6724
+Epoch 8/50
+Train - Loss: 0.5117, Acc: 0.7688, AUC: 0.8272, F1: 0.7184
+Val   - Loss: 0.5929, Acc: 0.6700, AUC: 0.7751, F1: 0.6526
+Final model saved to ./models/rsna/max/model_max.pth
+Epoch 9/50
+Train - Loss: 0.5090, Acc: 0.7650, AUC: 0.8272, F1: 0.7125
+Val   - Loss: 0.5862, Acc: 0.7050, AUC: 0.7694, F1: 0.6740
+Epoch 10/50
+Train - Loss: 0.5063, Acc: 0.7600, AUC: 0.8354, F1: 0.7019
+Val   - Loss: 0.5927, Acc: 0.6600, AUC: 0.7758, F1: 0.6495
+Final model saved to ./models/rsna/max/model_max.pth
+Epoch 11/50
+Train - Loss: 0.4977, Acc: 0.7600, AUC: 0.8369, F1: 0.7073
+Val   - Loss: 0.6361, Acc: 0.6500, AUC: 0.7815, F1: 0.6818
+Final model saved to ./models/rsna/max/model_max.pth
+Epoch 12/50
+Train - Loss: 0.4946, Acc: 0.7638, AUC: 0.8360, F1: 0.7106
+Val   - Loss: 0.6605, Acc: 0.6300, AUC: 0.7818, F1: 0.6783
+Final model saved to ./models/rsna/max/model_max.pth
+Epoch 13/50
+Train - Loss: 0.4971, Acc: 0.7688, AUC: 0.8372, F1: 0.7218
+Val   - Loss: 0.6636, Acc: 0.6300, AUC: 0.7820, F1: 0.6783
+Final model saved to ./models/rsna/max/model_max.pth
+Epoch 14/50
+Train - Loss: 0.4773, Acc: 0.7913, AUC: 0.8519, F1: 0.7427
+Val   - Loss: 0.7230, Acc: 0.5850, AUC: 0.7851, F1: 0.6556
+Final model saved to ./models/rsna/max/model_max.pth
+Epoch 15/50
+Train - Loss: 0.4849, Acc: 0.7662, AUC: 0.8434, F1: 0.7171
+Val   - Loss: 0.6197, Acc: 0.6650, AUC: 0.7913, F1: 0.6884
+Final model saved to ./models/rsna/max/model_max.pth
+Epoch 16/50
+Train - Loss: 0.4687, Acc: 0.7887, AUC: 0.8563, F1: 0.7436
+Val   - Loss: 0.6231, Acc: 0.6600, AUC: 0.7927, F1: 0.6852
+Final model saved to ./models/rsna/max/model_max.pth
+Epoch 17/50
+Train - Loss: 0.4704, Acc: 0.7800, AUC: 0.8581, F1: 0.7333
+Val   - Loss: 0.5822, Acc: 0.6800, AUC: 0.7897, F1: 0.6667
+Epoch 18/50
+Train - Loss: 0.4752, Acc: 0.7837, AUC: 0.8472, F1: 0.7375
+Val   - Loss: 0.7216, Acc: 0.5950, AUC: 0.7854, F1: 0.6611
+Epoch 19/50
+Train - Loss: 0.4552, Acc: 0.7925, AUC: 0.8657, F1: 0.7462
+Val   - Loss: 0.6112, Acc: 0.6700, AUC: 0.7926, F1: 0.6827
+Epoch 20/50
+Train - Loss: 0.4614, Acc: 0.7750, AUC: 0.8573, F1: 0.7345
+Val   - Loss: 0.6951, Acc: 0.6100, AUC: 0.7988, F1: 0.6695
+Final model saved to ./models/rsna/max/model_max.pth
+Epoch 21/50
+Train - Loss: 0.4436, Acc: 0.7937, AUC: 0.8742, F1: 0.7489
+Val   - Loss: 0.7463, Acc: 0.5850, AUC: 0.7968, F1: 0.6556
+Epoch 22/50
+Train - Loss: 0.4398, Acc: 0.7937, AUC: 0.8775, F1: 0.7465
+Val   - Loss: 0.7146, Acc: 0.6100, AUC: 0.7955, F1: 0.6667
+Epoch 23/50
+Train - Loss: 0.4493, Acc: 0.7937, AUC: 0.8659, F1: 0.7577
+Val   - Loss: 0.6198, Acc: 0.6650, AUC: 0.7976, F1: 0.6794
+Epoch 24/50
+Train - Loss: 0.4591, Acc: 0.7712, AUC: 0.8601, F1: 0.7231
+Val   - Loss: 0.7447, Acc: 0.5900, AUC: 0.8014, F1: 0.6555
+Final model saved to ./models/rsna/max/model_max.pth
+Epoch 25/50
+Train - Loss: 0.4317, Acc: 0.8050, AUC: 0.8798, F1: 0.7629
+Val   - Loss: 0.7180, Acc: 0.6050, AUC: 0.7999, F1: 0.6638
+Epoch 26/50
+Train - Loss: 0.4345, Acc: 0.8050, AUC: 0.8800, F1: 0.7615
+Val   - Loss: 0.7696, Acc: 0.5600, AUC: 0.7996, F1: 0.6393
+Epoch 27/50
+Train - Loss: 0.4399, Acc: 0.8000, AUC: 0.8701, F1: 0.7576
+Val   - Loss: 0.8992, Acc: 0.5250, AUC: 0.8077, F1: 0.6332
+Final model saved to ./models/rsna/max/model_max.pth
+Epoch 28/50
+Train - Loss: 0.4288, Acc: 0.7975, AUC: 0.8821, F1: 0.7523
+Val   - Loss: 0.6351, Acc: 0.6300, AUC: 0.8089, F1: 0.6606
+Final model saved to ./models/rsna/max/model_max.pth
+Epoch 29/50
+Train - Loss: 0.4339, Acc: 0.8125, AUC: 0.8767, F1: 0.7734
+Val   - Loss: 0.6926, Acc: 0.6150, AUC: 0.8061, F1: 0.6667
+Epoch 30/50
+Train - Loss: 0.4192, Acc: 0.8237, AUC: 0.8883, F1: 0.7860
+Val   - Loss: 0.6999, Acc: 0.6200, AUC: 0.8022, F1: 0.6724
+Epoch 31/50
+Train - Loss: 0.4069, Acc: 0.8150, AUC: 0.8943, F1: 0.7764
+Val   - Loss: 0.6357, Acc: 0.6400, AUC: 0.8078, F1: 0.6636
+Epoch 32/50
+Train - Loss: 0.4267, Acc: 0.8175, AUC: 0.8799, F1: 0.7808
+Val   - Loss: 0.7812, Acc: 0.5600, AUC: 0.8091, F1: 0.6393
+Final model saved to ./models/rsna/max/model_max.pth
+Epoch 33/50
+Train - Loss: 0.4088, Acc: 0.8113, AUC: 0.8923, F1: 0.7680
+Val   - Loss: 0.6203, Acc: 0.6500, AUC: 0.8111, F1: 0.6698
+Final model saved to ./models/rsna/max/model_max.pth
+Epoch 34/50
+Train - Loss: 0.4192, Acc: 0.8100, AUC: 0.8836, F1: 0.7697
+Val   - Loss: 0.5749, Acc: 0.6950, AUC: 0.8147, F1: 0.6935
+Final model saved to ./models/rsna/max/model_max.pth
+Epoch 35/50
+Train - Loss: 0.4063, Acc: 0.8213, AUC: 0.8879, F1: 0.7803
+Val   - Loss: 1.0232, Acc: 0.4800, AUC: 0.8035, F1: 0.6090
+Epoch 36/50
+Train - Loss: 0.4134, Acc: 0.8050, AUC: 0.8869, F1: 0.7593
+Val   - Loss: 0.7009, Acc: 0.6400, AUC: 0.8036, F1: 0.6814
+Epoch 37/50
+Train - Loss: 0.4102, Acc: 0.8187, AUC: 0.8859, F1: 0.7833
+Val   - Loss: 0.7682, Acc: 0.5950, AUC: 0.8086, F1: 0.6582
+Epoch 38/50
+Train - Loss: 0.4121, Acc: 0.8137, AUC: 0.8870, F1: 0.7786
+Val   - Loss: 0.5953, Acc: 0.6700, AUC: 0.8120, F1: 0.6733
+Epoch 39/50
+Train - Loss: 0.4014, Acc: 0.8237, AUC: 0.8901, F1: 0.7899
+Val   - Loss: 0.7593, Acc: 0.6150, AUC: 0.8122, F1: 0.6695
+Early stopping triggered.
+Model loaded successfully from ./models/rsna/max/model.pth
+/home/javitrucas/TFG/scripts/medical_scripts/medical_evaluation.py:64: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+  ax.set_xticklabels([''] + ["Negative", "Positive"])
+/home/javitrucas/TFG/scripts/medical_scripts/medical_evaluation.py:65: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+  ax.set_yticklabels([''] + ["Negative", "Positive"])
+Confusion matrix saved at output/max/confusion_matrix.png
+
+--- Evaluation Results ---
+Optimal Threshold: 0.8128
+Accuracy: 0.8000, AUC: 0.8684
+Precision: 0.7838, Recall: 0.8056, F1-Score: 0.7945
+Confusion Matrix:
+[[62 16]
+ [14 58]]

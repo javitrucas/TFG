@@ -1,0 +1,18 @@
+{"time":"2025-04-21T23:07:36.803670678+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"/home/javitrucas/TFG/notebooks/wandb/run-20250421_230736-4bf7jcf9/logs/debug-core.log"}
+{"time":"2025-04-21T23:07:36.91404857+02:00","level":"INFO","msg":"created new stream","id":"4bf7jcf9"}
+{"time":"2025-04-21T23:07:36.914085426+02:00","level":"INFO","msg":"stream: started","id":"4bf7jcf9"}
+{"time":"2025-04-21T23:07:36.9140966+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"4bf7jcf9"}
+{"time":"2025-04-21T23:07:36.914116841+02:00","level":"INFO","msg":"sender: started","stream_id":"4bf7jcf9"}
+{"time":"2025-04-21T23:07:36.914104782+02:00","level":"INFO","msg":"handler: started","stream_id":"4bf7jcf9"}
+{"time":"2025-04-21T23:07:37.170206046+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-21T23:08:22.270859502+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-04-21T23:08:37.835101128+02:00","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/javitrucas-universidad-de-granada/TFG/4bf7jcf9/file_stream","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}
+{"time":"2025-04-21T23:13:34.273482444+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-21T23:13:34.274684672+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-21T23:13:34.956206766+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-21T23:13:35.177492954+02:00","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2025-04-21T23:13:36.183020651+02:00","level":"INFO","msg":"stream: closing","id":"4bf7jcf9"}
+{"time":"2025-04-21T23:13:36.18304556+02:00","level":"INFO","msg":"handler: closed","stream_id":"4bf7jcf9"}
+{"time":"2025-04-21T23:13:36.183064661+02:00","level":"INFO","msg":"sender: closed","stream_id":"4bf7jcf9"}
+{"time":"2025-04-21T23:13:36.183059667+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"4bf7jcf9"}
+{"time":"2025-04-21T23:13:36.183143957+02:00","level":"INFO","msg":"stream: closed","id":"4bf7jcf9"}
