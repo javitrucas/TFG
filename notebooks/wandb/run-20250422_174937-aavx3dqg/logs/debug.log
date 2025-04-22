@@ -1,0 +1,19 @@
+2025-04-22 17:49:37,771 INFO    MainThread:2497772 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /home/javitrucas/TFG/notebooks/wandb/run-20250422_174937-aavx3dqg/logs/debug.log
+2025-04-22 17:49:37,772 INFO    MainThread:2497772 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /home/javitrucas/TFG/notebooks/wandb/run-20250422_174937-aavx3dqg/logs/debug-internal.log
+2025-04-22 17:49:37,772 INFO    MainThread:2497772 [wandb_init.py:monkeypatch_ipython():599] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7f9a6c1c0f10>
+2025-04-22 17:49:37,772 INFO    MainThread:2497772 [wandb_init.py:init():761] calling init triggers
+2025-04-22 17:49:37,772 INFO    MainThread:2497772 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'dataset_name': 'panda-patches_512_preset-features_UNI', 'input_feature_dim': 1024, 'feature_dim': 128, 'pooling_type': 'attention', 'num_epochs': 15, 'learning_rate': 0.001, 'batch_size': 1, 'val_prop': 0.2, 'seed': 3, 'use_inst_distances': False, 'adj_mat_mode': 'relative', '_wandb': {}}
+2025-04-22 17:49:37,772 INFO    MainThread:2497772 [wandb_init.py:init():784] starting backend
+2025-04-22 17:49:37,772 INFO    MainThread:2497772 [wandb_init.py:init():788] sending inform_init request
+2025-04-22 17:49:37,774 INFO    MainThread:2497772 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2025-04-22 17:49:37,775 INFO    MainThread:2497772 [wandb_init.py:init():803] backend started and connected
+2025-04-22 17:49:37,778 INFO    MainThread:2497772 [wandb_run.py:_label_probe_notebook():1204] probe notebook
+2025-04-22 17:49:37,794 INFO    MainThread:2497772 [wandb_init.py:init():896] updated telemetry
+2025-04-22 17:49:37,805 INFO    MainThread:2497772 [wandb_init.py:init():920] communicating run to backend with 90.0 second timeout
+2025-04-22 17:49:38,192 INFO    MainThread:2497772 [wandb_init.py:init():995] starting run threads in backend
+2025-04-22 17:49:38,393 INFO    MainThread:2497772 [wandb_run.py:_console_start():2377] atexit reg
+2025-04-22 17:49:38,394 INFO    MainThread:2497772 [wandb_run.py:_redirect():2227] redirect: wrap_raw
+2025-04-22 17:49:38,394 INFO    MainThread:2497772 [wandb_run.py:_redirect():2292] Wrapping output streams.
+2025-04-22 17:49:38,394 INFO    MainThread:2497772 [wandb_run.py:_redirect():2317] Redirects installed.
+2025-04-22 17:49:38,395 INFO    MainThread:2497772 [wandb_init.py:init():1037] run started, returning control to user process
