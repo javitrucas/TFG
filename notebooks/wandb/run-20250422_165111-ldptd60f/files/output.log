@@ -56,3 +56,24 @@ Epoch 14/15
 Train - Loss: 0.3328, Acc: 0.9370, AUC: 0.9753, F1: 0.9568
 Val   - Loss: 0.2411, Acc: 0.9552, AUC: 0.9886, F1: 0.9687
 Epoch 15/15
+Train - Loss: 0.3420, Acc: 0.9361, AUC: 0.9751, F1: 0.9561
+Val   - Loss: 0.3442, Acc: 0.9399, AUC: 0.9854, F1: 0.9593
+Early stopping triggered.
+Model loaded successfully from ./models/panda/attention/model.pth
+  ax.set_xticklabels([''] + ["Negative", "Positive"])
+/home/javitrucas/TFG/scripts/medical_scripts/medical_evaluation.py:65: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+  ax.set_yticklabels([''] + ["Negative", "Positive"])
+Confusion matrix saved at output/attention/confusion_matrix.png
+
+--- Evaluation Results ---
+Optimal Threshold: 0.9998
+Accuracy: 0.9365, AUC: 0.9761
+Precision: 0.9821, Recall: 0.9291, F1-Score: 0.9548
+Confusion Matrix:
+[[ 475   22]
+ [  92 1205]]
+Attention heatmap 0 saved at output/attention/attention_heatmap_0.png
+Attention heatmap 1 saved at output/attention/attention_heatmap_1.png
+Attention heatmap 2 saved at output/attention/attention_heatmap_2.png
+Attention heatmap 3 saved at output/attention/attention_heatmap_3.png
+Attention heatmap 4 saved at output/attention/attention_heatmap_4.png
