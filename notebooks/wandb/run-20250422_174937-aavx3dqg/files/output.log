@@ -1,4 +1,53 @@
 panda
 [WSIDataset] Scanning files...
+[WSIDataset] Building data dict: 100%|██████████| 8822/8822 [01:47<00:00, 82.33it/s]
+[WSIDataset] Building data dict: 100%|██████████| 1794/1794 [00:17<00:00, 99.94it/s]]
+[WSIDataset] Skipped 5 bags
+[WSIDataset] Found 8817 already processed bags
+panda
+[WSIDataset] Scanning files...
+/home/javitrucas/TFG/scripts/medical_scripts/medical_evaluation.py:64: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+[WSIDataset] Skipped 0 bags
+[WSIDataset] Found 1794 already processed bags
+Epoch 1/15
+Train - Loss: 0.2541, Acc: 0.9124, AUC: 0.9642, F1: 0.9400
+Val   - Loss: 0.2097, Acc: 0.9314, AUC: 0.9822, F1: 0.9513
+Final model saved to ./models/panda/attention/model_attention.pth
+Epoch 2/15
+Train - Loss: 0.2412, Acc: 0.9243, AUC: 0.9718, F1: 0.9479
+Val   - Loss: 0.5016, Acc: 0.8656, AUC: 0.9843, F1: 0.9153
+Final model saved to ./models/panda/attention/model_attention.pth
+Epoch 3/15
+Train - Loss: 0.2412, Acc: 0.9290, AUC: 0.9733, F1: 0.9512
+Val   - Loss: 0.1863, Acc: 0.9382, AUC: 0.9842, F1: 0.9572
+Epoch 4/15
+Train - Loss: 0.2440, Acc: 0.9298, AUC: 0.9749, F1: 0.9518
+Val   - Loss: 0.2065, Acc: 0.9433, AUC: 0.9838, F1: 0.9605
+Epoch 5/15
+Train - Loss: 0.2730, Acc: 0.9335, AUC: 0.9756, F1: 0.9543
+Val   - Loss: 0.4035, Acc: 0.9337, AUC: 0.9815, F1: 0.9533
+Epoch 6/15
+Train - Loss: 0.2775, Acc: 0.9352, AUC: 0.9766, F1: 0.9555
+Val   - Loss: 0.2103, Acc: 0.9263, AUC: 0.9839, F1: 0.9504
+Epoch 7/15
+Train - Loss: 0.2737, Acc: 0.9359, AUC: 0.9778, F1: 0.9560
+Val   - Loss: 0.6500, Acc: 0.8923, AUC: 0.9835, F1: 0.9311
+Early stopping triggered.
+Model loaded successfully from ./models/panda/attention/model.pth
+  ax.set_xticklabels([''] + ["Negative", "Positive"])
+/home/javitrucas/TFG/scripts/medical_scripts/medical_evaluation.py:65: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+  ax.set_yticklabels([''] + ["Negative", "Positive"])
+Confusion matrix saved at output/attention/confusion_matrix.png
 
-[WSIDataset] Building data dict:  92%|█████████▏| 8156/8822 [01:40<00:06, 103.04it/s]
+--- Evaluation Results ---
+Optimal Threshold: 1.0000
+Accuracy: 0.9431, AUC: 0.9813
+Precision: 0.9870, Recall: 0.9337, F1-Score: 0.9596
+Confusion Matrix:
+[[ 481   16]
+ [  86 1211]]
+Attention heatmap 0 saved at output/attention/attention_heatmap_0.png
+Attention heatmap 1 saved at output/attention/attention_heatmap_1.png
+Attention heatmap 2 saved at output/attention/attention_heatmap_2.png
+Attention heatmap 3 saved at output/attention/attention_heatmap_3.png
+Attention heatmap 4 saved at output/attention/attention_heatmap_4.png

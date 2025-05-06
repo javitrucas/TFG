@@ -1,0 +1,83 @@
+panda
+[WSIDataset] Scanning files...
+[WSIDataset] Building data dict: 100%|██████████| 8822/8822 [01:41<00:00, 86.81it/s]
+[WSIDataset] Building data dict: 100%|██████████| 1794/1794 [00:18<00:00, 98.07it/s]]
+[WSIDataset] Skipped 5 bags
+[WSIDataset] Found 8817 already processed bags
+panda
+[WSIDataset] Scanning files...
+[WSIDataset] Building data dict:  99%|█████████▉| 1785/1794 [00:18<00:00, 97.66it/s] 
+[WSIDataset] Skipped 0 bags
+[WSIDataset] Found 1794 already processed bags
+Epoch 1/15
+Train - Loss: 0.1625, Acc: 0.9366, AUC: 0.9791, F1: 0.9563
+Val   - Loss: 0.1500, Acc: 0.9444, AUC: 0.9823, F1: 0.9616
+Final model saved to ./models/panda/attention/model_attention.pth
+Epoch 2/15
+Train - Loss: 0.1227, Acc: 0.9501, AUC: 0.9877, F1: 0.9656
+Val   - Loss: 0.1378, Acc: 0.9495, AUC: 0.9852, F1: 0.9653
+Final model saved to ./models/panda/attention/model_attention.pth
+Epoch 3/15
+Train - Loss: 0.1136, Acc: 0.9543, AUC: 0.9896, F1: 0.9686
+Val   - Loss: 0.1555, Acc: 0.9473, AUC: 0.9851, F1: 0.9630
+Epoch 4/15
+Train - Loss: 0.1050, Acc: 0.9590, AUC: 0.9909, F1: 0.9717
+Val   - Loss: 0.1536, Acc: 0.9507, AUC: 0.9854, F1: 0.9662
+Final model saved to ./models/panda/attention/model_attention.pth
+Epoch 5/15
+Train - Loss: 0.1006, Acc: 0.9583, AUC: 0.9918, F1: 0.9713
+Val   - Loss: 0.1377, Acc: 0.9478, AUC: 0.9859, F1: 0.9641
+Final model saved to ./models/panda/attention/model_attention.pth
+Epoch 6/15
+Train - Loss: 0.0972, Acc: 0.9629, AUC: 0.9923, F1: 0.9744
+Val   - Loss: 0.1428, Acc: 0.9484, AUC: 0.9861, F1: 0.9648
+Final model saved to ./models/panda/attention/model_attention.pth
+Epoch 7/15
+Train - Loss: 0.0897, Acc: 0.9646, AUC: 0.9934, F1: 0.9756
+Val   - Loss: 0.1656, Acc: 0.9376, AUC: 0.9872, F1: 0.9581
+Final model saved to ./models/panda/attention/model_attention.pth
+Epoch 8/15
+Train - Loss: 0.0871, Acc: 0.9672, AUC: 0.9937, F1: 0.9774
+Val   - Loss: 0.1522, Acc: 0.9535, AUC: 0.9859, F1: 0.9680
+Epoch 9/15
+Train - Loss: 0.0824, Acc: 0.9701, AUC: 0.9941, F1: 0.9794
+Val   - Loss: 0.1328, Acc: 0.9495, AUC: 0.9873, F1: 0.9651
+Final model saved to ./models/panda/attention/model_attention.pth
+Epoch 10/15
+Train - Loss: 0.0774, Acc: 0.9697, AUC: 0.9949, F1: 0.9791
+Val   - Loss: 0.1324, Acc: 0.9569, AUC: 0.9877, F1: 0.9702
+Final model saved to ./models/panda/attention/model_attention.pth
+Epoch 11/15
+Train - Loss: 0.0765, Acc: 0.9712, AUC: 0.9951, F1: 0.9802
+Val   - Loss: 0.1600, Acc: 0.9439, AUC: 0.9858, F1: 0.9620
+Epoch 12/15
+Train - Loss: 0.0773, Acc: 0.9724, AUC: 0.9950, F1: 0.9810
+Val   - Loss: 0.1504, Acc: 0.9501, AUC: 0.9859, F1: 0.9660
+Epoch 13/15
+Train - Loss: 0.0725, Acc: 0.9712, AUC: 0.9956, F1: 0.9802
+Val   - Loss: 0.1499, Acc: 0.9535, AUC: 0.9868, F1: 0.9680
+Epoch 14/15
+Train - Loss: 0.0667, Acc: 0.9741, AUC: 0.9962, F1: 0.9821
+Val   - Loss: 0.1539, Acc: 0.9524, AUC: 0.9855, F1: 0.9670
+Epoch 15/15
+Train - Loss: 0.0688, Acc: 0.9738, AUC: 0.9960, F1: 0.9819
+Val   - Loss: 0.1588, Acc: 0.9569, AUC: 0.9865, F1: 0.9705
+Early stopping triggered.
+Model loaded successfully from ./models/panda/attention/model.pth
+  ax.set_xticklabels([''] + ["Negative", "Positive"])
+/home/javitrucas/TFG/scripts/medical_scripts/medical_evaluation.py:65: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+  ax.set_yticklabels([''] + ["Negative", "Positive"])
+Confusion matrix saved at output/attention/confusion_matrix.png
+
+--- Evaluation Results ---
+Optimal Threshold: 0.9165
+Accuracy: 0.9504, AUC: 0.9875
+Precision: 0.9848, Recall: 0.9460, F1-Score: 0.9650
+Confusion Matrix:
+[[ 478   19]
+ [  70 1227]]
+Attention heatmap 0 saved at output/attention/attention_heatmap_0.png
+Attention heatmap 1 saved at output/attention/attention_heatmap_1.png
+Attention heatmap 2 saved at output/attention/attention_heatmap_2.png
+Attention heatmap 3 saved at output/attention/attention_heatmap_3.png
+Attention heatmap 4 saved at output/attention/attention_heatmap_4.png

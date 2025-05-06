@@ -1,0 +1,57 @@
+panda
+[WSIDataset] Scanning files...
+[WSIDataset] Building data dict: 100%|██████████| 8822/8822 [01:46<00:00, 82.98it/s]
+[WSIDataset] Building data dict: 100%|██████████| 1794/1794 [00:17<00:00, 100.92it/s]
+[WSIDataset] Skipped 5 bags
+[WSIDataset] Found 8817 already processed bags
+panda
+[WSIDataset] Scanning files...
+/home/javitrucas/TFG/scripts/medical_scripts/medical_evaluation.py:64: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+[WSIDataset] Skipped 0 bags
+[WSIDataset] Found 1794 already processed bags
+Epoch 1/15
+Train - Loss: 0.2354, Acc: 0.9125, AUC: 0.9685, F1: 0.9400
+Val   - Loss: 0.1732, Acc: 0.9348, AUC: 0.9807, F1: 0.9557
+Final model saved to ./models/panda/attention/model_attention.pth
+Epoch 2/15
+Train - Loss: 0.2397, Acc: 0.9250, AUC: 0.9731, F1: 0.9484
+Val   - Loss: 0.2181, Acc: 0.9456, AUC: 0.9813, F1: 0.9626
+Final model saved to ./models/panda/attention/model_attention.pth
+Epoch 3/15
+Train - Loss: 0.2381, Acc: 0.9253, AUC: 0.9763, F1: 0.9487
+Val   - Loss: 0.2347, Acc: 0.9490, AUC: 0.9840, F1: 0.9648
+Final model saved to ./models/panda/attention/model_attention.pth
+Epoch 4/15
+Train - Loss: 0.2499, Acc: 0.9324, AUC: 0.9767, F1: 0.9536
+Val   - Loss: 0.2812, Acc: 0.9252, AUC: 0.9830, F1: 0.9498
+Epoch 5/15
+Train - Loss: 0.2725, Acc: 0.9366, AUC: 0.9782, F1: 0.9565
+Val   - Loss: 0.2603, Acc: 0.9478, AUC: 0.9839, F1: 0.9636
+Epoch 6/15
+Train - Loss: 0.3426, Acc: 0.9263, AUC: 0.9707, F1: 0.9494
+Val   - Loss: 0.3052, Acc: 0.9422, AUC: 0.9811, F1: 0.9596
+Epoch 7/15
+Train - Loss: 0.2978, Acc: 0.9375, AUC: 0.9767, F1: 0.9570
+Val   - Loss: 0.4140, Acc: 0.9410, AUC: 0.9813, F1: 0.9589
+Epoch 8/15
+Train - Loss: 0.3148, Acc: 0.9390, AUC: 0.9757, F1: 0.9582
+Val   - Loss: 0.3034, Acc: 0.9410, AUC: 0.9817, F1: 0.9594
+Early stopping triggered.
+Model loaded successfully from ./models/panda/attention/model.pth
+  ax.set_xticklabels([''] + ["Negative", "Positive"])
+/home/javitrucas/TFG/scripts/medical_scripts/medical_evaluation.py:65: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+  ax.set_yticklabels([''] + ["Negative", "Positive"])
+Confusion matrix saved at output/attention/confusion_matrix.png
+
+--- Evaluation Results ---
+Optimal Threshold: 0.9976
+Accuracy: 0.9398, AUC: 0.9854
+Precision: 0.9917, Recall: 0.9244, F1-Score: 0.9569
+Confusion Matrix:
+[[ 487   10]
+ [  98 1199]]
+Attention heatmap 0 saved at output/attention/attention_heatmap_0.png
+Attention heatmap 1 saved at output/attention/attention_heatmap_1.png
+Attention heatmap 2 saved at output/attention/attention_heatmap_2.png
+Attention heatmap 3 saved at output/attention/attention_heatmap_3.png
+Attention heatmap 4 saved at output/attention/attention_heatmap_4.png

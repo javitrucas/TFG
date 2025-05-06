@@ -1,0 +1,49 @@
+panda
+[WSIDataset] Scanning files...
+[WSIDataset] Building data dict: 100%|██████████| 8822/8822 [01:42<00:00, 86.32it/s]
+[WSIDataset] Building data dict: 100%|██████████| 1794/1794 [00:16<00:00, 105.78it/s]
+[WSIDataset] Skipped 5 bags
+[WSIDataset] Found 8817 already processed bags
+panda
+[WSIDataset] Scanning files...
+/home/javitrucas/TFG/scripts/medical_scripts/medical_evaluation.py:64: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+[WSIDataset] Skipped 0 bags
+[WSIDataset] Found 1794 already processed bags
+Epoch 1/15
+Train - Loss: 0.2540, Acc: 0.9111, AUC: 0.9647, F1: 0.9390
+Val   - Loss: 0.1724, Acc: 0.9359, AUC: 0.9865, F1: 0.9552
+Final model saved to ./models/panda/attention/model_attention.pth
+Epoch 2/15
+Train - Loss: 0.2497, Acc: 0.9223, AUC: 0.9723, F1: 0.9466
+Val   - Loss: 0.7716, Acc: 0.8668, AUC: 0.9805, F1: 0.8998
+Epoch 3/15
+Train - Loss: 0.2651, Acc: 0.9297, AUC: 0.9732, F1: 0.9517
+Val   - Loss: 0.2123, Acc: 0.9206, AUC: 0.9784, F1: 0.9458
+Epoch 4/15
+Train - Loss: 0.2946, Acc: 0.9295, AUC: 0.9738, F1: 0.9516
+Val   - Loss: 0.5382, Acc: 0.8498, AUC: 0.9835, F1: 0.9061
+Epoch 5/15
+Train - Loss: 0.2741, Acc: 0.9331, AUC: 0.9748, F1: 0.9540
+Val   - Loss: 0.2715, Acc: 0.9444, AUC: 0.9839, F1: 0.9621
+Epoch 6/15
+Train - Loss: 0.3093, Acc: 0.9322, AUC: 0.9740, F1: 0.9535
+Val   - Loss: 0.3343, Acc: 0.9320, AUC: 0.9843, F1: 0.9517
+Early stopping triggered.
+Model loaded successfully from ./models/panda/attention/model.pth
+  ax.set_xticklabels([''] + ["Negative", "Positive"])
+/home/javitrucas/TFG/scripts/medical_scripts/medical_evaluation.py:65: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+  ax.set_yticklabels([''] + ["Negative", "Positive"])
+Confusion matrix saved at output/attention/confusion_matrix.png
+
+--- Evaluation Results ---
+Optimal Threshold: 0.7902
+Accuracy: 0.9320, AUC: 0.9860
+Precision: 0.9908, Recall: 0.9144, F1-Score: 0.9511
+Confusion Matrix:
+[[ 486   11]
+ [ 111 1186]]
+Attention heatmap 0 saved at output/attention/attention_heatmap_0.png
+Attention heatmap 1 saved at output/attention/attention_heatmap_1.png
+Attention heatmap 2 saved at output/attention/attention_heatmap_2.png
+Attention heatmap 3 saved at output/attention/attention_heatmap_3.png
+Attention heatmap 4 saved at output/attention/attention_heatmap_4.png

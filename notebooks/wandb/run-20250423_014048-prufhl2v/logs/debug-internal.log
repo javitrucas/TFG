@@ -1,0 +1,16 @@
+{"time":"2025-04-23T01:40:48.660014+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"/home/javitrucas/TFG/notebooks/wandb/run-20250423_014048-prufhl2v/logs/debug-core.log"}
+{"time":"2025-04-23T01:40:48.778470381+02:00","level":"INFO","msg":"created new stream","id":"prufhl2v"}
+{"time":"2025-04-23T01:40:48.778534534+02:00","level":"INFO","msg":"stream: started","id":"prufhl2v"}
+{"time":"2025-04-23T01:40:48.778564541+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"prufhl2v"}
+{"time":"2025-04-23T01:40:48.778594217+02:00","level":"INFO","msg":"handler: started","stream_id":"prufhl2v"}
+{"time":"2025-04-23T01:40:48.778578834+02:00","level":"INFO","msg":"sender: started","stream_id":"prufhl2v"}
+{"time":"2025-04-23T01:40:49.020644388+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-23T02:03:08.967611216+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-23T02:03:08.96854712+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-23T02:03:09.842232696+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-23T02:03:09.972075139+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading history steps 13-13, summary, console lines 58-74","runtime_seconds":0.129557626}],"total_operations":1}}
+{"time":"2025-04-23T02:03:11.090475987+02:00","level":"INFO","msg":"stream: closing","id":"prufhl2v"}
+{"time":"2025-04-23T02:03:11.090511973+02:00","level":"INFO","msg":"handler: closed","stream_id":"prufhl2v"}
+{"time":"2025-04-23T02:03:11.090528494+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"prufhl2v"}
+{"time":"2025-04-23T02:03:11.090555163+02:00","level":"INFO","msg":"sender: closed","stream_id":"prufhl2v"}
+{"time":"2025-04-23T02:03:11.090708398+02:00","level":"INFO","msg":"stream: closed","id":"prufhl2v"}

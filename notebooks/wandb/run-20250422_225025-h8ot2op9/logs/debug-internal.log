@@ -1,0 +1,17 @@
+{"time":"2025-04-22T22:50:25.372875751+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"/home/javitrucas/TFG/notebooks/wandb/run-20250422_225025-h8ot2op9/logs/debug-core.log"}
+{"time":"2025-04-22T22:50:25.488014538+02:00","level":"INFO","msg":"created new stream","id":"h8ot2op9"}
+{"time":"2025-04-22T22:50:25.488063586+02:00","level":"INFO","msg":"stream: started","id":"h8ot2op9"}
+{"time":"2025-04-22T22:50:25.48808445+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"h8ot2op9"}
+{"time":"2025-04-22T22:50:25.488105621+02:00","level":"INFO","msg":"handler: started","stream_id":"h8ot2op9"}
+{"time":"2025-04-22T22:50:25.488125171+02:00","level":"INFO","msg":"sender: started","stream_id":"h8ot2op9"}
+{"time":"2025-04-22T22:50:25.800290777+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-22T23:02:11.691101641+02:00","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/javitrucas-universidad-de-granada/TFG/h8ot2op9/file_stream","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}
+{"time":"2025-04-22T23:07:26.723503754+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-22T23:07:26.724405522+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-22T23:07:27.602360719+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-22T23:07:27.728223439+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading history steps 10-10, summary, console lines 47-63","runtime_seconds":0.125605631}],"total_operations":1}}
+{"time":"2025-04-22T23:07:28.832475902+02:00","level":"INFO","msg":"stream: closing","id":"h8ot2op9"}
+{"time":"2025-04-22T23:07:28.832503495+02:00","level":"INFO","msg":"handler: closed","stream_id":"h8ot2op9"}
+{"time":"2025-04-22T23:07:28.832517784+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"h8ot2op9"}
+{"time":"2025-04-22T23:07:28.832529837+02:00","level":"INFO","msg":"sender: closed","stream_id":"h8ot2op9"}
+{"time":"2025-04-22T23:07:28.832669788+02:00","level":"INFO","msg":"stream: closed","id":"h8ot2op9"}

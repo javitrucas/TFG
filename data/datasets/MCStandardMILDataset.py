@@ -9,15 +9,16 @@ from torch.nn.utils.rnn import pad_sequence
 
 
 class MCStandardMILDataset(torch.utils.data.Dataset):
+
     def __init__(
-            self, 
-            D : int,
-            num_bags : int,
-            B: int,
-            pos_class_prob : float = 0.5,
-            train : bool = True,
-            seed : int = 0
-        ) -> None:
+        self,
+        D: int,
+        num_bags: int,
+        B: int,
+        pos_class_prob: float = 0.5,
+        train: bool = True,
+        seed: int = 0,
+    ) -> None:
         """
         Multi-Concept Standard MIL Dataset class constructor.
         Implementation from Algorithm 2 in the paper:
@@ -28,7 +29,7 @@ class MCStandardMILDataset(torch.utils.data.Dataset):
             num_bags: Number of bags in the dataset.
             B: Number of negative instances in each bag.
             pos_class_prob: Probability of a bag being positive.
-            seed: Seed for the random number generator.    
+            seed: Seed for the random number generator.
         """
 
         super().__init__()
@@ -41,15 +42,17 @@ class MCStandardMILDataset(torch.utils.data.Dataset):
         self.data_shape = (D,)
 
         # Create the distributions
-        self.pos_distr = [torch.distributions.Normal(2 * torch.ones(D), 0.1 * torch.ones(D)),
-                         torch.distributions.Normal(3 * torch.ones(D), 0.1 * torch.ones(D))]
+        self.pos_distr = [
+            torch.distributions.Normal(2 * torch.ones(D), 0.1 * torch.ones(D)),
+            torch.distributions.Normal(3 * torch.ones(D), 0.1 * torch.ones(D)),
+        ]
         self.neg_distr = torch.distributions.Normal(torch.zeros(D), torch.ones(D))
-        self.poisoning = torch.distributions.Normal(-10 * torch.ones(D), 0.1 * torch.ones(D))
+        self.poisoning = torch.distributions.Normal(
+            -10 * torch.ones(D), 0.1 * torch.ones(D)
+        )
 
-        # TODO: Check what would happen with the validation set in this cases
         np.random.seed(seed)
         self.bags_list = self._create_bags()
-
 
     def _sample_positive_bag(self):
         """
@@ -57,7 +60,7 @@ class MCStandardMILDataset(torch.utils.data.Dataset):
 
         Arguments:
             mode: Mode of the dataset.
-        
+
         Returns:
             bag_dict: Dictionary containing the following keys:
 
@@ -67,33 +70,30 @@ class MCStandardMILDataset(torch.utils.data.Dataset):
         """
         data = []
         inst_labels = []
-        
+
         # Poison in test mode
         if not self.train:
             data.extend([self.poisoning.sample()])
-            inst_labels.extend(-1*torch.ones(1))
+            inst_labels.extend([-1 * torch.ones(1)])
 
         # Sample num_positives from positive distributions
         # Bag must have both types
         num_positives = torch.randint(low=1, high=4, size=(1,)).item()
-        data.extend([self.pos_distr[(i)%2].sample() for i in range(2*num_positives)])
-        inst_labels.extend(torch.ones(2*num_positives))
+        data.extend(
+            [self.pos_distr[(i) % 2].sample() for i in range(2 * num_positives)]
+        )
+        inst_labels.extend([torch.ones(2 * num_positives)])
 
         # Negative instances sampling
         num_negatives = torch.randint(low=1, high=10, size=(1,)).item()
         data.extend([self.neg_distr.sample() for _ in range(num_negatives)])
-        inst_labels.extend(torch.zeros(num_negatives))
-        
+        inst_labels.extend([torch.zeros(num_negatives)])
+
         # Stack data
         data = torch.stack(data).view(-1, data[0].shape[-1])
-        inst_labels = [x.unsqueeze(0) for x in inst_labels]  # Convert all to shape (1,)
-        inst_labels = torch.cat(inst_labels)  
+        inst_labels = torch.cat([t.flatten() for t in inst_labels])
 
-        return {
-            'X': data,
-            'Y': torch.tensor(1),
-            'y_inst': inst_labels
-        }
+        return {"X": data, "Y": torch.tensor(1), "y_inst": inst_labels}
 
     def _sample_negative_bag(self):
         """
@@ -106,7 +106,7 @@ class MCStandardMILDataset(torch.utils.data.Dataset):
                 - label: Label of the bag.
                 - inst_labels: Instance labels of the bag.
         """
-    
+
         data = []
         inst_labels = []
 
@@ -125,20 +125,15 @@ class MCStandardMILDataset(torch.utils.data.Dataset):
         num_negatives = torch.randint(low=1, high=10, size=(1,)).item()
         data.extend([self.neg_distr.sample() for _ in range(num_negatives)])
         inst_labels.extend(torch.zeros(num_negatives))
-       
+
         # Stack data
         data = torch.stack(data).view(-1, data[0].shape[-1])
-        inst_labels = torch.cat([torch.zeros(self.B), -1 * torch.ones(1)])
+        inst_labels = torch.cat([t.flatten() for t in inst_labels])
 
-        return {
-            'X': data,
-            'Y': torch.tensor(0),
-            'y_inst': inst_labels
-        }
-    
+        return {"X": data, "Y": torch.tensor(0), "y_inst": inst_labels}
+
     def _create_bags(self):
-        """Generate the bags for the dataset.
-        """
+        """Generate the bags for the dataset."""
 
         num_pos_bags = int(self.num_bags * self.pos_class_prob)
         num_neg_bags = self.num_bags - num_pos_bags
@@ -150,11 +145,11 @@ class MCStandardMILDataset(torch.utils.data.Dataset):
 
         for _ in range(num_neg_bags):
             bags_list.append(self._sample_negative_bag())
-        
+
         return bags_list
-    
+
     def get_class_counts(self):
-        return {0:self.num_bags//2, 1: self.num_bags//2}
+        return {0: self.num_bags // 2, 1: self.num_bags // 2}
 
     def collate_fn(self, batch, use_sparse=True):
 
@@ -188,11 +183,15 @@ class MCStandardMILDataset(torch.utils.data.Dataset):
                 adj_mat_indices_list.append(adj_mat.indices())
                 adj_mat_values_list.append(adj_mat.values())
                 adj_mat_shape_list.append(adj_mat.shape)
-            
-            bag_data = pad_sequence(bag_data_list, batch_first=True, padding_value=0) # (batch_size, max_bag_size, feat_dim)
-            bag_label = torch.stack(bag_label_list) # (batch_size, )
-            inst_labels = pad_sequence(inst_labels_list, batch_first=True, padding_value=-2) # (batch_size, max_bag_size)
-            
+
+            bag_data = pad_sequence(
+                bag_data_list, batch_first=True, padding_value=0
+            )  # (batch_size, max_bag_size, feat_dim)
+            bag_label = torch.stack(bag_label_list)  # (batch_size, )
+            inst_labels = pad_sequence(
+                inst_labels_list, batch_first=True, padding_value=-2
+            )  # (batch_size, max_bag_size)
+
             # bag_size = bag_data.shape[1]
             adj_mat_shape_array = np.array(adj_mat_shape_list)
             adj_mat_max_shape = tuple(np.max(adj_mat_shape_array, axis=0).astype(int))
@@ -201,11 +200,15 @@ class MCStandardMILDataset(torch.utils.data.Dataset):
             for i in range(batch_size):
                 indices = adj_mat_indices_list[i]
                 values = adj_mat_values_list[i]
-                adj_mat_list.append(torch.sparse_coo_tensor(indices, values, adj_mat_max_shape))
-            adj_mat = torch.stack(adj_mat_list).coalesce() # (batch_size, bag_size, bag_size)
+                adj_mat_list.append(
+                    torch.sparse_coo_tensor(indices, values, adj_mat_max_shape)
+                )
+            adj_mat = torch.stack(
+                adj_mat_list
+            ).coalesce()  # (batch_size, bag_size, bag_size)
             if not use_sparse:
                 adj_mat = adj_mat.to_dense()
-            mask = (inst_labels != -2).float() # (batch_size, max_bag_size)
+            mask = (inst_labels != -2).float()  # (batch_size, max_bag_size)
 
         return bag_data, bag_label, inst_labels, adj_mat, mask
 
@@ -215,12 +218,12 @@ class MCStandardMILDataset(torch.utils.data.Dataset):
             Number of bags in the dataset
         """
         return len(self.bags_list)
-    
+
     def __getitem__(self, idx: int):
         """
         Arguments:
             index: Index of the bag to retrieve.
-        
+
         Returns:
             bag_dict: Dictionary containing the following keys:
 
@@ -229,16 +232,27 @@ class MCStandardMILDataset(torch.utils.data.Dataset):
                 - y_inst: Instance labels of the bag.
         """
         d = self.bags_list[idx]
-        instances = d['X']
-        bag_label = d['Y']
-        instance_labels = d['y_inst']
+        instances = d["X"]
+        bag_label = d["Y"]
+        instance_labels = d["y_inst"]
         L_mat = csgraph.laplacian(np.eye(len(instance_labels)), normed=True)
-        return instances, bag_label, instance_labels, torch.from_numpy(L_mat).to_sparse()
-        
-    
-    
+        if instances.shape[0] != instance_labels.shape[0]:
+            print(instances)
+            print(bag_label)
+            print(instance_labels)
+            raise ValueError(
+                f"Instances shape {instances.shape} does not match instance labels shape {instance_labels.shape}"
+            )
+        return (
+            instances,
+            bag_label,
+            instance_labels,
+            torch.from_numpy(L_mat).to_sparse(),
+        )
+
+
 if __name__ == "__main__":
-    dataset = MCStandardMILDataset(D = 2, num_bags = 10, B = 3)
+    dataset = MCStandardMILDataset(D=2, num_bags=10, B=3)
     print(dataset[0])
     print(len(dataset))
     print(dataset[1])

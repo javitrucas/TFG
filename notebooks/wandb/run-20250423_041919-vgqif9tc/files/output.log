@@ -1,0 +1,49 @@
+panda
+[WSIDataset] Scanning files...
+[WSIDataset] Building data dict: 100%|██████████| 8822/8822 [01:49<00:00, 80.86it/s]
+[WSIDataset] Building data dict: 100%|██████████| 1794/1794 [00:19<00:00, 89.81it/s] 
+[WSIDataset] Skipped 5 bags
+[WSIDataset] Found 8817 already processed bags
+panda
+[WSIDataset] Scanning files...
+[WSIDataset] Building data dict: 100%|█████████▉| 1787/1794 [00:19<00:00, 91.94it/s]
+[WSIDataset] Skipped 0 bags
+[WSIDataset] Found 1794 already processed bags
+Epoch 1/15
+Train - Loss: 0.3443, Acc: 0.8338, AUC: 0.9053, F1: 0.8865
+Val   - Loss: 0.3346, Acc: 0.8543, AUC: 0.9311, F1: 0.8927
+Final model saved to ./models/panda/mean/model_mean.pth
+Epoch 2/15
+Train - Loss: 0.2977, Acc: 0.8618, AUC: 0.9293, F1: 0.9049
+Val   - Loss: 0.2996, Acc: 0.8628, AUC: 0.9511, F1: 0.9119
+Final model saved to ./models/panda/mean/model_mean.pth
+Epoch 3/15
+Train - Loss: 0.2737, Acc: 0.8717, AUC: 0.9408, F1: 0.9115
+Val   - Loss: 0.3455, Acc: 0.8288, AUC: 0.9544, F1: 0.8935
+Final model saved to ./models/panda/mean/model_mean.pth
+Epoch 4/15
+Train - Loss: 0.2668, Acc: 0.8734, AUC: 0.9431, F1: 0.9126
+Val   - Loss: 0.2657, Acc: 0.8753, AUC: 0.9545, F1: 0.9098
+Final model saved to ./models/panda/mean/model_mean.pth
+Epoch 5/15
+Train - Loss: 0.2604, Acc: 0.8805, AUC: 0.9467, F1: 0.9175
+Val   - Loss: 0.4894, Acc: 0.7789, AUC: 0.9520, F1: 0.8679
+Epoch 6/15
+Train - Loss: 0.2536, Acc: 0.8886, AUC: 0.9504, F1: 0.9233
+Val   - Loss: 0.2687, Acc: 0.8787, AUC: 0.9551, F1: 0.9201
+Final model saved to ./models/panda/mean/model_mean.pth
+Epoch 7/15
+Train - Loss: 0.2538, Acc: 0.8847, AUC: 0.9491, F1: 0.9204
+Val   - Loss: 0.2368, Acc: 0.9002, AUC: 0.9609, F1: 0.9301
+Final model saved to ./models/panda/mean/model_mean.pth
+Epoch 8/15
+Train - Loss: 0.2482, Acc: 0.8857, AUC: 0.9516, F1: 0.9209
+Val   - Loss: 0.3062, Acc: 0.8639, AUC: 0.9582, F1: 0.8981
+Epoch 9/15
+Train - Loss: 0.2419, Acc: 0.8922, AUC: 0.9545, F1: 0.9255
+Val   - Loss: 0.2443, Acc: 0.9036, AUC: 0.9627, F1: 0.9348
+Final model saved to ./models/panda/mean/model_mean.pth
+Epoch 10/15
+Train - Loss: 0.2424, Acc: 0.8891, AUC: 0.9544, F1: 0.9235
+Val   - Loss: 0.2529, Acc: 0.9031, AUC: 0.9637, F1: 0.9354
+Final model saved to ./models/panda/mean/model_mean.pth
