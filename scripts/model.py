@@ -4,11 +4,21 @@ import torch.nn.functional as F
 
 class CNNFeatureExtractor(nn.Module):
     def __init__(self):
-        super(CNNFeatureExtractor, self).__init__()
         # Capas convolucionales
-        self.conv1 = nn.Conv2d(1, 16, kernel_size=3, stride=1, padding=1)
-        self.conv2 = nn.Conv2d(16, 32, kernel_size=3, stride=1, padding=1)
-        self.fc = nn.Linear(32 * 7 * 7, 128)  # Ajustado para MNIST (28x28 -> 7x7 después de pooling)
+        super(CNNFeatureExtractor, self).__init__()
+        self.conv1 = nn.Sequential(
+            nn.Conv2d(1, 32, kernel_size=3, stride=1, padding=1),
+            nn.BatchNorm2d(32),
+            nn.ReLU(),
+            nn.MaxPool2d(2)
+        )
+        self.conv2 = nn.Sequential(
+            nn.Conv2d(32, 64, kernel_size=3, stride=1, padding=1),
+            nn.BatchNorm2d(64),
+            nn.ReLU(),
+            nn.MaxPool2d(2)
+        )
+        self.fc = nn.Linear(64 * 7 * 7, 128)
     
     def forward(self, x):
         # Extracción de características usando capas convolucionales
