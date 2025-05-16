@@ -1,0 +1,108 @@
+rsna
+[RSNADataset] Scanning files...
+[RSNADataset] Found 1000 already processed bags
+[RSNADataset] Number of bags found: 1000
+rsna
+[RSNADataset] Scanning files...
+[RSNADataset] Found 150 already processed bags
+[RSNADataset] Number of bags found: 150
+Epoch 1/50
+Train - Loss: 0.7413, Acc: 0.5938, AUC: 0.6191, F1: 0.4444
+Val   - Loss: 0.5880, Acc: 0.6800, AUC: 0.7561, F1: 0.4839
+Final model saved to ./models/rsna/model_attention.pth
+Epoch 2/50
+Train - Loss: 0.6393, Acc: 0.6525, AUC: 0.7046, F1: 0.5458
+Val   - Loss: 0.6094, Acc: 0.6400, AUC: 0.7757, F1: 0.6505
+Final model saved to ./models/rsna/model_attention.pth
+Epoch 3/50
+Train - Loss: 0.5874, Acc: 0.6863, AUC: 0.7473, F1: 0.5892
+Val   - Loss: 0.5614, Acc: 0.7450, AUC: 0.7821, F1: 0.6331
+Final model saved to ./models/rsna/model_attention.pth
+Epoch 4/50
+Train - Loss: 0.5553, Acc: 0.7212, AUC: 0.7807, F1: 0.6443
+Val   - Loss: 0.5958, Acc: 0.6850, AUC: 0.7938, F1: 0.6834
+Final model saved to ./models/rsna/model_attention.pth
+Epoch 5/50
+Train - Loss: 0.5483, Acc: 0.7262, AUC: 0.7933, F1: 0.6473
+Val   - Loss: 0.5789, Acc: 0.6950, AUC: 0.8171, F1: 0.4505
+Final model saved to ./models/rsna/model_attention.pth
+Epoch 6/50
+Train - Loss: 0.5383, Acc: 0.7475, AUC: 0.8027, F1: 0.6763
+Val   - Loss: 0.5234, Acc: 0.7400, AUC: 0.8153, F1: 0.6338
+Epoch 7/50
+Train - Loss: 0.5636, Acc: 0.7338, AUC: 0.7910, F1: 0.6614
+Val   - Loss: 0.5241, Acc: 0.7350, AUC: 0.8079, F1: 0.6624
+Epoch 8/50
+Train - Loss: 0.5119, Acc: 0.7600, AUC: 0.8198, F1: 0.6981
+Val   - Loss: 0.5581, Acc: 0.7300, AUC: 0.8372, F1: 0.7273
+Final model saved to ./models/rsna/model_attention.pth
+Epoch 9/50
+Train - Loss: 0.5195, Acc: 0.7488, AUC: 0.8196, F1: 0.6835
+Val   - Loss: 0.8068, Acc: 0.6600, AUC: 0.7890, F1: 0.3462
+Epoch 10/50
+Train - Loss: 0.5266, Acc: 0.7475, AUC: 0.8188, F1: 0.6854
+Val   - Loss: 0.5441, Acc: 0.7400, AUC: 0.8360, F1: 0.7374
+Epoch 11/50
+Train - Loss: 0.5195, Acc: 0.7712, AUC: 0.8284, F1: 0.7091
+Val   - Loss: 0.5103, Acc: 0.7600, AUC: 0.8477, F1: 0.6522
+Final model saved to ./models/rsna/model_attention.pth
+Epoch 12/50
+Train - Loss: 0.5106, Acc: 0.7575, AUC: 0.8295, F1: 0.6930
+Val   - Loss: 0.6139, Acc: 0.6800, AUC: 0.8117, F1: 0.4286
+Epoch 13/50
+Train - Loss: 0.5126, Acc: 0.7662, AUC: 0.8340, F1: 0.7036
+Val   - Loss: 0.6075, Acc: 0.7200, AUC: 0.8352, F1: 0.7255
+Epoch 14/50
+Train - Loss: 0.4879, Acc: 0.7600, AUC: 0.8405, F1: 0.6923
+Val   - Loss: 0.7486, Acc: 0.6600, AUC: 0.8413, F1: 0.6881
+Epoch 15/50
+Train - Loss: 0.4797, Acc: 0.7800, AUC: 0.8500, F1: 0.7197
+Val   - Loss: 0.5539, Acc: 0.7350, AUC: 0.8544, F1: 0.7363
+Final model saved to ./models/rsna/model_attention.pth
+Epoch 16/50
+Train - Loss: 0.5145, Acc: 0.7538, AUC: 0.8373, F1: 0.6974
+Val   - Loss: 0.7210, Acc: 0.6900, AUC: 0.8202, F1: 0.4364
+Epoch 17/50
+Train - Loss: 0.4702, Acc: 0.7762, AUC: 0.8569, F1: 0.7199
+Val   - Loss: 0.5186, Acc: 0.8000, AUC: 0.8489, F1: 0.7674
+Epoch 18/50
+Train - Loss: 0.4705, Acc: 0.7850, AUC: 0.8601, F1: 0.7270
+Val   - Loss: 0.5082, Acc: 0.7750, AUC: 0.8654, F1: 0.7594
+Final model saved to ./models/rsna/model_attention.pth
+Epoch 19/50
+Train - Loss: 0.4739, Acc: 0.7875, AUC: 0.8642, F1: 0.7352
+Val   - Loss: 0.5162, Acc: 0.7800, AUC: 0.8595, F1: 0.6857
+Epoch 20/50
+Train - Loss: 0.5051, Acc: 0.7762, AUC: 0.8501, F1: 0.7225
+Val   - Loss: 0.6776, Acc: 0.6700, AUC: 0.8603, F1: 0.7000
+Epoch 21/50
+Train - Loss: 0.5109, Acc: 0.7825, AUC: 0.8459, F1: 0.7307
+Val   - Loss: 0.4838, Acc: 0.8150, AUC: 0.8581, F1: 0.7886
+Epoch 22/50
+Train - Loss: 0.4423, Acc: 0.8013, AUC: 0.8733, F1: 0.7504
+Val   - Loss: 0.6650, Acc: 0.6850, AUC: 0.8615, F1: 0.4522
+Epoch 23/50
+Train - Loss: 0.4534, Acc: 0.7925, AUC: 0.8742, F1: 0.7438
+Val   - Loss: 0.5626, Acc: 0.7750, AUC: 0.8497, F1: 0.7619
+Early stopping triggered.
+Model loaded successfully from ./models/rsna/model.pth
+/home/javitrucas/TFG/scripts/medical_scripts/medical_evaluation.py:64: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+  ax.set_xticklabels([''] + ["Negative", "Positive"])
+/home/javitrucas/TFG/scripts/medical_scripts/medical_evaluation.py:65: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+  ax.set_yticklabels([''] + ["Negative", "Positive"])
+Confusion matrix saved at output/attention/confusion_matrix.png
+
+--- Evaluation Results ---
+Optimal Threshold: 0.5798
+Accuracy: 0.8133, AUC: 0.8759
+Precision: 0.7895, Recall: 0.8333, F1-Score: 0.8108
+Confusion Matrix:
+[[62 16]
+ [12 60]]
+Attention heatmap 0 saved at output/attention/attention_heatmap_0.png
+Attention heatmap 1 saved at output/attention/attention_heatmap_1.png
+Attention heatmap 2 saved at output/attention/attention_heatmap_2.png
+Attention heatmap 3 saved at output/attention/attention_heatmap_3.png
+Attention heatmap 4 saved at output/attention/attention_heatmap_4.png
+/tmp/ipykernel_1658768/383822097.py:383: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed in 3.11. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap()`` or ``pyplot.get_cmap()`` instead.
+  cmap = cm.get_cmap('viridis', len(lambdas))

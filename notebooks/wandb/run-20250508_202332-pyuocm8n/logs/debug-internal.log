@@ -1,0 +1,8 @@
+{"time":"2025-05-08T20:23:32.140246757+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"/home/javitrucas/TFG/notebooks/wandb/run-20250508_202332-pyuocm8n/logs/debug-core.log"}
+{"time":"2025-05-08T20:23:32.255976046+02:00","level":"INFO","msg":"created new stream","id":"pyuocm8n"}
+{"time":"2025-05-08T20:23:32.256032811+02:00","level":"INFO","msg":"stream: started","id":"pyuocm8n"}
+{"time":"2025-05-08T20:23:32.256061621+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"pyuocm8n"}
+{"time":"2025-05-08T20:23:32.256090659+02:00","level":"INFO","msg":"handler: started","stream_id":"pyuocm8n"}
+{"time":"2025-05-08T20:23:32.256110186+02:00","level":"INFO","msg":"sender: started","stream_id":"pyuocm8n"}
+{"time":"2025-05-08T20:23:32.6553746+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-08T20:29:21.782398465+02:00","level":"INFO","msg":"Pausing system monitor"}
