@@ -1,0 +1,36 @@
+2025-05-22 13:18:20,380 WARNING MainThread:4138841 [wandb_init.py:init():1475] interrupted
+Traceback (most recent call last):
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 1457, in init
+    wi.setup_run_log_directory(run_settings)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 647, in setup_run_log_directory
+    self._logger.info(f"Logging user logs to {settings.log_user}")
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/logging/__init__.py", line 1489, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/logging/__init__.py", line 1634, in _log
+    self.handle(record)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/logging/__init__.py", line 1644, in handle
+    self.callHandlers(record)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/logging/__init__.py", line 1706, in callHandlers
+    hdlr.handle(record)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/logging/__init__.py", line 978, in handle
+    self.emit(record)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/logging/__init__.py", line 1230, in emit
+    StreamHandler.emit(self, record)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/logging/__init__.py", line 1110, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/logging/__init__.py", line 953, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/logging/__init__.py", line 688, in format
+    if self.usesTime():
+       ^^^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/logging/__init__.py", line 652, in usesTime
+    def usesTime(self):
+    
+KeyboardInterrupt
+2025-05-22 13:18:21,408 INFO    MainThread:4138841 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-05-22 13:18:21,423 INFO    MainThread:4138841 [wandb_init.py:_pause_backend():564] pausing backend
+2025-05-22 13:18:28,495 INFO    MainThread:4138841 [wandb_init.py:_resume_backend():569] resuming backend
+2025-05-22 13:18:28,770 INFO    MainThread:4138841 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-05-22 13:18:28,784 INFO    MainThread:4138841 [wandb_init.py:_pause_backend():564] pausing backend

@@ -1,0 +1,751 @@
+2025-05-23 12:15:36,643 INFO    MainThread:2433171 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /home/javitrucas/TFG/notebooks/wandb/run-20250523_121536-94jzw4df/logs/debug.log
+2025-05-23 12:15:36,652 INFO    MainThread:2433171 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /home/javitrucas/TFG/notebooks/wandb/run-20250523_121536-94jzw4df/logs/debug-internal.log
+2025-05-23 12:15:36,660 INFO    MainThread:2433171 [wandb_init.py:init():761] calling init triggers
+2025-05-23 12:15:36,667 INFO    MainThread:2433171 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'target_digit': 3, 'bag_size': 20, 'num_epochs': 5, 'learning_rate': 0.001, 'pooling_type': 'attention', 'seed': 2, '_wandb': {}}
+2025-05-23 12:15:36,674 INFO    MainThread:2433171 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-05-23 12:15:36,681 ERROR   MainThread:2433171 [wandb_init.py:init():1481] error in wandb.init()
+Traceback (most recent call last):
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 1471, in init
+    return wi.init(run_settings, run_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 779, in init
+    with telemetry.context() as tel:
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/telemetry.py", line 42, in __exit__
+    self._run._telemetry_callback(self._obj)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 749, in _telemetry_callback
+    self._telemetry_flush()
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 762, in _telemetry_flush
+    self._backend.interface._publish_telemetry(self._telemetry_obj)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/interface/interface_shared.py", line 70, in _publish_telemetry
+    self._publish(rec)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/interface/interface_sock.py", line 46, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 224, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+2025-05-23 12:15:36,712 INFO    MainThread:2433171 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /home/javitrucas/TFG/notebooks/wandb/run-20250523_121536-tvhijgsi/logs/debug.log
+2025-05-23 12:15:36,719 INFO    MainThread:2433171 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /home/javitrucas/TFG/notebooks/wandb/run-20250523_121536-tvhijgsi/logs/debug-internal.log
+2025-05-23 12:15:36,726 INFO    MainThread:2433171 [wandb_init.py:init():761] calling init triggers
+2025-05-23 12:15:36,733 INFO    MainThread:2433171 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'target_digit': 3, 'bag_size': 20, 'num_epochs': 5, 'learning_rate': 0.001, 'pooling_type': 'attention', 'seed': 3, '_wandb': {}}
+2025-05-23 12:15:36,742 INFO    MainThread:2433171 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-05-23 12:15:36,751 ERROR   MainThread:2433171 [wandb_init.py:init():1481] error in wandb.init()
+Traceback (most recent call last):
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 1471, in init
+    return wi.init(run_settings, run_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 779, in init
+    with telemetry.context() as tel:
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/telemetry.py", line 42, in __exit__
+    self._run._telemetry_callback(self._obj)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 749, in _telemetry_callback
+    self._telemetry_flush()
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 762, in _telemetry_flush
+    self._backend.interface._publish_telemetry(self._telemetry_obj)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/interface/interface_shared.py", line 70, in _publish_telemetry
+    self._publish(rec)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/interface/interface_sock.py", line 46, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 224, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+2025-05-23 12:15:36,778 INFO    MainThread:2433171 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /home/javitrucas/TFG/notebooks/wandb/run-20250523_121536-qc5ae7h1/logs/debug.log
+2025-05-23 12:15:36,785 INFO    MainThread:2433171 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /home/javitrucas/TFG/notebooks/wandb/run-20250523_121536-qc5ae7h1/logs/debug-internal.log
+2025-05-23 12:15:36,795 INFO    MainThread:2433171 [wandb_init.py:init():761] calling init triggers
+2025-05-23 12:15:36,802 INFO    MainThread:2433171 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'target_digit': 3, 'bag_size': 20, 'num_epochs': 5, 'learning_rate': 0.001, 'pooling_type': 'attention', 'seed': 4, '_wandb': {}}
+2025-05-23 12:15:36,810 INFO    MainThread:2433171 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-05-23 12:15:36,817 ERROR   MainThread:2433171 [wandb_init.py:init():1481] error in wandb.init()
+Traceback (most recent call last):
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 1471, in init
+    return wi.init(run_settings, run_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 779, in init
+    with telemetry.context() as tel:
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/telemetry.py", line 42, in __exit__
+    self._run._telemetry_callback(self._obj)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 749, in _telemetry_callback
+    self._telemetry_flush()
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 762, in _telemetry_flush
+    self._backend.interface._publish_telemetry(self._telemetry_obj)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/interface/interface_shared.py", line 70, in _publish_telemetry
+    self._publish(rec)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/interface/interface_sock.py", line 46, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 224, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+2025-05-23 12:15:36,850 INFO    MainThread:2433171 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /home/javitrucas/TFG/notebooks/wandb/run-20250523_121536-xf987c9g/logs/debug.log
+2025-05-23 12:15:36,858 INFO    MainThread:2433171 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /home/javitrucas/TFG/notebooks/wandb/run-20250523_121536-xf987c9g/logs/debug-internal.log
+2025-05-23 12:15:36,865 INFO    MainThread:2433171 [wandb_init.py:init():761] calling init triggers
+2025-05-23 12:15:36,872 INFO    MainThread:2433171 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'target_digit': 3, 'bag_size': 20, 'num_epochs': 5, 'learning_rate': 0.001, 'pooling_type': 'mean', 'seed': 0, '_wandb': {}}
+2025-05-23 12:15:36,879 INFO    MainThread:2433171 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-05-23 12:15:36,887 ERROR   MainThread:2433171 [wandb_init.py:init():1481] error in wandb.init()
+Traceback (most recent call last):
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 1471, in init
+    return wi.init(run_settings, run_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 779, in init
+    with telemetry.context() as tel:
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/telemetry.py", line 42, in __exit__
+    self._run._telemetry_callback(self._obj)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 749, in _telemetry_callback
+    self._telemetry_flush()
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 762, in _telemetry_flush
+    self._backend.interface._publish_telemetry(self._telemetry_obj)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/interface/interface_shared.py", line 70, in _publish_telemetry
+    self._publish(rec)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/interface/interface_sock.py", line 46, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 224, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+2025-05-23 12:15:36,916 INFO    MainThread:2433171 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /home/javitrucas/TFG/notebooks/wandb/run-20250523_121536-knaac612/logs/debug.log
+2025-05-23 12:15:36,924 INFO    MainThread:2433171 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /home/javitrucas/TFG/notebooks/wandb/run-20250523_121536-knaac612/logs/debug-internal.log
+2025-05-23 12:15:36,931 INFO    MainThread:2433171 [wandb_init.py:init():761] calling init triggers
+2025-05-23 12:15:36,940 INFO    MainThread:2433171 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'target_digit': 3, 'bag_size': 20, 'num_epochs': 5, 'learning_rate': 0.001, 'pooling_type': 'mean', 'seed': 1, '_wandb': {}}
+2025-05-23 12:15:36,948 INFO    MainThread:2433171 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-05-23 12:15:36,956 ERROR   MainThread:2433171 [wandb_init.py:init():1481] error in wandb.init()
+Traceback (most recent call last):
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 1471, in init
+    return wi.init(run_settings, run_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 779, in init
+    with telemetry.context() as tel:
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/telemetry.py", line 42, in __exit__
+    self._run._telemetry_callback(self._obj)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 749, in _telemetry_callback
+    self._telemetry_flush()
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 762, in _telemetry_flush
+    self._backend.interface._publish_telemetry(self._telemetry_obj)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/interface/interface_shared.py", line 70, in _publish_telemetry
+    self._publish(rec)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/interface/interface_sock.py", line 46, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 224, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+2025-05-23 12:15:36,984 INFO    MainThread:2433171 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /home/javitrucas/TFG/notebooks/wandb/run-20250523_121536-xo45drur/logs/debug.log
+2025-05-23 12:15:36,994 INFO    MainThread:2433171 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /home/javitrucas/TFG/notebooks/wandb/run-20250523_121536-xo45drur/logs/debug-internal.log
+2025-05-23 12:15:37,001 INFO    MainThread:2433171 [wandb_init.py:init():761] calling init triggers
+2025-05-23 12:15:37,008 INFO    MainThread:2433171 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'target_digit': 3, 'bag_size': 20, 'num_epochs': 5, 'learning_rate': 0.001, 'pooling_type': 'mean', 'seed': 2, '_wandb': {}}
+2025-05-23 12:15:37,016 INFO    MainThread:2433171 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-05-23 12:15:37,023 ERROR   MainThread:2433171 [wandb_init.py:init():1481] error in wandb.init()
+Traceback (most recent call last):
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 1471, in init
+    return wi.init(run_settings, run_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 779, in init
+    with telemetry.context() as tel:
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/telemetry.py", line 42, in __exit__
+    self._run._telemetry_callback(self._obj)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 749, in _telemetry_callback
+    self._telemetry_flush()
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 762, in _telemetry_flush
+    self._backend.interface._publish_telemetry(self._telemetry_obj)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/interface/interface_shared.py", line 70, in _publish_telemetry
+    self._publish(rec)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/interface/interface_sock.py", line 46, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 224, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+2025-05-23 12:15:37,054 INFO    MainThread:2433171 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /home/javitrucas/TFG/notebooks/wandb/run-20250523_121537-rpxp5zz3/logs/debug.log
+2025-05-23 12:15:37,062 INFO    MainThread:2433171 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /home/javitrucas/TFG/notebooks/wandb/run-20250523_121537-rpxp5zz3/logs/debug-internal.log
+2025-05-23 12:15:37,069 INFO    MainThread:2433171 [wandb_init.py:init():761] calling init triggers
+2025-05-23 12:15:37,076 INFO    MainThread:2433171 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'target_digit': 3, 'bag_size': 20, 'num_epochs': 5, 'learning_rate': 0.001, 'pooling_type': 'mean', 'seed': 3, '_wandb': {}}
+2025-05-23 12:15:37,083 INFO    MainThread:2433171 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-05-23 12:15:37,094 ERROR   MainThread:2433171 [wandb_init.py:init():1481] error in wandb.init()
+Traceback (most recent call last):
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 1471, in init
+    return wi.init(run_settings, run_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 779, in init
+    with telemetry.context() as tel:
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/telemetry.py", line 42, in __exit__
+    self._run._telemetry_callback(self._obj)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 749, in _telemetry_callback
+    self._telemetry_flush()
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 762, in _telemetry_flush
+    self._backend.interface._publish_telemetry(self._telemetry_obj)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/interface/interface_shared.py", line 70, in _publish_telemetry
+    self._publish(rec)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/interface/interface_sock.py", line 46, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 224, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+2025-05-23 12:15:37,122 INFO    MainThread:2433171 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /home/javitrucas/TFG/notebooks/wandb/run-20250523_121537-vs98cw34/logs/debug.log
+2025-05-23 12:15:37,129 INFO    MainThread:2433171 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /home/javitrucas/TFG/notebooks/wandb/run-20250523_121537-vs98cw34/logs/debug-internal.log
+2025-05-23 12:15:37,139 INFO    MainThread:2433171 [wandb_init.py:init():761] calling init triggers
+2025-05-23 12:15:37,147 INFO    MainThread:2433171 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'target_digit': 3, 'bag_size': 20, 'num_epochs': 5, 'learning_rate': 0.001, 'pooling_type': 'mean', 'seed': 4, '_wandb': {}}
+2025-05-23 12:15:37,154 INFO    MainThread:2433171 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-05-23 12:15:37,162 ERROR   MainThread:2433171 [wandb_init.py:init():1481] error in wandb.init()
+Traceback (most recent call last):
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 1471, in init
+    return wi.init(run_settings, run_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 779, in init
+    with telemetry.context() as tel:
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/telemetry.py", line 42, in __exit__
+    self._run._telemetry_callback(self._obj)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 749, in _telemetry_callback
+    self._telemetry_flush()
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 762, in _telemetry_flush
+    self._backend.interface._publish_telemetry(self._telemetry_obj)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/interface/interface_shared.py", line 70, in _publish_telemetry
+    self._publish(rec)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/interface/interface_sock.py", line 46, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 224, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+2025-05-23 12:15:37,193 INFO    MainThread:2433171 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /home/javitrucas/TFG/notebooks/wandb/run-20250523_121537-ok9qrywz/logs/debug.log
+2025-05-23 12:15:37,201 INFO    MainThread:2433171 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /home/javitrucas/TFG/notebooks/wandb/run-20250523_121537-ok9qrywz/logs/debug-internal.log
+2025-05-23 12:15:37,208 INFO    MainThread:2433171 [wandb_init.py:init():761] calling init triggers
+2025-05-23 12:15:37,216 INFO    MainThread:2433171 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'target_digit': 3, 'bag_size': 20, 'num_epochs': 5, 'learning_rate': 0.001, 'pooling_type': 'max', 'seed': 0, '_wandb': {}}
+2025-05-23 12:15:37,223 INFO    MainThread:2433171 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-05-23 12:15:37,230 ERROR   MainThread:2433171 [wandb_init.py:init():1481] error in wandb.init()
+Traceback (most recent call last):
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 1471, in init
+    return wi.init(run_settings, run_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 779, in init
+    with telemetry.context() as tel:
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/telemetry.py", line 42, in __exit__
+    self._run._telemetry_callback(self._obj)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 749, in _telemetry_callback
+    self._telemetry_flush()
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 762, in _telemetry_flush
+    self._backend.interface._publish_telemetry(self._telemetry_obj)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/interface/interface_shared.py", line 70, in _publish_telemetry
+    self._publish(rec)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/interface/interface_sock.py", line 46, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 224, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+2025-05-23 12:15:37,262 INFO    MainThread:2433171 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /home/javitrucas/TFG/notebooks/wandb/run-20250523_121537-ddjrk4sv/logs/debug.log
+2025-05-23 12:15:37,269 INFO    MainThread:2433171 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /home/javitrucas/TFG/notebooks/wandb/run-20250523_121537-ddjrk4sv/logs/debug-internal.log
+2025-05-23 12:15:37,277 INFO    MainThread:2433171 [wandb_init.py:init():761] calling init triggers
+2025-05-23 12:15:37,287 INFO    MainThread:2433171 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'target_digit': 3, 'bag_size': 20, 'num_epochs': 5, 'learning_rate': 0.001, 'pooling_type': 'max', 'seed': 1, '_wandb': {}}
+2025-05-23 12:15:37,294 INFO    MainThread:2433171 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-05-23 12:15:37,302 ERROR   MainThread:2433171 [wandb_init.py:init():1481] error in wandb.init()
+Traceback (most recent call last):
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 1471, in init
+    return wi.init(run_settings, run_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 779, in init
+    with telemetry.context() as tel:
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/telemetry.py", line 42, in __exit__
+    self._run._telemetry_callback(self._obj)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 749, in _telemetry_callback
+    self._telemetry_flush()
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 762, in _telemetry_flush
+    self._backend.interface._publish_telemetry(self._telemetry_obj)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/interface/interface_shared.py", line 70, in _publish_telemetry
+    self._publish(rec)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/interface/interface_sock.py", line 46, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 224, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+2025-05-23 12:15:37,329 INFO    MainThread:2433171 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /home/javitrucas/TFG/notebooks/wandb/run-20250523_121537-rd40kfs7/logs/debug.log
+2025-05-23 12:15:37,339 INFO    MainThread:2433171 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /home/javitrucas/TFG/notebooks/wandb/run-20250523_121537-rd40kfs7/logs/debug-internal.log
+2025-05-23 12:15:37,347 INFO    MainThread:2433171 [wandb_init.py:init():761] calling init triggers
+2025-05-23 12:15:37,354 INFO    MainThread:2433171 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'target_digit': 3, 'bag_size': 20, 'num_epochs': 5, 'learning_rate': 0.001, 'pooling_type': 'max', 'seed': 2, '_wandb': {}}
+2025-05-23 12:15:37,362 INFO    MainThread:2433171 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-05-23 12:15:37,369 ERROR   MainThread:2433171 [wandb_init.py:init():1481] error in wandb.init()
+Traceback (most recent call last):
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 1471, in init
+    return wi.init(run_settings, run_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 779, in init
+    with telemetry.context() as tel:
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/telemetry.py", line 42, in __exit__
+    self._run._telemetry_callback(self._obj)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 749, in _telemetry_callback
+    self._telemetry_flush()
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 762, in _telemetry_flush
+    self._backend.interface._publish_telemetry(self._telemetry_obj)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/interface/interface_shared.py", line 70, in _publish_telemetry
+    self._publish(rec)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/interface/interface_sock.py", line 46, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 224, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+2025-05-23 12:15:37,400 INFO    MainThread:2433171 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /home/javitrucas/TFG/notebooks/wandb/run-20250523_121537-qoxhemfh/logs/debug.log
+2025-05-23 12:15:37,408 INFO    MainThread:2433171 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /home/javitrucas/TFG/notebooks/wandb/run-20250523_121537-qoxhemfh/logs/debug-internal.log
+2025-05-23 12:15:37,415 INFO    MainThread:2433171 [wandb_init.py:init():761] calling init triggers
+2025-05-23 12:15:37,422 INFO    MainThread:2433171 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'target_digit': 3, 'bag_size': 20, 'num_epochs': 5, 'learning_rate': 0.001, 'pooling_type': 'max', 'seed': 3, '_wandb': {}}
+2025-05-23 12:15:37,431 INFO    MainThread:2433171 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-05-23 12:15:37,440 ERROR   MainThread:2433171 [wandb_init.py:init():1481] error in wandb.init()
+Traceback (most recent call last):
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 1471, in init
+    return wi.init(run_settings, run_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 779, in init
+    with telemetry.context() as tel:
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/telemetry.py", line 42, in __exit__
+    self._run._telemetry_callback(self._obj)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 749, in _telemetry_callback
+    self._telemetry_flush()
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 762, in _telemetry_flush
+    self._backend.interface._publish_telemetry(self._telemetry_obj)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/interface/interface_shared.py", line 70, in _publish_telemetry
+    self._publish(rec)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/interface/interface_sock.py", line 46, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 224, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+2025-05-23 12:15:37,469 INFO    MainThread:2433171 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /home/javitrucas/TFG/notebooks/wandb/run-20250523_121537-4jaj6icl/logs/debug.log
+2025-05-23 12:15:37,476 INFO    MainThread:2433171 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /home/javitrucas/TFG/notebooks/wandb/run-20250523_121537-4jaj6icl/logs/debug-internal.log
+2025-05-23 12:15:37,487 INFO    MainThread:2433171 [wandb_init.py:init():761] calling init triggers
+2025-05-23 12:15:37,494 INFO    MainThread:2433171 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'target_digit': 3, 'bag_size': 20, 'num_epochs': 5, 'learning_rate': 0.001, 'pooling_type': 'max', 'seed': 4, '_wandb': {}}
+2025-05-23 12:15:37,502 INFO    MainThread:2433171 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-05-23 12:15:37,509 ERROR   MainThread:2433171 [wandb_init.py:init():1481] error in wandb.init()
+Traceback (most recent call last):
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 1471, in init
+    return wi.init(run_settings, run_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 779, in init
+    with telemetry.context() as tel:
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/telemetry.py", line 42, in __exit__
+    self._run._telemetry_callback(self._obj)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 749, in _telemetry_callback
+    self._telemetry_flush()
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 762, in _telemetry_flush
+    self._backend.interface._publish_telemetry(self._telemetry_obj)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/interface/interface_shared.py", line 70, in _publish_telemetry
+    self._publish(rec)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/interface/interface_sock.py", line 46, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 224, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+2025-05-23 12:15:37,542 INFO    MainThread:2433171 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /home/javitrucas/TFG/notebooks/wandb/run-20250523_121537-7um67fkd/logs/debug.log
+2025-05-23 12:15:37,549 INFO    MainThread:2433171 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /home/javitrucas/TFG/notebooks/wandb/run-20250523_121537-7um67fkd/logs/debug-internal.log
+2025-05-23 12:15:37,557 INFO    MainThread:2433171 [wandb_init.py:init():761] calling init triggers
+2025-05-23 12:15:37,564 INFO    MainThread:2433171 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'target_digit': 3, 'bag_size': 20, 'num_epochs': 5, 'learning_rate': 0.0001, 'pooling_type': 'attention', 'seed': 0, '_wandb': {}}
+2025-05-23 12:15:37,572 INFO    MainThread:2433171 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-05-23 12:15:37,580 ERROR   MainThread:2433171 [wandb_init.py:init():1481] error in wandb.init()
+Traceback (most recent call last):
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 1471, in init
+    return wi.init(run_settings, run_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 779, in init
+    with telemetry.context() as tel:
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/telemetry.py", line 42, in __exit__
+    self._run._telemetry_callback(self._obj)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 749, in _telemetry_callback
+    self._telemetry_flush()
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 762, in _telemetry_flush
+    self._backend.interface._publish_telemetry(self._telemetry_obj)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/interface/interface_shared.py", line 70, in _publish_telemetry
+    self._publish(rec)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/interface/interface_sock.py", line 46, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 224, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+2025-05-23 12:15:37,609 INFO    MainThread:2433171 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /home/javitrucas/TFG/notebooks/wandb/run-20250523_121537-gaf0qgyz/logs/debug.log
+2025-05-23 12:15:37,617 INFO    MainThread:2433171 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /home/javitrucas/TFG/notebooks/wandb/run-20250523_121537-gaf0qgyz/logs/debug-internal.log
+2025-05-23 12:15:37,625 INFO    MainThread:2433171 [wandb_init.py:init():761] calling init triggers
+2025-05-23 12:15:37,634 INFO    MainThread:2433171 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'target_digit': 3, 'bag_size': 20, 'num_epochs': 5, 'learning_rate': 0.0001, 'pooling_type': 'attention', 'seed': 1, '_wandb': {}}
+2025-05-23 12:15:37,642 INFO    MainThread:2433171 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-05-23 12:15:37,650 ERROR   MainThread:2433171 [wandb_init.py:init():1481] error in wandb.init()
+Traceback (most recent call last):
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 1471, in init
+    return wi.init(run_settings, run_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 779, in init
+    with telemetry.context() as tel:
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/telemetry.py", line 42, in __exit__
+    self._run._telemetry_callback(self._obj)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 749, in _telemetry_callback
+    self._telemetry_flush()
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 762, in _telemetry_flush
+    self._backend.interface._publish_telemetry(self._telemetry_obj)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/interface/interface_shared.py", line 70, in _publish_telemetry
+    self._publish(rec)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/interface/interface_sock.py", line 46, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 224, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+2025-05-23 12:15:37,681 INFO    MainThread:2433171 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /home/javitrucas/TFG/notebooks/wandb/run-20250523_121537-wjlx95kv/logs/debug.log
+2025-05-23 12:15:37,689 INFO    MainThread:2433171 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /home/javitrucas/TFG/notebooks/wandb/run-20250523_121537-wjlx95kv/logs/debug-internal.log
+2025-05-23 12:15:37,697 INFO    MainThread:2433171 [wandb_init.py:init():761] calling init triggers
+2025-05-23 12:15:37,704 INFO    MainThread:2433171 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'target_digit': 3, 'bag_size': 20, 'num_epochs': 5, 'learning_rate': 0.0001, 'pooling_type': 'attention', 'seed': 2, '_wandb': {}}
+2025-05-23 12:15:37,712 INFO    MainThread:2433171 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-05-23 12:15:37,719 ERROR   MainThread:2433171 [wandb_init.py:init():1481] error in wandb.init()
+Traceback (most recent call last):
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 1471, in init
+    return wi.init(run_settings, run_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 779, in init
+    with telemetry.context() as tel:
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/telemetry.py", line 42, in __exit__
+    self._run._telemetry_callback(self._obj)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 749, in _telemetry_callback
+    self._telemetry_flush()
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 762, in _telemetry_flush
+    self._backend.interface._publish_telemetry(self._telemetry_obj)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/interface/interface_shared.py", line 70, in _publish_telemetry
+    self._publish(rec)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/interface/interface_sock.py", line 46, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 224, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+2025-05-23 12:15:37,750 INFO    MainThread:2433171 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /home/javitrucas/TFG/notebooks/wandb/run-20250523_121537-o6mvsfwy/logs/debug.log
+2025-05-23 12:15:37,757 INFO    MainThread:2433171 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /home/javitrucas/TFG/notebooks/wandb/run-20250523_121537-o6mvsfwy/logs/debug-internal.log
+2025-05-23 12:15:37,765 INFO    MainThread:2433171 [wandb_init.py:init():761] calling init triggers
+2025-05-23 12:15:37,774 INFO    MainThread:2433171 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'target_digit': 3, 'bag_size': 20, 'num_epochs': 5, 'learning_rate': 0.0001, 'pooling_type': 'attention', 'seed': 3, '_wandb': {}}
+2025-05-23 12:15:37,783 INFO    MainThread:2433171 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-05-23 12:15:37,790 ERROR   MainThread:2433171 [wandb_init.py:init():1481] error in wandb.init()
+Traceback (most recent call last):
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 1471, in init
+    return wi.init(run_settings, run_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 779, in init
+    with telemetry.context() as tel:
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/telemetry.py", line 42, in __exit__
+    self._run._telemetry_callback(self._obj)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 749, in _telemetry_callback
+    self._telemetry_flush()
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 762, in _telemetry_flush
+    self._backend.interface._publish_telemetry(self._telemetry_obj)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/interface/interface_shared.py", line 70, in _publish_telemetry
+    self._publish(rec)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/interface/interface_sock.py", line 46, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 224, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+2025-05-23 12:15:37,820 INFO    MainThread:2433171 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /home/javitrucas/TFG/notebooks/wandb/run-20250523_121537-a7ww2b60/logs/debug.log
+2025-05-23 12:15:37,830 INFO    MainThread:2433171 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /home/javitrucas/TFG/notebooks/wandb/run-20250523_121537-a7ww2b60/logs/debug-internal.log
+2025-05-23 12:15:37,837 INFO    MainThread:2433171 [wandb_init.py:init():761] calling init triggers
+2025-05-23 12:15:37,845 INFO    MainThread:2433171 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'target_digit': 3, 'bag_size': 20, 'num_epochs': 5, 'learning_rate': 0.0001, 'pooling_type': 'attention', 'seed': 4, '_wandb': {}}
+2025-05-23 12:15:37,853 INFO    MainThread:2433171 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-05-23 12:15:37,860 ERROR   MainThread:2433171 [wandb_init.py:init():1481] error in wandb.init()
+Traceback (most recent call last):
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 1471, in init
+    return wi.init(run_settings, run_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 779, in init
+    with telemetry.context() as tel:
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/telemetry.py", line 42, in __exit__
+    self._run._telemetry_callback(self._obj)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 749, in _telemetry_callback
+    self._telemetry_flush()
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 762, in _telemetry_flush
+    self._backend.interface._publish_telemetry(self._telemetry_obj)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/interface/interface_shared.py", line 70, in _publish_telemetry
+    self._publish(rec)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/interface/interface_sock.py", line 46, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 224, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+2025-05-23 12:15:37,893 INFO    MainThread:2433171 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /home/javitrucas/TFG/notebooks/wandb/run-20250523_121537-jsarea2k/logs/debug.log
+2025-05-23 12:15:37,901 INFO    MainThread:2433171 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /home/javitrucas/TFG/notebooks/wandb/run-20250523_121537-jsarea2k/logs/debug-internal.log
+2025-05-23 12:15:37,909 INFO    MainThread:2433171 [wandb_init.py:init():761] calling init triggers
+2025-05-23 12:15:37,916 INFO    MainThread:2433171 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'target_digit': 3, 'bag_size': 20, 'num_epochs': 5, 'learning_rate': 0.0001, 'pooling_type': 'mean', 'seed': 0, '_wandb': {}}
+2025-05-23 12:15:37,926 INFO    MainThread:2433171 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-05-23 12:15:37,934 ERROR   MainThread:2433171 [wandb_init.py:init():1481] error in wandb.init()
+Traceback (most recent call last):
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 1471, in init
+    return wi.init(run_settings, run_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 779, in init
+    with telemetry.context() as tel:
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/telemetry.py", line 42, in __exit__
+    self._run._telemetry_callback(self._obj)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 749, in _telemetry_callback
+    self._telemetry_flush()
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 762, in _telemetry_flush
+    self._backend.interface._publish_telemetry(self._telemetry_obj)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/interface/interface_shared.py", line 70, in _publish_telemetry
+    self._publish(rec)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/interface/interface_sock.py", line 46, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 224, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+2025-05-23 12:15:37,962 INFO    MainThread:2433171 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /home/javitrucas/TFG/notebooks/wandb/run-20250523_121537-f8efnni6/logs/debug.log
+2025-05-23 12:15:37,972 INFO    MainThread:2433171 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /home/javitrucas/TFG/notebooks/wandb/run-20250523_121537-f8efnni6/logs/debug-internal.log
+2025-05-23 12:15:37,980 INFO    MainThread:2433171 [wandb_init.py:init():761] calling init triggers
+2025-05-23 12:15:37,988 INFO    MainThread:2433171 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'target_digit': 3, 'bag_size': 20, 'num_epochs': 5, 'learning_rate': 0.0001, 'pooling_type': 'mean', 'seed': 1, '_wandb': {}}
+2025-05-23 12:15:37,995 INFO    MainThread:2433171 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-05-23 12:15:38,003 ERROR   MainThread:2433171 [wandb_init.py:init():1481] error in wandb.init()
+Traceback (most recent call last):
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 1471, in init
+    return wi.init(run_settings, run_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 779, in init
+    with telemetry.context() as tel:
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/telemetry.py", line 42, in __exit__
+    self._run._telemetry_callback(self._obj)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 749, in _telemetry_callback
+    self._telemetry_flush()
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 762, in _telemetry_flush
+    self._backend.interface._publish_telemetry(self._telemetry_obj)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/interface/interface_shared.py", line 70, in _publish_telemetry
+    self._publish(rec)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/interface/interface_sock.py", line 46, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 224, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+2025-05-23 12:15:38,033 INFO    MainThread:2433171 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /home/javitrucas/TFG/notebooks/wandb/run-20250523_121538-8otasspo/logs/debug.log
+2025-05-23 12:15:38,040 INFO    MainThread:2433171 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /home/javitrucas/TFG/notebooks/wandb/run-20250523_121538-8otasspo/logs/debug-internal.log
+2025-05-23 12:15:38,048 INFO    MainThread:2433171 [wandb_init.py:init():761] calling init triggers
+2025-05-23 12:15:38,055 INFO    MainThread:2433171 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'target_digit': 3, 'bag_size': 20, 'num_epochs': 5, 'learning_rate': 0.0001, 'pooling_type': 'mean', 'seed': 2, '_wandb': {}}
+2025-05-23 12:15:38,065 INFO    MainThread:2433171 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-05-23 12:15:38,073 ERROR   MainThread:2433171 [wandb_init.py:init():1481] error in wandb.init()
+Traceback (most recent call last):
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 1471, in init
+    return wi.init(run_settings, run_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 779, in init
+    with telemetry.context() as tel:
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/telemetry.py", line 42, in __exit__
+    self._run._telemetry_callback(self._obj)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 749, in _telemetry_callback
+    self._telemetry_flush()
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 762, in _telemetry_flush
+    self._backend.interface._publish_telemetry(self._telemetry_obj)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/interface/interface_shared.py", line 70, in _publish_telemetry
+    self._publish(rec)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/interface/interface_sock.py", line 46, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 224, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+2025-05-23 12:15:38,102 INFO    MainThread:2433171 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /home/javitrucas/TFG/notebooks/wandb/run-20250523_121538-hje616tg/logs/debug.log
+2025-05-23 12:15:38,111 INFO    MainThread:2433171 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /home/javitrucas/TFG/notebooks/wandb/run-20250523_121538-hje616tg/logs/debug-internal.log
+2025-05-23 12:15:38,120 INFO    MainThread:2433171 [wandb_init.py:init():761] calling init triggers
+2025-05-23 12:15:38,128 INFO    MainThread:2433171 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'target_digit': 3, 'bag_size': 20, 'num_epochs': 5, 'learning_rate': 0.0001, 'pooling_type': 'mean', 'seed': 3, '_wandb': {}}
+2025-05-23 12:15:38,135 INFO    MainThread:2433171 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-05-23 12:15:38,145 ERROR   MainThread:2433171 [wandb_init.py:init():1481] error in wandb.init()
+Traceback (most recent call last):
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 1471, in init
+    return wi.init(run_settings, run_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 779, in init
+    with telemetry.context() as tel:
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/telemetry.py", line 42, in __exit__
+    self._run._telemetry_callback(self._obj)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 749, in _telemetry_callback
+    self._telemetry_flush()
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 762, in _telemetry_flush
+    self._backend.interface._publish_telemetry(self._telemetry_obj)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/interface/interface_shared.py", line 70, in _publish_telemetry
+    self._publish(rec)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/interface/interface_sock.py", line 46, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 224, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+2025-05-23 12:15:38,178 WARNING MainThread:2433171 [wandb_init.py:init():1475] interrupted
+Traceback (most recent call last):
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 1457, in init
+    wi.setup_run_log_directory(run_settings)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 647, in setup_run_log_directory
+    self._logger.info(f"Logging user logs to {settings.log_user}")
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/logging/__init__.py", line 1489, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/logging/__init__.py", line 1634, in _log
+    self.handle(record)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/logging/__init__.py", line 1644, in handle
+    self.callHandlers(record)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/logging/__init__.py", line 1706, in callHandlers
+    hdlr.handle(record)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/logging/__init__.py", line 978, in handle
+    self.emit(record)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/logging/__init__.py", line 1230, in emit
+    StreamHandler.emit(self, record)
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/logging/__init__.py", line 1114, in emit
+    self.flush()
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/logging/__init__.py", line 1094, in flush
+    self.stream.flush()
+KeyboardInterrupt
+2025-05-23 12:15:39,007 INFO    MainThread:2433171 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-05-23 12:15:39,015 INFO    MainThread:2433171 [wandb_init.py:_pause_backend():564] pausing backend
