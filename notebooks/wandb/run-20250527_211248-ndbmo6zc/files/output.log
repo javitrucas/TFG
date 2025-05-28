@@ -1,0 +1,34 @@
+Epoch 1/10
+Entrenamiento - Loss: 1201.2654, Accuracy: 0.8915
+Validación - Loss: 131.0770, Accuracy: 0.9600
+Epoch 2/10
+Entrenamiento - Loss: 395.0205, Accuracy: 0.9708
+Validación - Loss: 112.8514, Accuracy: 0.9608
+Epoch 3/10
+Entrenamiento - Loss: 280.6294, Accuracy: 0.9794
+Validación - Loss: 63.0111, Accuracy: 0.9825
+Epoch 4/10
+Entrenamiento - Loss: 207.2647, Accuracy: 0.9865
+Validación - Loss: 52.6844, Accuracy: 0.9867
+Epoch 5/10
+Entrenamiento - Loss: 156.2735, Accuracy: 0.9898
+Validación - Loss: 104.8392, Accuracy: 0.9733
+Epoch 6/10
+Entrenamiento - Loss: 116.2281, Accuracy: 0.9923
+Validación - Loss: 61.2803, Accuracy: 0.9858
+Epoch 7/10
+Entrenamiento - Loss: 102.1297, Accuracy: 0.9929
+Validación - Loss: 83.1891, Accuracy: 0.9792
+Epoch 8/10
+Entrenamiento - Loss: 86.5030, Accuracy: 0.9950
+Validación - Loss: 163.1658, Accuracy: 0.9642
+Epoch 9/10
+Entrenamiento - Loss: 88.7331, Accuracy: 0.9931
+Validación - Loss: 78.9581, Accuracy: 0.9858
+Epoch 10/10
+Entrenamiento - Loss: 77.1852, Accuracy: 0.9944
+Validación - Loss: 88.0608, Accuracy: 0.9842
+✅ ATTENTION POOLING completado:
+   📈 Accuracy: 0.9870
+   📈 F1-Score: 0.9906
+🔍 Generando visualizaciones de mapas de atención...

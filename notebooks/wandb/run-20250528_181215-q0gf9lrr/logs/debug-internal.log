@@ -1,0 +1,20 @@
+{"time":"2025-05-28T18:12:15.017787762+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"/home/javitrucas/TFG/notebooks/wandb/run-20250528_181215-q0gf9lrr/logs/debug-core.log"}
+{"time":"2025-05-28T18:12:15.127044566+02:00","level":"INFO","msg":"created new stream","id":"q0gf9lrr"}
+{"time":"2025-05-28T18:12:15.127388646+02:00","level":"INFO","msg":"stream: started","id":"q0gf9lrr"}
+{"time":"2025-05-28T18:12:15.127401774+02:00","level":"INFO","msg":"handler: started","stream_id":"q0gf9lrr"}
+{"time":"2025-05-28T18:12:15.127405447+02:00","level":"INFO","msg":"sender: started","stream_id":"q0gf9lrr"}
+{"time":"2025-05-28T18:12:15.127405987+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"q0gf9lrr"}
+{"time":"2025-05-28T18:12:15.418316249+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-28T18:12:15.81886515+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-05-28T18:12:24.547619661+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-05-28T18:12:25.7977399+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-05-28T18:12:29.45795716+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-05-28T18:14:05.542754704+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-28T18:14:05.543117186+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-28T18:14:06.279493943+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-28T18:14:06.464917669+02:00","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2025-05-28T18:14:07.47009418+02:00","level":"INFO","msg":"stream: closing","id":"q0gf9lrr"}
+{"time":"2025-05-28T18:14:07.470107512+02:00","level":"INFO","msg":"handler: closed","stream_id":"q0gf9lrr"}
+{"time":"2025-05-28T18:14:07.470114026+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"q0gf9lrr"}
+{"time":"2025-05-28T18:14:07.470127417+02:00","level":"INFO","msg":"sender: closed","stream_id":"q0gf9lrr"}
+{"time":"2025-05-28T18:14:07.470171992+02:00","level":"INFO","msg":"stream: closed","id":"q0gf9lrr"}

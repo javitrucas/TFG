@@ -1,0 +1,1 @@
+{"accuracy":0.989,"_runtime":671.588087676,"_step":0,"test_loss":0.05853733321856316,"_timestamp":1.748373948267633e+09,"f1_score":0.992057761732852,"pooling_type":"attention","target_digit":3,"_wandb":{"runtime":671},"auc":0.9994716358061093}

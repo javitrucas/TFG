@@ -1,0 +1,21 @@
+=== Iniciando experimento mejorado - Pooling: ATTENTION ===
+Epoch 1/5
+Entrenamiento - Loss: 1210.7756, Accuracy: 0.8844
+Validación - Loss: 165.3125, Accuracy: 0.9592
+Epoch 2/5
+Entrenamiento - Loss: 412.0291, Accuracy: 0.9708
+Validación - Loss: 77.4872, Accuracy: 0.9783
+Epoch 3/5
+Entrenamiento - Loss: 268.0596, Accuracy: 0.9806
+Validación - Loss: 100.2161, Accuracy: 0.9725
+Epoch 4/5
+Entrenamiento - Loss: 208.0941, Accuracy: 0.9846
+Validación - Loss: 67.3649, Accuracy: 0.9875
+Epoch 5/5
+Entrenamiento - Loss: 150.0727, Accuracy: 0.9896
+Validación - Loss: 120.0782, Accuracy: 0.9683
+=== Resultados - ATTENTION ===
+accuracy: 0.9690
+f1_score: 0.9781
+auc: 0.9985
+test_loss: 0.0906

@@ -1,0 +1,1 @@
+{"_wandb":{"runtime":175},"accuracy":0.988,"target_digit":3,"pooling_type":"max","auc":0.9996131619294729,"test_loss":0.03780841581970142,"_timestamp":1.748373572297753e+09,"_runtime":175.389773731,"_step":0,"f1_score":0.9914040114613181}

@@ -1,0 +1,33 @@
+Epoch 1/10
+Entrenamiento - Loss: 1035.6926, Accuracy: 0.9015
+Validación - Loss: 130.9568, Accuracy: 0.9683
+Epoch 2/10
+Entrenamiento - Loss: 358.3302, Accuracy: 0.9735
+Validación - Loss: 93.8394, Accuracy: 0.9742
+Epoch 3/10
+Entrenamiento - Loss: 208.6472, Accuracy: 0.9850
+Validación - Loss: 86.8883, Accuracy: 0.9758
+Epoch 4/10
+Entrenamiento - Loss: 164.4270, Accuracy: 0.9879
+Validación - Loss: 92.3818, Accuracy: 0.9783
+Epoch 5/10
+Entrenamiento - Loss: 134.3072, Accuracy: 0.9892
+Validación - Loss: 81.7016, Accuracy: 0.9808
+Epoch 6/10
+Entrenamiento - Loss: 94.4788, Accuracy: 0.9935
+Validación - Loss: 94.9922, Accuracy: 0.9825
+Epoch 7/10
+Entrenamiento - Loss: 62.5654, Accuracy: 0.9958
+Validación - Loss: 84.9645, Accuracy: 0.9808
+Epoch 8/10
+Entrenamiento - Loss: 65.1902, Accuracy: 0.9958
+Validación - Loss: 155.4926, Accuracy: 0.9858
+Epoch 9/10
+Entrenamiento - Loss: 56.5254, Accuracy: 0.9973
+Validación - Loss: 90.1310, Accuracy: 0.9783
+Epoch 10/10
+Entrenamiento - Loss: 54.8859, Accuracy: 0.9965
+Validación - Loss: 172.4034, Accuracy: 0.9858
+✅ MAX POOLING completado:
+   📈 Accuracy: 0.9820
+   📈 F1-Score: 0.9871

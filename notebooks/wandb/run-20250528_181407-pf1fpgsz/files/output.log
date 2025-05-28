@@ -1,0 +1,7 @@
+=== Iniciando experimento mejorado - Pooling: MEAN ===
+Epoch 1/5
+Entrenamiento - Loss: 1451.2892, Accuracy: 0.8642
+Validación - Loss: 132.0862, Accuracy: 0.9650
+Epoch 2/5
+Entrenamiento - Loss: 433.9190, Accuracy: 0.9692
+Validación - Loss: 161.6158, Accuracy: 0.9492

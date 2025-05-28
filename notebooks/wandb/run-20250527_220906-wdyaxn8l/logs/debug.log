@@ -1,0 +1,46 @@
+2025-05-27 22:09:06,053 INFO    MainThread:2485665 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /home/javitrucas/TFG/notebooks/wandb/run-20250527_220906-wdyaxn8l/logs/debug.log
+2025-05-27 22:09:06,053 INFO    MainThread:2485665 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /home/javitrucas/TFG/notebooks/wandb/run-20250527_220906-wdyaxn8l/logs/debug-internal.log
+2025-05-27 22:09:06,053 INFO    MainThread:2485665 [wandb_init.py:monkeypatch_ipython():599] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7f01b00ee490>
+2025-05-27 22:09:06,053 INFO    MainThread:2485665 [wandb_init.py:init():761] calling init triggers
+2025-05-27 22:09:06,054 INFO    MainThread:2485665 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'target_digit': 3, 'bag_size': 10, 'num_epochs': 5, 'learning_rate': 0.001, 'pooling_type': 'attention', '_wandb': {}}
+2025-05-27 22:09:06,054 INFO    MainThread:2485665 [wandb_init.py:init():784] starting backend
+2025-05-27 22:09:06,054 INFO    MainThread:2485665 [wandb_init.py:init():788] sending inform_init request
+2025-05-27 22:09:06,056 INFO    MainThread:2485665 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2025-05-27 22:09:06,056 INFO    MainThread:2485665 [wandb_init.py:init():803] backend started and connected
+2025-05-27 22:09:06,059 INFO    MainThread:2485665 [wandb_run.py:_label_probe_notebook():1204] probe notebook
+2025-05-27 22:09:06,062 INFO    MainThread:2485665 [wandb_init.py:init():896] updated telemetry
+2025-05-27 22:09:06,072 INFO    MainThread:2485665 [wandb_init.py:init():920] communicating run to backend with 90.0 second timeout
+2025-05-27 22:09:06,531 INFO    MainThread:2485665 [wandb_init.py:init():995] starting run threads in backend
+2025-05-27 22:09:06,721 INFO    MainThread:2485665 [wandb_run.py:_console_start():2377] atexit reg
+2025-05-27 22:09:06,722 INFO    MainThread:2485665 [wandb_run.py:_redirect():2227] redirect: wrap_raw
+2025-05-27 22:09:06,722 INFO    MainThread:2485665 [wandb_run.py:_redirect():2292] Wrapping output streams.
+2025-05-27 22:09:06,722 INFO    MainThread:2485665 [wandb_run.py:_redirect():2317] Redirects installed.
+2025-05-27 22:09:06,723 INFO    MainThread:2485665 [wandb_init.py:init():1037] run started, returning control to user process
+2025-05-27 22:09:49,180 WARNING MsgRouterThr:2485665 [router.py:message_loop():77] message_loop has been closed
+Traceback (most recent call last):
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/interface/router_sock.py", line 28, in _read_message
+    resp = self._sock_client.read_server_response(timeout=1)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 285, in read_server_response
+    data = self._read_packet_bytes(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 270, in _read_packet_bytes
+    raise SockClientClosedError
+wandb.sdk.lib.sock_client.SockClientClosedError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/interface/router.py", line 70, in message_loop
+    msg = self._read_message()
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/wandb/sdk/interface/router_sock.py", line 30, in _read_message
+    raise MessageRouterClosedError from e
+wandb.sdk.interface.router.MessageRouterClosedError
+2025-05-27 22:09:49,197 INFO    MsgRouterThr:2485665 [mailbox.py:close():115] Closing mailbox, abandoning 1 handles.
+2025-05-27 22:09:49,813 INFO    MainThread:2485665 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-05-27 22:09:49,813 INFO    MainThread:2485665 [wandb_init.py:_pause_backend():564] pausing backend
+2025-05-27 22:09:51,505 INFO    MainThread:2485665 [wandb_init.py:_resume_backend():569] resuming backend
+2025-05-27 22:09:51,696 INFO    MainThread:2485665 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-05-27 22:09:51,696 INFO    MainThread:2485665 [wandb_init.py:_pause_backend():564] pausing backend

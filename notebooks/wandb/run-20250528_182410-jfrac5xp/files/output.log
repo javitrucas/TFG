@@ -1,0 +1,4 @@
+=== 🔬 Análisis de Dos Instancias - Pooling: MEAN ===
+Epoch 1/5
+Entrenamiento - Loss: 1601.9848, Accuracy: 0.8469
+Validación - Loss: 140.9973, Accuracy: 0.9567

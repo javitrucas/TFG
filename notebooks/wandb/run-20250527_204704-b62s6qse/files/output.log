@@ -1,0 +1,54 @@
+=== Iniciando experimento ===
+Target Digit: 3, Bag Size: 10, Epochs: 5, LR: 0.001, Pooling: attention
+Creando datasets...
+
+=== CREANDO VISUALIZACIONES DE ATENCIÓN AVANZADAS ===
+/tmp/ipykernel_2485665/1163988442.py:451: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(os.path.join(output_model_dir, 'model.pth'), map_location=device))
+🚀 Iniciando experimento con mapas de calor tipo Grad-CAM...
+=== Iniciando experimento con mapas de calor ===
+Target Digit: 3, Bag Size: 10, Epochs: 5
+Learning Rate: 0.001, Pooling: attention
+Creando datasets...
+Iniciando entrenamiento...
+Epoch 1/5
+Entrenamiento - Loss: 1367.6074, Accuracy: 0.8654
+Validación - Loss: 137.6585, Accuracy: 0.9517
+Epoch 2/5
+Entrenamiento - Loss: 506.4766, Accuracy: 0.9623
+Validación - Loss: 86.4973, Accuracy: 0.9767
+Epoch 3/5
+Entrenamiento - Loss: 333.1521, Accuracy: 0.9760
+Validación - Loss: 97.3392, Accuracy: 0.9700
+Epoch 4/5
+Entrenamiento - Loss: 280.4625, Accuracy: 0.9812
+Validación - Loss: 65.4237, Accuracy: 0.9808
+Epoch 5/5
+Entrenamiento - Loss: 213.5810, Accuracy: 0.9838
+Validación - Loss: 80.3610, Accuracy: 0.9758
+Evaluando modelo...
+Recolectando muestras para visualización...
+🚀 Iniciando experimento con mapas de calor tipo Grad-CAM...
+=== Iniciando experimento con mapas de calor ===
+Epoch 1/5
+Entrenamiento - Loss: 1647.4804, Accuracy: 0.8348
+Validación - Loss: 126.8774, Accuracy: 0.9633
+Epoch 2/5
+Entrenamiento - Loss: 485.9962, Accuracy: 0.9625
+Validación - Loss: 84.0760, Accuracy: 0.9792
+Epoch 3/5
+Entrenamiento - Loss: 313.6491, Accuracy: 0.9802
+Validación - Loss: 58.8053, Accuracy: 0.9875
+Epoch 4/5
+Entrenamiento - Loss: 248.2058, Accuracy: 0.9827
+Validación - Loss: 52.0121, Accuracy: 0.9875
+Epoch 5/5
+Entrenamiento - Loss: 185.0625, Accuracy: 0.9879
+Validación - Loss: 54.9959, Accuracy: 0.9867
+Recolectando muestras para visualización...
+Generando mapas de calor comprehensivos...
+=== Resultados del experimento ===
+accuracy: 0.9870
+f1_score: 0.9906
+auc: 0.9985
+test_loss: 0.0459

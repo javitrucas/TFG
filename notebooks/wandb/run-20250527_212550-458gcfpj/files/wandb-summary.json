@@ -1,0 +1,1 @@
+{"auc":0.9985564335416913,"_timestamp":1.748374149306936e+09,"_runtime":199.00908662,"f1_score":0.9870875179340028,"_wandb":{"runtime":199},"accuracy":0.982,"test_loss":0.06714957706138187,"_step":0,"pooling_type":"max","target_digit":3}

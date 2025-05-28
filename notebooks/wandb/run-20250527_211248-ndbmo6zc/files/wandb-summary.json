@@ -1,0 +1,1 @@
+{"_timestamp":1.748373394523035e+09,"_step":0,"test_loss":0.06902733895993694,"target_digit":3,"accuracy":0.987,"f1_score":0.990572878897752,"auc":0.9989762943743365,"pooling_type":"attention","_wandb":{"runtime":226},"_runtime":226.159688076}

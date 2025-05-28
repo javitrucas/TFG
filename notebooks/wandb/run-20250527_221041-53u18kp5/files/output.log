@@ -1,0 +1,53 @@
+=== Iniciando experimento con mapas de calor ===
+Epoch 1/5
+Entrenamiento - Loss: 1294.1072, Accuracy: 0.8762
+Validación - Loss: 117.8871, Accuracy: 0.9608
+Epoch 2/5
+Entrenamiento - Loss: 465.8098, Accuracy: 0.9663
+Validación - Loss: 91.7136, Accuracy: 0.9775
+Epoch 3/5
+Entrenamiento - Loss: 337.8435, Accuracy: 0.9769
+Validación - Loss: 54.4967, Accuracy: 0.9850
+Epoch 4/5
+Entrenamiento - Loss: 218.2109, Accuracy: 0.9850
+Validación - Loss: 53.5044, Accuracy: 0.9858
+Epoch 5/5
+Entrenamiento - Loss: 199.4014, Accuracy: 0.9840
+Validación - Loss: 64.0167, Accuracy: 0.9858
+=== Iniciando experimento con mapas de calor ===
+Epoch 1/5
+Entrenamiento - Loss: 1184.4071, Accuracy: 0.8919
+Validación - Loss: 104.8055, Accuracy: 0.9692
+Epoch 2/5
+Entrenamiento - Loss: 328.0822, Accuracy: 0.9779
+Validación - Loss: 76.4372, Accuracy: 0.9817
+Epoch 3/5
+Entrenamiento - Loss: 206.3262, Accuracy: 0.9850
+Validación - Loss: 68.9154, Accuracy: 0.9808
+Epoch 4/5
+Entrenamiento - Loss: 147.5697, Accuracy: 0.9902
+Validación - Loss: 57.4541, Accuracy: 0.9842
+Epoch 5/5
+Entrenamiento - Loss: 95.2453, Accuracy: 0.9925
+Validación - Loss: 86.9728, Accuracy: 0.9767
+=== Iniciando experimento con mapas de calor ===
+Epoch 1/5
+Entrenamiento - Loss: 1243.5838, Accuracy: 0.8860
+Validación - Loss: 120.5655, Accuracy: 0.9650
+Epoch 2/5
+Entrenamiento - Loss: 439.2435, Accuracy: 0.9685
+Validación - Loss: 114.8698, Accuracy: 0.9600
+Epoch 3/5
+Entrenamiento - Loss: 293.3310, Accuracy: 0.9777
+Validación - Loss: 47.2043, Accuracy: 0.9883
+Epoch 4/5
+Entrenamiento - Loss: 211.7791, Accuracy: 0.9854
+Validación - Loss: 58.0564, Accuracy: 0.9858
+Epoch 5/5
+Entrenamiento - Loss: 161.1921, Accuracy: 0.9894
+Validación - Loss: 42.0855, Accuracy: 0.9883
+=== Resultados del experimento ===
+accuracy: 0.9830
+f1_score: 0.9877
+auc: 0.9991
+test_loss: 0.0446

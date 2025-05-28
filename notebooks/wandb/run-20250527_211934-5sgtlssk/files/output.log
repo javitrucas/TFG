@@ -1,0 +1,33 @@
+Epoch 1/10
+Entrenamiento - Loss: 1681.8939, Accuracy: 0.8387
+Validación - Loss: 143.9160, Accuracy: 0.9500
+Epoch 2/10
+Entrenamiento - Loss: 436.8876, Accuracy: 0.9706
+Validación - Loss: 77.2338, Accuracy: 0.9783
+Epoch 3/10
+Entrenamiento - Loss: 285.9457, Accuracy: 0.9815
+Validación - Loss: 68.9367, Accuracy: 0.9783
+Epoch 4/10
+Entrenamiento - Loss: 198.0341, Accuracy: 0.9875
+Validación - Loss: 88.2609, Accuracy: 0.9758
+Epoch 5/10
+Entrenamiento - Loss: 167.1957, Accuracy: 0.9906
+Validación - Loss: 107.9620, Accuracy: 0.9717
+Epoch 6/10
+Entrenamiento - Loss: 115.0491, Accuracy: 0.9933
+Validación - Loss: 31.8981, Accuracy: 0.9908
+Epoch 7/10
+Entrenamiento - Loss: 84.4616, Accuracy: 0.9938
+Validación - Loss: 95.5583, Accuracy: 0.9742
+Epoch 8/10
+Entrenamiento - Loss: 81.1039, Accuracy: 0.9946
+Validación - Loss: 35.5311, Accuracy: 0.9892
+Epoch 9/10
+Entrenamiento - Loss: 48.8253, Accuracy: 0.9962
+Validación - Loss: 53.2010, Accuracy: 0.9858
+Epoch 10/10
+Entrenamiento - Loss: 48.8586, Accuracy: 0.9960
+Validación - Loss: 46.5815, Accuracy: 0.9883
+✅ MEAN POOLING completado:
+   📈 Accuracy: 0.9870
+   📈 F1-Score: 0.9906

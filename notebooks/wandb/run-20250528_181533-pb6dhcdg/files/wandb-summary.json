@@ -1,0 +1,1 @@
+{"experiment_completed":true,"f1_score":0.9781227946365562,"auc":0.9984762354051185,"_wandb":{"runtime":122},"_timestamp":1.748449056435848e+09,"_runtime":122.680440182,"test_loss":0.09061763945744584,"_step":0,"accuracy":0.969}

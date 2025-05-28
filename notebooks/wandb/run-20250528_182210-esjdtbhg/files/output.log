@@ -1,0 +1,33 @@
+=== 🔬 Análisis de Dos Instancias - Pooling: ATTENTION ===
+Epoch 1/5
+Entrenamiento - Loss: 1279.4309, Accuracy: 0.8902
+Validación - Loss: 104.2246, Accuracy: 0.9683
+Epoch 2/5
+Entrenamiento - Loss: 382.2179, Accuracy: 0.9742
+Validación - Loss: 70.1493, Accuracy: 0.9733
+Epoch 3/5
+Entrenamiento - Loss: 252.7721, Accuracy: 0.9823
+Validación - Loss: 47.7343, Accuracy: 0.9833
+Epoch 4/5
+Entrenamiento - Loss: 208.7541, Accuracy: 0.9835
+Validación - Loss: 69.9963, Accuracy: 0.9750
+Epoch 5/5
+Entrenamiento - Loss: 176.6963, Accuracy: 0.9892
+Validación - Loss: 89.8176, Accuracy: 0.9783
+📊 Generando visualización comparativa...
+/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/IPython/core/pylabtools.py:170: UserWarning: Glyph 128202 (\N{BAR CHART}) missing from font(s) DejaVu Sans.
+  fig.canvas.print_figure(bytes_io, **kw)
+/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/IPython/core/pylabtools.py:170: UserWarning: Glyph 127919 (\N{DIRECT HIT}) missing from font(s) DejaVu Sans.
+  fig.canvas.print_figure(bytes_io, **kw)
+/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/IPython/core/pylabtools.py:170: UserWarning: Glyph 128994 (\N{LARGE GREEN CIRCLE}) missing from font(s) DejaVu Sans.
+  fig.canvas.print_figure(bytes_io, **kw)
+/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/IPython/core/pylabtools.py:170: UserWarning: Glyph 128308 (\N{LARGE RED CIRCLE}) missing from font(s) DejaVu Sans.
+  fig.canvas.print_figure(bytes_io, **kw)
+/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/IPython/core/pylabtools.py:170: UserWarning: Glyph 128200 (\N{CHART WITH UPWARDS TREND}) missing from font(s) DejaVu Sans.
+  fig.canvas.print_figure(bytes_io, **kw)
+
+📈 Resumen de Resultados - ATTENTION:
+   Accuracy: 0.9850
+   Precision: 0.0000
+   Recall: 0.0000
+   F1-Score: 0.9891

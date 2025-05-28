@@ -1,0 +1,23 @@
+=== 🎯 Análisis de Attention Pooling - Dígito: 3 ===
+Epoch 1/5
+Entrenamiento - Loss: 1024.2507, Accuracy: 0.9052
+Validación - Loss: 92.4809, Accuracy: 0.9675
+Epoch 2/5
+Entrenamiento - Loss: 346.3427, Accuracy: 0.9758
+Validación - Loss: 77.0050, Accuracy: 0.9800
+Epoch 3/5
+Entrenamiento - Loss: 199.7574, Accuracy: 0.9860
+Validación - Loss: 39.7415, Accuracy: 0.9908
+Epoch 4/5
+Entrenamiento - Loss: 165.7164, Accuracy: 0.9898
+Validación - Loss: 57.2297, Accuracy: 0.9833
+Epoch 5/5
+Entrenamiento - Loss: 146.4340, Accuracy: 0.9902
+Validación - Loss: 84.2935, Accuracy: 0.9825
+🔥 Generando mapas de atención...
+
+📈 Resultados del Attention Pooling:
+   Accuracy: 0.9850
+   Precision: 0.0000
+   Recall: 0.0000
+   F1-Score: 0.9891

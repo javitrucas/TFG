@@ -1,0 +1,1 @@
+{"accuracy":0.985,"f1_score":0.9890909090909091,"_timestamp":1.748449448830356e+09,"test_loss":0.06673117263556363,"_runtime":117.847145415,"_wandb":{"runtime":117},"_step":0,"experiment_completed":true,"auc":0.9990281872862367}

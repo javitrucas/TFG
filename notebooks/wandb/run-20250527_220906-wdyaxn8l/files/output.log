@@ -1,0 +1,4 @@
+=== Iniciando experimento con mapas de calor ===
+Epoch 1/5
+Entrenamiento - Loss: 1164.0578, Accuracy: 0.8946
+Validación - Loss: 83.1857, Accuracy: 0.9733

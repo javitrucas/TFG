@@ -1,0 +1,29 @@
+=== Iniciando experimento mejorado - Pooling: ATTENTION ===
+/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/torchvision/io/image.py:13: UserWarning: Failed to load image Python extension: '/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages/torchvision/image.so: undefined symbol: _ZN3c1017RegisterOperatorsD1Ev'If you don't plan on using image functionality from `torchvision.io`, you can ignore this warning. Otherwise, there might be something wrong with your environment. Did you have `libjpeg` or `libpng` installed before building `torchvision` from source?
+  warn(
+['/home/javitrucas/miniconda3/envs/tfg/lib/python311.zip', '/home/javitrucas/miniconda3/envs/tfg/lib/python3.11', '/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/lib-dynload', '', '/home/javitrucas/miniconda3/envs/tfg/lib/python3.11/site-packages', '/home/javitrucas/TFG', '/home/javitrucas/TFG/scripts']
+
+==================================================
+📌 Ejecutando con pooling: ATTENTION
+==================================================
+=== Iniciando experimento mejorado - Pooling: ATTENTION ===
+Epoch 1/5
+Entrenamiento - Loss: 1259.0491, Accuracy: 0.8854
+Validación - Loss: 169.1608, Accuracy: 0.9583
+Epoch 2/5
+Entrenamiento - Loss: 510.7535, Accuracy: 0.9631
+Validación - Loss: 115.0471, Accuracy: 0.9692
+Epoch 3/5
+Entrenamiento - Loss: 357.7611, Accuracy: 0.9752
+Validación - Loss: 88.0987, Accuracy: 0.9758
+Epoch 4/5
+Entrenamiento - Loss: 246.2103, Accuracy: 0.9827
+Validación - Loss: 81.4046, Accuracy: 0.9767
+Epoch 5/5
+Entrenamiento - Loss: 196.9835, Accuracy: 0.9848
+Validación - Loss: 82.0706, Accuracy: 0.9792
+=== Resultados - ATTENTION ===
+accuracy: 0.9840
+f1_score: 0.9884
+auc: 0.9977
+test_loss: 0.0525

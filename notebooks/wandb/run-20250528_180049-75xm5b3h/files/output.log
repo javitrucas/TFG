@@ -1,0 +1,21 @@
+=== Iniciando experimento con mapas de calor ===
+Epoch 1/5
+Entrenamiento - Loss: 1917.3999, Accuracy: 0.8235
+Validación - Loss: 255.1203, Accuracy: 0.9425
+Epoch 2/5
+Entrenamiento - Loss: 653.0490, Accuracy: 0.9677
+Validación - Loss: 112.0538, Accuracy: 0.9767
+Epoch 3/5
+Entrenamiento - Loss: 385.9655, Accuracy: 0.9760
+Validación - Loss: 70.6191, Accuracy: 0.9825
+Epoch 4/5
+Entrenamiento - Loss: 257.8881, Accuracy: 0.9817
+Validación - Loss: 59.0141, Accuracy: 0.9867
+Epoch 5/5
+Entrenamiento - Loss: 195.2559, Accuracy: 0.9869
+Validación - Loss: 48.6747, Accuracy: 0.9833
+=== Resultados del experimento ===
+accuracy: 0.9890
+f1_score: 0.9920
+auc: 0.9990
+test_loss: 0.0378
