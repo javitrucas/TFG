@@ -1,168 +1,96 @@
 import cv2
 import numpy as np
-
 from matplotlib import pyplot as plt
+import os # Added for saving
 
 def normalize(x):
+    """Normalizes an array to the range [0, 1]."""
     return (x - np.min(x)) / (np.max(x) - np.min(x))
 
 def combine_attmap_wsi(attmap, wsi_img):
     """
+    Combines an attention heatmap with a WSI image using a colormap and alpha blending.
     Input:
-        attmap: numpy array, shape = (H, W)
+        attmap: numpy array, shape = (H, W), attention values (normalized 0-1)
         wsi_img: numpy array, shape = (H, W, 3), mode RGB
     Output:
         combined_img: numpy array, shape = (H, W, 3), mode RGB
     """
-    # attmap = normalize(attmap) # (H, W)
-    attmap_img_bgr = cv2.applyColorMap((attmap*255).astype(np.uint8), cv2.COLORMAP_JET) # (H, W, 3)
-    wsi_img_bgr = cv2.cvtColor(wsi_img, cv2.COLOR_RGB2BGR) # (H, W, 3)
-    combined_img_bgr = cv2.addWeighted(wsi_img_bgr, 0.5, attmap_img_bgr, 0.5, 0) # (H, W, 3)
-    combined_img_rgb = cv2.cvtColor(combined_img_bgr, cv2.COLOR_BGR2RGB) # (H, W, 3)
+    # attmap is already normalized in the main script via `normalize()`
+    attmap_img_bgr = cv2.applyColorMap((attmap * 255).astype(np.uint8), cv2.COLORMAP_JET)
+    wsi_img_bgr = cv2.cvtColor(wsi_img, cv2.COLOR_RGB2BGR)
+    combined_img_bgr = cv2.addWeighted(wsi_img_bgr, 0.5, attmap_img_bgr, 0.5, 0)
+    combined_img_rgb = cv2.cvtColor(combined_img_bgr, cv2.COLOR_BGR2RGB)
     return combined_img_rgb
 
+# --- THIS IS THE MODIFIED FUNCTION ---
 def plot_wsi_and_heatmap(
-        ax,
-        canvas_wsi, 
-        attval = None, 
-        plot_patch_contour=False,
-        size = None,
-        row_array = None,
-        col_array = None,
-        start_y = 0,
-        start_x = 0,
-        height = None,
-        width = None,
-        alpha = 0.8 ,
-        p = 0.05,
-        remove_axis = False
-    ):
+    wsi_image,              # The WSI thumbnail (numpy array, already loaded)
+    attention_scores,       # Normalized attention scores (numpy array, 1D)
+    patch_coords,           # Nx2 numpy array of (x, y) coordinates for each patch
+    patch_size,             # Original patch size (e.g., 512)
+    level_downsample_factor,# Downsampling factor of the `wsi_image` (e.g., 4 for level 2)
+    image_id,               # String ID of the WSI
+    pred_prob,              # Predicted probability (float)
+    true_label,             # True ISUP grade (int or string)
+    save_path=None,         # Path to save the image (if not None)
+    save_extension='png'    # File extension for saving
+):
+    """
+    Plots a WSI thumbnail with an attention heatmap overlay.
+    """
+    fig, ax = plt.subplots(1, 1, figsize=(12, 12)) # Create a figure and axis
 
-    if width is None:
-        width = canvas_wsi.shape[0]
-    if height is None:
-        height = canvas_wsi.shape[1]
-
-    # if canvas_attmap is not None:
-    #     wsi_array = combine_attmap_wsi(canvas_attmap, canvas_wsi)
-    # else:
-    #     wsi_array = canvas_wsi
+    # Convert patch coordinates to the thumbnail's coordinate system
+    # patch_coords are (x, y) at level 0. Divide by downsample_factor.
+    # We are working with (col, row) for x, y in image processing, so patch_coords[:,0] is x (col)
+    # and patch_coords[:,1] is y (row)
     
-    tab_red = np.array([
-        0.8392156862745098,
-        0.15294117647058825,
-        0.1568627450980392
-    ])
-    tab_green = np.array([
-        0.17254901960784313,
-        0.6274509803921569,
-        0.17254901960784313
-    ])
+    # Scale patch coordinates and size to the thumbnail's resolution
+    scaled_patch_coords = patch_coords / level_downsample_factor
+    scaled_patch_size = patch_size / level_downsample_factor
 
-    canvas_wsi_copy = np.copy(canvas_wsi)
+    # Create an empty canvas for the heatmap, same size as the thumbnail
+    heatmap_canvas = np.zeros(wsi_image.shape[:2], dtype=np.float32)
 
-    # ax.imshow(canvas_wsi[start_y:start_y+width, start_x:start_x+height])
-    if plot_patch_contour or (attval is not None):  
-        for i in range(len(row_array)):
-            row_i = row_array[i]
-            column_i = col_array[i]
-            x_i = column_i * size
-            y_i = row_i * size
-            row = row_array[i]
-            column = col_array[i]
-            x = column * size
-            y = row * size
-            if y_i >= start_y and y_i <= start_y+width and x_i >= start_x and x_i <= start_x+height:
-                color = 0
-                if attval is not None:
-                    w = attval[i]
-                    color = 255*(w*tab_red + (1.0-w)*tab_green)
-                    # ax.add_patch(plt.Rectangle((x, y), size, size, color=color, alpha=alpha))
-                    canvas_wsi_copy[y:y+size, x:x+size] = (alpha)*color + (1.0-alpha)*canvas_wsi[y:y+size, x:x+size]
-                    # canvas_wsi_with_heatmap[y:y+size, x:x+size] = 255*color
-                
-                if plot_patch_contour:
-                    contour_len = int(p*size)
-                    canvas_wsi_copy[y:y+size, x-contour_len:x+contour_len] = color
-                    canvas_wsi_copy[y:y+size, x+size-contour_len:x+size+contour_len] = color
-                    
-                    canvas_wsi_copy[y-contour_len:y+contour_len, x:x+size] = color
-                    canvas_wsi_copy[y+size-contour_len:y+size+contour_len, x:x+size] = color
-                    
-                    # ax.add_patch(plt.Rectangle((x, y), size, size, edgecolor='black', fill=False))
-    ax.imshow(canvas_wsi_copy[start_y:start_y+width, start_x:start_x+height], aspect='equal')
-    if remove_axis:
-        ax.axis('off')
-    else:
-        ax.set_xticks([])
-        ax.set_yticks([])
-    # remove axis ticks
-    # ax.set_xticks([])
-    # ax.set_yticks([])
-    # ax.axis('off')
-    return ax
+    # Populate the heatmap_canvas with attention scores
+    # Iterate through each patch and its attention score
+    for i in range(len(attention_scores)):
+        x_scaled = int(scaled_patch_coords[i, 0])
+        y_scaled = int(scaled_patch_coords[i, 1])
+        score = attention_scores[i]
 
-# def plot_wsi_and_heatmap(
-#         ax,
-#         canvas_wsi, 
-#         attval = None, 
-#         plot_patch_contour=False,
-#         size = None,
-#         row_array = None,
-#         col_array = None,
-#         start_y = 0,
-#         start_x = 0,
-#         height = None,
-#         width = None,
-#         alpha = None 
-#     ):
+        # Define the patch area on the heatmap_canvas
+        # Ensure coordinates are within image bounds
+        x_end = min(x_scaled + int(scaled_patch_size), heatmap_canvas.shape[1])
+        y_end = min(y_scaled + int(scaled_patch_size), heatmap_canvas.shape[0])
+        
+        # Apply the attention score to the corresponding region in the heatmap_canvas
+        # We're just setting a uniform score for the patch area
+        # If there are overlapping patches, the last one drawn will overwrite
+        if x_scaled < x_end and y_scaled < y_end: # Check for valid dimensions
+             heatmap_canvas[y_scaled:y_end, x_scaled:x_end] = score
 
-#     if width is None:
-#         width = canvas_wsi.shape[0]
-#     if height is None:
-#         height = canvas_wsi.shape[1]
+    # Combine the WSI image and the heatmap
+    combined_img = combine_attmap_wsi(heatmap_canvas, wsi_image)
+
+    # Display the combined image
+    ax.imshow(combined_img)
+    ax.set_title(f"Image ID: {image_id}\nPred. Prob: {pred_prob:.4f} | True Label: {true_label}", fontsize=14)
+    ax.axis('off') # Turn off axes for cleaner image
+
+    # Save the plot if save_path is provided
+    if save_path:
+        filename = f"{image_id}_heatmap.{save_extension}"
+        full_save_path = os.path.join(save_path, filename)
+        plt.savefig(full_save_path, bbox_inches='tight', dpi=300)
+        print(f"Heatmap guardado en: {full_save_path}")
     
-#     if alpha is None:
-#         alpha = 0.8
+    plt.show() # Display the plot
 
-#     # if canvas_attmap is not None:
-#     #     wsi_array = combine_attmap_wsi(canvas_attmap, canvas_wsi)
-#     # else:
-#     #     wsi_array = canvas_wsi
-    
-#     tab_red = np.array([
-#         0.8392156862745098,
-#         0.15294117647058825,
-#         0.1568627450980392
-#     ])
-#     tab_green = np.array([
-#         0.17254901960784313,
-#         0.6274509803921569,
-#         0.17254901960784313
-#     ])
 
-#     ax.imshow(canvas_wsi[start_y:start_y+width, start_x:start_x+height])
-#     if plot_patch_contour or (attval is not None):  
-#         for i in range(len(row_array)):
-#             row_i = row_array[i]
-#             column_i = col_array[i]
-#             x_i = column_i * size
-#             y_i = row_i * size
-#             row = row_array[i]
-#             column = col_array[i]
-#             x = column * size
-#             y = row * size
-#             if y_i >= start_y and y_i <= start_y+width and x_i >= start_x and x_i <= start_x+height:
-#                 if attval is not None:
-#                     w = attval[i]
-#                     color = w*tab_red + (1.0-w)*tab_green
-#                     ax.add_patch(plt.Rectangle((x, y), size, size, color=color, alpha=alpha))
-#                 elif plot_patch_contour:
-#                     ax.add_patch(plt.Rectangle((x, y), size, size, edgecolor='black', fill=False))
-                
-#     ax.axis('off')
-#     return ax
-
+# Keep other functions as they were if you use them elsewhere,
+# but plot_scan_and_heatmap is not being called by the main script here.
 def plot_scan_and_heatmap(
         ax,
         canvas_bag, 
@@ -202,12 +130,9 @@ def plot_scan_and_heatmap(
             if attval is not None:
                 w = attval[i]
                 color = 255*(w*tab_red + (1.0-w)*tab_green)
-                # ax.add_patch(plt.Rectangle((x, y), size, size, color=color, alpha=alpha))
-
                 canvas_bag_copy[y:y+size, x:x+size] = (alpha)*color + (1.0-alpha)*canvas_bag[y:y+size, x:x+size]
 
             if plot_patch_contour:
-                # ax.add_patch(plt.Rectangle((x, y), size, size, edgecolor='black', fill=False))
                 contour_len = int(p*size)
                 canvas_bag_copy[y:y+size, x-contour_len:x+contour_len] = color
                 canvas_bag_copy[y:y+size, x+size-contour_len:x+size+contour_len] = color
