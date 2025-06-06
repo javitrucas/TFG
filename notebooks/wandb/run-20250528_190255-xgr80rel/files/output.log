@@ -1,0 +1,16 @@
+Epoch 1/5
+Entrenamiento - Loss: 873.5647, Accuracy: 0.9187
+Validación - Loss: 93.5025, Accuracy: 0.9758
+Epoch 2/5
+Entrenamiento - Loss: 313.2813, Accuracy: 0.9775
+Validación - Loss: 65.3828, Accuracy: 0.9800
+Epoch 3/5
+Entrenamiento - Loss: 209.9679, Accuracy: 0.9850
+Validación - Loss: 63.8383, Accuracy: 0.9833
+Epoch 4/5
+Entrenamiento - Loss: 158.5913, Accuracy: 0.9883
+Validación - Loss: 50.2538, Accuracy: 0.9858
+Epoch 5/5
+Entrenamiento - Loss: 109.0316, Accuracy: 0.9921
+Validación - Loss: 85.3012, Accuracy: 0.9758
+Resultados max: {'accuracy': 0.985, 'f1_score': 0.9892627057981389, 'auc': 0.9993820025946456, 'test_loss': 0.041501202256649404}
